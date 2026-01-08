@@ -216,7 +216,7 @@ def mass_from_radius_chen_kipping_2017(R_rearth):
 
     return 10.0 ** logM
 
-def PICASO_PT_Planet(rad_plan=1, mh='2.0', tint=60, semi_major_AU=1, ctoO='1', nlevel=91, nofczns=1, nstr_upper=85, rfacv=0.5, outputfile=None, pt_guillot=True, prior_out=None):
+def PICASO_PT_Planet(rad_plan=1, log_mh='2.0', tint=60, semi_major_AU=1, ctoO='1', nlevel=91, nofczns=1, nstr_upper=85, rfacv=0.5, outputfile=None, pt_guillot=True, prior_out=None):
 
     """
     Calculates the semi-major distance from the Sun of a planet whose equilibrium temperature can vary.
@@ -251,19 +251,18 @@ def PICASO_PT_Planet(rad_plan=1, mh='2.0', tint=60, semi_major_AU=1, ctoO='1', n
     
     """
 
-    print(f'Input Values: rad_plan={rad_plan}, mh={mh}, tint={tint}, semi_major_AU={semi_major_AU}, ctoO={ctoO}')
+    print(f'Input Values: rad_plan={rad_plan}, mh={log_mh}, tint={tint}, semi_major_AU={semi_major_AU}, ctoO={ctoO}')
     
     # Values of Planet
     radius_planet = rad_plan*6.371e+6*u.m # Converts from units of xEarth radius to m
 
     # Use the 2017 M-R relationship to calculate mass in Earth units
-    mass_planet_earth = mass_from_radius_chen_kipping_2017(R_rearth=radius_planet)
+    mass_planet_earth = mass_from_radius_chen_kipping_2017(R_rearth=rad_plan)
     mass_planet = mass_planet_earth*5.972e+24*u.kg # Converts from units of x Earth mass to kg
     grav = (const.G * (mass_planet)) / ((radius_planet)**2) # of planet
     
-    # Depends on mh and ctoO
-    ck_db = download_opacity(mh=mh, ctoO=ctoO, save_directory="opacities")
-    opacity_ck = jdi.opannection(ck_db=ck_db, method='preweighted') # grab your opacities
+    # Opacity is independent from log_mh and ctoO, instead of downloading opacities
+    opacity_ck = jdi.opannection(method='resortrebin') # grab your opacities
 
     # Values of the Host Star (assuming G-Star)
     T_star = 5778 # K, star effective temperature, the min value is 3500K 
@@ -280,7 +279,7 @@ def PICASO_PT_Planet(rad_plan=1, mh='2.0', tint=60, semi_major_AU=1, ctoO='1', n
     cl_run.gravity(gravity=grav.value, gravity_unit=u.Unit('m/(s**2)')) # input gravity
     cl_run.effective_temp(tint) # input effective temperature
     cl_run.star(opacity_ck, temp =T_star,metal =metal, logg =logg, radius = r_star, 
-            radius_unit=u.R_sun,semi_major= semi_major_AU , semi_major_unit = u.AU)#opacity db, pysynphot database, temp, metallicity, logg
+            radius_unit=u.R_sun,semi_major= semi_major_AU , semi_major_unit = u.AU )#opacity db, pysynphot database, temp, metallicity, logg
 
     # Initial T(P) Guess
     nstr_deep = nlevel -2
@@ -309,9 +308,14 @@ def PICASO_PT_Planet(rad_plan=1, mh='2.0', tint=60, semi_major_AU=1, ctoO='1', n
     # Initial Convective Zone Guess
     cl_run.inputs_climate(temp_guess= temp_guess, pressure= pressure, 
                       nstr = nstr, nofczns = nofczns , rfacv = rfacv)
-    
+
+    # Set composition
+    mh_converted_from_log = 10**log_mh
+    cl_run.atmosphere(mh=mh_converted_from_log, cto_relative=ctoO, chem_method='on-the-fly')
+
+    # Run Model
     out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-    # print(f'This is the type of output I get with the keys: {out.keys()}, for the input {[mh, tint, total_flux]}')
+    # print(f'This is the type of output I get with the keys: {out.keys()}, for the input {[log_mh, tint, total_flux]}')
     base_case = jdi.pd.read_csv(jdi.HJ_pt(), delim_whitespace=True)
 
     # Saves out and base_case to python file to be re-loaded.
@@ -325,9 +329,9 @@ def PICASO_PT_Planet(rad_plan=1, mh='2.0', tint=60, semi_major_AU=1, ctoO='1', n
             pickle.dump(base_case, f)
         return out, base_case
 
-def PICASO_fake_climate_model_testing_errors(rad_plan, mh, tint, semi_major_AU, ctoO, outputfile=None):
+def PICASO_fake_climate_model_testing_errors(rad_plan, log_mh, tint, semi_major_AU, ctoO, outputfile=None):
     
-    fake_dictionary = {'planet radius': np.full(10, rad_plan), 'mh': np.full(10, mh) , 'tint': np.full(10, tint), 'semi major': np.full(10, semi_major_AU), 'ctoO': np.full(10, ctoO)}
+    fake_dictionary = {'planet radius': np.full(10, rad_plan), 'log_mh': np.full(10, mh) , 'tint': np.full(10, tint), 'semi major': np.full(10, semi_major_AU), 'ctoO': np.full(10, ctoO)}
     return fake_dictionary
 
 def PICASO_climate_model(x):
@@ -350,12 +354,11 @@ def PICASO_climate_model(x):
         Noting that both go from smaller value to larger value,
         and converged representing whether or not results converged (0 = False, 1 = True)
         
-    
     """
     # For Tijuca
     rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar = x
-    # print(f'This is the value of {x} used in the climate model')
-    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, mh=log10_planet_metallicity, tint=tint_K, semi_major_AU = semi_major_AU, ctoO=ctoO_solar, outputfile=None)
+    print(f'This is the value of {x} used in the climate model')
+    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU = semi_major_AU, ctoO=ctoO_solar, outputfile=None)
 
     count = 0
     while out['converged'] == 0:  # An infinite loop that will be broken out of explicitly
@@ -363,7 +366,7 @@ def PICASO_climate_model(x):
         
         print(f"Loop iteration, Recalculating PT Profile: {count}")
         
-        out, base_case = PICASO_PT_Planet(mh=log10_planet_metallicity, tint=tint, total_flux=log10_totalflux, outputfile=None, pt_guillot=False, prior_out = out)
+        out, base_case = PICASO_PT_Planet(log_mh=log10_planet_metallicity, tint=tint, total_flux=log10_totalflux, outputfile=None, pt_guillot=False, prior_out = out)
 
         if count == 3:
             print(f"Hit the maximum amount of loops without converging.")
@@ -375,7 +378,7 @@ def PICASO_climate_model(x):
     # Try specifying the dictionary w/ inputs and outputs
 
     # Testing (with a simple dictionary, the code works)
-    # out = PICASO_fake_climate_model_testing_errors(mh=log10_planet_metallicity, tint=tint, total_flux=log10_totalflux, outputfile=None)
+    # out = PICASO_fake_climate_model_testing_errors(log_mh=log10_planet_metallicity, tint=tint, total_flux=log10_totalflux, outputfile=None)
 
     return new_out
 
@@ -399,20 +402,35 @@ def get_gridvals_PICASO_TP():
     """
     """
     # True Values to replace after test case:
+
+    Convert float inputs to strings for metallicity and ctoO ratio:
+    metal_float = np.linspace(3, 3000, 10)
+    metal_string = np.array([str(f) for f in metal_float])
+
     rad_plan_earth_units = np.linspace(1.6, 4, 5) # in units of xEarth radii
-    log10_planet_metallicity = np.linspace(3, 3000, 10) # in units of solar metallicity, right now should be a string but that was opacity dependent (which may no longer depend on metallicities)
+    log10_planet_metallicity = metal_string # in units of solar metallicity, right now should be a list of strings
     tint_K = np.linspace(20, 400, 5) # in Kelvin
     semi_major_AU = np.linspace(0.3, 10, 10) # in AU 
     ctoO_solar = np.array(['0.01', '0.25', '0.5', '0.75', '1']) # in units of solar C/O
 
     """
-    # Test Case:
-    rad_plan_earth_units = np.array([2.61]) # in units of xEarth radii
-    log10_planet_metallicity = np.array(['0.5']) # in units of solar metallicity
-    tint_K = np.array([155]) # in Kelvin
-    semi_major_AU = np.array([1.047920906403798]) # in AU 
-    ctoO_solar = np.array(['1']) # in units of solar C/O
 
+    # Test Case: this was the _updatop_test files
+    rad_plan_earth_units = np.array([2.61]) # in units of xEarth radii
+    log10_planet_metallicity = np.array([0.5]) # in units of solar metallicity
+    tint_K = np.array([155]) # in Kelvin
+    semi_major_AU = np.array([1]) # in AU 
+    ctoO_solar = np.array([1]) # in units of solar C/O
+
+
+    """
+    # Parameter Exploration
+    rad_plan_earth_units = np.array([2.61]) # in units of xEarth radii
+    log10_planet_metallicity = np.array([3.4]) # in units of solar metallicity
+    tint_K = np.array([155]) # in Kelvin
+    semi_major_AU = np.array([1]) # in AU 
+    ctoO_solar = np.array([0.01]) # in units of solar C/O
+    """
 
     gridvals = (rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar)
     

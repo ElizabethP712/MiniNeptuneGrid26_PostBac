@@ -38,7 +38,7 @@ import PICASO_Climate_grid_121625 as PICASO_Climate_grid
 
 # Finds the associated PT profile and calculates Photochemical Composition of a Planet
 
-def find_PT_grid(filename='results/PICASO_climate_fv.h5', rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, gridvals=PICASO_Climate_grid.get_gridvals_PICASO_TP()):
+def find_PT_grid(filename='results/PICASO_climate_updatop_test.h5', rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, gridvals=PICASO_Climate_grid.get_gridvals_PICASO_TP()):
     """
     This finds the matching PT profile in the PICASO grid to be used for Photochem grid calculation.
     
@@ -53,7 +53,7 @@ def find_PT_grid(filename='results/PICASO_climate_fv.h5', rad_plan=None, log10_p
         This is the internal temperature of the planet in units of Kelvin
     semi_major_AU = float
         This is the orbital distance of the planet from the star in units of AU.
-    ctoO = string
+    ctoO = float
         This is the carbon to oxygen ratio of the planet in units of x Solar C/O ratio
     gridvals: function
         This calls the parameter space used to create the grid whose path was given in filename (i.e. PICASO by default).
@@ -65,19 +65,28 @@ def find_PT_grid(filename='results/PICASO_climate_fv.h5', rad_plan=None, log10_p
         This provides whether or not the PICASO model converged (0 = False, 1 = True).
     
     """
+    log10_planet_metal_float = float(log10_planet_metallicity)
     gridvals_metal = [float(s) for s in gridvals[1]]
     gridvals_ctoO = [float(s) for s in gridvals[4]]
     
-    gridvals_dict = {'planet_radius':gridvals[0], 'planet_metallicity':np.array(gridvals_metal), 'tint':gridvals[2]
-                    'semi_major':gridvals[3], 'ctoO':np.array(gridvals_ctoO)}
+    gridvals_dict = {'planet_radius':gridvals[0],
+                     'planet_metallicity': np.array(gridvals_metal),
+                     'tint':gridvals[2],
+                     'semi_major':gridvals[3], 
+                     'ctoO': np.array(gridvals_ctoO)}
 
     with h5py.File(filename, 'r') as f:
-        input_list = np.array([rad_plan, log10_planet_metallicity, tint, semi_major, ctoO])
-        matches = (list(f['inputs'] == input_list))
+        input_list = np.array([rad_plan, log10_planet_metal_float, tint, semi_major, ctoO])
+        matches = list(f['inputs'] == input_list)
+        print(input_list)
+        print(list(f['inputs']))
+        print(matches)
         row_matches = np.all(matches, axis=1)
         matching_indicies = np.where(row_matches)
 
         matching_indicies_radius = np.where(list(gridvals_dict['planet_radius'] == input_list[0]))
+        print(gridvals_dict['planet_metallicity'])
+        print(input_list[1])
         matching_indicies_metal = np.where(list(gridvals_dict['planet_metallicity'] == input_list[1]))
         matching_indicies_tint = np.where(list(gridvals_dict['tint'] == input_list[2]))
         matching_indicies_semi_major = np.where(list(gridvals_dict['semi_major'] == input_list[3]))
@@ -328,17 +337,17 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
 
     print(f"This is for the input value of planet radius:{rad_plan}, metal:{float(log10_planet_metallicity)}, tint:{tint}, semi major:{semi_major}, ctoO: {ctoO}, log_Kzz: {log_Kzz}")
     
-    for key, value in sol.items():
-        if isinstance(value, np.ndarray):  # Check if the value is a list (or array)
-            print(f"The array for sol's '{key}' has a length of: {len(value)}")
-        else:
-            print(f"The value for sol's '{key}' is not an array.")
+    #for key, value in sol.items():
+    #    if isinstance(value, np.ndarray):  # Check if the value is a list (or array)
+    #        print(f"The array for sol's '{key}' has a length of: {len(value)}")
+    #    else:
+    #        print(f"The value for sol's '{key}' is not an array.")
 
-    for key, value in soleq.items():
-        if isinstance(value, np.ndarray):  # Check if the value is a list (or array)
-            print(f"The array for soleq's '{key}' has a length of: {len(value)}, Length of pressure: {len(P)}")
-        else:
-            print(f"The value for soleq's '{key}' is not an array.")
+    #for key, value in soleq.items():
+    #    if isinstance(value, np.ndarray):  # Check if the value is a list (or array)
+    #        print(f"The array for soleq's '{key}' has a length of: {len(value)}, Length of pressure: {len(P)}")
+    #    else:
+    #        print(f"The value for soleq's '{key}' is not an array.")
 
     # Add nan's to fit the grid if underestimated, and make sure list goes from largest to smallest.
     
@@ -370,24 +379,27 @@ def get_gridvals_Photochem():
     """
 
     # True Values to replace after test case:
-    # True Values to replace after test case:
+    """
+    # Convert metallicity to a list of string values
+    metal_float = np.linspace(3, 3000, 10)
+    metal_string = np.array([str(f) for f in metal_float])
+
     rad_plan_earth_units = np.linspace(1.6, 4, 5) # in units of xEarth radii
-    log10_planet_metallicity = np.linspace(3, 3000, 10) # in units of solar metallicity, right now should be a string but that was opacity dependent (which may no longer depend on metallicities)
+    log10_planet_metallicity = metal_string # in units of log solar metallicity
     tint_K = np.linspace(20, 400, 5) # in Kelvin
     semi_major_AU = np.linspace(0.3, 10, 10) # in AU 
     ctoO_solar = [0.01, 0.25, 0.5, 0.75, 1] # in units of solar C/O
     log_Kzz = np.array([7, 9]) # in cm^2/s 
     
     """
-    # Test Case
-    rad_plan_earth_units = 2 # in units of xEarth radii
-    log10_planet_metallicity = '3' # in units of solar metallicity
-    tint_K = 100 # in Kelvin
-    semi_major_AU = 1 # in AU 
-    ctoO_solar = 1 # in units of solar C/O
-    log_Kzz = np.array([9, 7]) # in cm^2/s (I think) 
+    # Test Case:
+    rad_plan_earth_units = np.array([2.61]) # in units of xEarth radii
+    log10_planet_metallicity = np.array(['0.5']) # in units of solar metallicity
+    tint_K = np.array([155]) # in Kelvin
+    semi_major_AU = np.array([1]) # in AU 
+    ctoO_solar = np.array([1]) # in units of solar C/O
+    log_Kzz = np.array([5])
     
-    """
     gridvals = (rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar, log_Kzz)
 
     return gridvals
@@ -412,7 +424,7 @@ def Photochem_1D_model(x):
 
     # For Tijuca
     rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar, log_Kzz = x
-    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_fv.h5')
+    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_test.h5')
 
     # Merge the sol & soleq & convergence arrays into a single dictionary
     modified_sol_dict = {key + "_sol": value for key, value in sol.items()}
@@ -427,12 +439,12 @@ if __name__ == "__main__":
     """
     To execute running 1D Photochemical model for the range of values in get_gridvals_Photochem, type the folling command into your terminal:
    
-    # mpiexec -n X python Photochem_grid.py
+    # mpiexec -n X python Photochem_grid_121625.py
     
     """
     gridutils.make_grid(
         model_func=Photochem_1D_model,
         gridvals=get_gridvals_Photochem(),
-        filename='results/Photochem_1D.h5',
-        progress_filename='results/Photochem_1D.log'
+        filename='results/Photochem_1D_updatop_test.h5',
+        progress_filename='results/Photochem_1D_updatop_test.log'
     )

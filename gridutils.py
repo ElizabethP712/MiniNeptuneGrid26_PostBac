@@ -90,6 +90,7 @@ def master(model_func, gridvals, filename, progress_filename):
     size = comm.Get_size()
     inputs = get_inputs(gridvals)
     gridshape = tuple(len(v) for v in gridvals)
+    print(f'This is the gridshape used: {gridshape}')
 
     serialized_model = pickle.dumps(model_func)
 
@@ -99,6 +100,7 @@ def master(model_func, gridvals, filename, progress_filename):
         initialize_hdf5(filename)
 
     completed_inds = load_completed_mask(filename)
+    
     if len(completed_inds) > 0:
         print(f'Calculations completed/total: {len(completed_inds)}/{inputs.shape[0]}.')
         if len(completed_inds) == inputs.shape[0]:
