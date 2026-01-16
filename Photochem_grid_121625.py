@@ -1,5 +1,15 @@
 import warnings
 warnings.filterwarnings('ignore')
+
+import os
+from pathlib import Path
+
+current_directory = Path.cwd()
+references_directory_path = "picasofiles/reference"
+PYSYN_directory_path = "picasofiles/grp/redcat/trds"
+os.environ['picaso_refdata']= os.path.join(current_directory, references_directory_path)
+os.environ['PYSYN_CDBS']= os.path.join(current_directory, PYSYN_directory_path)
+
 import picaso.justdoit as jdi
 import picaso.justplotit as jpi
 import astropy.units as u
