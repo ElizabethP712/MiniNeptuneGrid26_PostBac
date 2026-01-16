@@ -2,8 +2,13 @@ import warnings
 warnings.filterwarnings('ignore')
 
 import os
-os.environ['picaso_refdata']="/mnt/c/Users/lily/Documents/NASAUWPostbac/MiniNeptuneGrid26_PostBac/picasofiles/reference" 
-os.environ['PYSYN_CDBS']="/mnt/c/Users/lily/Documents/NASAUWPostbac/MiniNeptuneGrid26_PostBac/picasofiles/grp/redcat/trds"
+from pathlib import Path
+
+current_directory = Path.cwd()
+references_directory_path = "picasofiles/reference"
+PYSYN_directory_path = "picasofiles/grp/redcat/trds"
+os.environ['picaso_refdata']= os.path.join(current_directory, references_directory_path)
+os.environ['PYSYN_CDBS']= os.path.join(current_directory, PYSYN_directory_path)
 
 import picaso.justdoit as jdi
 import picaso.justplotit as jpi
@@ -320,20 +325,20 @@ def PICASO_PT_Planet(rad_plan=1, log_mh='2.0', tint=60, semi_major_AU=1, ctoO='1
 
     # Run Model
     out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-    # print(f'This is the type of output I get with the keys: {out.keys()}, for the input {[log_mh, tint, total_flux]}')
+        # print(f'This is the type of output I get with the keys: {out.keys()}, for the input {[log_mh, tint, total_flux]}')
     base_case = jdi.pd.read_csv(jdi.HJ_pt(), delim_whitespace=True)
-
+        
     # Saves out and base_case to python file to be re-loaded.
     if outputfile == None:
         return out, base_case
-        
+                
     else:
         with open(f'out_{outputfile}.pkl', 'wb') as f:
             pickle.dump(out, f)
         with open(f'basecase_{outputfile}.pkl', 'wb') as f:
             pickle.dump(base_case, f)
         return out, base_case
-
+   
 def PICASO_fake_climate_model_testing_errors(rad_plan, log_mh, tint, semi_major_AU, ctoO, outputfile=None):
     
     fake_dictionary = {'planet radius': np.full(10, rad_plan), 'log_mh': np.full(10, mh) , 'tint': np.full(10, tint), 'semi major': np.full(10, semi_major_AU), 'ctoO': np.full(10, ctoO)}
