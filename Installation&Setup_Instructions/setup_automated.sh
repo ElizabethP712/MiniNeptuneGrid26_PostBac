@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Define variables (adjust as needed)
-ENV_FILE="environment.yml"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ENV_FILE="$SCRIPT_DIR/environment.yaml"
 CONDA_ENV_NAME="subneptune"
 PICASO_DOWNLOAD_URL="https://github.com/Nicholaswogan/picaso/archive/837b04c3432133189697f5ed1a28a3c62f364e61.zip"
 PICASO_DOWNLOAD_FILE="837b04c3432133189697f5ed1a28a3c62f364e61.zip"
@@ -14,7 +15,7 @@ Starstuff_DOWNLOAD_File="synphot3.tar.gz"
 # 1. Create Conda Environment
 
 # Define the path to your environment YAML file
-ENV_FILE="environment.yml"
+ENV_FILE="$SCRIPT_DIR/environment.yaml"
 
 # Check if the file exists
 if [ ! -f "$ENV_FILE" ]; then
