@@ -5,8 +5,8 @@ import os
 from pathlib import Path
 
 current_directory = Path.cwd()
-references_directory_path = "picasofiles/reference"
-PYSYN_directory_path = "picasofiles/grp/redcat/trds"
+references_directory_path = "Installation&Setup_Instructions/picasofiles/reference"
+PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/trds"
 os.environ['picaso_refdata']= os.path.join(current_directory, references_directory_path)
 os.environ['PYSYN_CDBS']= os.path.join(current_directory, PYSYN_directory_path)
 
@@ -324,10 +324,14 @@ def PICASO_PT_Planet(rad_plan=1, log_mh='2.0', tint=60, semi_major_AU=1, ctoO='1
     cl_run.atmosphere(mh=mh_converted_from_log, cto_relative=ctoO, chem_method='on-the-fly')
 
     # Run Model
-    out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-        # print(f'This is the type of output I get with the keys: {out.keys()}, for the input {[log_mh, tint, total_flux]}')
-    base_case = jdi.pd.read_csv(jdi.HJ_pt(), delim_whitespace=True)
-        
+    try:
+        out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
+        base_case = jdi.pd.read_csv(jdi.HJ_pt(), delim_whitespace=True)
+
+    except Exception as e:
+        print(f"An exception was raised: {type(e).__name__}: {e}")
+        raise
+    
     # Saves out and base_case to python file to be re-loaded.
     if outputfile == None:
         return out, base_case
