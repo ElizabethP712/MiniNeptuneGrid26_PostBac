@@ -7,7 +7,7 @@ dependencies:
   - numpy=1.26.4
   - scipy=1.11.4
   - bokeh=3.0.2
-  - photochem=0.6.8
+  - photochem=0.7.0
   - mpi4py=4.0.1
   - dill=0.3.9
   - tqdm=4.66.5
