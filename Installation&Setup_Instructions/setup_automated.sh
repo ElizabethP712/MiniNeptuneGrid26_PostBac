@@ -4,9 +4,9 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ENV_FILE="$SCRIPT_DIR/environment.yaml"
 CONDA_ENV_NAME="subneptune"
-PICASO_DOWNLOAD_URL="https://github.com/Nicholaswogan/picaso/archive/837b04c3432133189697f5ed1a28a3c62f364e61.zip"
-PICASO_DOWNLOAD_FILE="837b04c3432133189697f5ed1a28a3c62f364e61.zip"
-PICASO_EXTRACT_DIR="picaso-837b04c3432133189697f5ed1a28a3c62f364e61"
+PICASO_DOWNLOAD_URL="https://github.com/Nicholaswogan/picaso/archive/1abab282f0fa8a7ca6c7ddb330cbcfdc08d75f37.zip"
+PICASO_DOWNLOAD_FILE="1abab282f0fa8a7ca6c7ddb330cbcfdc08d75f37.zip"
+PICASO_EXTRACT_DIR="picaso-1abab282f0fa8a7ca6c7ddb330cbcfdc08d75f37"
 Starstuff_DOWNLOAD_URL="http://ssb.stsci.edu/trds/tarfiles/synphot3.tar.gz"
 Starstuff_DOWNLOAD_File="synphot3.tar.gz"
 
