@@ -2,81 +2,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import h5py
-import Photochem_grid
-import Reflected_Spectra_grid as Reflected_Spectra
-import PICASO_Climate_grid
+import Photochem_grid_121625 as Photochem_grid
+import PICASO_Climate_grid_121625 as PICASO_Climate_grid
 import FilterGrids
 from photochem.utils import stars
 import pickle
 
-# Open an h5 file
-def find_Reflected_Spectra_values(filename=None, total_flux=None, log10_planet_metallicity=None, tint=None, Kzz=None, phase=None, gridvals=Reflected_Spectra.get_gridvals_RSM()):
-    """
-    filename = this is the output of makegrid for climate model using Photochem
-    flux, metallicity, tint, Kzz are the same inputs used to create the photochemical grid
-    but the gridvals are what was used for the Photochem modeling
-    Also note that I might want to add a if then statement for convergence (some PT profiles didn't converge with PICASO)
-    """
-    gridvals_metal = [float(s) for s in gridvals[1]]
-    log10_planet_metallicity = float(log10_planet_metallicity)
-    gridvals_dict = {'total_flux':gridvals[0], 'planet_metallicity':gridvals_metal, 'tint':gridvals[2], 'Kzz':gridvals[3], 'phase':gridvals[4]}
 
-    with h5py.File(filename, 'r') as f:
-        input_list = np.array([total_flux, log10_planet_metallicity, tint, Kzz, phase])
-        #print(f'These were the inputs used: {input_list}')
-        #print(f'These were the inputs used for metallicity from the grid: {gridvals_dict['planet_metallicity']}')
-        matches = (list(f['inputs'] == input_list))
-        row_matches = np.all(matches, axis=1)
-        matching_indicies = np.where(row_matches)
 
-        matching_indicies_flux = np.where(list(gridvals_dict['total_flux'] == input_list[0]))
-        matching_indicies_metal = np.where(list(gridvals_dict['planet_metallicity'] == input_list[1]))
-        #print(f'This is the matching indicies of metallicity: {matching_indicies_metal}')
-        matching_indicies_tint = np.where(list(gridvals_dict['tint'] == input_list[2]))
-        matching_indicies_kzz = np.where(list(gridvals_dict['Kzz'] == input_list[3]))
-        matching_indicies_phase = np.where(list(gridvals_dict['phase'] == input_list[4]))
-        
-
-        flux_index, metal_index, tint_index, kzz_index, phase_index = matching_indicies_flux[0], matching_indicies_metal[0], matching_indicies_tint[0], matching_indicies_kzz[0], matching_indicies_phase[0]
-
-        if matching_indicies[0].size == 0:
-            print(f'A match given total flux, planet metallicity, and tint does not exist')
-            wno = None
-            albedo = None
-            fpfs = None
-            return wno, albedo, fpfs
-            
-        else:
-            wno = np.array(f['results']['wno'][flux_index[0]][metal_index[0]][tint_index[0]][kzz_index[0]][phase_index[0]])
-            albedo = (f['results']['albedo'][flux_index[0]][metal_index[0]][tint_index[0]][kzz_index[0]][phase_index[0]])
-            fpfs =  (f['results']['fpfs'][flux_index[0]][metal_index[0]][tint_index[0]][kzz_index[0]][phase_index[0]])
-            print(f'Was able to successfully find your input parameters in the PICASO TP profile grid!')
-            
-            return wno, albedo, fpfs
-
-def find_all_plotting_values_old(total_flux=None, planet_metal=None, tint=None, kzz=None, phase=None, ptop=None, pbottom=None, w0=None, g0=None, opd=None, reflected_spec=False):
-
-    
-    PT_list, convergence_values = Photochem_grid.find_PT_grid(total_flux=total_flux, log10_planet_metallicity=planet_metal, tint=tint, gridvals=PICASO_Climate_grid.get_gridvals_PICASO_TP())
-    
-    sol_dict, soleq_dict, PT_list_Photochem, convergence_PC, convergence_TP = Reflected_Spectra.find_Photochem_match(total_flux=total_flux, log10_planet_metallicity=planet_metal, tint=tint, Kzz=kzz, gridvals= Photochem_grid.get_gridvals_Photochem())
-    
-    if reflected_spec == False:
-        wno = 0
-        albedo = 0
-        fpfs = 0
-        return PT_list, sol_dict, soleq_dict, wno, albedo, fpfs, PT_list_Photochem
-    
-    elif reflected_spec == True:
-        wno, albedo, fpfs = find_Reflected_Spectra_values(total_flux=total_flux, log10_planet_metallicity=planet_metal, tint=tint, Kzz=kzz, phase=phase, gridvals=Reflected_Spectra.get_gridvals_RSM())
-        
-        return PT_list, sol_dict, soleq_dict, wno, albedo, fpfs, PT_list_Photochem
-
-def find_all_plotting_values(total_flux=None, planet_metal=None, tint=None, kzz=None, phase=None, calc_PT=True, calc_PhotCh=True, calc_RSM=True):
+def find_all_plotting_values(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, kzz=None, calc_PT=True, calc_PhotCh=True):
 
     # Results from PICASO Grid (Interpolates if within range of grid)
     if calc_PT == True:
-        PT_results_dict = FilterGrids.find_PT_sol(total_flux=total_flux, log10_planet_metallicity=planet_metal, tint=tint)
+        PT_results_dict = FilterGrids.find_PT_sol(rad_plan=rad_plan, log10_planet_metallicity=planet_metal, tint=tint, semi_major=semi_major, ctoO=ctoO)
 
         PT_list = [PT_results_dict['pressure'], PT_results_dict['temperature']]
 
@@ -85,7 +23,7 @@ def find_all_plotting_values(total_flux=None, planet_metal=None, tint=None, kzz=
 
     # Results from Photochem Grid (Interpolates if within range of grid)
     if calc_PhotCh == True:
-        PhotCh_results_dict = FilterGrids.find_Photochem_sol(total_flux=total_flux, log10_planet_metallicity=planet_metal, tint=tint, Kzz=kzz)
+        PhotCh_results_dict = FilterGrids.find_Photochem_sol(rad_plan=rad_plan, log10_planet_metallicity=planet_metal, tint=tint, semi_major=semi_major, ctoO=ctoO, Kzz=kzz)
     
         sol_dict = {}
         soleq_dict = {}
@@ -103,26 +41,13 @@ def find_all_plotting_values(total_flux=None, planet_metal=None, tint=None, kzz=
         PT_list_Photochem = None
         sol_dict = None
         soleq_dict = None
-
-    if calc_RSM == True:
-        # Results from Reflected Spectra Grid
-        RSM_results_dict = FilterGrids.find_ReflectedSpectra_sol(total_flux=total_flux, log10_planet_metallicity=planet_metal, tint=tint, Kzz=kzz, phase=phase)
     
-        wno = RSM_results_dict['wno']
-        albedo = RSM_results_dict['albedo']
-        fpfs = RSM_results_dict['fpfs']
-
-    elif calc_RSM == False:
-        wno = None
-        albedo = None
-        fpfs = None
-    
-    return PT_list, sol_dict, soleq_dict, wno, albedo, fpfs, PT_list_Photochem
+    return PT_list, sol_dict, soleq_dict, PT_list_Photochem
     
 
-def plot_PT(total_flux=None, planet_metal=None, tint=None, kzz=None, phase=None, calc_PT=True, calc_PhotCh=True, calc_RSM=False):
+def plot_PT(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, kzz=None, calc_PT=True, calc_PhotCh=True):
     
-    PT_list, sol_dict, soleq_dict, wno, albedo, fpfs, PT_list_Photochem = find_all_plotting_values(total_flux=total_flux, planet_metal=planet_metal, tint=tint, kzz=kzz, phase=phase, calc_PT=calc_PT, calc_PhotCh=calc_PhotCh, calc_RSM=calc_RSM)
+    PT_list, sol_dict, soleq_dict, PT_list_Photochem = find_all_plotting_values(rad_plan=rad_plan, planet_metal=planet_metal, tint=tint, semi_major=semi_major, ctoO=ctoO, kzz=kzz, calc_PT=calc_PT, calc_PhotCh=calc_PhotCh)
     
     # Plot the PT Profile from PICASO
     
@@ -134,19 +59,21 @@ def plot_PT(total_flux=None, planet_metal=None, tint=None, kzz=None, phase=None,
     #plt.xlim(250,1750)
     
     plt.semilogy(PT_list[1],PT_list[0],color="r",linewidth=3, label='PICASO PT')
-    plt.semilogy(PT_list_Photochem[1],PT_list_Photochem[0]/(10**6),color="blue",linewidth=3, label='PICASO PT')
+    plt.semilogy(PT_list_Photochem[1],PT_list_Photochem[0]/(10**6),color="blue",linewidth=3, linestyle='--', label='Photochem PT')
     plt.minorticks_on()
     plt.tick_params(axis='both',which='major',length =30, width=2,direction='in',labelsize=23)
     plt.tick_params(axis='both',which='minor',length =10, width=2,direction='in',labelsize=23)
 
-    Tef = stars.equilibrium_temperature(total_flux*1361, 0)
-    plt.title(f"Teff = {Tef} K, log(g)=4.4")
+    plt.legend()
+
+    #Tef = stars.equilibrium_temperature(total_flux*1361, 0)
+    #plt.title(f"Teff = {Tef} K, log(g)=4.4")
 
     plt.show()
 
-def plot_PT_Photochem(total_flux=None, planet_metal=None, tint=None, kzz=None, phase=None, calc_PT=True, calc_PhotCh=True, calc_RSM=False):
+def plot_PT_Photochem(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, kzz=None, calc_PT=True, calc_PhotCh=True):
     
-    PT_list, sol_dict, soleq_dict, wno, albedo, fpfs, PT_list_Photochem = find_all_plotting_values(total_flux=total_flux, planet_metal=planet_metal, tint=tint, kzz=kzz, phase=phase, calc_PT=calc_PT, calc_PhotCh=calc_PhotCh, calc_RSM=calc_RSM)
+    PT_list, sol_dict, soleq_dict, PT_list_Photochem = find_all_plotting_values(rad_plan=rad_plan, planet_metal=planet_metal, tint=tint, semi_major=semi_major, ctoO=ctoO, kzz=kzz, calc_PT=calc_PT, calc_PhotCh=calc_PhotCh)
     
     # Plot the Composition from Photochem
     fig, ax1 = plt.subplots(1,1,figsize=[5,4])
@@ -225,6 +152,7 @@ def plot_solar_spectra(solar_file_name='GJ176_spectrum_278K.txt'):
     plt.title('Star Spectra')
     plt.show()
 
+# Just keeping this for the plot reference; will have to calculate the wno, albedo, and fpfs desired (no grid available for this in this repository). 
 def plot_Reflected_Spectra(total_flux=None, planet_metal=None, tint=None, kzz=None, phase=None, calc_PT=False, calc_PhotCh=False, calc_RSM=True):
 
     PT_list, sol_dict, soleq_dict, wno, albedo, fpfs, PT_list_Photochem = find_all_plotting_values(total_flux=total_flux, planet_metal=planet_metal, tint=tint, kzz=kzz, phase=phase, calc_PT=calc_PT, calc_PhotCh=calc_PhotCh, calc_RSM=calc_RSM)
@@ -249,6 +177,7 @@ def plot_Reflected_Spectra(total_flux=None, planet_metal=None, tint=None, kzz=No
     #plt.savefig('old_opacities.pdf',bbox_inches='tight')
     plt.show()
 
+# Just keeping this for the plot reference; will have to calculate the wno, albedo, and fpfs desired (no grid available for this in this repository). 
 def plot_Reflected_Spectra_comp(total_flux=None, planet_metal=None, tint=None, kzz=None, phase=None, calc_PT=False, calc_PhotCh=False, calc_RSM=True):
 
     PT_list, sol_dict, soleq_dict, wno, albedo, fpfs, PT_list_Photochem = find_all_plotting_values(total_flux=total_flux, planet_metal=planet_metal, tint=tint, kzz=kzz, phase=phase, calc_PT=calc_PT, calc_PhotCh=calc_PhotCh, calc_RSM=calc_RSM)

@@ -48,101 +48,6 @@ import gridutils
 
 import h5py
 
-# Finds the corresponding k-coefficient opacity files from Roxana et. al, 2021 on zenodo
-
-def download_opacity(mh='1.0', ctoO='1.0', save_directory="opacities"):
-    """
-    Downloads a file from a given URL and saves it to a specified directory.
-    
-    Parameters:
-    
-    mh: string
-        This is the metallicity of the planet in units of xSolar
-    ctoO: string
-        This is the c/o ratio of the planet in units of xSolar
-    save_directory: string
-        This is the directory all opacity folders downloaded will be saved in
-
-    Results:
-    Returns the path to the saved folder w/ opacities
-    
-    """
-
-    # Sort through possible downloads
-    
-    record_url = "https://zenodo.org/records/7542068" # Replace with the actual record URL
-    response = requests.get(record_url)
-    soup = BeautifulSoup(response.content, 'html.parser')
-    
-    # Find download links (this might require inspecting the HTML structure of Zenodo pages)
-    # Example: looking for <a> tags with specific classes or attributes
-    
-    for link in soup.find_all('a', href=True):
-        mh_converted = f"{int(np.float64(mh)*100):03d}"
-        co_converted = f"{int(np.float64(ctoO)*100):03d}"
-        if "download=1" in link['href'] and f"feh+{mh_converted}_co_{co_converted}" in link.text:
-            download_url = link['href']
-            print(f"Found download URL: {download_url}")
-            break
-    else:
-        print("File not found.")
-    
-    if not os.path.exists(save_directory):
-        os.makedirs(save_directory)
-
-    if os.path.exists(os.path.join(save_directory, f"sonora_2020_feh+{mh_converted}_co_{co_converted}.data.196")):
-        print(f'File already downloaded')
-        return os.path.join(save_directory, f"sonora_2020_feh+{mh_converted}_co_{co_converted}.data.196")
-
-    else:
-
-        try:
-            # Ensure the URL is absolute if it's relative
-            if not download_url.startswith(('http://', 'https://')):
-                webpage_url = "https://zenodo.org/"
-                download_url = requests.compat.urljoin(webpage_url, download_url)
-                print(download_url)
-            
-            # 4. Download the file
-            file_response = requests.get(download_url, stream=True) # Use stream=True for large files
-            file_response.raise_for_status() # Raise an exception for bad status codes
-        
-            # Extract filename from URL
-            filename = os.path.basename(urlparse(download_url).path)
-            if not filename:  # Handle cases where URL might not have a clear filename
-                filename = f"sonora_2020_feh+{mh_converted}_co_{co_converted}.data.196.tar.gz"
-                
-            file_path = os.path.join(save_directory, filename)
-        
-            with open(file_path, 'wb') as f:
-                for chunk in file_response.iter_content(chunk_size=8192):
-                    if chunk:
-                        f.write(chunk)
-            print(f"Successfully downloaded '{filename}' to '{save_directory}'")
-    
-        except requests.exceptions.RequestException as e:
-            print(f"Error downloading file from {url}: {e}")
-    
-        # Assuming 'downloaded_file.gz' is the path to your downloaded .gz file
-    
-        try:
-            # Open the .tar.gz file in read mode ('r:gz' for gzip compressed tar files)
-            with tarfile.open(file_path, "r:gz") as tar:
-                # Extract all contents to the specified directory
-                tar.extractall(save_directory)
-            print(f"Successfully extracted '{file_path}' to '{save_directory}'")
-            return os.path.join(save_directory, filename[:-7])
-        except tarfile.ReadError as e:
-            print(f"Error reading tar file: {e}")
-            return None
-        except FileNotFoundError:
-            print(f"Error: The file '{file_path}' was not found.")
-            return None
-        except Exception as e:
-            print(f"An unexpected error occurred: {e}")
-            return None
-
-
 # Calculates the PT Profile Using PICASO; w/ K2-18b & G-star Assumptions for non-changing parameters; change mh, tint, and total_flux.
 
 def calc_semi_major_SUN(Teq):
@@ -229,7 +134,7 @@ def mass_from_radius_chen_kipping_2017(R_rearth):
 
     return 10.0 ** logM
 
-def PICASO_PT_Planet(rad_plan=1, log_mh='2.0', tint=60, semi_major_AU=1, ctoO='1', nlevel=91, nofczns=1, nstr_upper=85, rfacv=0.5, outputfile=None, pt_guillot=True, prior_out=None):
+def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO='1', nlevel=91, nofczns=1, nstr_upper=85, rfacv=0.5, outputfile=None, pt_guillot=True, prior_out=None):
 
     """
     Calculates the semi-major distance from the Sun of a planet whose equilibrium temperature can vary.
@@ -238,7 +143,7 @@ def PICASO_PT_Planet(rad_plan=1, log_mh='2.0', tint=60, semi_major_AU=1, ctoO='1
 
     rad_plan = float
         This is the radius of the planet in units of x Earth radius.
-    mh = string
+    mh = float
         This is the metallicity of the planet in units of log10 x Solar
     tint = float
         This is the internal temperature of the planet in units of Kelvin
@@ -348,7 +253,7 @@ def PICASO_PT_Planet(rad_plan=1, log_mh='2.0', tint=60, semi_major_AU=1, ctoO='1
    
 def PICASO_fake_climate_model_testing_errors(rad_plan, log_mh, tint, semi_major_AU, ctoO, outputfile=None):
     
-    fake_dictionary = {'planet radius': np.full(10, rad_plan), 'log_mh': np.full(10, mh) , 'tint': np.full(10, tint), 'semi major': np.full(10, semi_major_AU), 'ctoO': np.full(10, ctoO)}
+    fake_dictionary = {'planet radius': np.full(10, rad_plan), 'log_mh': np.full(10, log_mh) , 'tint': np.full(10, tint), 'semi major': np.full(10, semi_major_AU), 'ctoO': np.full(10, ctoO)}
     return fake_dictionary
 
 def PICASO_climate_model(x):

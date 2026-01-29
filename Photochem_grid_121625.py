@@ -48,7 +48,11 @@ import PICASO_Climate_grid_121625 as PICASO_Climate_grid
 
 # Finds the associated PT profile and calculates Photochemical Composition of a Planet
 
+<<<<<<< HEAD
 def find_PT_grid(filename='results/PICASO_climate_updatop_paramext_K218b.h5', rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, gridvals=PICASO_Climate_grid.get_gridvals_PICASO_TP()):
+=======
+def find_PT_grid(filename='results/PICASO_climate_updatop_paraext_K218b.h5', rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, gridvals=PICASO_Climate_grid.get_gridvals_PICASO_TP()):
+>>>>>>> 6bf8573aa7e1773d3959b3cabf7705e8c3aaf3bc
     """
     This finds the matching PT profile in the PICASO grid to be used for Photochem grid calculation.
     
@@ -85,22 +89,20 @@ def find_PT_grid(filename='results/PICASO_climate_updatop_paramext_K218b.h5', ra
                      'semi_major':gridvals[3], 
                      'ctoO': np.array(gridvals_ctoO)}
 
-    print(gridvals_dict)
-
     with h5py.File(filename, 'r') as f:
         input_list = np.array([rad_plan, log10_planet_metal_float, tint, semi_major, ctoO])
         matches = list(f['inputs'] == input_list)
-        print(input_list)
-        print(list(f['inputs']))
-        print(matches)
+        print(f"This is the input list: {input_list}")
+        #print(list(f['inputs']))
+        #print(matches)
         row_matches = np.all(matches, axis=1)
         matching_indicies = np.where(row_matches)
 
         matching_indicies_radius = np.where(list(gridvals_dict['planet_radius'] == input_list[0]))
-        print(gridvals_dict['planet_metallicity'])
-        print(input_list[1])
+        #print(gridvals_dict['planet_metallicity'])
+        #print(input_list[1])
         matching_indicies_metal = np.where(list(gridvals_dict['planet_metallicity'] == input_list[1]))
-        print(matching_indicies_metal)
+        #print(matching_indicies_metal)
         matching_indicies_tint = np.where(list(gridvals_dict['tint'] == input_list[2]))
         matching_indicies_semi_major = np.where(list(gridvals_dict['semi_major'] == input_list[3]))
         matching_indicies_ctoO = np.where(list(gridvals_dict['ctoO'] == input_list[4]))
@@ -208,7 +210,7 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
     Parameters:
     rad_plan = float
         This is the radius of the planet in units of x Earth radius. Should be same as PICASO grid. 
-    mh = string
+    log10_planet_metallicity = float
         This is the metallicity of the planet in units of log10 x Solar. Should be same as PICASO grid. 
     tint = float
         This is the internal temperature of the planet in units of Kelvin. Should be same as PICASO grid. 
@@ -328,7 +330,7 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
 
     # Initialize the PT based on chemical equilibrium 
     pc.gdat.BOA_pressure_factor = 3
-    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, float(log10_planet_metallicity), ctoO)
+    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
     
     # Integrate to steady state
     converged = pc.find_steady_state()
@@ -451,7 +453,11 @@ def Photochem_1D_model(x):
 
     # For Tijuca
     rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar, log_Kzz = x
+<<<<<<< HEAD
     sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+=======
+    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paraext_K218b.h5')
+>>>>>>> 6bf8573aa7e1773d3959b3cabf7705e8c3aaf3bc
 
     # Merge the sol & soleq & convergence arrays into a single dictionary
     modified_sol_dict = {key + "_sol": value for key, value in sol.items()}
