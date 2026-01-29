@@ -253,7 +253,7 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO='1',
    
 def PICASO_fake_climate_model_testing_errors(rad_plan, log_mh, tint, semi_major_AU, ctoO, outputfile=None):
     
-    fake_dictionary = {'planet radius': np.full(10, rad_plan), 'log_mh': np.full(10, mh) , 'tint': np.full(10, tint), 'semi major': np.full(10, semi_major_AU), 'ctoO': np.full(10, ctoO)}
+    fake_dictionary = {'planet radius': np.full(10, rad_plan), 'log_mh': np.full(10, log_mh) , 'tint': np.full(10, tint), 'semi major': np.full(10, semi_major_AU), 'ctoO': np.full(10, ctoO)}
     return fake_dictionary
 
 def PICASO_climate_model(x):

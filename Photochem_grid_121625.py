@@ -206,7 +206,7 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
     Parameters:
     rad_plan = float
         This is the radius of the planet in units of x Earth radius. Should be same as PICASO grid. 
-    mh = string
+    log10_planet_metallicity = float
         This is the metallicity of the planet in units of log10 x Solar. Should be same as PICASO grid. 
     tint = float
         This is the internal temperature of the planet in units of Kelvin. Should be same as PICASO grid. 
@@ -326,7 +326,7 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
 
     # Initialize the PT based on chemical equilibrium 
     pc.gdat.BOA_pressure_factor = 3
-    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, float(log10_planet_metallicity), ctoO)
+    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
     
     # Integrate to steady state
     converged = pc.find_steady_state()
