@@ -1,0 +1,112 @@
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 470, in <module>
+    gridutils.make_grid(
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 206, in make_grid
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 470, in <module>
+    gridutils.make_grid(
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 206, in make_grid
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 470, in <module>
+    gridutils.make_grid(
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 206, in make_grid
+    worker()
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 159, in worker
+    res = model_func(x)
+          ^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 452, in Photochem_1D_model
+    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 329, in Photochem_Gas_Giant
+    worker()
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 159, in worker
+    res = model_func(x)
+          ^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 452, in Photochem_1D_model
+    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 329, in Photochem_Gas_Giant
+    worker()
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 159, in worker
+    res = model_func(x)
+          ^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 452, in Photochem_1D_model
+    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 329, in Photochem_Gas_Giant
+    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
+    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/photochem/extensions/gasgiants.py", line 244, in initialize_to_climate_equilibrium_PT
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/photochem/extensions/gasgiants.py", line 244, in initialize_to_climate_equilibrium_PT
+    raise Exception('BOA in photochemical model wants to be deeper than BOA of climate model.')
+Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/photochem/extensions/gasgiants.py", line 244, in initialize_to_climate_equilibrium_PT
+    raise Exception('BOA in photochemical model wants to be deeper than BOA of climate model.')
+Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 470, in <module>
+    gridutils.make_grid(
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 206, in make_grid
+    worker()
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 159, in worker
+    res = model_func(x)
+          ^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 452, in Photochem_1D_model
+    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 329, in Photochem_Gas_Giant
+    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/photochem/extensions/gasgiants.py", line 244, in initialize_to_climate_equilibrium_PT
+    raise Exception('BOA in photochemical model wants to be deeper than BOA of climate model.')
+Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+    raise Exception('BOA in photochemical model wants to be deeper than BOA of climate model.')
+Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 470, in <module>
+    gridutils.make_grid(
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 206, in make_grid
+    worker()
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 159, in worker
+    res = model_func(x)
+          ^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 452, in Photochem_1D_model
+    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 329, in Photochem_Gas_Giant
+    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/photochem/extensions/gasgiants.py", line 244, in initialize_to_climate_equilibrium_PT
+    raise Exception('BOA in photochemical model wants to be deeper than BOA of climate model.')
+Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 470, in <module>
+    gridutils.make_grid(
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 206, in make_grid
+    worker()
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 159, in worker
+    res = model_func(x)
+          ^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 452, in Photochem_1D_model
+    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 329, in Photochem_Gas_Giant
+    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/photochem/extensions/gasgiants.py", line 244, in initialize_to_climate_equilibrium_PT
+    raise Exception('BOA in photochemical model wants to be deeper than BOA of climate model.')
+Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 470, in <module>
+    gridutils.make_grid(
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 206, in make_grid
+    worker()
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 159, in worker
+    res = model_func(x)
+          ^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 452, in Photochem_1D_model
+    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 329, in Photochem_Gas_Giant
+    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/photochem/extensions/gasgiants.py", line 244, in initialize_to_climate_equilibrium_PT
+    raise Exception('BOA in photochemical model wants to be deeper than BOA of climate model.')
+Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
