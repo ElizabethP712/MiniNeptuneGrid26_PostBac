@@ -346,11 +346,21 @@ def get_gridvals_PICASO_TP():
     ctoO_solar = np.array([1]) # in units of solar C/O
     
     """
+    """
     
     # Parameter Exploration
     rad_plan_earth_units = np.array([1.6, 4]) # in units of xEarth radii
     log10_planet_metallicity = np.array([0.5, 3.5]) # in units of solar metallicity
     tint_K = np.array([20, 400]) # in Kelvin
+    semi_major_AU = np.array([0.3, 10]) # in AU 
+    ctoO_solar = np.array([0.01, 1]) # in units of solar C/O
+
+    """
+
+    # Parameter Exploration Refined
+    rad_plan_earth_units = np.array([1.6, 4]) # in units of xEarth radii
+    log10_planet_metallicity = np.array([3.5]) # in units of solar metallicity
+    tint_K = np.array([50, 75]) # in Kelvin
     semi_major_AU = np.array([0.3, 10]) # in AU 
     ctoO_solar = np.array([0.01, 1]) # in units of solar C/O
 
@@ -369,8 +379,8 @@ if __name__ == "__main__":
     gridutils.make_grid(
         model_func=PICASO_climate_model, 
         gridvals=get_gridvals_PICASO_TP(), 
-        filename='results/PICASO_climate_updatop_paramext_K218b.h5', 
-        progress_filename='results/PICASO_climate_updatop_paramext_K218b.log'
+        filename='results/PICASO_climate_updatop_paramext_refineTINT.h5', 
+        progress_filename='results/PICASO_climate_updatop_paramext_refineTINT.log'
     ) 
 
 

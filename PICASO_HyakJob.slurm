@@ -4,7 +4,7 @@
 
 #SBATCH --account=stf
 #SBATCH --partition=cpu-g2
-#SBATCH --nodes=2
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=40
 #SBATCH --mem=50G
 #SBATCH --time=24:00:00
@@ -14,4 +14,4 @@
 #SBATCH --error=picaso_grid.stderr
 
 # Run the script 
-mpiexec -np 80 python PICASO_Climate_grid_121625.py
+mpiexec -np 40 python PICASO_Climate_grid_121625.py

@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 379, in <module>
+    gridutils.make_grid(
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 206, in make_grid
+    worker()
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 159, in worker
+    res = model_func(x)
+          ^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 283, in PICASO_climate_model
+    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU = semi_major_AU, ctoO=ctoO_solar, outputfile=None)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 236, in PICASO_PT_Planet
+    out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 5290, in climate
+    chem_out,cld_out,  all_profiles,  all_opd,all_kzz=run_chemeq_climate_workflow(self,
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 387, in run_chemeq_climate_workflow
+    final_conv_flag, pressure, temp, dtdp, nstr_new, flux_net_ir_final,flux_net_v_final, flux_plus_final, chem_out, cld_out, all_profiles, all_opd,all_kzz =find_strat(bundle,
+                                                                                                                                                            ^^^^^^^^^^^^^^^^^^
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 2826, in find_strat
+    profile_flag, pressure, temp, dtdp,CloudParameters,cld_out,flux_net_ir_layer,flux_net_v_layer, flux_plus_ir_attop,  all_profiles,all_opd ,all_kzz= profile(bundle,
+                                                                                                                                                       ^^^^^^^^^^^^^^^
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 3150, in profile
+    OpacityWEd, OpacityNoEd, ScatteringPhase, Disco, Atmosphere , holes =  calculate_atm(bundle, opacityclass)
+                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 2174, in calculate_atm
+    opacityclass.get_opacities(atm)
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/optics.py", line 1555, in get_opacities_deq_onfly
+    self.mix_my_opacities_gasesfly(atmosphere,exclude_mol=exclude_mol)
+  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/optics.py", line 1235, in mix_my_opacities_gasesfly
+    kappa_mixed = mix_all_gases_gasesfly(kappas,mixes, np.array(self.gauss_pts),np.array(self.gauss_wts),indices)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ZeroDivisionError: division by zero
