@@ -10,11 +10,11 @@ import pickle
 
 
 
-def find_all_plotting_values(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, kzz=None, calc_PT=True, calc_PhotCh=True):
+def find_all_plotting_values(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, kzz=None, calc_PT=True, calc_PhotCh=True, PT_filepath='/mnt/c/Users/lily/Documents/NASAUWPostbac/MiniNeptuneGrid26_PostBac/results/PICASO_climate_updatop_paramext_K218b.h5'):
 
     # Results from PICASO Grid (Interpolates if within range of grid)
     if calc_PT == True:
-        PT_results_dict = FilterGrids.find_PT_sol(rad_plan=rad_plan, log10_planet_metallicity=planet_metal, tint=tint, semi_major=semi_major, ctoO=ctoO)
+        PT_results_dict = FilterGrids.find_PT_sol(filepath=PT_filepath, rad_plan=rad_plan, log10_planet_metallicity=planet_metal, tint=tint, semi_major=semi_major, ctoO=ctoO)
 
         PT_list = [PT_results_dict['pressure'], PT_results_dict['temperature']]
 
@@ -45,9 +45,9 @@ def find_all_plotting_values(rad_plan=None, planet_metal=None, tint=None, semi_m
     return PT_list, sol_dict, soleq_dict, PT_list_Photochem
     
 
-def plot_PT(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, kzz=None, calc_PT=True, calc_PhotCh=True):
+def plot_PT(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, kzz=None, calc_PT=True, calc_PhotCh=True, PT_filepath='/mnt/c/Users/lily/Documents/NASAUWPostbac/MiniNeptuneGrid26_PostBac/results/PICASO_climate_updatop_paramext_K218b.h5'):
     
-    PT_list, sol_dict, soleq_dict, PT_list_Photochem = find_all_plotting_values(rad_plan=rad_plan, planet_metal=planet_metal, tint=tint, semi_major=semi_major, ctoO=ctoO, kzz=kzz, calc_PT=calc_PT, calc_PhotCh=calc_PhotCh)
+    PT_list, sol_dict, soleq_dict, PT_list_Photochem = find_all_plotting_values(rad_plan=rad_plan, planet_metal=planet_metal, tint=tint, semi_major=semi_major, ctoO=ctoO, kzz=kzz, calc_PT=calc_PT, calc_PhotCh=calc_PhotCh, PT_filepath=PT_filepath)
     
     # Plot the PT Profile from PICASO
     
@@ -59,7 +59,15 @@ def plot_PT(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=N
     #plt.xlim(250,1750)
     
     plt.semilogy(PT_list[1],PT_list[0],color="r",linewidth=3, label='PICASO PT')
-    plt.semilogy(PT_list_Photochem[1],PT_list_Photochem[0]/(10**6),color="blue",linewidth=3, linestyle='--', label='Photochem PT')
+
+    if calc_PhotCh is True:
+        
+        plt.semilogy(PT_list_Photochem[1],PT_list_Photochem[0]/(10**6),color="blue",linewidth=3, linestyle='--', label='Photochem PT')
+        print(f'Includes Photochemistry extension of PT profile.')
+
+    else:
+        print(f'Does not include Photochemistry extension of PT profile')
+        
     plt.minorticks_on()
     plt.tick_params(axis='both',which='major',length =30, width=2,direction='in',labelsize=23)
     plt.tick_params(axis='both',which='minor',length =10, width=2,direction='in',labelsize=23)
@@ -70,6 +78,7 @@ def plot_PT(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=N
     #plt.title(f"Teff = {Tef} K, log(g)=4.4")
 
     plt.show()
+        
 
 def plot_PT_Photochem(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, kzz=None, calc_PT=True, calc_PhotCh=True):
     
