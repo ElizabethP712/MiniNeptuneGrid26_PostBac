@@ -66,5 +66,3 @@ Traceback (most recent call last):
     kappa_mixed = mix_all_gases_gasesfly(kappas,mixes, np.array(self.gauss_pts),np.array(self.gauss_wts),indices)
                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ZeroDivisionError: division by zero
-[2026-01-31T16:33:34.074] error: *** STEP 32753068.0 ON n3433 CANCELLED AT 2026-01-31T16:33:34 DUE TO TIME LIMIT ***
-[2026-01-31T16:33:34.074] error: *** JOB 32753068 ON n3433 CANCELLED AT 2026-01-31T16:33:34 DUE TO TIME LIMIT ***
