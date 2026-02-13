@@ -349,7 +349,7 @@ def find_pbot(sol=None, solaer=None, tol=0.9):
 
 # Make a Global Variable
 
-opacity_path=f'/Users/lily/Documents/NASAUWPostbac/MiniNeptuneGrid26_PostBac/picaso/reference/opacities/opacities_photochem_0.1_250.0_R15000.db'
+opacity_path=f'/mnt/c/Users/lily/Documents/NASAUWPostbac/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db'
 OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.1,2.5])
 
 # Flip the data between PICASO and Photochem
