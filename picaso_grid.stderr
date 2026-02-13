@@ -100,3 +100,5 @@ Traceback (most recent call last):
     kappa_mixed = mix_all_gases_gasesfly(kappas,mixes, np.array(self.gauss_pts),np.array(self.gauss_wts),indices)
                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ZeroDivisionError: division by zero
+[2026-02-04T14:54:11.685] error: *** STEP 32825670.0 ON n3439 CANCELLED AT 2026-02-04T14:54:11 DUE to SIGNAL Terminated ***
+[2026-02-04T14:54:11.685] error: *** JOB 32825670 ON n3439 CANCELLED AT 2026-02-04T14:54:11 DUE to SIGNAL Terminated ***
