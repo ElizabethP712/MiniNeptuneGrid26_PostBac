@@ -349,19 +349,12 @@ def find_pbot(sol=None, solaer=None, tol=0.9):
 
 # Make a Global Variable
 
-<<<<<<< HEAD
 current_directory = Path.cwd()
-opacity_file_path = "Installation&Setup_Instructions/picasofiles/reference/opacities/
-references_directory_path = "Installation&Setup_Instructions/picasofiles/reference"
-PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/trds"
-print(os.path.join(current_directory, references_directory_path))
+opacity_file_path = "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
+print(os.path.join(current_directory, opacity_file_path))
 
-opacity_path=f'/Users/epawelka/Documents/NASA_Ames_ProjS25/AmesProjS25Work/picaso_v4/reference/opacities/opacities_0.3_15_R15000.db'
+opacity_path=os.path.join(current_directory, opacity_file_path)
 OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.3,2.5])
-=======
-opacity_path=f'/mnt/c/Users/lily/Documents/NASAUWPostbac/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db'
-OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.1,2.5])
->>>>>>> 50833600454bace202a34b52d23854ff78ac4d0a
 
 # Flip the data between PICASO and Photochem
 
