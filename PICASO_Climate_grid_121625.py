@@ -297,10 +297,16 @@ def PICASO_climate_model(x):
     desired_keys = ['pressure', 'temperature', 'converged']
     new_out = {key: out[key] for key in desired_keys if key in out} # Only picks out some array results from Photochem b/c not all were arrays
     new_out['converged'] = np.array([new_out['converged']])
-    # Try specifying the dictionary w/ inputs and outputs
-
-    # Testing (with a simple dictionary, the code works)
-    # out = PICASO_fake_climate_model_testing_errors(log_mh=log10_planet_metallicity, tint=tint, total_flux=log10_totalflux, outputfile=None)
+    
+    # Ensure all values are numpy arrays and handle string dtypes
+    for k, v in list(new_out.items()):
+        # Convert non-arrays to arrays and ensure at least 1D
+        if not isinstance(v, np.ndarray):
+            v = np.atleast_1d(np.array(v))
+        # Convert Unicode string dtype to byte string dtype for h5py compatibility
+        if v.dtype.kind == 'U':
+            v = v.astype('S')
+        new_out[k] = v
 
     return new_out
 
