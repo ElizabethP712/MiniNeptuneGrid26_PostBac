@@ -47,6 +47,11 @@ import tarfile
 import gridutils
 
 import h5py
+import sys
+import logging
+
+# set up simple logging to stderr with timestamps
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
 
 # Calculates the PT Profile Using PICASO; w/ K2-18b & G-star Assumptions for non-changing parameters; change mh, tint, and total_flux.
 
@@ -134,7 +139,7 @@ def mass_from_radius_chen_kipping_2017(R_rearth):
 
     return 10.0 ** logM
 
-def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO='1', nlevel=91, nofczns=1, nstr_upper=85, rfacv=0.5, outputfile=None, pt_guillot=True, prior_out=None):
+def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, nlevel=91, nofczns=1, nstr_upper=85, rfacv=0.5, outputfile=None, pt_guillot=True, prior_out=None):
 
     """
     Calculates the semi-major distance from the Sun of a planet whose equilibrium temperature can vary.
@@ -149,7 +154,7 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO='1',
         This is the internal temperature of the planet in units of Kelvin
     semi_major_AU = float
         This is the orbital distance of the planet from the star in units of AU.
-    ctoO = string
+    ctoO = float
         This is the carbon to oxygen ratio of the planet in units of x Solar C/O ratio.
     nlevel = float
         Number of plane-parallel levels in your code
@@ -279,21 +284,114 @@ def PICASO_climate_model(x):
     """
     # For Tijuca
     rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar = x
+    logging.info(f"starting climate model for inputs: {x}")
     print(f'This is the value of {x} used in the climate model')
-    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU = semi_major_AU, ctoO=ctoO_solar, outputfile=None)
 
+    # normalize/convert inputs
+    try:
+        rad_plan_earth_units = float(rad_plan_earth_units)
+    except Exception:
+        pass
+    try:
+        tint_K = float(tint_K)
+    except Exception:
+        pass
+    try:
+        semi_major_AU = float(semi_major_AU)
+    except Exception:
+        pass
+    try:
+        log10_planet_metallicity = float(log10_planet_metallicity)
+    except Exception:
+        pass
+    try:
+        ctoO_solar = float(ctoO_solar)
+    except Exception:
+        pass
+
+    # Default fallback length for PT arrays (matches PICASO_PT_Planet default nlevel)
+    _default_nlevel = 91
+    max_retries = 3
+
+    # Try initial run
+    try:
+        out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None)
+    except Exception as e:
+        logging.error("PICASO run failed (initial) for inputs %s: %s", x, e, exc_info=True)
+        print(f"PICASO run failed (initial): {type(e).__name__}: {e}", file=sys.stderr)
+        new_out = {
+            'pressure': np.full(_default_nlevel, np.nan),
+            'temperature': np.full(_default_nlevel, np.nan),
+            'converged': np.array([0]),
+        }
+        # wrap status/error as arrays
+        new_out['status'] = np.array(['error'], dtype='U')
+        new_out['error'] = np.array([f"{type(e).__name__}: {e}"], dtype='U')
+        return new_out
+
+    # If PICASO returned an error status, do not attempt retries
+    if out.get('status') == 'error':
+        print(f"PICASO returned status 'error' after initial run: {out.get('error', '')}")
+        new_out = {
+            'pressure': np.full(_default_nlevel, np.nan),
+            'temperature': np.full(_default_nlevel, np.nan),
+            'converged': np.array([0]),
+        }
+        new_out['status'] = np.array(['error'], dtype='U')
+        new_out['error'] = np.array([out.get('error', 'Unknown error')], dtype='U')
+        return new_out
+
+    # If the model reports not converged, try a few more times using prior outputs
     count = 0
-    while out['converged'] == 0:  # An infinite loop that will be broken out of explicitly
+    while out.get('converged', 1) == 0 and out.get('status') != 'error' and count < max_retries:
         count += 1
-        
         print(f"Loop iteration, Recalculating PT Profile: {count}")
-        
-        out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU = semi_major_AU, ctoO=ctoO_solar, outputfile=None, pt_guillot=False, prior_out = out)
+        try:
+            out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None, pt_guillot=False, prior_out=out)
+        except Exception as e:
+            logging.error("PICASO run failed (recalc #%d) for inputs %s: %s", count, x, e, exc_info=True)
+            print(f"PICASO run failed (recalc #{count}): {type(e).__name__}: {e}", file=sys.stderr)
+            _record_failure(e, stage=f"recalc_{count}")
+            new_out = {
+                'pressure': np.full(_default_nlevel, np.nan),
+                'temperature': np.full(_default_nlevel, np.nan),
+                'converged': np.array([0]),
+            }
+            new_out['status'] = np.array(['error'], dtype='U')
+            new_out['error'] = np.array([f"{type(e).__name__}: {e}"], dtype='U')
+            return new_out
 
-        if count == 3:
-            print(f"Hit the maximum amount of loops without converging.")
-            break  # Exit the loop when count reaches 3
+        if count >= max_retries:
+            print(f"Hit the maximum amount of loops ({max_retries}) without converging.")
+            break
 
+<<<<<<< HEAD
+    # Prepare output dictionary with only the desired keys
+    desired_keys = ['pressure', 'temperature', 'converged', 'status', 'error']
+    new_out = {key: out[key] for key in desired_keys if key in out}
+    # Ensure pressure and temperature exist; if missing, fill with NaNs
+    if 'pressure' not in new_out:
+        new_out['pressure'] = np.full(_default_nlevel, np.nan)
+    if 'temperature' not in new_out:
+        new_out['temperature'] = np.full(_default_nlevel, np.nan)
+
+    # Ensure converged is an array
+    new_out['converged'] = np.array([out.get('converged', 0)])
+
+    # Add status: 'converged', 'not_converged', or 'error'
+    if new_out['converged'][0] == 1:
+        new_out['status'] = 'converged'
+    else:
+        new_out['status'] = 'not_converged'
+
+    # ensure 'status' and 'error' are numpy arrays (so gridutils can treat them uniformly)
+    new_out['status'] = np.array([new_out.get('status','')], dtype='U')
+    new_out['error'] = np.array([new_out.get('error','')], dtype='U')
+
+    # final pass: convert any remaining scalars/strings to numpy arrays and fix dtypes
+    for k, v in list(new_out.items()):
+        # Ensure scalars become at least 1D arrays (for len() calls in gridutils)
+=======
     desired_keys = ['pressure', 'temperature', 'converged']
     new_out = {key: out[key] for key in desired_keys if key in out} # Only picks out some array results from Photochem b/c not all were arrays
     new_out['converged'] = np.array([new_out['converged']])
@@ -301,6 +399,7 @@ def PICASO_climate_model(x):
     # Ensure all values are numpy arrays and handle string dtypes
     for k, v in list(new_out.items()):
         # Convert non-arrays to arrays and ensure at least 1D
+>>>>>>> 8d08de7ad1c319b4cab68f097ec530a01f83dce2
         if not isinstance(v, np.ndarray):
             v = np.atleast_1d(np.array(v))
         # Convert Unicode string dtype to byte string dtype for h5py compatibility
@@ -319,7 +418,7 @@ def get_gridvals_PICASO_TP():
     Parameter(s):
     log10_totalflux = np.array of floats
         This is the total flux of the starlight on the planet in units of x Solar
-    log10_planet_metallicity = np.array of strings
+    log10_planet_metallicity = np.array of floats (will be converted to strings internally)
         This is the planet metallicity in units of log10 x Solar
     tint = np.array of floats
         This is the internal temperature of the planet in units of Kelvin
@@ -348,18 +447,19 @@ def get_gridvals_PICASO_TP():
     rad_plan_earth_units = np.array([2.61]) # in units of xEarth radii
     log10_planet_metallicity = np.array([0.5]) # in units of solar metallicity
     tint_K = np.array([155]) # in Kelvin
-    semi_major_AU = np.array([1.04]) # in AU 
+    semi_major_AU = np.array([1]) # in AU 
     ctoO_solar = np.array([1]) # in units of solar C/O
-    
+
+
     """
-    """
+
     
     # Parameter Exploration
-    rad_plan_earth_units = np.array([1.6, 4]) # in units of xEarth radii
-    log10_planet_metallicity = np.array([0.5, 3.5]) # in units of solar metallicity
+    rad_plan_earth_units = np.array([1.6]) # in units of xEarth radii
+    log10_planet_metallicity = np.array([3.5]) # in units of solar metallicity
     tint_K = np.array([20, 400]) # in Kelvin
-    semi_major_AU = np.array([0.3, 10]) # in AU 
-    ctoO_solar = np.array([0.01, 1]) # in units of solar C/O
+    semi_major_AU = np.array([10]) # in AU 
+    ctoO_solar = np.array([0.01]) # in units of solar C/O
 
     """
 
@@ -369,6 +469,8 @@ def get_gridvals_PICASO_TP():
     tint_K = np.array([100, 200, 300, 400]) # in Kelvin
     semi_major_AU = np.array([2,4,6,8,10]) # in AU 
     ctoO_solar = np.array([0.01, 1]) # in units of solar C/O
+
+    """
 
     gridvals = (rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar)
     
@@ -385,9 +487,7 @@ if __name__ == "__main__":
     gridutils.make_grid(
         model_func=PICASO_climate_model, 
         gridvals=get_gridvals_PICASO_TP(), 
-        filename='results/PICASO_climate_updatop_paramext_BIGtestTINT_met_co.h5', 
-        progress_filename='results/PICASO_climate_updatop_paramext_BIGtestTINT_met_co.log'
+        filename='results/PICASO_climate_updatop_paramext_SMALLtestTINT_met_co.h5', 
+        progress_filename='results/PICASO_climate_updatop_paramext_SMALLtestTINT_met_co.log'
     ) 
-
-
 
