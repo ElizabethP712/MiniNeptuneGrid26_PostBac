@@ -645,4 +645,528 @@ Iteration number  3 , min , max temp  96.97649216321798 4212.599622854954 , flux
 Iteration number  4 , min , max temp  96.46748092368969 4214.850971134998 , flux balance  -0.04847728754666874
 Iteration number  5 , min , max temp  96.49787223154998 4218.955462805706 , flux balance  -0.039050760524146765
 Iteration number  6 , min , max temp  95.98247913720424 4220.733403925247 , flux balance  -0.03492995813279301
-Iteration number 
+Iteration number  7 , min , max temp  96.0759480513813 4223.535292290488 , flux balance  -0.028392645506559643
+Iterations exceeded it_max ! sorry 
+Big iteration is  96.0759480513813 1
+Iteration number  0 , min , max temp  95.54246909566184 4224.972794864704 , flux balance  -0.025015685836534497
+Iteration number  1 , min , max temp  95.71888167754699 4226.84314934899 , flux balance  -0.0206008091354755
+Iteration number  2 , min , max temp  95.17151968009478 4227.998788810127 , flux balance  -0.017858831239149036
+Iteration number  3 , min , max temp  95.42113454450549 4229.235981857229 , flux balance  -0.014913405543185074
+Iteration number  4 , min , max temp  94.86233766760968 4230.149582266396 , flux balance  -0.012729530495146944
+Iteration number  5 , min , max temp  95.17505175709778 4230.967261896677 , flux balance  -0.010770517461010229
+Iteration number  6 , min , max temp  94.60719010348852 4231.675668986735 , flux balance  -0.009066470314001297
+Iteration number  7 , min , max temp  94.97371033551963 4232.217486935242 , flux balance  -0.007760530666398419
+Iterations exceeded it_max ! sorry 
+Profile converged before itmx
+[ 0 55 89  0 85 89]
+Iteration number  0 , min , max temp  95.58492327838889 3965.7076042495714 , flux balance  -0.3321134684504061
+Iteration number  1 , min , max temp  95.99449963670533 3985.920504028244 , flux balance  -0.30266479121735057
+Iteration number  2 , min , max temp  96.29915967750124 4005.765641612825 , flux balance  -0.2720968526493283
+Iteration number  3 , min , max temp  96.65127540568955 4024.78051992568 , flux balance  -0.24039630764897832
+Iteration number  4 , min , max temp  97.11975066418884 4043.3987383333597 , flux balance  -0.20748083000973355
+Iteration number  5 , min , max temp  97.88408408115045 4061.5718341616675 , flux balance  -0.1733093366520008
+Iteration number  6 , min , max temp  98.76832732869792 4078.6676780149996 , flux balance  -0.13945494522083557
+Iteration number  7 , min , max temp  97.98944873315111 4092.743367274554 , flux balance  -0.11033464367493871
+Iterations exceeded it_max ! sorry 
+Big iteration is  97.98944873315111 0
+Iteration number  0 , min , max temp  96.95798338894527 4108.645152051281 , flux balance  -0.07586759939002878
+Iteration number  1 , min , max temp  96.78192376196883 4127.574533260321 , flux balance  -0.03269235241189386
+Iteration number  2 , min , max temp  97.49070984237362 4141.125328175433 , flux balance  -0.00024284400317003615
+Iteration number  3 , min , max temp  97.40646627155331 4141.19926125101 , flux balance  -5.43876310562531e-06
+In t_start: Converged Solution in iterations  3
+Big iteration is  97.40646627155331 1
+ We are already at a root, tolf , test =  5e-05 ,  5.439121291422971e-06
+Profile converged before itmx
+[ 0 54 89  0 85 89]
+Iteration number  0 , min , max temp  97.66772427622338 3688.5296414195036 , flux balance  -0.4936523291178724
+Iteration number  1 , min , max temp  97.9433766618047 3713.407466705428 , flux balance  -0.4672842904556347
+Iteration number  2 , min , max temp  98.23411526943524 3737.518839229389 , flux balance  -0.4395868840187542
+Iteration number  3 , min , max temp  98.54066091136666 3761.136447421491 , flux balance  -0.4104971179831265
+Iteration number  4 , min , max temp  98.86377081824627 3784.467630316992 , flux balance  -0.3799566236133651
+Iteration number  5 , min , max temp  99.2042299713301 3807.516111416678 , flux balance  -0.34790203416977583
+Iteration number  6 , min , max temp  99.56285296293174 3830.3091560351268 , flux balance  -0.3142764619015892
+Iteration number  7 , min , max temp  99.94046084947179 3852.896226375037 , flux balance  -0.27901382399864855
+Iterations exceeded it_max ! sorry 
+Big iteration is  99.94046084947179 0
+Iteration number  0 , min , max temp  100.33787482878198 3874.91677071368 , flux balance  -0.24205620479978074
+Iteration number  1 , min , max temp  100.75587004373996 3896.399224761629 , flux balance  -0.20334504847137636
+Iteration number  2 , min , max temp  101.19510780275729 3917.4621205002877 , flux balance  -0.16281950348789995
+Iteration number  3 , min , max temp  101.6559572797232 3938.2734607698217 , flux balance  -0.12044170548652422
+Iteration number  4 , min , max temp  102.13798974270505 3958.798574782009 , flux balance  -0.0761788193491025
+Iteration number  5 , min , max temp  102.60838659141218 3979.0064232704194 , flux balance  -0.030065837236114206
+Iteration number  6 , min , max temp  102.87576685567223 3991.4765076318004 , flux balance  -0.00030137529642173324
+Iteration number  7 , min , max temp  102.88359949932864 3991.587553145825 , flux balance  -7.257054712529467e-06
+In t_start: Converged Solution in iterations  7
+Big iteration is  102.88359949932864 1
+ We are already at a root, tolf , test =  5e-05 ,  7.257164235348853e-06
+Profile converged before itmx
+[ 0 53 89  0 85 89]
+Iteration number  0 , min , max temp  101.45955207424349 2836.817874836483 , flux balance  -0.7695859116553069
+Iteration number  1 , min , max temp  101.71020957707861 2870.7789428226542 , flux balance  -0.7545113810540517
+Iteration number  2 , min , max temp  102.0240019300807 2904.194872541111 , flux balance  -0.7387689271954315
+Iteration number  3 , min , max temp  102.46141949640166 2936.7366615407686 , flux balance  -0.7225195962625403
+Iteration number  4 , min , max temp  102.97828047237002 2965.070719132499 , flux balance  -0.707460586085589
+Iteration number  5 , min , max temp  102.5874384909841 2993.6200764743194 , flux balance  -0.6912417843109155
+Iteration number  6 , min , max temp  102.98389488329342 3015.1369122663714 , flux balance  -0.678415424222188
+Iteration number  7 , min , max temp  103.06713172823383 3045.7641731012345 , flux balance  -0.6592637013950711
+Iterations exceeded it_max ! sorry 
+Big iteration is  103.06713172823383 0
+Iteration number  0 , min , max temp  102.66985076756136 3073.8649143343214 , flux balance  -0.6407245083231989
+Iteration number  1 , min , max temp  103.0312758083847 3084.851069538761 , flux balance  -0.6331893374854279
+Iteration number  2 , min , max temp  103.11163819443526 3115.1213917481 , flux balance  -0.6115052445996998
+Iteration number  3 , min , max temp  103.2077360402291 3143.915789166734 , flux balance  -0.5892887435386621
+Iteration number  4 , min , max temp  102.5839939283547 3169.6722755645224 , flux balance  -0.5682906353887655
+Iteration number  5 , min , max temp  103.18681376388733 3179.74954063068 , flux balance  -0.5597553925791561
+Iteration number  6 , min , max temp  103.28501669637808 3208.1799628492035 , flux balance  -0.5348223168292132
+Iteration number  7 , min , max temp  103.04092277190576 3234.9468650587296 , flux balance  -0.5100380921613454
+Iterations exceeded it_max ! sorry 
+Big iteration is  103.04092277190576 1
+Iteration number  0 , min , max temp  101.75081428538581 3252.1471230600578 , flux balance  -0.4934144250418157
+Iteration number  1 , min , max temp  102.6417831198804 3276.428269683929 , flux balance  -0.4685291081008817
+Iteration number  2 , min , max temp  103.35825941810506 3276.806174838564 , flux balance  -0.46811282529662473
+Iteration number  3 , min , max temp  103.47334515275743 3303.33962571284 , flux balance  -0.4390841405910935
+Iteration number  4 , min , max temp  103.02794117727252 3327.8496882328304 , flux balance  -0.4107503840919721
+Iteration number  5 , min , max temp  101.64895462069079 3342.2315267359522 , flux balance  -0.3933764762513038
+Iteration number  6 , min , max temp  102.7790983422164 3362.622472453647 , flux balance  -0.36781042988794044
+Iteration number  7 , min , max temp  101.19370575835066 3369.4555716037175 , flux balance  -0.3590102428292912
+Iterations exceeded it_max ! sorry 
+Big iteration is  101.19370575835066 2
+Iteration number  0 , min , max temp  102.22462762915121 3391.1388315335885 , flux balance  -0.3301815505858675
+Iteration number  1 , min , max temp  103.72507561678403 3398.8928860187093 , flux balance  -0.31953328172582696
+Iteration number  2 , min , max temp  102.86072857381029 3420.3725306478027 , flux balance  -0.28886727500491116
+Iteration number  3 , min , max temp  101.2905598624624 3428.3323294737665 , flux balance  -0.2770056585089078
+Iteration number  4 , min , max temp  102.61091940401691 3444.7380182075403 , flux balance  -0.2516775660208192
+Iteration number  5 , min , max temp  100.95933312751123 3447.510363255074 , flux balance  -0.24730536416137947
+Iteration number  6 , min , max temp  102.27235385786128 3463.9823801597704 , flux balance  -0.22067290800698225
+Iteration number  7 , min , max temp  103.88410665127937 3466.280931189392 , flux balance  -0.21686447999431202
+Iterations exceeded it_max ! sorry 
+Big iteration is  103.88410665127937 3
+Iteration number  0 , min , max temp  102.75357268999235 3483.9535926346734 , flux balance  -0.18698506697422976
+Iteration number  1 , min , max temp  101.11136337402323 3488.3560233112407 , flux balance  -0.17934185326978574
+Iteration number  2 , min , max temp  102.63958238509628 3499.4273393478843 , flux balance  -0.15973879134213037
+Iteration number  3 , min , max temp  100.97563660462059 3502.178447656393 , flux balance  -0.1548131527243063
+Iteration number  4 , min , max temp  102.53532222274559 3512.194913138895 , flux balance  -0.13653644569908982
+Iteration number  5 , min , max temp  100.85980121073881 3513.7903954800254 , flux balance  -0.1336074220432202
+Iteration number  6 , min , max temp  102.44766297868786 3522.7368401451654 , flux balance  -0.11686759981480498
+Iteration number  7 , min , max temp  100.7659354247524 3523.593226314322 , flux balance  -0.11526575652935442
+Iterations exceeded it_max ! sorry 
+Big iteration is  100.7659354247524 4
+Not converged
+[ 0 52 89  0 85 89]
+Iteration number  0 , min , max temp  100.5915415881304 3001.886548907776 , flux balance  -0.7343357951214193
+Iteration number  1 , min , max temp  100.40243030841128 3040.5883268661432 , flux balance  -0.715045566881948
+Iteration number  2 , min , max temp  100.19727836365752 3079.0178310532046 , flux balance  -0.6944937312878052
+Iteration number  3 , min , max temp  99.97464982122789 3116.8880863197505 , flux balance  -0.6726128099952174
+Iteration number  4 , min , max temp  99.7330243872389 3153.713801665156 , flux balance  -0.6493246628090795
+Iteration number  5 , min , max temp  99.47079779208326 3190.172150813885 , flux balance  -0.6245304334886623
+Iteration number  6 , min , max temp  99.18601540715966 3226.3587385099177 , flux balance  -0.5981289756516363
+Iteration number  7 , min , max temp  98.87682740140347 3262.1297535120866 , flux balance  -0.5700380570187216
+Iterations exceeded it_max ! sorry 
+Big iteration is  98.87682740140347 0
+Iteration number  0 , min , max temp  98.54154825150513 3296.7846305755756 , flux balance  -0.5401767811821614
+Iteration number  1 , min , max temp  98.17808845271038 3330.8794793228535 , flux balance  -0.5084384775175967
+Iteration number  2 , min , max temp  97.71361343695065 3364.467068094325 , flux balance  -0.47476900712172987
+Iteration number  3 , min , max temp  97.18576492713913 3397.621273975881 , flux balance  -0.43911693698362075
+Iteration number  4 , min , max temp  96.6070313210578 3429.884432119858 , flux balance  -0.4014414492709995
+Iteration number  5 , min , max temp  95.97010605079112 3461.0182699268717 , flux balance  -0.3617782882198151
+Iteration number  6 , min , max temp  95.26411282012502 3491.3591434815116 , flux balance  -0.32022514109366346
+Iteration number  7 , min , max temp  94.47506246204156 3520.7451757909603 , flux balance  -0.2770780403065372
+Iterations exceeded it_max ! sorry 
+Big iteration is  94.47506246204156 1
+Iteration number  0 , min , max temp  93.58006109812564 3548.9514066979013 , flux balance  -0.23288544801668098
+Iteration number  1 , min , max temp  92.54085469916136 3575.1676287545424 , flux balance  -0.18872162566562095
+Iteration number  2 , min , max temp  91.28814106680268 3598.103685712673 , flux balance  -0.14703978405402926
+Iteration number  3 , min , max temp  89.69552496190056 3615.2697399385293 , flux balance  -0.11409616675682932
+Iteration number  4 , min , max temp  87.6734278088942 3619.4387318054637 , flux balance  -0.10583760828574099
+Iteration number  5 , min , max temp  89.65489960494826 3632.1043450370767 , flux balance  -0.0804843857568131
+Iteration number  6 , min , max temp  87.58069382005414 3634.0329404252384 , flux balance  -0.07647435495625415
+Iteration number  7 , min , max temp  89.62671906080446 3644.6920210764665 , flux balance  -0.05435987288881297
+Iterations exceeded it_max ! sorry 
+Big iteration is  89.62671906080446 2
+Iteration number  0 , min , max temp  87.52510058712964 3645.443795620607 , flux balance  -0.05270047529900761
+Iteration number  1 , min , max temp  89.62824574153971 3653.678318223267 , flux balance  -0.035199357212129925
+Iteration number  2 , min , max temp  87.51111098713744 3653.9635912723434 , flux balance  -0.03451144984238459
+Iteration number  3 , min , max temp  89.65003121060397 3659.770829044026 , flux balance  -0.021964715106860145
+Iteration number  4 , min , max temp  87.52289794395456 3659.8999354263437 , flux balance  -0.0216097641317772
+Iteration number  5 , min , max temp  89.67638283888961 3663.6983526808062 , flux balance  -0.013330611100576645
+Iteration number  6 , min , max temp  87.54231625181015 3663.7679377727463 , flux balance  -0.013104500090250009
+Iteration number  7 , min , max temp  89.69821961196497 3666.1315240913755 , flux balance  -0.00794095971960284
+Iterations exceeded it_max ! sorry 
+Big iteration is  89.69821961196497 3
+Iteration number  0 , min , max temp  87.55936844843323 3666.1671518231215 , flux balance  -0.0077893918682948845
+Iteration number  1 , min , max temp  89.71343215568926 3667.5985666318925 , flux balance  -0.004675454722470652
+Iteration number  2 , min , max temp  87.57141256904235 3667.610373739425 , flux balance  -0.004576676988125622
+Iteration number  3 , min , max temp  89.7230983350269 3668.4672729656554 , flux balance  -0.0027338815850916514
+Iteration number  4 , min , max temp  87.5790673982591 3668.4625988750627 , flux balance  -0.002671915024258457
+Iteration number  5 , min , max temp  89.72893302655505 3668.9772226012633 , flux balance  -0.0015920276991306574
+Iteration number  6 , min , max temp  87.58366569504173 3668.9617336813135 , flux balance  -0.0015542983283598705
+Iteration number  7 , min , max temp  89.73235445085182 3669.274778929524 , flux balance  -0.0009249627713891773
+Iterations exceeded it_max ! sorry 
+Profile converged before itmx
+[ 0 51 89  0 85 89]
+Iteration number  0 , min , max temp  90.3987121441812 3341.572087165024 , flux balance  -0.6517832154058827
+Iteration number  1 , min , max temp  91.08920283066057 3376.7449681667003 , flux balance  -0.6287852535760027
+Iteration number  2 , min , max temp  91.80486449621156 3411.6323886371683 , flux balance  -0.6042475554798287
+Iteration number  3 , min , max temp  92.54586021646712 3445.434602400547 , flux balance  -0.5780806665865176
+Iteration number  4 , min , max temp  93.31294210395549 3478.7090689626834 , flux balance  -0.5501744976556913
+Iteration number  5 , min , max temp  94.10683214913423 3511.5088355648327 , flux balance  -0.5204455340963845
+Iteration number  6 , min , max temp  94.92808870994561 3543.9968134323462 , flux balance  -0.48880580990366856
+Iteration number  7 , min , max temp  95.77708737385734 3575.861035443127 , flux balance  -0.45515651401420204
+Iterations exceeded it_max ! sorry 
+Big iteration is  95.77708737385734 0
+Iteration number  0 , min , max temp  96.65401339068826 3606.676939655527 , flux balance  -0.41942613869481515
+Iteration number  1 , min , max temp  97.55973232338182 3636.977084066044 , flux balance  -0.38151699711730047
+Iteration number  2 , min , max temp  98.49271942859772 3666.6942103046135 , flux balance  -0.3414159027257005
+Iteration number  3 , min , max temp  99.45196649149479 3695.92901169813 , flux balance  -0.2991015406260485
+Iteration number  4 , min , max temp  100.43589300515869 3724.405058585792 , flux balance  -0.25456138472113987
+Iteration number  5 , min , max temp  101.44229521678221 3751.6950037436413 , flux balance  -0.20785765018365224
+Iteration number  6 , min , max temp  102.46804430450396 3778.143066436973 , flux balance  -0.15908392260448126
+Iteration number  7 , min , max temp  103.31471269209268 3803.826971132676 , flux balance  -0.10837170224680098
+Iterations exceeded it_max ! sorry 
+Big iteration is  103.31471269209268 1
+Iteration number  0 , min , max temp  104.07897239375885 3828.7024836219493 , flux balance  -0.05586606501290672
+Iteration number  1 , min , max temp  104.16404734525791 3852.7761856564393 , flux balance  -0.0017962964896445922
+Iteration number  2 , min , max temp  104.1678107132937 3853.5261207886906 , flux balance  -5.8624708694333374e-05
+In t_start: Converged Solution in iterations  2
+Big iteration is  104.1678107132937 2
+Iteration number  0 , min , max temp  104.16747210732822 3853.550036124382 , flux balance  -1.8882304328875885e-06
+In t_start: Converged Solution in iterations  0
+Profile converged before itmx
+[ 0 50 89  0 85 89]
+Iteration number  0 , min , max temp  104.31253691935754 3079.5200865733996 , flux balance  -0.7172684150247086
+Iteration number  1 , min , max temp  104.46134751401465 3107.5248618945425 , flux balance  -0.7016831097023906
+Iteration number  2 , min , max temp  104.61391910635275 3134.7992057791603 , flux balance  -0.6854113022648277
+Iteration number  3 , min , max temp  104.77027351334011 3161.683587216768 , flux balance  -0.6684404380350758
+Iteration number  4 , min , max temp  104.93044387688794 3188.322621987964 , flux balance  -0.6507355246457037
+Iteration number  5 , min , max temp  104.9458346728032 3214.7811523114083 , flux balance  -0.6322531934039389
+Iteration number  6 , min , max temp  104.95110620739187 3241.048881646149 , flux balance  -0.6129541188228245
+Iteration number  7 , min , max temp  104.95495068134088 3266.9446501667226 , flux balance  -0.5927937332435539
+Iterations exceeded it_max ! sorry 
+Big iteration is  104.95495068134088 0
+Iteration number  0 , min , max temp  104.95723169104939 3292.229001346224 , flux balance  -0.5717209278075944
+Iteration number  1 , min , max temp  104.95792307121212 3317.241294714299 , flux balance  -0.5496999545607513
+Iteration number  2 , min , max temp  104.95693131659952 3341.9499795442457 , flux balance  -0.5266891431136344
+Iteration number  3 , min , max temp  104.9541704628897 3366.52443263452 , flux balance  -0.502623525489909
+Iteration number  4 , min , max temp  104.94955535863869 3390.9674797807747 , flux balance  -0.47744763000740736
+Iteration number  5 , min , max temp  104.94300914078038 3415.1708711400347 , flux balance  -0.4511230944071322
+Iteration number  6 , min , max temp  104.93447231126514 3438.770942058774 , flux balance  -0.42359477624411845
+Iteration number  7 , min , max temp  104.92390372914696 3462.0332682476705 , flux balance  -0.3948000392300723
+Iterations exceeded it_max ! sorry 
+Big iteration is  104.92390372914696 1
+Iteration number  0 , min , max temp  104.91128134467047 3485.137724624434 , flux balance  -0.36466589601218086
+Iteration number  1 , min , max temp  104.89660277110633 3508.0321149390843 , flux balance  -0.3331499897373628
+Iteration number  2 , min , max temp  104.87977789249477 3530.839425561631 , flux balance  -0.30013194059859805
+Iteration number  3 , min , max temp  104.86106431275836 3553.52123697464 , flux balance  -0.2656048299315948
+Iteration number  4 , min , max temp  104.84067856060105 3575.791131054616 , flux balance  -0.22948262386678606
+Iteration number  5 , min , max temp  104.81896915255525 3597.573628402482 , flux balance  -0.19173045058961388
+Iteration number  6 , min , max temp  104.79655251567574 3619.0917335315685 , flux balance  -0.15226129532420377
+Iteration number  7 , min , max temp  104.77448439731788 3640.413156702077 , flux balance  -0.11105933176214622
+Iterations exceeded it_max ! sorry 
+Big iteration is  104.77448439731788 2
+Iteration number  0 , min , max temp  104.7548640568119 3661.460170228896 , flux balance  -0.06815626683228904
+Iteration number  1 , min , max temp  104.74289923447999 3682.20872685 , flux balance  -0.023712235042155774
+Iteration number  2 , min , max temp  104.75401260788031 3692.6135455384224 , flux balance  -0.00059034073517575
+In t_start: Converged Solution in iterations  2
+Big iteration is  104.75401260788031 3
+Iteration number  0 , min , max temp  104.76692803111192 3692.8655062782136 , flux balance  -2.0887075895713883e-05
+In t_start: Converged Solution in iterations  0
+Profile converged before itmx
+[ 0 49 89  0 85 89]
+Iteration number  0 , min , max temp  102.98795202692891 3337.5970670281044 , flux balance  -0.6638784126210957
+Iteration number  1 , min , max temp  102.04095346995693 3372.911818165681 , flux balance  -0.6401067426343269
+Iteration number  2 , min , max temp  101.21620499997007 3409.6177362725302 , flux balance  -0.6135239432102338
+Iteration number  3 , min , max temp  100.42266541197871 3445.6755756283437 , flux balance  -0.5847067966165823
+Iteration number  4 , min , max temp  99.627265797027 3481.1896383539274 , flux balance  -0.5538105832698125
+Iteration number  5 , min , max temp  98.81011296251454 3516.096702688947 , flux balance  -0.5208935301594408
+Iteration number  6 , min , max temp  97.95658054521033 3550.4333021951106 , flux balance  -0.4859931450165579
+Iteration number  7 , min , max temp  97.05411599153416 3583.5114794552806 , flux balance  -0.4492411136446442
+Iterations exceeded it_max ! sorry 
+Big iteration is  97.05411599153416 0
+Iteration number  0 , min , max temp  96.09095200963918 3615.0528303494793 , flux balance  -0.41082491751755496
+Iteration number  1 , min , max temp  95.0551447341499 3645.364852668205 , flux balance  -0.37101477648963743
+Iteration number  2 , min , max temp  93.9331475718092 3674.2484534580235 , flux balance  -0.33024089837617576
+Iteration number  3 , min , max temp  92.71034978819668 3701.501422347207 , flux balance  -0.28915644508495647
+Iteration number  4 , min , max temp  91.37106169128238 3726.4687674926 , flux balance  -0.2486408157579801
+Iteration number  5 , min , max temp  89.89611731677412 3748.5725720446053 , flux balance  -0.20999053863170272
+Iteration number  6 , min , max temp  88.26546099652565 3767.4585224944317 , flux balance  -0.17498981504419253
+Iteration number  7 , min , max temp  86.4653796884706 3782.331352245562 , flux balance  -0.14622508725729574
+Iterations exceeded it_max ! sorry 
+Big iteration is  86.4653796884706 1
+Iteration number  0 , min , max temp  84.508005767351 3792.0268108733594 , flux balance  -0.126904347260355
+Iteration number  1 , min , max temp  82.45539120297529 3795.546641210596 , flux balance  -0.11975382384353922
+Iteration number  2 , min , max temp  84.50405307157519 3798.2205374815235 , flux balance  -0.11424483154603975
+Iteration number  3 , min , max temp  82.45024093576947 3801.55941909273 , flux balance  -0.10736032443880328
+Iteration number  4 , min , max temp  84.50210806911775 3803.748768065041 , flux balance  -0.1027762718155362
+Iteration number  5 , min , max temp  82.44704652045608 3806.890743071568 , flux balance  -0.09620543622222229
+Iteration number  6 , min , max temp  84.50116620940688 3808.68843862423 , flux balance  -0.09239114379880203
+Iteration number  7 , min , max temp  82.4448606282682 3811.6264725622577 , flux balance  -0.08617394682935203
+Iterations exceeded it_max ! sorry 
+Big iteration is  82.4448606282682 2
+Iteration number  0 , min , max temp  84.50056478002467 3813.10403936594 , flux balance  -0.08299973004746278
+Iteration number  1 , min , max temp  82.44307021681342 3815.835361256307 , flux balance  -0.07716005175044519
+Iteration number  2 , min , max temp  84.49989401388304 3817.0516717292653 , flux balance  -0.0745145788580547
+Iteration number  3 , min , max temp  82.44130018150358 3819.5733688594128 , flux balance  -0.06906668221162561
+Iteration number  4 , min , max temp  84.49892020618988 3820.5789361767543 , flux balance  -0.06685635858099515
+Iteration number  5 , min , max temp  82.43933889258948 3822.8996114090965 , flux balance  -0.06180201014929917
+Iteration number  6 , min , max temp  84.49752893904008 3823.734146971078 , flux balance  -0.059949700721381276
+Iteration number  7 , min , max temp  82.43708242037371 3825.8609067925518 , flux balance  -0.05528444205346228
+Iterations exceeded it_max ! sorry 
+Profile converged before itmx
+[ 0 48 89  0 85 89]
+Iteration number  0 , min , max temp  83.9777755257544 3569.694777176349 , flux balance  -0.5895388783109764
+Iteration number  1 , min , max temp  85.53716610144905 3584.0265082887972 , flux balance  -0.5770220636304951
+Iteration number  2 , min , max temp  87.11005369380699 3596.755370778095 , flux balance  -0.5654907024629178
+Iteration number  3 , min , max temp  88.68442313987605 3606.070003768645 , flux balance  -0.5567963906663679
+Iteration number  4 , min , max temp  90.16996759787806 3606.448480533116 , flux balance  -0.5564402729255118
+Iteration number  5 , min , max temp  89.24621790314603 3625.301266318964 , flux balance  -0.5382677962610527
+Iteration number  6 , min , max temp  90.74189609863407 3627.095970351183 , flux balance  -0.5364952433882743
+Iteration number  7 , min , max temp  89.7534579779349 3643.721173515153 , flux balance  -0.5196841360400789
+Iterations exceeded it_max ! sorry 
+Big iteration is  89.7534579779349 0
+Iteration number  0 , min , max temp  91.26329386212993 3647.333886713278 , flux balance  -0.5159391139682983
+Iteration number  1 , min , max temp  90.18757049524302 3660.9572190509816 , flux balance  -0.501526520045146
+Iteration number  2 , min , max temp  91.71344821212152 3666.756038122758 , flux balance  -0.4952582306990292
+Iteration number  3 , min , max temp  90.52894631875365 3676.3852395098834 , flux balance  -0.48465016527588806
+Iteration number  4 , min , max temp  92.06948717332892 3684.5174773303343 , flux balance  -0.4755140256237889
+Iteration number  5 , min , max temp  90.76953401990468 3689.2320679504846 , flux balance  -0.47013711392355956
+Iteration number  6 , min , max temp  92.32045283320079 3699.5613850250606 , flux balance  -0.4581438649654526
+Iteration number  7 , min , max temp  93.71755360286592 3699.96438495446 , flux balance  -0.4576724475283457
+Iterations exceeded it_max ! sorry 
+Big iteration is  93.71755360286592 1
+Iteration number  0 , min , max temp  92.95923925540527 3718.8763586430714 , flux balance  -0.43479909191538596
+Iteration number  1 , min , max temp  94.33340115222332 3719.352211983679 , flux balance  -0.4342018142206705
+Iteration number  2 , min , max temp  93.60620166727816 3737.730981475026 , flux balance  -0.4104664343463828
+Iteration number  3 , min , max temp  94.95027818926465 3738.0848450279927 , flux balance  -0.4100008514731172
+Iteration number  4 , min , max temp  94.26216537915592 3756.2695549910873 , flux balance  -0.3852110173195577
+Iteration number  5 , min , max temp  92.95762030954958 3756.3052978619226 , flux balance  -0.3851585866565903
+Iteration number  6 , min , max temp  94.48200686180874 3768.2055917319312 , flux balance  -0.3682939054791388
+Iteration number  7 , min , max temp  95.85417863748577 3772.0761594850455 , flux balance  -0.362701072656895
+Iterations exceeded it_max ! sorry 
+Big iteration is  95.85417863748577 2
+Iteration number  0 , min , max temp  95.02682983950051 3785.42855754511 , flux balance  -0.34295748947770477
+Iteration number  1 , min , max temp  96.3846893652141 3789.951493295916 , flux balance  -0.3361286250931479
+Iteration number  2 , min , max temp  95.54543033389105 3801.899282371067 , flux balance  -0.3176402740341845
+Iteration number  3 , min , max temp  96.88927174388438 3807.061260264534 , flux balance  -0.3094732134020712
+Iteration number  4 , min , max temp  96.03211939485709 3817.4478175037393 , flux balance  -0.29272196256385924
+Iteration number  5 , min , max temp  97.36224564038115 3823.2754816045085 , flux balance  -0.28312926549299
+Iteration number  6 , min , max temp  96.48226393713868 3831.921820466674 , flux balance  -0.2686412702072435
+Iteration number  7 , min , max temp  97.79875823408223 3838.3677161192263 , flux balance  -0.2576407511263678
+Iterations exceeded it_max ! sorry 
+Big iteration is  97.79875823408223 3
+Iteration number  0 , min , max temp  96.89351223536336 3845.185730948648 , flux balance  -0.24579778902576707
+Iteration number  1 , min , max temp  98.19595496695449 3852.157003844283 , flux balance  -0.23348740042100172
+Iteration number  2 , min , max temp  97.2662014308852 3857.1926187529357 , flux balance  -0.22446381980637126
+Iteration number  3 , min , max temp  98.55350880991928 3864.4862322637487 , flux balance  -0.21101986365467507
+Iteration number  4 , min , max temp  97.60294697303904 3867.8072993199326 , flux balance  -0.2047672000428435
+Iteration number  5 , min , max temp  98.87344994751659 3875.2482558862835 , flux balance  -0.19045511753668462
+Iteration number  6 , min , max temp  97.90765885904887 3877.1666572830704 , flux balance  -0.18671386500819445
+Iteration number  7 , min , max temp  99.15931609951033 3884.709515571305 , flux balance  -0.17181557281581497
+Iterations exceeded it_max ! sorry 
+Big iteration is  99.15931609951033 4
+Not converged
+[ 0 47 89  0 85 89]
+Iteration number  0 , min , max temp  99.19788736042312 3525.1371022542885 , flux balance  -0.5908929435881132
+Iteration number  1 , min , max temp  99.2363615669477 3555.94150693529 , flux balance  -0.564048510013306
+Iteration number  2 , min , max temp  99.27465978378541 3586.0101890854817 , flux balance  -0.535531441761404
+Iteration number  3 , min , max temp  99.31267795978874 3615.420800761259 , flux balance  -0.5052539856270644
+Iteration number  4 , min , max temp  99.35031082753173 3644.5585049480733 , flux balance  -0.47309001998976863
+Iteration number  5 , min , max temp  99.38742596345769 3673.451701713594 , flux balance  -0.43889540851455394
+Iteration number  6 , min , max temp  99.42385070265125 3702.2045563522956 , flux balance  -0.40253256543273475
+Iteration number  7 , min , max temp  99.45928443062292 3730.4416183028648 , flux balance  -0.363816575846378
+Iterations exceeded it_max ! sorry 
+Big iteration is  99.45928443062292 0
+Iteration number  0 , min , max temp  99.49339682332409 3758.0209359906485 , flux balance  -0.3226252734321354
+Iteration number  1 , min , max temp  99.52575339313982 3785.33160322945 , flux balance  -0.27879301955098496
+Iteration number  2 , min , max temp  99.55554461449219 3812.3818795780317 , flux balance  -0.23220407850164015
+Iteration number  3 , min , max temp  99.58144446579104 3839.2473148318636 , flux balance  -0.182675779409123
+Iteration number  4 , min , max temp  99.47466058977291 3865.7727061158075 , flux balance  -0.13019302227899973
+Iteration number  5 , min , max temp  99.32854375078641 3891.3490953893897 , flux balance  -0.0748090379330319
+Iteration number  6 , min , max temp  99.14489088912077 3916.107094602339 , flux balance  -0.01691927350737672
+Iteration number  7 , min , max temp  99.03711357548039 3922.7663835519706 , flux balance  -0.0006582738768923415
+In t_start: Converged Solution in iterations  7
+Big iteration is  99.03711357548039 1
+Iteration number  0 , min , max temp  99.0116270134003 3923.021092559465 , flux balance  -3.0415659915854542e-05
+In t_start: Converged Solution in iterations  0
+Profile converged before itmx
+[ 0 46 89  0 85 89]
+Iteration number  0 , min , max temp  97.17091399556787 3688.9582431613717 , flux balance  -0.5358421499240247
+Iteration number  1 , min , max temp  98.85677830740093 3697.4753580656766 , flux balance  -0.5272765582045383
+Iteration number  2 , min , max temp  97.40193226821441 3704.0050704944933 , flux balance  -0.5205665136046208
+Iteration number  3 , min , max temp  98.74415278750304 3709.980379777002 , flux balance  -0.5143689301681811
+Iteration number  4 , min , max temp  97.65320991938488 3717.771288105921 , flux balance  -0.5060361743945296
+Iteration number  5 , min , max temp  98.66904058764587 3721.3276977756027 , flux balance  -0.5021534484341661
+Iteration number  6 , min , max temp  97.6211346585351 3730.1531250169655 , flux balance  -0.49230613348871194
+Iteration number  7 , min , max temp  98.62512808248563 3731.6896098819393 , flux balance  -0.4905844703741795
+Iterations exceeded it_max ! sorry 
+Big iteration is  98.62512808248563 0
+Iteration number  0 , min , max temp  97.56476910401744 3741.484386617053 , flux balance  -0.4793535438896782
+Iteration number  1 , min , max temp  96.06147867428922 3741.667297876422 , flux balance  -0.4791298630281872
+Iteration number  2 , min , max temp  97.3691028528949 3751.7483820583743 , flux balance  -0.46720834309418185
+Iteration number  3 , min , max temp  96.26388478176392 3752.656012739546 , flux balance  -0.46610830139752857
+Iteration number  4 , min , max temp  97.21575356449215 3761.2310014925224 , flux balance  -0.4557038694596715
+Iteration number  5 , min , max temp  96.09514621817246 3762.7644435249017 , flux balance  -0.45381116491104334
+Iteration number  6 , min , max temp  97.09741096459064 3770.047442435657 , flux balance  -0.44477137718919824
+Iteration number  7 , min , max temp  95.9523501626601 3772.0957288587815 , flux balance  -0.44218943318757414
+Iterations exceeded it_max ! sorry 
+Big iteration is  95.9523501626601 1
+Iteration number  0 , min , max temp  97.00788992224257 3778.2809895142327 , flux balance  -0.4343285178413259
+Iteration number  1 , min , max temp  95.84346668759477 3780.74670362341 , flux balance  -0.43115691960735353
+Iteration number  2 , min , max temp  96.94072329814759 3786.0428928094457 , flux balance  -0.42429305882800755
+Iteration number  3 , min , max temp  95.76100723034754 3788.8467253478625 , flux balance  -0.42062052909028164
+Iteration number  4 , min , max temp  96.89070711422738 3793.400796768126 , flux balance  -0.4145980501156483
+Iteration number  5 , min , max temp  95.69885851418017 3796.4593323460094 , flux balance  -0.4105006958548143
+Iteration number  6 , min , max temp  96.85384053384556 3800.390121490201 , flux balance  -0.4051921126677862
+Iteration number  7 , min , max temp  95.65228743015007 3803.6596352390675 , flux balance  -0.4007343426454264
+Iterations exceeded it_max ! sorry 
+Big iteration is  95.65228743015007 2
+Iteration number  0 , min , max temp  96.82709734136299 3807.076995106921 , flux balance  -0.3960355580873294
+Iteration number  1 , min , max temp  95.6177043689018 3810.5229804858454 , flux balance  -0.39126174359235877
+Iteration number  2 , min , max temp  96.80819055627741 3813.512693988567 , flux balance  -0.3870846639510952
+Iteration number  3 , min , max temp  95.59239360111503 3817.08916761698 , flux balance  -0.38205095358332575
+Iteration number  4 , min , max temp  96.79537925825078 3819.7026473458955 , flux balance  -0.37833744142065545
+Iteration number  5 , min , max temp  95.57429455755334 3823.377072867278 , flux balance  -0.3730839513675441
+Iteration number  6 , min , max temp  96.78732933095326 3825.668922031642 , flux balance  -0.36977852036076014
+Iteration number  7 , min , max temp  95.56182998918827 3829.4194477879 , flux balance  -0.36433935382123517
+Iterations exceeded it_max ! sorry 
+Big iteration is  95.56182998918827 3
+Iteration number  0 , min , max temp  96.78300655854117 3831.4308370417943 , flux balance  -0.36139633344472427
+Iteration number  1 , min , max temp  95.55378037567219 3835.235890477277 , flux balance  -0.3558017243750794
+Iteration number  2 , min , max temp  96.78160077479744 3837.0011096280987 , flux balance  -0.3531826471986145
+Iteration number  3 , min , max temp  95.54919141614289 3840.8356940621866 , flux balance  -0.3474598623802462
+Iteration number  4 , min , max temp  96.78246944327344 3842.380459524983 , flux balance  -0.34513282576393045
+Iteration number  5 , min , max temp  95.54730313579671 3846.233721290437 , flux balance  -0.33930766277964974
+Iteration number  6 , min , max temp  96.78509425523602 3847.5858297983536 , flux balance  -0.33724397063837974
+Iteration number  7 , min , max temp  95.54752110739526 3851.444468358663 , flux balance  -0.33133776495198497
+Iterations exceeded it_max ! sorry 
+Big iteration is  95.54752110739526 4
+Not converged
+[ 0 45 89  0 85 89]
+Iteration number  0 , min , max temp  96.49054081810988 3768.8233073031115 , flux balance  -0.4862303781444806
+Iteration number  1 , min , max temp  97.42077546702832 3787.7683607794465 , flux balance  -0.4637321429569534
+Iteration number  2 , min , max temp  98.34960233724227 3806.4644991394507 , flux balance  -0.4404237333055796
+Iteration number  3 , min , max temp  99.2758779970031 3825.0697605210285 , flux balance  -0.4161290880655957
+Iteration number  4 , min , max temp  100.19919871189245 3843.63036181667 , flux balance  -0.3907730674850606
+Iteration number  5 , min , max temp  101.11952624776816 3862.144689650504 , flux balance  -0.36423481858204093
+Iteration number  6 , min , max temp  102.03193437989708 3880.3056401123163 , flux balance  -0.336371021595302
+Iteration number  7 , min , max temp  102.94043943731455 3898.3597129023206 , flux balance  -0.30715422729338954
+Iterations exceeded it_max ! sorry 
+Big iteration is  102.94043943731455 0
+Iteration number  0 , min , max temp  103.84712847330802 3916.318264846689 , flux balance  -0.2764736192652801
+Iteration number  1 , min , max temp  104.75277815107704 3934.2754574186106 , flux balance  -0.24428862269977095
+Iteration number  2 , min , max temp  105.65813057078269 3952.2240016916653 , flux balance  -0.2105467935914018
+Iteration number  3 , min , max temp  106.56391497658714 3970.1438793500683 , flux balance  -0.1751352165403382
+Iteration number  4 , min , max temp  107.47104080810695 3988.0262434095257 , flux balance  -0.13810060466896334
+Iteration number  5 , min , max temp  108.38032800842959 4005.801818538203 , flux balance  -0.09944520348616369
+Iteration number  6 , min , max temp  109.29260733905882 4023.034312693809 , flux balance  -0.059184006869425716
+Iteration number  7 , min , max temp  110.20777800827831 4039.9013927878427 , flux balance  -0.017645851008500964
+Iterations exceeded it_max ! sorry 
+Big iteration is  110.20777800827831 1
+Iteration number  0 , min , max temp  110.58541364823012 4046.4390159541003 , flux balance  -0.0008799180333752524
+In t_start: Converged Solution in iterations  0
+Profile converged before itmx
+[ 0 44 89  0 85 89]
+Iteration number  0 , min , max temp  110.3201670528648 3906.868226509376 , flux balance  -0.3944171357912774
+Iteration number  1 , min , max temp  110.00272833123297 3930.688990450376 , flux balance  -0.35891990519602934
+Iteration number  2 , min , max temp  109.67760088238313 3952.822362538057 , flux balance  -0.3238832335812824
+Iteration number  3 , min , max temp  109.43234770512633 3970.5527347361226 , flux balance  -0.29424312644684336
+Iteration number  4 , min , max temp  109.4372690091276 3978.7196647804863 , flux balance  -0.28012965858713657
+Iteration number  5 , min , max temp  109.10025867009061 3983.084975175119 , flux balance  -0.27246419456601023
+Iteration number  6 , min , max temp  109.09711976443572 3991.1329010548484 , flux balance  -0.2580875312585079
+Iteration number  7 , min , max temp  108.76702101470596 3994.6989571627873 , flux balance  -0.2516235135573989
+Iterations exceeded it_max ! sorry 
+Big iteration is  108.76702101470596 0
+Iteration number  0 , min , max temp  108.75936163469183 4002.5362131538573 , flux balance  -0.23721108280662564
+Iteration number  1 , min , max temp  108.43491895678574 4005.4303702555453 , flux balance  -0.23175889974006447
+Iteration number  2 , min , max temp  108.42690976405318 4012.8228866253608 , flux balance  -0.21753284578646356
+Iteration number  3 , min , max temp  108.10635327605318 4015.168839871035 , flux balance  -0.21289646915137533
+Iteration number  4 , min , max temp  108.1025470537214 4022.0344042842353 , flux balance  -0.19912319478556137
+Iteration number  5 , min , max temp  107.78384855695207 4024.0001965389765 , flux balance  -0.1951237377479447
+Iteration number  6 , min , max temp  107.78886124422156 4030.3809894771293 , flux balance  -0.18201596933541014
+Iteration number  7 , min , max temp  107.47000252174503 4032.084990444715 , flux balance  -0.17848500313703045
+Iterations exceeded it_max ! sorry 
+Big iteration is  107.47000252174503 1
+Iteration number  0 , min , max temp  107.48813796218181 4037.9460899190644 , flux balance  -0.16621336749708202
+Iteration number  1 , min , max temp  107.16733319313238 4039.458143771285 , flux balance  -0.1630123948958323
+Iteration number  2 , min , max temp  107.20224341959711 4044.718049174599 , flux balance  -0.1516987105164419
+Iteration number  3 , min , max temp  106.87809130761063 4046.0831389601253 , flux balance  -0.14872188498986283
+Iteration number  4 , min , max temp  106.93252375511312 4050.773964630053 , flux balance  -0.13841809779769604
+Iteration number /mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference
+/mmfs1/gscratch/stf/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/grp/redcat/trds
+(array([1.6]), array([3.5]), array([ 20, 400]), array([10]), array([0.01]))
+This is the gridshape used: (1, 1, 2, 1, 1)
+Initializing HDF5 output...
+ 5 , min , max temp  106.60407548967893 4052.0512262149055 , flux balance  -0.13558739312216372
+Iteration number  6 , min , max temp  106.67975590251056 4056.1998278864444 , flux balance  -0.12633076974796245
+Iteration number  7 , min , max temp  106.34650285845795 4057.4122139998653 , flux balance  -0.12360375947923208
+Iterations exceeded it_max ! sorry 
+Big iteration is  106.34650285845795 2
+Iteration number  0 , min , max temp  106.44416596704146 4061.0530266779574 , flux balance  -0.11536582024559494
+Iteration number  1 , min , max temp  106.10597950850561 4062.212826730299 , flux balance  -0.11271647027631398
+Iteration number  2 , min , max temp  106.2255021193841 4065.382116002278 , flux balance  -0.10543981043821812
+Iteration number  3 , min , max temp  105.88254182064122 4066.49932255921 , flux balance  -0.1028567504991627
+Iteration number  4 , min , max temp  106.02314650523944 4069.254627812688 , flux balance  -0.09646128880921416
+Iteration number  5 , min , max temp  105.67576545481586 4070.332521424146 , flux balance  -0.09394286702956763
+Iteration number  6 , min , max temp  105.83623423517285 4072.722846043143 , flux balance  -0.08834033086285585
+Iteration number  7 , min , max temp  105.48489640489969 4073.761672145547 , flux balance  -0.0858902729189824
+Iterations exceeded it_max ! sorry 
+Big iteration is  105.48489640489969 3
+Iteration number  0 , min , max temp  105.66376179720957 4075.8339994802654 , flux balance  -0.08099067419579184
+Iteration number  1 , min , max temp  105.30897869443928 4076.832808201299 , flux balance  -0.07861503115577735
+Iteration number  2 , min , max temp  105.4930861975848 4078.6303448353847 , flux balance  -0.07433197750127729
+Iteration number  3 , min , max temp  105.13107284410087 4079.5878390479047 , flux balance  -0.0720372320902881
+Iteration number  4 , min , max temp  105.33099502557602 4081.1491826572733 , flux balance  -0.06829102033986478
+Iteration number  5 , min , max temp  104.96687069782651 4082.064195530947 , flux balance  -0.06608299857148821
+Iteration number  6 , min , max temp  105.18148574696262 4083.4231425627745 , flux balance  -0.06280205461566414
+Iteration number  7 , min , max temp  104.81570359662028 4084.2948769146337 , flux balance  -0.060685374580863545
+Iterations exceeded it_max ! sorry 
+Profile converged before itmx
+[ 0 43 89  0 85 89]
+Iteration number  0 , min , max temp  105.14357920128981 3998.2640424295023 , flux balance  -0.31590998247375224
+Iteration number  1 , min , max temp  105.33632847896577 4022.6858129486463 , flux balance  -0.2734067147776387
+Iteration number  2 , min , max temp  105.53704855909977 4046.2380748168953 , flux balance  -0.2290324686060758
+Iteration number  3 , min , max temp  105.73573287664145 4069.0989222976737 , flux balance  -0.1827600600668092
+Iteration number  4 , min , max temp  105.92542826573305 4091.3984090198387 , flux balance  -0.13473140227726813
+Iteration number  5 , min , max temp  106.10023857298323 4113.0261471436625 , flux balance  -0.08508546477520154
+Iteration number  6 , min , max temp  106.24238210830335 4133.820078509757 , flux balance  -0.03442902109122177
+Iteration number  7 , min , max temp  106.28139745853404 4146.599617139694 , flux balance  -0.0018713226292215194
+Iterations exceeded it_max ! sorry 
+Big iteration is  106.28139745853404 0
+Iteration number  0 , min , max temp  106.26007856214841 4147.282550239702 , flux balance  -0.0001256936409968489
+In t_start: Converged Solution in iterations  0
+Profile converged before itmx
+[ 0 42 89  0 85 89]
+Iteration number  0 , min , max temp  106.15928528529518 4099.969134192241 , flux balance  -0.2147627071791746
+Iteration number  1 , min , max temp  106.09084645013738 4125.700422254434 , flux balance  -0.16128450459991206
+Iteration number  2 , min , max temp  106.0612615750347 4151.099448073483 , flux balance  -0.10487798615913106
+Iteration number  3 , min , max temp  106.08162135075833 4175.939254660848 , flux balance  -0.04568738935042607
+Iteration number  4 , min , max temp  106.0921939105678 4192.916814620329 , flux balance  -0.0025513125056211548
+Iteration number  5 , min , max temp  106.12345725122451 4193.818436570443 , flux balance  -0.0001897446524236996
+In t_start: Converged Solution in iterations  5
+Big iteration is  106.12345725122451 0
+Iteration number  0 , min , max temp  106.12657976203819 4193.885312290194 , flux balance  -1.4297794541924122e-05
+In t_start: Converged Solution in iterations  0
+Profile converged before itmx
+[ 0 41 89  0 85 89]
+Iteration number  0 , min , max temp  105.48475328154368 4172.406195159375 , flux balance  -0.15028258586587945
+Iteration number  1 , min , max temp  104.81117346000048 4189.14977584557 , flux balance  -0.1128170740389021
+Iteration number  2 , min , max temp  104.14364317880641 4207.068227778947 , flux balance  -0.07044273162428114
+Iteration number  3 , min , max temp  103.47740723893266 4225.746085649097 , flux balance  -0.02391373712379106
+Iteration number  4 , min , max temp  103.1575069453707 4234.305654808404 , flux balance  -0.0017726062228265382
+Iteration number  5 , min , max temp  103.1157005529391 4234.925818455773 , flux balance  -0.00014700025993817276
+In t_start: Converged Solution in iterations  5
+Big iteration is  103.1157005529391 0
+Iteration number  0 , min , max temp  103.11042309525929 4234.97721739592 , flux balance  -1.2269828644975197e-05
+In t_start: Converged Solution in iterations  0
+Profile converged before itmx
+Grow Phase : Upper Zone
+final [ 0 41 89  0 85 89]
+Iteration number  0 , min , max temp  103.45251432334352 4247.043463564157 , flux balance  -0.052626527048176795
+Iteration number  1 , min , max temp  103.2447375583212 4258.439436692399 , flux balance  -0.023971474609001557
+Iteration number  2 , min , max temp  103.05485164128854 4267.056232406685 , flux balance  -0.0016985033690833672
+Iteration number  3 , min , max temp  103.00284510976074 4267.651004753663 , flux balance  -0.00013582770010728775
+In t_start: Converged Solution in iterations  3
+Big iteration is  103.00284510976074 0
+Iteration number  0 , min , max temp  102.99921311942548 4267.698466424285 , flux balance  -1.0942817956350624e-05
+In t_start: Converged Solution in iterations  0
+Profile converged before itmx
+YAY ! ENDING WITH CONVERGENCE

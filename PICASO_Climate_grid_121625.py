@@ -313,6 +313,17 @@ def PICASO_climate_model(x):
     _default_nlevel = 91
     max_retries = 3
 
+    # helper to make sure outputs have array dtype suitable for h5py
+    def _sanitize(new_out_dict):
+        # ensure everything is at least 1‑D numpy array and convert U strings to S
+        for kk, vv in list(new_out_dict.items()):
+            if not isinstance(vv, np.ndarray):
+                vv = np.atleast_1d(np.array(vv))
+            if vv.dtype.kind == 'U':
+                vv = vv.astype('S')
+            new_out_dict[kk] = vv
+        return new_out_dict
+
     # Try initial run
     try:
         out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None)
@@ -327,7 +338,7 @@ def PICASO_climate_model(x):
         # wrap status/error as arrays
         new_out['status'] = np.array(['error'], dtype='U')
         new_out['error'] = np.array([f"{type(e).__name__}: {e}"], dtype='U')
-        return new_out
+        return _sanitize(new_out)
 
     # If PICASO returned an error status, do not attempt retries
     if out.get('status') == 'error':
@@ -339,7 +350,7 @@ def PICASO_climate_model(x):
         }
         new_out['status'] = np.array(['error'], dtype='U')
         new_out['error'] = np.array([out.get('error', 'Unknown error')], dtype='U')
-        return new_out
+        return _sanitize(new_out)
 
     # If the model reports not converged, try a few more times using prior outputs
     count = 0
@@ -359,13 +370,12 @@ def PICASO_climate_model(x):
             }
             new_out['status'] = np.array(['error'], dtype='U')
             new_out['error'] = np.array([f"{type(e).__name__}: {e}"], dtype='U')
-            return new_out
+            return _sanitize(new_out)
 
         if count >= max_retries:
             print(f"Hit the maximum amount of loops ({max_retries}) without converging.")
             break
 
-<<<<<<< HEAD
     # Prepare output dictionary with only the desired keys
     desired_keys = ['pressure', 'temperature', 'converged', 'status', 'error']
     new_out = {key: out[key] for key in desired_keys if key in out}
@@ -391,15 +401,6 @@ def PICASO_climate_model(x):
     # final pass: convert any remaining scalars/strings to numpy arrays and fix dtypes
     for k, v in list(new_out.items()):
         # Ensure scalars become at least 1D arrays (for len() calls in gridutils)
-=======
-    desired_keys = ['pressure', 'temperature', 'converged']
-    new_out = {key: out[key] for key in desired_keys if key in out} # Only picks out some array results from Photochem b/c not all were arrays
-    new_out['converged'] = np.array([new_out['converged']])
-    
-    # Ensure all values are numpy arrays and handle string dtypes
-    for k, v in list(new_out.items()):
-        # Convert non-arrays to arrays and ensure at least 1D
->>>>>>> 8d08de7ad1c319b4cab68f097ec530a01f83dce2
         if not isinstance(v, np.ndarray):
             v = np.atleast_1d(np.array(v))
         # Convert Unicode string dtype to byte string dtype for h5py compatibility
@@ -490,4 +491,3 @@ if __name__ == "__main__":
         filename='results/PICASO_climate_updatop_paramext_SMALLtestTINT_met_co.h5', 
         progress_filename='results/PICASO_climate_updatop_paramext_SMALLtestTINT_met_co.log'
     ) 
-
