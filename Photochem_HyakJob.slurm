@@ -6,7 +6,7 @@
 #SBATCH --partition=cpu-g2
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=40
-#SBATCH --mem=50G
+#SBATCH --mem=200G
 #SBATCH --time=24:00:00
 
 #SBATCH --export=all
