@@ -242,8 +242,17 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, n
         base_case = jdi.pd.read_csv(jdi.HJ_pt(), delim_whitespace=True)
 
     except Exception as e:
-        print(f"An exception was raised: {type(e).__name__}: {e}")
-        raise
+        print(f"An exception was raised in PICASO_PT_Planet: {type(e).__name__}: {e}", file=sys.stderr)
+        # Return an error dictionary instead of raising to prevent worker crash
+        error_out = {
+            'pressure': np.full(nlevel, np.nan),
+            'temperature': np.full(nlevel, np.nan),
+            'converged': 0,
+            'status': 'error',
+            'error': f"{type(e).__name__}: {e}"
+        }
+        base_case = None
+        return error_out, base_case
     
     # Saves out and base_case to python file to be re-loaded.
     if outputfile == None:
@@ -362,7 +371,6 @@ def PICASO_climate_model(x):
         except Exception as e:
             logging.error("PICASO run failed (recalc #%d) for inputs %s: %s", count, x, e, exc_info=True)
             print(f"PICASO run failed (recalc #{count}): {type(e).__name__}: {e}", file=sys.stderr)
-            _record_failure(e, stage=f"recalc_{count}")
             new_out = {
                 'pressure': np.full(_default_nlevel, np.nan),
                 'temperature': np.full(_default_nlevel, np.nan),

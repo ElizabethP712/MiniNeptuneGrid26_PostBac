@@ -1,315 +1,79 @@
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       2.75   150.      10.       0.2575]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [  2.       2.75   200.      10.       0.2575]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [  2.      2.75  200.     10.      0.505]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 2.50e+02 4.00e+00 1.00e-02]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [  2.       2.75   250.       6.       0.2575]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 1.000e+02 7.000e-01 1.000e-02]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [  2.       2.75   250.       8.       0.2575]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 100.      5.      0.505]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 2.50e+02 1.00e+01 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 100.      5.      1.   ]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [  2.       2.75   250.      10.       0.2575]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [  2.       3.125  100.      10.       0.7525]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [  2.       2.75   250.      10.       0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 100.     10.      1.   ]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.00e+02 8.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 1.500e+02 7.000e-01 1.000e-02]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.50e+02 4.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  150.       1.       0.2575]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 4.00e+02 8.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  150.       3.       0.2575]
-2026-03-03 16:10:14,498 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 4.00e+02 1.00e+01 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.      3.      0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [ 2.     3.125 50.     4.     0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  150.       3.       0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [ 2.      3.125  50.      4.      0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.      3.      1.   ]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [ 2.     3.125 50.     6.     0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  150.       4.       0.2575]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       2.75   100.      10.       0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.      4.      0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 2.00e+02 4.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  150.       4.       0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 2.00e+02 1.00e+01 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.      4.      1.   ]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 2.50e+02 3.00e+00 1.00e-02]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [  2.      3.125 150.      5.      0.505]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [  2.      2.75  250.      8.      0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  150.       5.       0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.00e+02 3.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  150.       6.       0.2575]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.00e+02 4.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.      6.      0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.00e+02 5.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  150.       6.       0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.00e+02 1.00e+01 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.      6.      1.   ]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.50e+02 5.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.      8.      0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.50e+02 8.00e+00 1.00e-02]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [  2.       3.125  150.       8.       0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.50e+02 1.00e+01 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.      8.      1.   ]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 4.00e+02 4.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 1.500e+02 1.000e+01 1.000e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [ 2.      3.125  50.      2.      0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.     10.      0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [ 2.      3.125  50.      5.      0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  150.      10.       0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [ 2.     3.125 50.     8.     0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 150.     10.      1.   ]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.50e+02 6.00e+00 1.00e-02]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 2.000e+02 1.000e+00 1.000e-02]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [ 2.     3.125 50.     2.     1.   ]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  200.       1.       0.2575]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 4.00e+02 6.00e+00 1.00e-02]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 2.000e+02 1.500e+00 1.000e-02]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [ 2.     3.125 50.     2.     0.505]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.       3.125  200.       1.5      0.7525]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [ 2.      3.125  50.      3.      0.7525]
-2026-03-03 16:10:14,499 INFO: starting climate model for inputs: [  2.      3.125 200.      1.5     1.   ]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [ 2.     3.125 50.     5.     1.   ]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [  2.       3.125  200.       2.       0.2575]
-2026-03-03 16:10:14,501 INFO: starting climate model for inputs: [ 2.     3.125 50.     3.     1.   ]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [  2.      3.125 200.      2.      0.505]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [  2.      3.125 200.      2.      1.   ]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 2.000e+02 3.000e+00 1.000e-02]
-2026-03-03 16:10:14,500 INFO: starting climate model for inputs: [  2.      3.125 150.      5.      1.   ]
-2026-03-03 16:10:14,501 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 2.000e+02 2.000e+00 1.000e-02]
-2026-03-03 16:10:14,501 INFO: starting climate model for inputs: [  2.       3.125  200.       2.       0.7525]
-2026-03-04 00:14:20,843 INFO: starting climate model for inputs: [  2.       3.125  200.       3.       0.2575]
-2026-03-04 00:30:44,428 INFO: starting climate model for inputs: [  2.      3.125 200.      3.      0.505]
-2026-03-04 00:35:49,176 INFO: starting climate model for inputs: [  2.      3.125 200.      3.      1.   ]
-2026-03-04 00:40:29,280 INFO: starting climate model for inputs: [  2.       3.125  200.       4.       0.2575]
-2026-03-04 00:50:45,908 INFO: starting climate model for inputs: [  2.      3.125 200.      4.      0.505]
-2026-03-04 00:52:52,477 INFO: starting climate model for inputs: [  2.       3.125  200.       4.       0.7525]
-2026-03-04 00:54:06,658 ERROR: PICASO run failed (initial) for inputs [2.000e+00 3.125e+00 1.500e+02 1.000e+01 1.000e-02]: division by zero
-Traceback (most recent call last):
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 329, in PICASO_climate_model
-    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 241, in PICASO_PT_Planet
-    out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 5355, in climate
-    df_spec = self.spectrum(opacityclass,full_output=True,calculation='thermal')
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 4917, in spectrum
-    return picaso(self, opacityclass,dimension=dimension,calculation=calculation,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 235, in picaso
-    get_opacities(atm,exclude_mol=exclude_mol)
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/optics.py", line 1555, in get_opacities_deq_onfly
-    self.mix_my_opacities_gasesfly(atmosphere,exclude_mol=exclude_mol)
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/optics.py", line 1235, in mix_my_opacities_gasesfly
-    kappa_mixed = mix_all_gases_gasesfly(kappas,mixes, np.array(self.gauss_pts),np.array(self.gauss_wts),indices)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ZeroDivisionError: division by zero
-PICASO run failed (initial): ZeroDivisionError: division by zero
-2026-03-04 00:54:07,024 INFO: starting climate model for inputs: [  2.      3.125 200.      4.      1.   ]
-2026-03-04 01:01:08,402 INFO: starting climate model for inputs: [  2.      3.125 200.      5.      0.505]
-2026-03-04 01:01:11,816 INFO: starting climate model for inputs: [  2.       3.125  200.       5.       0.7525]
-2026-03-04 01:01:16,095 INFO: starting climate model for inputs: [  2.      3.125 200.      5.      1.   ]
-2026-03-04 01:05:16,826 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 2.000e+02 6.000e+00 1.000e-02]
-2026-03-04 01:19:26,214 INFO: starting climate model for inputs: [  2.       3.125  200.       6.       0.2575]
-2026-03-04 01:19:51,027 INFO: starting climate model for inputs: [  2.      3.125 200.      6.      0.505]
-2026-03-04 01:23:31,309 INFO: starting climate model for inputs: [  2.       3.125  200.       6.       0.7525]
-2026-03-04 01:24:24,836 INFO: starting climate model for inputs: [  2.      3.125 200.      6.      1.   ]
-2026-03-04 01:25:41,271 ERROR: PICASO run failed (recalc #1) for inputs [  2.       2.75   100.      10.       0.7525]: Convection zone grew to Top of atmosphere, Need to Stop
-Traceback (most recent call last):
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 361, in PICASO_climate_model
-    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None, pt_guillot=False, prior_out=out)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 241, in PICASO_PT_Planet
-    out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 5290, in climate
-    chem_out,cld_out,  all_profiles,  all_opd,all_kzz=run_chemeq_climate_workflow(self,
-                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 387, in run_chemeq_climate_workflow
-    final_conv_flag, pressure, temp, dtdp, nstr_new, flux_net_ir_final,flux_net_v_final, flux_plus_final, chem_out, cld_out, all_profiles, all_opd,all_kzz =find_strat(bundle,
-                                                                                                                                                            ^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 2814, in find_strat
-    raise ValueError( "Convection zone grew to Top of atmosphere, Need to Stop")
-ValueError: Convection zone grew to Top of atmosphere, Need to Stop
-PICASO run failed (recalc #1): ValueError: Convection zone grew to Top of atmosphere, Need to Stop
-Traceback (most recent call last):
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 361, in PICASO_climate_model
-    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None, pt_guillot=False, prior_out=out)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 241, in PICASO_PT_Planet
-    out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 5290, in climate
-    chem_out,cld_out,  all_profiles,  all_opd,all_kzz=run_chemeq_climate_workflow(self,
-                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 387, in run_chemeq_climate_workflow
-    final_conv_flag, pressure, temp, dtdp, nstr_new, flux_net_ir_final,flux_net_v_final, flux_plus_final, chem_out, cld_out, all_profiles, all_opd,all_kzz =find_strat(bundle,
-                                                                                                                                                            ^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 2814, in find_strat
-    raise ValueError( "Convection zone grew to Top of atmosphere, Need to Stop")
-ValueError: Convection zone grew to Top of atmosphere, Need to Stop
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 488, in <module>
-    gridutils.make_grid(
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 206, in make_grid
-    worker()
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 159, in worker
-    res = model_func(x)
-          ^^^^^^^^^^^^^
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 365, in PICASO_climate_model
-    _record_failure(e, stage=f"recalc_{count}")
-    ^^^^^^^^^^^^^^^
-NameError: name '_record_failure' is not defined
-2026-03-04 01:26:53,075 INFO: starting climate model for inputs: [  2.      3.125 200.      8.      0.505]
-2026-03-04 01:29:18,041 INFO: starting climate model for inputs: [  2.       3.125  200.       8.       0.7525]
-2026-03-04 01:37:43,608 INFO: starting climate model for inputs: [  2.      3.125 200.      8.      1.   ]
-2026-03-04 01:48:46,234 INFO: starting climate model for inputs: [  2.      3.125 200.     10.      0.505]
-2026-03-04 01:49:54,382 INFO: starting climate model for inputs: [  2.       3.125  200.      10.       0.7525]
-2026-03-04 01:55:58,409 INFO: starting climate model for inputs: [  2.      3.125 200.     10.      1.   ]
-2026-03-04 02:01:12,055 INFO: starting climate model for inputs: [  2.       3.125  250.       0.7      0.2575]
-2026-03-04 02:05:54,082 INFO: starting climate model for inputs: [  2.       3.125  250.       1.       0.2575]
-2026-03-04 02:18:47,480 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 2.500e+02 1.500e+00 1.000e-02]
-2026-03-04 02:20:58,633 INFO: starting climate model for inputs: [  2.       3.125  250.       1.5      0.2575]
-2026-03-04 02:25:58,939 INFO: starting climate model for inputs: [  2.      3.125 250.      1.5     0.505]
-2026-03-04 02:28:00,315 INFO: starting climate model for inputs: [  2.       3.125  250.       1.5      0.7525]
-2026-03-04 02:29:19,219 INFO: starting climate model for inputs: [  2.      3.125 250.      1.5     1.   ]
-2026-03-04 02:39:35,520 INFO: starting climate model for inputs: [  2.       3.125  250.       2.       0.2575]
-2026-03-04 02:50:54,353 INFO: starting climate model for inputs: [  2.      3.125 250.      2.      0.505]
-2026-03-04 03:01:39,791 INFO: starting climate model for inputs: [  2.       3.125  250.       2.       0.7525]
-2026-03-04 03:04:27,342 ERROR: PICASO run failed (initial) for inputs [ 2.     3.125 50.     8.     0.505]: Convection zone grew to Top of atmosphere, Need to Stop
-Traceback (most recent call last):
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 329, in PICASO_climate_model
-    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 241, in PICASO_PT_Planet
-    out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 5290, in climate
-    chem_out,cld_out,  all_profiles,  all_opd,all_kzz=run_chemeq_climate_workflow(self,
-                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 387, in run_chemeq_climate_workflow
-    final_conv_flag, pressure, temp, dtdp, nstr_new, flux_net_ir_final,flux_net_v_final, flux_plus_final, chem_out, cld_out, all_profiles, all_opd,all_kzz =find_strat(bundle,
-                                                                                                                                                            ^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 2814, in find_strat
-    raise ValueError( "Convection zone grew to Top of atmosphere, Need to Stop")
-ValueError: Convection zone grew to Top of atmosphere, Need to Stop
-PICASO run failed (initial): ValueError: Convection zone grew to Top of atmosphere, Need to Stop
-2026-03-04 03:04:27,360 INFO: starting climate model for inputs: [  2.      3.125 250.      2.      1.   ]
-2026-03-04 03:05:04,624 INFO: starting climate model for inputs: [  2.      3.125 250.      3.      0.505]
-2026-03-04 03:05:52,248 INFO: starting climate model for inputs: [  2.       3.125  250.       3.       0.7525]
-2026-03-04 03:10:04,544 ERROR: PICASO run failed (initial) for inputs [  2.      3.125 150.     10.      1.   ]: Convection zone grew to Top of atmosphere, Need to Stop
-Traceback (most recent call last):
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 329, in PICASO_climate_model
-    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 241, in PICASO_PT_Planet
-    out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 5290, in climate
-    chem_out,cld_out,  all_profiles,  all_opd,all_kzz=run_chemeq_climate_workflow(self,
-                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 387, in run_chemeq_climate_workflow
-    final_conv_flag, pressure, temp, dtdp, nstr_new, flux_net_ir_final,flux_net_v_final, flux_plus_final, chem_out, cld_out, all_profiles, all_opd,all_kzz =find_strat(bundle,
-                                                                                                                                                            ^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 2814, in find_strat
-    raise ValueError( "Convection zone grew to Top of atmosphere, Need to Stop")
-ValueError: Convection zone grew to Top of atmosphere, Need to Stop
-PICASO run failed (initial): ValueError: Convection zone grew to Top of atmosphere, Need to Stop
-2026-03-04 03:10:04,563 INFO: starting climate model for inputs: [  2.      3.125 250.      3.      1.   ]
-2026-03-04 03:11:35,160 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 2.500e+02 4.000e+00 1.000e-02]
-2026-03-04 03:12:17,388 INFO: starting climate model for inputs: [  2.       3.125  250.       4.       0.2575]
-2026-03-04 03:12:20,097 INFO: starting climate model for inputs: [  2.      3.125 250.      4.      0.505]
-2026-03-04 03:15:18,991 INFO: starting climate model for inputs: [  2.       3.125  250.       4.       0.7525]
-2026-03-04 03:20:58,693 INFO: starting climate model for inputs: [  2.      3.125 250.      4.      1.   ]
-2026-03-04 03:35:34,091 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 2.500e+02 5.000e+00 1.000e-02]
-2026-03-04 03:39:12,586 INFO: starting climate model for inputs: [  2.       3.125  250.       5.       0.2575]
-2026-03-04 03:39:16,264 INFO: starting climate model for inputs: [  2.      3.125 250.      5.      0.505]
-2026-03-04 03:47:26,065 INFO: starting climate model for inputs: [  2.       3.125  250.       5.       0.7525]
-2026-03-04 03:50:02,136 INFO: starting climate model for inputs: [  2.      3.125 250.      5.      1.   ]
-2026-03-04 04:05:07,872 INFO: starting climate model for inputs: [  2.      3.125 250.      6.      0.505]
-2026-03-04 04:06:13,687 INFO: starting climate model for inputs: [  2.       3.125  250.       6.       0.7525]
-2026-03-04 04:27:42,849 INFO: starting climate model for inputs: [  2.      3.125 250.      6.      1.   ]
-2026-03-04 04:48:00,746 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 2.500e+02 8.000e+00 1.000e-02]
-2026-03-04 04:59:29,955 INFO: starting climate model for inputs: [  2.      3.125 250.      8.      0.505]
-2026-03-04 05:20:16,678 INFO: starting climate model for inputs: [  2.       3.125  250.       8.       0.7525]
-2026-03-04 05:23:53,938 INFO: starting climate model for inputs: [  2.      3.125 250.      8.      1.   ]
-2026-03-04 05:24:16,308 INFO: starting climate model for inputs: [  2.       3.125  250.      10.       0.2575]
-2026-03-04 05:30:40,076 INFO: starting climate model for inputs: [  2.      3.125 250.     10.      0.505]
-2026-03-04 05:33:59,310 INFO: starting climate model for inputs: [  2.       3.125  250.      10.       0.7525]
-2026-03-04 05:51:08,187 INFO: starting climate model for inputs: [  2.      3.125 250.     10.      1.   ]
-2026-03-04 05:52:12,572 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 7.000e-01 1.000e-02]
-2026-03-04 05:52:32,896 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 7.000e-01 2.575e-01]
-2026-03-04 06:06:45,261 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 1.000e+00 1.000e-02]
-2026-03-04 06:20:55,836 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 1.000e+00 2.575e-01]
-2026-03-04 06:23:37,026 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 1.500e+00 1.000e-02]
-2026-03-04 07:03:01,431 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 1.500e+00 2.575e-01]
-2026-03-04 07:08:46,508 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 2.000e+00 1.000e-02]
-2026-03-04 07:17:52,371 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 2.000e+00 2.575e-01]
-2026-03-04 07:29:56,186 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 3.000e+00 1.000e-02]
-2026-03-04 07:52:47,291 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 3.000e+00 2.575e-01]
-2026-03-04 07:56:09,135 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 4.000e+00 1.000e-02]
-2026-03-04 08:14:27,189 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 5.000e+00 2.575e-01]
-2026-03-04 08:43:41,782 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 6.000e+00 2.575e-01]
-2026-03-04 08:48:00,370 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 1.000e+01 2.575e-01]
-2026-03-04 09:00:13,553 INFO: starting climate model for inputs: [  2.      3.125 300.     10.      0.505]
-2026-03-04 09:01:24,653 INFO: starting climate model for inputs: [  2.       3.125  300.      10.       0.7525]
-2026-03-04 09:18:48,527 INFO: starting climate model for inputs: [  2.      3.125 300.     10.      1.   ]
-2026-03-04 09:47:37,407 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 7.000e-01 1.000e-02]
-2026-03-04 09:47:59,894 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 7.000e-01 2.575e-01]
-2026-03-04 09:58:08,713 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 1.000e+00 1.000e-02]
-2026-03-04 10:02:45,498 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 1.000e+00 2.575e-01]
-2026-03-04 10:48:06,518 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 1.500e+00 1.000e-02]
-2026-03-04 10:59:21,059 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 1.500e+00 2.575e-01]
-2026-03-04 11:18:42,640 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 2.000e+00 1.000e-02]
-2026-03-04 11:21:12,175 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 2.000e+00 2.575e-01]
-2026-03-04 11:24:19,648 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 3.000e+00 1.000e-02]
-2026-03-04 11:36:10,290 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 3.000e+00 2.575e-01]
-2026-03-04 11:45:59,588 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 4.000e+00 1.000e-02]
-2026-03-04 11:49:14,921 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 4.000e+00 2.575e-01]
-2026-03-04 11:59:38,387 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 5.000e+00 1.000e-02]
-2026-03-04 12:11:50,296 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 5.000e+00 2.575e-01]
-2026-03-04 12:22:32,641 INFO: starting climate model for inputs: [  2.      3.125 350.      5.      0.505]
-2026-03-04 12:30:03,041 INFO: starting climate model for inputs: [  2.      3.125 350.      5.      1.   ]
-2026-03-04 12:44:21,903 ERROR: PICASO run failed (initial) for inputs [  2.       3.125  250.       5.       0.2575]: division by zero
-Traceback (most recent call last):
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 329, in PICASO_climate_model
-    out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 241, in PICASO_PT_Planet
-    out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 5290, in climate
-    chem_out,cld_out,  all_profiles,  all_opd,all_kzz=run_chemeq_climate_workflow(self,
-                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 387, in run_chemeq_climate_workflow
-    final_conv_flag, pressure, temp, dtdp, nstr_new, flux_net_ir_final,flux_net_v_final, flux_plus_final, chem_out, cld_out, all_profiles, all_opd,all_kzz =find_strat(bundle,
-                                                                                                                                                            ^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 2736, in find_strat
-    profile_flag, pressure, temp, dtdp, CloudParameters, cld_out, flux_net_ir_layer, flux_net_v_layer,flux_plus_ir_attop, all_profiles,all_opd,all_kzz = profile(bundle,
-                                                                                                                                                         ^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 3150, in profile
-    OpacityWEd, OpacityNoEd, ScatteringPhase, Disco, Atmosphere , holes =  calculate_atm(bundle, opacityclass)
-                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 2174, in calculate_atm
-    opacityclass.get_opacities(atm)
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/optics.py", line 1555, in get_opacities_deq_onfly
-    self.mix_my_opacities_gasesfly(atmosphere,exclude_mol=exclude_mol)
-  File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/optics.py", line 1235, in mix_my_opacities_gasesfly
-    kappa_mixed = mix_all_gases_gasesfly(kappas,mixes, np.array(self.gauss_pts),np.array(self.gauss_wts),indices)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ZeroDivisionError: division by zero
-PICASO run failed (initial): ZeroDivisionError: division by zero
-2026-03-04 12:44:21,945 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 6.000e+00 1.000e-02]
-2026-03-04 12:58:23,936 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 6.000e+00 2.575e-01]
-2026-03-04 13:07:08,327 INFO: starting climate model for inputs: [  2.      3.125 350.      6.      0.505]
-2026-03-04 13:14:27,913 INFO: starting climate model for inputs: [  2.       3.125  350.       6.       0.7525]
-2026-03-04 13:24:31,137 INFO: starting climate model for inputs: [  2.      3.125 350.      6.      1.   ]
-2026-03-04 13:36:28,796 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 8.000e+00 1.000e-02]
-2026-03-04 13:36:59,936 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 8.000e+00 2.575e-01]
-2026-03-04 13:38:26,181 INFO: starting climate model for inputs: [  2.      3.125 350.      8.      0.505]
-2026-03-04 13:44:10,160 INFO: starting climate model for inputs: [  2.       3.125  350.       8.       0.7525]
-2026-03-04 13:49:50,435 INFO: starting climate model for inputs: [  2.      3.125 350.      8.      1.   ]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.       2.75   100.      10.       0.7525]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 2.00e+02 1.00e+01 1.00e-02]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.00e+00 2.75e+00 3.50e+02 1.00e+01 1.00e-02]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.       3.125  200.       3.       0.2575]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.       3.125  200.       6.       0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 8.000e+00 2.575e-01]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.      3.125 200.      6.      1.   ]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [  2.      3.125 400.      8.      1.   ]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.      3.125 200.      8.      0.505]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 1.000e+01 1.000e-02]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.      3.125 200.     10.      1.   ]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 1.000e+01 2.575e-01]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.       3.125  250.       3.       0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [  2.      3.125 400.     10.      0.505]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [  2.      3.125 250.      3.      1.   ]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [  2.       3.125  400.      10.       0.7525]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.      3.125 250.      4.      0.505]
+2026-03-05 16:14:30,799 INFO: starting climate model for inputs: [  2.      3.125 400.     10.      1.   ]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.       3.125  250.       4.       0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      0.7     0.2575]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.      3.125 250.      4.      1.   ]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.     3.5   50.     0.7    0.505]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.      3.125 250.      5.      0.505]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      1.      0.2575]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.       3.125  250.       5.       0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.     3.5   50.     1.     0.505]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.      3.125 250.      6.      0.505]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      1.      0.7525]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.       3.125  250.       6.       0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.   3.5 50.   1.   1. ]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [  2.      3.125 250.     10.      0.505]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      1.5     0.7525]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [  2.       3.125  250.      10.       0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.   3.5 50.   1.5  1. ]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 7.000e-01 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      2.      0.7525]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 7.000e-01 2.575e-01]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.   3.5 50.   2.   1. ]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 4.000e+00 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 3.0e+00 1.0e-02]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 7.000e-01 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.     3.5   50.     3.     0.505]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 7.000e-01 2.575e-01]
+2026-03-05 16:14:30,799 INFO: starting climate model for inputs: [ 2.      3.5    50.      3.      0.7525]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 1.000e+00 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.   3.5 50.   3.   1. ]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 1.500e+00 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 4.0e+00 1.0e-02]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 4.000e+00 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      4.      0.2575]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 5.000e+00 2.575e-01]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.     3.5   50.     4.     0.505]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 7.000e-01 1.000e-02]
+2026-03-05 16:14:30,799 INFO: starting climate model for inputs: [ 2.      3.5    50.      4.      0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 1.000e+00 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.   3.5 50.   4.   1. ]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 1.500e+00 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 5.0e+00 1.0e-02]
+2026-03-05 16:14:30,797 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 5.000e+00 2.575e-01]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      5.      0.2575]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 6.000e+00 2.575e-01]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.     3.5   50.     5.     0.505]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 8.000e+00 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      5.      0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [  2.      3.125 200.      6.      0.505]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.   3.5 50.   5.   1. ]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 6.000e+00 1.000e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 6.0e+00 1.0e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [  2.       3.125  250.       8.       0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      6.      0.2575]
+2026-03-05 16:14:30,800 INFO: starting climate model for inputs: [  2.      3.125 250.      8.      1.   ]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      6.      0.7525]
+2026-03-05 16:14:30,800 INFO: starting climate model for inputs: [  2.      3.125 250.      8.      0.505]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.   3.5 50.   6.   1. ]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 8.0e+00 1.0e-02]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      8.      0.2575]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.     3.5   50.     8.     0.505]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.      3.5    50.      8.      0.7525]
+2026-03-05 16:14:30,798 INFO: starting climate model for inputs: [ 2.   3.5 50.   8.   1. ]
