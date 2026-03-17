@@ -156,7 +156,16 @@ def worker():
         # Call the function on the inputs
         serialized_model, index, x = data
         model_func = pickle.loads(serialized_model)
-        res = model_func(x)
+        try:
+            res = model_func(x)
+        except Exception as exc:
+            # Keep the worker alive and mark this point as failed.
+            err = f"{type(exc).__name__}: {exc}"
+            res = {
+                'status': np.array(['worker_exception'], dtype='S'),
+                'error': np.array([err], dtype='S'),
+                'converged': np.array([0]),
+            }
 
         # Send the results to the master process
         comm.send((index, x, res), dest=0, tag=2)

@@ -34,8 +34,6 @@ import star_spectrum
 import pickle
 import requests
 
-from mpi4py import MPI
-
 #from gridutils import make_grid
 from threadpoolctl import threadpool_limits
 _ = threadpool_limits(limits=1)
@@ -44,14 +42,40 @@ from bs4 import BeautifulSoup
 import os
 from urllib.parse import urljoin, urlparse
 import tarfile
-import gridutils
 
 import h5py
 import sys
 import logging
+import faulthandler
+import traceback
+import socket
+import multiprocessing as mp
+from queue import Empty
+from datetime import datetime
 
 # set up simple logging to stderr with timestamps
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
+
+def setup_rank_debug_logging():
+    """Attach rank/host metadata to logs and print uncaught tracebacks per MPI rank."""
+    from mpi4py import MPI
+    rank = MPI.COMM_WORLD.Get_rank()
+    hostname = socket.gethostname()
+
+    # Emit Python-level fatal tracebacks (including crashes in C extensions when possible)
+    faulthandler.enable(all_threads=True)
+
+    def _ranked_excepthook(exc_type, exc_value, exc_tb):
+        print(f"[UNCAUGHT EXCEPTION] rank={rank} host={hostname}", file=sys.stderr, flush=True)
+        traceback.print_exception(exc_type, exc_value, exc_tb, file=sys.stderr)
+        sys.stderr.flush()
+
+    sys.excepthook = _ranked_excepthook
+
+    formatter = logging.Formatter(f'%(asctime)s %(levelname)s [rank={rank} host={hostname}]: %(message)s')
+    root_logger = logging.getLogger()
+    for handler in root_logger.handlers:
+        handler.setFormatter(formatter)
 
 # Calculates the PT Profile Using PICASO; w/ K2-18b & G-star Assumptions for non-changing parameters; change mh, tint, and total_flux.
 
@@ -270,6 +294,114 @@ def PICASO_fake_climate_model_testing_errors(rad_plan, log_mh, tint, semi_major_
     fake_dictionary = {'planet radius': np.full(10, rad_plan), 'log_mh': np.full(10, log_mh) , 'tint': np.full(10, tint), 'semi major': np.full(10, semi_major_AU), 'ctoO': np.full(10, ctoO)}
     return fake_dictionary
 
+def _error_result(nlevel, status, error_message):
+    """Build a uniform, h5py-compatible error payload for failed grid points."""
+    return {
+        'pressure': np.full(nlevel, np.nan),
+        'temperature': np.full(nlevel, np.nan),
+        'converged': np.array([0]),
+        'status': np.array([status], dtype='U'),
+        'error': np.array([error_message], dtype='U'),
+    }
+
+def _picaso_subprocess_worker(kwargs, queue):
+    """Run one PICASO PT solve in an isolated process to contain native crashes."""
+    try:
+        out, base_case = PICASO_PT_Planet(**kwargs)
+        queue.put({'ok': True, 'out': out, 'base_case': base_case})
+    except Exception as exc:
+        queue.put({'ok': False, 'error': f"{type(exc).__name__}: {exc}"})
+
+def _run_picaso_isolated(kwargs, timeout_s):
+    """
+    Execute PICASO in a spawned child process.
+    This converts segfaults/timeouts into normal Python return states.
+    """
+    ctx = mp.get_context('spawn')
+    queue = ctx.Queue()
+    proc = ctx.Process(target=_picaso_subprocess_worker, args=(kwargs, queue))
+    proc.start()
+    proc.join(timeout=timeout_s)
+
+    if proc.is_alive():
+        proc.terminate()
+        proc.join()
+        return {
+            'ok': False,
+            'kind': 'timeout',
+            'error': f"PICASO subprocess timed out after {timeout_s}s",
+            'exitcode': proc.exitcode,
+        }
+
+    if proc.exitcode != 0:
+        signal_note = ''
+        if proc.exitcode is not None and proc.exitcode < 0:
+            signal_note = f" (signal {-proc.exitcode})"
+        return {
+            'ok': False,
+            'kind': 'crash',
+            'error': f"PICASO subprocess crashed with exit code {proc.exitcode}{signal_note}",
+            'exitcode': proc.exitcode,
+        }
+
+    try:
+        payload = queue.get(timeout=5)
+    except Empty:
+        return {
+            'ok': False,
+            'kind': 'no-payload',
+            'error': 'PICASO subprocess exited cleanly but returned no payload',
+            'exitcode': proc.exitcode,
+        }
+
+    if not payload.get('ok', False):
+        return {
+            'ok': False,
+            'kind': 'python-exception',
+            'error': payload.get('error', 'Unknown subprocess exception'),
+            'exitcode': proc.exitcode,
+        }
+
+    return {
+        'ok': True,
+        'out': payload['out'],
+        'base_case': payload['base_case'],
+        'exitcode': proc.exitcode,
+    }
+
+def _append_crash_fingerprint(stage, x, reason, details=None):
+    """
+    Write one-line crash fingerprints to a dedicated file.
+    This runs on each worker rank and is intentionally append-only.
+    """
+    rank = 'unknown'
+    host = socket.gethostname()
+    try:
+        from mpi4py import MPI
+        rank = MPI.COMM_WORLD.Get_rank()
+    except Exception:
+        pass
+
+    log_path = os.environ.get('PICASO_ERROR_LOG', 'results/picaso_crash_fingerprints.log')
+    log_dir = os.path.dirname(log_path)
+    if log_dir:
+        os.makedirs(log_dir, exist_ok=True)
+
+    timestamp = datetime.utcnow().isoformat(timespec='seconds') + 'Z'
+    x_list = np.atleast_1d(x).tolist()
+    detail_text = '' if details is None else str(details)
+    line = (
+        f"{timestamp} rank={rank} host={host} stage={stage} "
+        f"input={x_list} reason={reason} details={detail_text}\n"
+    )
+
+    try:
+        with open(log_path, 'a', encoding='utf-8') as fp:
+            fp.write(line)
+    except Exception:
+        # Logging should never break the simulation path.
+        pass
+
 def PICASO_climate_model(x):
     
     """
@@ -321,6 +453,11 @@ def PICASO_climate_model(x):
     # Default fallback length for PT arrays (matches PICASO_PT_Planet default nlevel)
     _default_nlevel = 91
     max_retries = 3
+    timeout_env = os.environ.get('PICASO_SUBPROCESS_TIMEOUT_S', '0').strip().lower()
+    if timeout_env in ('', '0', 'none', 'false', 'off'):
+        timeout_s = None
+    else:
+        timeout_s = int(timeout_env)
 
     # helper to make sure outputs have array dtype suitable for h5py
     def _sanitize(new_out_dict):
@@ -333,52 +470,78 @@ def PICASO_climate_model(x):
             new_out_dict[kk] = vv
         return new_out_dict
 
-    # Try initial run
-    try:
-        out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None)
-    except Exception as e:
-        logging.error("PICASO run failed (initial) for inputs %s: %s", x, e, exc_info=True)
-        print(f"PICASO run failed (initial): {type(e).__name__}: {e}", file=sys.stderr)
-        new_out = {
-            'pressure': np.full(_default_nlevel, np.nan),
-            'temperature': np.full(_default_nlevel, np.nan),
-            'converged': np.array([0]),
-        }
-        # wrap status/error as arrays
-        new_out['status'] = np.array(['error'], dtype='U')
-        new_out['error'] = np.array([f"{type(e).__name__}: {e}"], dtype='U')
-        return _sanitize(new_out)
+    # Try initial run in isolated subprocess so native crashes do not kill the MPI rank
+    first_kwargs = {
+        'rad_plan': rad_plan_earth_units,
+        'log_mh': log10_planet_metallicity,
+        'tint': tint_K,
+        'semi_major_AU': semi_major_AU,
+        'ctoO': ctoO_solar,
+        'outputfile': None,
+    }
+    initial = _run_picaso_isolated(first_kwargs, timeout_s=timeout_s)
+    if not initial.get('ok', False):
+        err = initial.get('error', 'Unknown isolated-run failure')
+        logging.error("PICASO run failed (initial) for inputs %s: %s", x, err)
+        print(f"PICASO run failed (initial): {err}", file=sys.stderr)
+        _append_crash_fingerprint(
+            stage='initial',
+            x=x,
+            reason=initial.get('kind', 'isolated-failure'),
+            details=err,
+        )
+        return _sanitize(_error_result(_default_nlevel, status='crash', error_message=err))
+
+    out, base_case = initial['out'], initial['base_case']
 
     # If PICASO returned an error status, do not attempt retries
     if out.get('status') == 'error':
         print(f"PICASO returned status 'error' after initial run: {out.get('error', '')}")
-        new_out = {
-            'pressure': np.full(_default_nlevel, np.nan),
-            'temperature': np.full(_default_nlevel, np.nan),
-            'converged': np.array([0]),
-        }
-        new_out['status'] = np.array(['error'], dtype='U')
-        new_out['error'] = np.array([out.get('error', 'Unknown error')], dtype='U')
-        return _sanitize(new_out)
+        _append_crash_fingerprint(
+            stage='initial',
+            x=x,
+            reason='picaso-status-error',
+            details=out.get('error', 'Unknown error'),
+        )
+        return _sanitize(_error_result(_default_nlevel, status='error', error_message=out.get('error', 'Unknown error')))
 
     # If the model reports not converged, try a few more times using prior outputs
     count = 0
     while out.get('converged', 1) == 0 and out.get('status') != 'error' and count < max_retries:
         count += 1
         print(f"Loop iteration, Recalculating PT Profile: {count}")
-        try:
-            out, base_case = PICASO_PT_Planet(rad_plan=rad_plan_earth_units, log_mh=log10_planet_metallicity, tint=tint_K, semi_major_AU=semi_major_AU, ctoO=ctoO_solar, outputfile=None, pt_guillot=False, prior_out=out)
-        except Exception as e:
-            logging.error("PICASO run failed (recalc #%d) for inputs %s: %s", count, x, e, exc_info=True)
-            print(f"PICASO run failed (recalc #{count}): {type(e).__name__}: {e}", file=sys.stderr)
-            new_out = {
-                'pressure': np.full(_default_nlevel, np.nan),
-                'temperature': np.full(_default_nlevel, np.nan),
-                'converged': np.array([0]),
-            }
-            new_out['status'] = np.array(['error'], dtype='U')
-            new_out['error'] = np.array([f"{type(e).__name__}: {e}"], dtype='U')
-            return _sanitize(new_out)
+        retry_kwargs = {
+            'rad_plan': rad_plan_earth_units,
+            'log_mh': log10_planet_metallicity,
+            'tint': tint_K,
+            'semi_major_AU': semi_major_AU,
+            'ctoO': ctoO_solar,
+            'outputfile': None,
+            'pt_guillot': False,
+            'prior_out': out,
+        }
+        retry = _run_picaso_isolated(retry_kwargs, timeout_s=timeout_s)
+        if not retry.get('ok', False):
+            err = retry.get('error', 'Unknown isolated-run failure')
+            logging.error("PICASO run failed (recalc #%d) for inputs %s: %s", count, x, err)
+            print(f"PICASO run failed (recalc #{count}): {err}", file=sys.stderr)
+            _append_crash_fingerprint(
+                stage=f'retry-{count}',
+                x=x,
+                reason=retry.get('kind', 'isolated-failure'),
+                details=err,
+            )
+            return _sanitize(_error_result(_default_nlevel, status='crash', error_message=err))
+
+        if retry['out'].get('status') == 'error':
+            _append_crash_fingerprint(
+                stage=f'retry-{count}',
+                x=x,
+                reason='picaso-status-error',
+                details=retry['out'].get('error', 'Unknown error'),
+            )
+
+        out, base_case = retry['out'], retry['base_case']
 
         if count >= max_retries:
             print(f"Hit the maximum amount of loops ({max_retries}) without converging.")
@@ -486,12 +649,14 @@ def get_gridvals_PICASO_TP():
     return gridvals
 
 if __name__ == "__main__":
+    import gridutils
 
     """
     To execute running 1D PICASO climate model for the range of values in get_gridvals_PICASO_TP, type the folling command into your terminal:
     # mpiexec -n X python PICASO_Climate_grid_121625.py
 
     """
+    setup_rank_debug_logging()
     
     gridutils.make_grid(
         model_func=PICASO_climate_model, 
