@@ -15,5 +15,8 @@
 
 export PYTHONFAULTHANDLER=1
 
+# Set case list for this job only - does not persist after job ends
+export PICASO_CASE_LIST="missing_batchB"
+
 # Run the script 
-mpiexec -l -np 160 python -u PICASO_Climate_grid_121625.py
+mpiexec -l -np 160 python -u PICASO_Climate_grid_121625_ForSplitComputing_BatchB.py

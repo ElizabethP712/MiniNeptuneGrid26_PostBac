@@ -1,0 +1,180 @@
+[46] 2026-03-16 19:15:26,732 INFO [rank=46 host=n3004]: Resolved case-list file: missing_batchA.npy
+[62] 2026-03-16 19:15:26,732 INFO [rank=62 host=n3004]: Resolved case-list file: missing_batchA.npy
+[71] 2026-03-16 19:15:26,732 INFO [rank=71 host=n3004]: Resolved case-list file: missing_batchA.npy
+[77] 2026-03-16 19:15:26,732 INFO [rank=77 host=n3004]: Resolved case-list file: missing_batchA.npy
+[73] 2026-03-16 19:15:26,732 INFO [rank=73 host=n3004]: Resolved case-list file: missing_batchA.npy
+[53] 2026-03-16 19:15:26,732 INFO [rank=53 host=n3004]: Resolved case-list file: missing_batchA.npy
+[57] 2026-03-16 19:15:26,732 INFO [rank=57 host=n3004]: Resolved case-list file: missing_batchA.npy
+[56] 2026-03-16 19:15:26,733 INFO [rank=56 host=n3004]: Resolved case-list file: missing_batchA.npy
+[52] 2026-03-16 19:15:26,733 INFO [rank=52 host=n3004]: Resolved case-list file: missing_batchA.npy
+[69] 2026-03-16 19:15:26,732 INFO [rank=69 host=n3004]: Resolved case-list file: missing_batchA.npy
+[76] 2026-03-16 19:15:26,732 INFO [rank=76 host=n3004]: Resolved case-list file: missing_batchA.npy
+[63] 2026-03-16 19:15:26,733 INFO [rank=63 host=n3004]: Resolved case-list file: missing_batchA.npy
+[75] 2026-03-16 19:15:26,732 INFO [rank=75 host=n3004]: Resolved case-list file: missing_batchA.npy
+[47] 2026-03-16 19:15:26,732 INFO [rank=47 host=n3004]: Resolved case-list file: missing_batchA.npy
+[49] 2026-03-16 19:15:26,733 INFO [rank=49 host=n3004]: Resolved case-list file: missing_batchA.npy
+[60] 2026-03-16 19:15:26,733 INFO [rank=60 host=n3004]: Resolved case-list file: missing_batchA.npy
+[65] 2026-03-16 19:15:26,733 INFO [rank=65 host=n3004]: Resolved case-list file: missing_batchA.npy
+[43] 2026-03-16 19:15:26,733 INFO [rank=43 host=n3004]: Resolved case-list file: missing_batchA.npy
+[45] 2026-03-16 19:15:26,733 INFO [rank=45 host=n3004]: Resolved case-list file: missing_batchA.npy
+[59] 2026-03-16 19:15:26,733 INFO [rank=59 host=n3004]: Resolved case-list file: missing_batchA.npy
+[48] 2026-03-16 19:15:26,734 INFO [rank=48 host=n3004]: Resolved case-list file: missing_batchA.npy
+[40] 2026-03-16 19:15:26,733 INFO [rank=40 host=n3004]: Resolved case-list file: missing_batchA.npy
+[55] 2026-03-16 19:15:26,734 INFO [rank=55 host=n3004]: Resolved case-list file: missing_batchA.npy
+[61] 2026-03-16 19:15:26,734 INFO [rank=61 host=n3004]: Resolved case-list file: missing_batchA.npy
+[68] 2026-03-16 19:15:26,733 INFO [rank=68 host=n3004]: Resolved case-list file: missing_batchA.npy
+[78] 2026-03-16 19:15:26,733 INFO [rank=78 host=n3004]: Resolved case-list file: missing_batchA.npy
+[79] 2026-03-16 19:15:26,733 INFO [rank=79 host=n3004]: Resolved case-list file: missing_batchA.npy
+[67] 2026-03-16 19:15:26,733 INFO [rank=67 host=n3004]: Resolved case-list file: missing_batchA.npy
+[74] 2026-03-16 19:15:26,733 INFO [rank=74 host=n3004]: Resolved case-list file: missing_batchA.npy
+[42] 2026-03-16 19:15:26,733 INFO [rank=42 host=n3004]: Resolved case-list file: missing_batchA.npy
+[41] 2026-03-16 19:15:26,733 INFO [rank=41 host=n3004]: Resolved case-list file: missing_batchA.npy
+[58] 2026-03-16 19:15:26,733 INFO [rank=58 host=n3004]: Resolved case-list file: missing_batchA.npy
+[51] 2026-03-16 19:15:26,734 INFO [rank=51 host=n3004]: Resolved case-list file: missing_batchA.npy
+[54] 2026-03-16 19:15:26,734 INFO [rank=54 host=n3004]: Resolved case-list file: missing_batchA.npy
+[70] 2026-03-16 19:15:26,734 INFO [rank=70 host=n3004]: Resolved case-list file: missing_batchA.npy
+[72] 2026-03-16 19:15:26,733 INFO [rank=72 host=n3004]: Resolved case-list file: missing_batchA.npy
+[64] 2026-03-16 19:15:26,733 INFO [rank=64 host=n3004]: Resolved case-list file: missing_batchA.npy
+[66] 2026-03-16 19:15:26,734 INFO [rank=66 host=n3004]: Resolved case-list file: missing_batchA.npy
+[44] 2026-03-16 19:15:26,734 INFO [rank=44 host=n3004]: Resolved case-list file: missing_batchA.npy
+[50] 2026-03-16 19:15:26,735 INFO [rank=50 host=n3004]: Resolved case-list file: missing_batchA.npy
+[18] 2026-03-16 19:15:26,737 INFO [rank=18 host=n3003]: Resolved case-list file: missing_batchA.npy
+[30] 2026-03-16 19:15:26,737 INFO [rank=30 host=n3003]: Resolved case-list file: missing_batchA.npy
+[21] 2026-03-16 19:15:26,737 INFO [rank=21 host=n3003]: Resolved case-list file: missing_batchA.npy
+[27] 2026-03-16 19:15:26,737 INFO [rank=27 host=n3003]: Resolved case-list file: missing_batchA.npy
+[36] 2026-03-16 19:15:26,737 INFO [rank=36 host=n3003]: Resolved case-list file: missing_batchA.npy
+[16] 2026-03-16 19:15:26,737 INFO [rank=16 host=n3003]: Resolved case-list file: missing_batchA.npy
+[33] 2026-03-16 19:15:26,737 INFO [rank=33 host=n3003]: Resolved case-list file: missing_batchA.npy
+[11] 2026-03-16 19:15:26,737 INFO [rank=11 host=n3003]: Resolved case-list file: missing_batchA.npy
+[23] 2026-03-16 19:15:26,737 INFO [rank=23 host=n3003]: Resolved case-list file: missing_batchA.npy
+[2] 2026-03-16 19:15:26,737 INFO [rank=2 host=n3003]: Resolved case-list file: missing_batchA.npy
+[4] 2026-03-16 19:15:26,737 INFO [rank=4 host=n3003]: Resolved case-list file: missing_batchA.npy
+[5] 2026-03-16 19:15:26,737 INFO [rank=5 host=n3003]: Resolved case-list file: missing_batchA.npy
+[20] 2026-03-16 19:15:26,737 INFO [rank=20 host=n3003]: Resolved case-list file: missing_batchA.npy
+[35] 2026-03-16 19:15:26,737 INFO [rank=35 host=n3003]: Resolved case-list file: missing_batchA.npy
+[17] 2026-03-16 19:15:26,738 INFO [rank=17 host=n3003]: Resolved case-list file: missing_batchA.npy
+[24] 2026-03-16 19:15:26,738 INFO [rank=24 host=n3003]: Resolved case-list file: missing_batchA.npy
+[34] 2026-03-16 19:15:26,737 INFO [rank=34 host=n3003]: Resolved case-list file: missing_batchA.npy
+[22] 2026-03-16 19:15:26,737 INFO [rank=22 host=n3003]: Resolved case-list file: missing_batchA.npy
+[32] 2026-03-16 19:15:26,738 INFO [rank=32 host=n3003]: Resolved case-list file: missing_batchA.npy
+[1] 2026-03-16 19:15:26,737 INFO [rank=1 host=n3003]: Resolved case-list file: missing_batchA.npy
+[29] 2026-03-16 19:15:26,738 INFO [rank=29 host=n3003]: Resolved case-list file: missing_batchA.npy
+[12] 2026-03-16 19:15:26,737 INFO [rank=12 host=n3003]: Resolved case-list file: missing_batchA.npy
+[28] 2026-03-16 19:15:26,738 INFO [rank=28 host=n3003]: Resolved case-list file: missing_batchA.npy
+[3] 2026-03-16 19:15:26,738 INFO [rank=3 host=n3003]: Resolved case-list file: missing_batchA.npy
+[15] 2026-03-16 19:15:26,737 INFO [rank=15 host=n3003]: Resolved case-list file: missing_batchA.npy
+[13] 2026-03-16 19:15:26,738 INFO [rank=13 host=n3003]: Resolved case-list file: missing_batchA.npy
+[31] 2026-03-16 19:15:26,738 INFO [rank=31 host=n3003]: Resolved case-list file: missing_batchA.npy
+[8] 2026-03-16 19:15:26,738 INFO [rank=8 host=n3003]: Resolved case-list file: missing_batchA.npy
+[6] 2026-03-16 19:15:26,737 INFO [rank=6 host=n3003]: Resolved case-list file: missing_batchA.npy
+[37] 2026-03-16 19:15:26,737 INFO [rank=37 host=n3003]: Resolved case-list file: missing_batchA.npy
+[9] 2026-03-16 19:15:26,738 INFO [rank=9 host=n3003]: Resolved case-list file: missing_batchA.npy
+[7] 2026-03-16 19:15:26,737 INFO [rank=7 host=n3003]: Resolved case-list file: missing_batchA.npy
+[10] 2026-03-16 19:15:26,738 INFO [rank=10 host=n3003]: Resolved case-list file: missing_batchA.npy
+[19] 2026-03-16 19:15:26,737 INFO [rank=19 host=n3003]: Resolved case-list file: missing_batchA.npy
+[0] 2026-03-16 19:15:26,739 INFO [rank=0 host=n3003]: Resolved case-list file: missing_batchA.npy
+[38] 2026-03-16 19:15:26,739 INFO [rank=38 host=n3003]: Resolved case-list file: missing_batchA.npy
+[25] 2026-03-16 19:15:26,738 INFO [rank=25 host=n3003]: Resolved case-list file: missing_batchA.npy
+[26] 2026-03-16 19:15:26,739 INFO [rank=26 host=n3003]: Resolved case-list file: missing_batchA.npy
+[14] 2026-03-16 19:15:26,738 INFO [rank=14 host=n3003]: Resolved case-list file: missing_batchA.npy
+[39] 2026-03-16 19:15:26,741 INFO [rank=39 host=n3003]: Resolved case-list file: missing_batchA.npy
+[1] 2026-03-16 19:15:26,753 INFO [rank=1 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[4] 2026-03-16 19:15:26,753 INFO [rank=4 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[11] 2026-03-16 19:15:26,753 INFO [rank=11 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[13] 2026-03-16 19:15:26,753 INFO [rank=13 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[16] 2026-03-16 19:15:26,753 INFO [rank=16 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[17] 2026-03-16 19:15:26,753 INFO [rank=17 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[23] 2026-03-16 19:15:26,753 INFO [rank=23 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[32] 2026-03-16 19:15:26,753 INFO [rank=32 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[33] 2026-03-16 19:15:26,753 INFO [rank=33 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[36] 2026-03-16 19:15:26,753 INFO [rank=36 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[24] 2026-03-16 19:15:26,753 INFO [rank=24 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[27] 2026-03-16 19:15:26,753 INFO [rank=27 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[28] 2026-03-16 19:15:26,753 INFO [rank=28 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[34] 2026-03-16 19:15:26,753 INFO [rank=34 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[8] 2026-03-16 19:15:26,753 INFO [rank=8 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[21] 2026-03-16 19:15:26,753 INFO [rank=21 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[29] 2026-03-16 19:15:26,753 INFO [rank=29 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[2] 2026-03-16 19:15:26,753 INFO [rank=2 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[22] 2026-03-16 19:15:26,753 INFO [rank=22 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[35] 2026-03-16 19:15:26,754 INFO [rank=35 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[3] 2026-03-16 19:15:26,754 INFO [rank=3 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[5] 2026-03-16 19:15:26,754 INFO [rank=5 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[10] 2026-03-16 19:15:26,754 INFO [rank=10 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[30] 2026-03-16 19:15:26,754 INFO [rank=30 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[20] 2026-03-16 19:15:26,754 INFO [rank=20 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[25] 2026-03-16 19:15:26,754 INFO [rank=25 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[6] 2026-03-16 19:15:26,754 INFO [rank=6 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[14] 2026-03-16 19:15:26,754 INFO [rank=14 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[7] 2026-03-16 19:15:26,754 INFO [rank=7 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[9] 2026-03-16 19:15:26,754 INFO [rank=9 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[19] 2026-03-16 19:15:26,754 INFO [rank=19 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[38] 2026-03-16 19:15:26,754 INFO [rank=38 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[0] 2026-03-16 19:15:26,754 INFO [rank=0 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[12] 2026-03-16 19:15:26,754 INFO [rank=12 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[31] 2026-03-16 19:15:26,754 INFO [rank=31 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[37] 2026-03-16 19:15:26,754 INFO [rank=37 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[39] 2026-03-16 19:15:26,754 INFO [rank=39 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[15] 2026-03-16 19:15:26,754 INFO [rank=15 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[26] 2026-03-16 19:15:26,754 INFO [rank=26 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[18] 2026-03-16 19:15:26,766 INFO [rank=18 host=n3003]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[40] 2026-03-16 19:15:27,183 INFO [rank=40 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[61] 2026-03-16 19:15:27,183 INFO [rank=61 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[71] 2026-03-16 19:15:27,183 INFO [rank=71 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[49] 2026-03-16 19:15:27,183 INFO [rank=49 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[52] 2026-03-16 19:15:27,183 INFO [rank=52 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[77] 2026-03-16 19:15:27,183 INFO [rank=77 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[46] 2026-03-16 19:15:27,183 INFO [rank=46 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[55] 2026-03-16 19:15:27,183 INFO [rank=55 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[48] 2026-03-16 19:15:27,183 INFO [rank=48 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[59] 2026-03-16 19:15:27,183 INFO [rank=59 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[43] 2026-03-16 19:15:27,184 INFO [rank=43 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[45] 2026-03-16 19:15:27,184 INFO [rank=45 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[53] 2026-03-16 19:15:27,184 INFO [rank=53 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[57] 2026-03-16 19:15:27,184 INFO [rank=57 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[60] 2026-03-16 19:15:27,184 INFO [rank=60 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[67] 2026-03-16 19:15:27,184 INFO [rank=67 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[78] 2026-03-16 19:15:27,184 INFO [rank=78 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[54] 2026-03-16 19:15:27,184 INFO [rank=54 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[56] 2026-03-16 19:15:27,184 INFO [rank=56 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[58] 2026-03-16 19:15:27,184 INFO [rank=58 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[62] 2026-03-16 19:15:27,184 INFO [rank=62 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[63] 2026-03-16 19:15:27,184 INFO [rank=63 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[68] 2026-03-16 19:15:27,184 INFO [rank=68 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[69] 2026-03-16 19:15:27,184 INFO [rank=69 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[73] 2026-03-16 19:15:27,184 INFO [rank=73 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[75] 2026-03-16 19:15:27,184 INFO [rank=75 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[79] 2026-03-16 19:15:27,184 INFO [rank=79 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[70] 2026-03-16 19:15:27,184 INFO [rank=70 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[74] 2026-03-16 19:15:27,184 INFO [rank=74 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[76] 2026-03-16 19:15:27,184 INFO [rank=76 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[41] 2026-03-16 19:15:27,184 INFO [rank=41 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[47] 2026-03-16 19:15:27,184 INFO [rank=47 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[65] 2026-03-16 19:15:27,184 INFO [rank=65 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[42] 2026-03-16 19:15:27,185 INFO [rank=42 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[50] 2026-03-16 19:15:27,185 INFO [rank=50 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[51] 2026-03-16 19:15:27,185 INFO [rank=51 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[66] 2026-03-16 19:15:27,185 INFO [rank=66 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[44] 2026-03-16 19:15:27,185 INFO [rank=44 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[64] 2026-03-16 19:15:27,186 INFO [rank=64 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[72] 2026-03-16 19:15:27,186 INFO [rank=72 host=n3004]: Loaded explicit case list: missing_batchA.npy  shape=(199, 5)
+[0] [UNCAUGHT EXCEPTION] rank=0 host=n3003
+[0] Traceback (most recent call last):
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625_ForSplitComputing_BatchA.py", line 738, in <module>
+[0]     gridutils.make_grid(
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 212, in make_grid
+[0]     master(model_func, gridvals, filename, progress_filename)
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 135, in master
+[0]     save_result_hdf5(filename, index, x, res, gridshape)
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 27, in save_result_hdf5
+[0]     unraveled_idx = np.unravel_index(index, grid_shape)
+[0]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0] ValueError: index 199 is out of bounds for array with size 199
+[proxy:1@n3004] HYD_pmcd_pmip_control_cmd_cb (proxy/pmip_cb.c:487): assert (!closed) failed
+[proxy:1@n3004] HYDT_dmxu_poll_wait_for_event (lib/tools/demux/demux_poll.c:76): callback returned error status
+[proxy:1@n3004] main (proxy/pmip.c:122): demux engine error waiting for event
+srun: error: n3004: task 1: Exited with exit code 7
+[mpiexec@n3003] HYDT_bscu_wait_for_completion (lib/tools/bootstrap/utils/bscu_wait.c:109): one of the processes terminated badly; aborting
+[mpiexec@n3003] HYDT_bsci_wait_for_completion (lib/tools/bootstrap/src/bsci_wait.c:21): launcher returned error waiting for completion
+[mpiexec@n3003] HYD_pmci_wait_for_completion (mpiexec/pmiserv_pmci.c:196): launcher returned error waiting for completion
+[mpiexec@n3003] main (mpiexec/mpiexec.c:260): process manager error waiting for completion
