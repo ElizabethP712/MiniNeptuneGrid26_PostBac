@@ -53,6 +53,10 @@ import multiprocessing as mp
 from queue import Empty
 from datetime import datetime
 
+# Opacity table cache: loaded once per MPI rank process, then inherited by all
+# forked subprocesses at zero cost (copy-on-write via fork).
+_OPACITY_CK = None
+
 # set up simple logging to stderr with timestamps
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
 
@@ -208,8 +212,12 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, n
     mass_planet = mass_planet_earth*5.972e+24*u.kg # Converts from units of x Earth mass to kg
     grav = (const.G * (mass_planet)) / ((radius_planet)**2) # of planet
     
-    # Opacity is independent from log_mh and ctoO, instead of downloading opacities
-    opacity_ck = jdi.opannection(method='resortrebin') # grab your opacities
+    # Load the opacity table once per process; forked subprocesses inherit it.
+    global _OPACITY_CK
+    if _OPACITY_CK is None:
+        logging.info("Loading opacity table (first call in this process)...")
+        _OPACITY_CK = jdi.opannection(method='resortrebin')
+    opacity_ck = _OPACITY_CK
 
     # Values of the Host Star (assuming G-Star)
     T_star = 5778 # K, star effective temperature, the min value is 3500K 
@@ -262,8 +270,8 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, n
 
     # Run Model
     try:
-        out = cl_run.climate(opacity_ck, save_all_profiles=True,with_spec=True)
-        base_case = jdi.pd.read_csv(jdi.HJ_pt(), delim_whitespace=True)
+        out = cl_run.climate(opacity_ck, save_all_profiles=False,with_spec=False) # For now changed with_spec to False since it is an additional calculation after climate solve for the values I am saving, also just saving convergence results (save_all_profiles=False).
+        # base_case = jdi.pd.read_csv(jdi.HJ_pt(), delim_whitespace=True)  # not used in final results
 
     except Exception as e:
         print(f"An exception was raised in PICASO_PT_Planet: {type(e).__name__}: {e}", file=sys.stderr)
@@ -275,19 +283,21 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, n
             'status': 'error',
             'error': f"{type(e).__name__}: {e}"
         }
-        base_case = None
-        return error_out, base_case
+
+        #base_case = None
+        
+        return error_out
     
-    # Saves out and base_case to python file to be re-loaded.
+    # Saves out to python file to be re-loaded.
     if outputfile == None:
-        return out, base_case
+        return out
                 
     else:
         with open(f'out_{outputfile}.pkl', 'wb') as f:
             pickle.dump(out, f)
-        with open(f'basecase_{outputfile}.pkl', 'wb') as f:
-            pickle.dump(base_case, f)
-        return out, base_case
+        # with open(f'basecase_{outputfile}.pkl', 'wb') as f:  # not used in final results
+        #     pickle.dump(base_case, f)
+        return out
    
 def PICASO_fake_climate_model_testing_errors(rad_plan, log_mh, tint, semi_major_AU, ctoO, outputfile=None):
     
@@ -307,17 +317,22 @@ def _error_result(nlevel, status, error_message):
 def _picaso_subprocess_worker(kwargs, queue):
     """Run one PICASO PT solve in an isolated process to contain native crashes."""
     try:
-        out, base_case = PICASO_PT_Planet(**kwargs)
-        queue.put({'ok': True, 'out': out, 'base_case': base_case})
+        out = PICASO_PT_Planet(**kwargs)
+        queue.put({'ok': True, 'out': out})
     except Exception as exc:
         queue.put({'ok': False, 'error': f"{type(exc).__name__}: {exc}"})
 
 def _run_picaso_isolated(kwargs, timeout_s):
     """
-    Execute PICASO in a spawned child process.
+    Execute PICASO in a forked child process.
     This converts segfaults/timeouts into normal Python return states.
+    Uses 'fork' (not 'spawn') so the child inherits already-imported modules
+    from the parent, avoiding expensive re-imports from the shared filesystem
+    that cause severe filesystem contention when many MPI workers spawn
+    subprocesses simultaneously on HPC clusters.
+    Note: the child process never calls MPI, so forking after MPI_Init is safe.
     """
-    ctx = mp.get_context('spawn')
+    ctx = mp.get_context('fork')
     queue = ctx.Queue()
     proc = ctx.Process(target=_picaso_subprocess_worker, args=(kwargs, queue))
     proc.start()
@@ -365,7 +380,6 @@ def _run_picaso_isolated(kwargs, timeout_s):
     return {
         'ok': True,
         'out': payload['out'],
-        'base_case': payload['base_case'],
         'exitcode': proc.exitcode,
     }
 
@@ -453,6 +467,8 @@ def PICASO_climate_model(x):
     # Default fallback length for PT arrays (matches PICASO_PT_Planet default nlevel)
     _default_nlevel = 91
     max_retries = 3
+    # Default timeout: 3600s (1 hour) per case.  Set PICASO_SUBPROCESS_TIMEOUT_S=0
+    # (or 'none') in the environment to disable the timeout entirely.
     timeout_env = os.environ.get('PICASO_SUBPROCESS_TIMEOUT_S', '0').strip().lower()
     if timeout_env in ('', '0', 'none', 'false', 'off'):
         timeout_s = None
@@ -461,7 +477,7 @@ def PICASO_climate_model(x):
 
     # helper to make sure outputs have array dtype suitable for h5py
     def _sanitize(new_out_dict):
-        # ensure everything is at least 1‑D numpy array and convert U strings to S
+        # ensure everything is at least 1-D numpy array and convert U strings to S
         for kk, vv in list(new_out_dict.items()):
             if not isinstance(vv, np.ndarray):
                 vv = np.atleast_1d(np.array(vv))
@@ -492,7 +508,7 @@ def PICASO_climate_model(x):
         )
         return _sanitize(_error_result(_default_nlevel, status='crash', error_message=err))
 
-    out, base_case = initial['out'], initial['base_case']
+    out = initial['out']
 
     # If PICASO returned an error status, do not attempt retries
     if out.get('status') == 'error':
@@ -541,7 +557,7 @@ def PICASO_climate_model(x):
                 details=retry['out'].get('error', 'Unknown error'),
             )
 
-        out, base_case = retry['out'], retry['base_case']
+        out = retry['out']
 
         if count >= max_retries:
             print(f"Hit the maximum amount of loops ({max_retries}) without converging.")
