@@ -20,7 +20,7 @@ def find_PT_sol(filepath='/mnt/c/Users/lily/Documents/NASAUWPostbac/MiniNeptuneG
     print(f"Make sure your inputs are within the following ranges, rad_plan: {np.min(grid_gridvals[0])} - {np.max(grid_gridvals[0])} xEarth Radii, planet metallicity: {np.min((grid_gridvals[1]).astype(float))} - {np.max((grid_gridvals[1]).astype(float))} xsolar, tint: {np.min(grid_gridvals[2])} - {np.max(grid_gridvals[2])} K, semi_major: {np.min(grid_gridvals[3])} - {np.max(grid_gridvals[3])} AU, ctoO: {np.min(grid_gridvals[4])} - {np.max(grid_gridvals[4])}")
 
     # Check to see if there is a solution that already exists
-    PT_list, convergence_values = Photochem_grid.find_PT_grid(filename=filepath, rad_plan=rad_plan, log10_planet_metallicity=log10_planet_metallicity, tint=tint, semi_major=semi_major, ctoO=ctoO)
+    PT_list, convergence_values, picaso_status, picaso_error = Photochem_grid.find_PT_grid(filename=filepath, rad_plan=rad_plan, log10_planet_metallicity=log10_planet_metallicity, tint=tint, semi_major=semi_major, ctoO=ctoO)
 
     if PT_list is not None:
         print(f'All inputs chosen were directly on the grid!')
