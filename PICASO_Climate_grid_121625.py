@@ -288,16 +288,24 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, n
         
         return error_out
     
-    # Saves out to python file to be re-loaded.
-    if outputfile == None:
-        return out
-                
-    else:
+    # Extract only plain numpy-compatible values before returning.
+    # The raw PICASO 'out' object contains pandas DataFrames and internal PICASO
+    # state that cannot be pickled by the standard multiprocessing.Queue used in
+    # _run_picaso_isolated.  Extracting here ensures only serializable data crosses
+    # the queue boundary.
+    safe_out = {
+        'pressure':    np.array(out['pressure']),
+        'temperature': np.array(out['temperature']),
+        'converged':   np.array([out.get('converged', 0)]),
+        'status':      out.get('status', ''),
+        'error':       out.get('error', ''),
+    }
+
+    if outputfile is not None:
         with open(f'out_{outputfile}.pkl', 'wb') as f:
             pickle.dump(out, f)
-        # with open(f'basecase_{outputfile}.pkl', 'wb') as f:  # not used in final results
-        #     pickle.dump(base_case, f)
-        return out
+
+    return safe_out
    
 def PICASO_fake_climate_model_testing_errors(rad_plan, log_mh, tint, semi_major_AU, ctoO, outputfile=None):
     
@@ -677,6 +685,6 @@ if __name__ == "__main__":
     gridutils.make_grid(
         model_func=PICASO_climate_model, 
         gridvals=get_gridvals_PICASO_TP(), 
-        filename='results/PICASO_climate_updatop_full_exploration_reducedrad.h5', 
-        progress_filename='results/PICASO_climate_updatop_full_exploration_reducedrad.log'
+        filename='results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.h5', 
+        progress_filename='results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.log'
     ) 
