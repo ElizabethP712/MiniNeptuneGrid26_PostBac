@@ -685,6 +685,6 @@ if __name__ == "__main__":
     gridutils.make_grid(
         model_func=PICASO_climate_model, 
         gridvals=get_gridvals_PICASO_TP(), 
-        filename='results/PICASO_climate_updatop_full_exploration_reducedrad.h5', 
-        progress_filename='results/PICASO_climate_updatop_full_exploration_reducedrad.log'
+        filename='results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.h5', 
+        progress_filename='results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.log'
     ) 
