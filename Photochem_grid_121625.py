@@ -45,6 +45,75 @@ import gridutils
 import star_spectrum
 import h5py
 import PICASO_Climate_grid_121625 as PICASO_Climate_grid
+import sys
+import logging
+import faulthandler
+import traceback
+import socket
+from datetime import datetime
+
+# set up simple logging to stderr with timestamps
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
+
+def setup_rank_debug_logging():
+    """Attach rank/host metadata to logs and print uncaught tracebacks per MPI rank."""
+    rank = MPI.COMM_WORLD.Get_rank()
+    hostname = socket.gethostname()
+
+    faulthandler.enable(all_threads=True)
+
+    def _ranked_excepthook(exc_type, exc_value, exc_tb):
+        print(f"[UNCAUGHT EXCEPTION] rank={rank} host={hostname}", file=sys.stderr, flush=True)
+        traceback.print_exception(exc_type, exc_value, exc_tb, file=sys.stderr)
+        sys.stderr.flush()
+
+    sys.excepthook = _ranked_excepthook
+
+    formatter = logging.Formatter(f'%(asctime)s %(levelname)s [rank={rank} host={hostname}]: %(message)s')
+    root_logger = logging.getLogger()
+    for handler in root_logger.handlers:
+        handler.setFormatter(formatter)
+
+def _append_crash_fingerprint(stage, x, reason, details=None):
+    """
+    Write one-line crash fingerprints to a dedicated file.
+    This runs on each worker rank and is intentionally append-only.
+    """
+    rank = 'unknown'
+    host = socket.gethostname()
+    try:
+        rank = MPI.COMM_WORLD.Get_rank()
+    except Exception:
+        pass
+
+    log_path = os.environ.get('PHOTOCHEM_ERROR_LOG', 'results/photochem_crash_fingerprints.log')
+    log_dir = os.path.dirname(log_path)
+    if log_dir:
+        os.makedirs(log_dir, exist_ok=True)
+
+    timestamp = datetime.utcnow().isoformat(timespec='seconds') + 'Z'
+    x_list = np.atleast_1d(x).tolist()
+    detail_text = '' if details is None else str(details)
+    line = (
+        f"{timestamp} rank={rank} host={host} stage={stage} "
+        f"input={x_list} reason={reason} details={detail_text}\n"
+    )
+
+    try:
+        with open(log_path, 'a', encoding='utf-8') as fp:
+            fp.write(line)
+    except Exception:
+        pass
+
+_PC_NLAYERS = 100  # matches interpolate_photochem_result_to_nlayers
+
+def _photochem_nan_result(nlayers=_PC_NLAYERS):
+    """Return NaN-filled sol/soleq dicts and zero convergence arrays for failed grid points."""
+    nan_arr = np.full(nlayers, np.nan)
+    sol_nan = {'pressure': nan_arr.copy(), 'temperature': nan_arr.copy(), 'Kzz': nan_arr.copy()}
+    soleq_nan = {'pressure': nan_arr.copy(), 'temperature': nan_arr.copy(), 'Kzz': nan_arr.copy()}
+    zero_arr = np.zeros(nlayers)
+    return sol_nan, soleq_nan, zero_arr, zero_arr
 
 # Finds the associated PT profile and calculates Photochemical Composition of a Planet
 
@@ -102,17 +171,30 @@ def find_PT_grid(filename='results/PICASO_climate_updatop_paramext_K218b.h5', ra
 
         if matching_indicies[0].size == 0:
             print(f'A match given total flux, planet metallicity, and tint does not exist')
-            PT_list = None
-            convergence_values = None
-            return PT_list, convergence_values
+            return None, None, 'PICASO Not Converged/Error Value', 'No matching PICASO grid point found'
             
         else:
             pressure_values = np.array(f['results']['pressure'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]])
             temperature_values = np.array(f['results']['temperature'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]])
             convergence_values = np.array(f['results']['converged'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]])
             PT_list = pressure_values, temperature_values
+
+            # Read PICASO status and error if available; guard against old h5 files.
+            picaso_status = b'converged'
+            picaso_error = b''
+            if 'status' in f['results']:
+                picaso_status = np.array(f['results']['status'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]]).flat[0]
+            if 'error' in f['results']:
+                picaso_error = np.array(f['results']['error'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]]).flat[0]
+
+            if picaso_status != b'converged' or picaso_error != b'':
+                status_str = picaso_status.decode('utf-8') if isinstance(picaso_status, bytes) else str(picaso_status)
+                error_str = picaso_error.decode('utf-8') if isinstance(picaso_error, bytes) else str(picaso_error)
+                print(f'PICASO did not converge or has an error: status={status_str}, error={error_str}')
+                return None, None, f'PICASO: {status_str}', error_str
+
             print(f'Was able to successfully find your input parameters in the PICASO TP profile grid!')
-            return PT_list, convergence_values
+            return PT_list, convergence_values, 'PICASO-converged', ''
 
 def linear_extrapolate_TP(P, T):
     
@@ -246,7 +328,12 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
         wv, F = star_spectrum.solar_spectrum(Teq=planet_Teq, outputfile= f'sun_flux_file_{planet_Teq}')
         stellar_flux_file = f'sun_flux_file_{planet_Teq}'
 
-    PT_list, convergence_values = find_PT_grid(filename=PT_filename, rad_plan=rad_plan, log10_planet_metallicity=log10_planet_metallicity, tint=tint, semi_major=semi_major, ctoO=ctoO) # This is for when I have the grid, but for now I am testing the rest out to make sure it works.
+    PT_list, convergence_values, picaso_status, picaso_error = find_PT_grid(filename=PT_filename, rad_plan=rad_plan, log10_planet_metallicity=log10_planet_metallicity, tint=tint, semi_major=semi_major, ctoO=ctoO)
+
+    # If PICASO did not converge or had an error, return NaN result immediately.
+    if PT_list is None:
+        sol_nan, soleq_nan, conv_nan, conv_pc_nan = _photochem_nan_result()
+        return sol_nan, soleq_nan, None, conv_nan, conv_pc_nan, picaso_status, picaso_error
 
     # Test Data - This works fine.
     #with open('out_Sun_5778_initp3bar.pkl', 'rb') as file:
@@ -275,90 +362,88 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
     remove_reaction_particles=True # For gas giants, we should always leave out reaction particles.
     )
 
-    # Initialize ExoAtmosphereGasGiant
-    # Assigns 
-    pc = gasgiants.EvoAtmosphereGasGiant(
-        mechanism_file='photochem_rxns.yaml',
-        stellar_flux_file=stellar_flux_file,
-        planet_mass=mass_planet,
-        planet_radius=radius_planet,
-        solar_zenith_angle=solar_zenith_angle,
-        thermo_file='photochem_thermo.yaml'
-    )
-    # Adjust convergence parameters:
-    pc.var.conv_longdy = 0.03 # converges at 3% (change of mixing ratios over long time)
-    pc.gdat.max_total_step = 10000 # assumes convergence after 10,000 steps
-    
-    pc.gdat.verbose = True # printing
-    
-    # Define the host star composition
-    molfracs_atoms_sun = np.ones(len(pc.gdat.gas.atoms_names))*1e-10 # This is for the Sun
-    comp = {
-        'H' : 9.21e-01,
-        'N' : 6.23e-05,
-        'O' : 4.51e-04,
-        'C' : 2.48e-04,
-        'S' : 1.21e-05,
-        'He' : 7.84e-02
-    }
-
-    tot = sum(comp.values())
-    for key in comp:
-        comp[key] /= tot
-    for i,atom in enumerate(pc.gdat.gas.atoms_names):
-        molfracs_atoms_sun[i] = comp[atom]
-    
-    pc.gdat.gas.molfracs_atoms_sun = molfracs_atoms_sun
-
-    # Assume a default radius for particles 1e-5cm was default, so we increased the size but think of these in microns
-    particle_radius = pc.var.particle_radius
-    particle_radius[:,:] = 1e-3 #cm or 10 microns
-    pc.var.particle_radius = particle_radius
-
-    # Assumed Kzz (cm^2/s) in Tsai et al. (2023)
-    Kzz_zero_grid = np.ones(P.shape[0])
-    Kzz = Kzz_zero_grid*(10**log_Kzz) #Note Kzz_fac was meant to be the power of 10 since we are in log10 space
-
-    # Initialize the PT based on chemical equilibrium 
-    pc.gdat.BOA_pressure_factor = 3
-    pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
-    
-    # Integrate to steady state
-    converged = pc.find_steady_state()
-
-    # Check if the model converged after 10,000 steps
-    if not converged:
-        assert pc.gdat.total_step_counter > pc.gdat.max_total_step - 10
+    try:
+        # Initialize ExoAtmosphereGasGiant
+        # Assigns 
+        pc = gasgiants.EvoAtmosphereGasGiant(
+            mechanism_file='photochem_rxns.yaml',
+            stellar_flux_file=stellar_flux_file,
+            planet_mass=mass_planet,
+            planet_radius=radius_planet,
+            solar_zenith_angle=solar_zenith_angle,
+            thermo_file='photochem_thermo.yaml'
+        )
+        # Adjust convergence parameters:
+        pc.var.conv_longdy = 0.03 # converges at 3% (change of mixing ratios over long time)
+        pc.gdat.max_total_step = 10000 # assumes convergence after 10,000 steps
         
-    sol_raw = pc.return_atmosphere()
-    soleq_raw = pc.return_atmosphere(equilibrium=True)
+        pc.gdat.verbose = True # printing
+        
+        # Define the host star composition
+        molfracs_atoms_sun = np.ones(len(pc.gdat.gas.atoms_names))*1e-10 # This is for the Sun
+        comp = {
+            'H' : 9.21e-01,
+            'N' : 6.23e-05,
+            'O' : 4.51e-04,
+            'C' : 2.48e-04,
+            'S' : 1.21e-05,
+            'He' : 7.84e-02
+        }
 
-    # Call the interpolation of the grid 
-    sol = interpolate_photochem_result_to_nlayers(out=sol_raw, nlayers=100)
-    soleq = interpolate_photochem_result_to_nlayers(out=soleq_raw, nlayers=100)
-    convergence_values = np.array([convergence_values[0] for _ in range(len(sol['pressure']))])
-    converged = np.array([converged for _ in range(len(sol['pressure']))])
+        tot = sum(comp.values())
+        for key in comp:
+            comp[key] /= tot
+        for i,atom in enumerate(pc.gdat.gas.atoms_names):
+            molfracs_atoms_sun[i] = comp[atom]
+        
+        pc.gdat.gas.molfracs_atoms_sun = molfracs_atoms_sun
 
-    # Print out the lengths of arrays: Save the size of the grid for future reference.
+        # Assume a default radius for particles 1e-5cm was default, so we increased the size but think of these in microns
+        particle_radius = pc.var.particle_radius
+        particle_radius[:,:] = 1e-3 #cm or 10 microns
+        pc.var.particle_radius = particle_radius
 
-    print(f"This is for the input value of planet radius:{rad_plan}, metal:{float(log10_planet_metallicity)}, tint:{tint}, semi major:{semi_major}, ctoO: {ctoO}, log_Kzz: {log_Kzz}")
-    
-    #for key, value in sol.items():
-    #    if isinstance(value, np.ndarray):  # Check if the value is a list (or array)
-    #        print(f"The array for sol's '{key}' has a length of: {len(value)}")
-    #    else:
-    #        print(f"The value for sol's '{key}' is not an array.")
+        # Assumed Kzz (cm^2/s) in Tsai et al. (2023)
+        Kzz_zero_grid = np.ones(P.shape[0])
+        Kzz = Kzz_zero_grid*(10**log_Kzz) #Note Kzz_fac was meant to be the power of 10 since we are in log10 space
 
-    #for key, value in soleq.items():
-    #    if isinstance(value, np.ndarray):  # Check if the value is a list (or array)
-    #        print(f"The array for soleq's '{key}' has a length of: {len(value)}, Length of pressure: {len(P)}")
-    #    else:
-    #        print(f"The value for soleq's '{key}' is not an array.")
+        # Initialize the PT based on chemical equilibrium 
+        pc.gdat.BOA_pressure_factor = 3
+        pc.initialize_to_climate_equilibrium_PT(P, T, Kzz, 10**(log10_planet_metallicity), ctoO)
+        
+        # Integrate to steady state
+        converged_PC = pc.find_steady_state()
 
-    # Add nan's to fit the grid if underestimated, and make sure list goes from largest to smallest.
-    
+        # Check if the model converged after 10,000 steps
+        if not converged_PC:
+            assert pc.gdat.total_step_counter > pc.gdat.max_total_step - 10
+            
+        sol_raw = pc.return_atmosphere()
+        soleq_raw = pc.return_atmosphere(equilibrium=True)
 
-    return sol, soleq, pc, convergence_values, converged
+        # Call the interpolation of the grid 
+        sol = interpolate_photochem_result_to_nlayers(out=sol_raw, nlayers=100)
+        soleq = interpolate_photochem_result_to_nlayers(out=soleq_raw, nlayers=100)
+        convergence_values = np.array([convergence_values[0] for _ in range(len(sol['pressure']))])
+        converged_PC_arr = np.array([converged_PC for _ in range(len(sol['pressure']))])
+
+        # Print out the lengths of arrays: Save the size of the grid for future reference.
+        print(f"This is for the input value of planet radius:{rad_plan}, metal:{float(log10_planet_metallicity)}, tint:{tint}, semi major:{semi_major}, ctoO: {ctoO}, log_Kzz: {log_Kzz}")
+
+        # Add nan's to fit the grid if underestimated, and make sure list goes from largest to smallest.
+
+        if converged_PC:
+            pc_status = 'Photochem-converged'
+        else:
+            pc_status = 'Photochem-not-converged'
+
+        return sol, soleq, pc, convergence_values, converged_PC_arr, pc_status, ''
+
+    except Exception as e:
+        err_str = f"{type(e).__name__}: {e}"
+        print(f"Photochem exception for inputs rad_plan={rad_plan}, metal={log10_planet_metallicity}, tint={tint}, semi_major={semi_major}, ctoO={ctoO}, log_Kzz={log_Kzz}: {err_str}", file=sys.stderr)
+        sol_nan, soleq_nan, conv_nan, conv_pc_nan = _photochem_nan_result()
+        return sol_nan, soleq_nan, None, conv_nan, conv_pc_nan, 'Photochem-error', err_str
 
 def get_gridvals_Photochem():
 
@@ -409,25 +494,25 @@ def get_gridvals_Photochem():
     log_Kzz = np.array([5])
     """
 
-    """
+    
     # Parameter Exploration
-    rad_plan_earth_units = np.array([1.6, 4]) # in units of xEarth radii
-    log10_planet_metallicity = np.array([0.5, 3.5]) # in units of solar metallicity
-    tint_K = np.array([20, 400]) # in Kelvin
-    semi_major_AU = np.array([0.3, 10]) # in AU 
-    ctoO_solar = np.array([0.01, 1]) # in units of solar C/O
-    log_Kzz = np.array([5, 9]) # In units of logspace (so 5 means 10^5 cm^2/s)
+    rad_plan_earth_units = np.array([2]) # in units of xEarth radii
+    log10_planet_metallicity = np.array([3.5]) # in units of solar metallicity
+    tint_K = np.array([50, 100, 250]) # in Kelvin
+    semi_major_AU = np.array([0.3, 5, 10]) # in AU 
+    ctoO_solar = np.array([0.01]) # in units of solar C/O
+    log_Kzz = np.array([5]) # In units of logspace (so 5 means 10^5 cm^2/s)
     """
 
     # Parameter Exploration Refined
-    rad_plan_earth_units = np.array([1.6, 4]) # in units of xEarth radii
-    log10_planet_metallicity = np.array([3.5]) # in units of solar metallicity
-    tint_K = np.array([50, 75]) # in Kelvin
-    semi_major_AU = np.array([0.3, 10]) # in AU 
-    ctoO_solar = np.array([0.01, 1]) # in units of solar C/O
-    log_Kzz = np.array([5,9]) # In units of logspace (so 5 means 10^5 cm^2/s)
+    rad_plan_earth_units = np.array([2]) # in units of xEarth radii
+    log10_planet_metallicity = np.linspace(0.5, 9, 3) # in units of solar metallicity
+    tint_K = np.linspace(50, 400, 8) # in Kelvin
+    semi_major_AU = np.array([0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10]) # in AU 
+    ctoO_solar = np.linspace(0.01, 1, 5) # in units of solar C/O
+    log_Kzz = np.array([5, 7, 9]) # In units of logspace (so 5 means 10^5 cm^2/s)
     
-    
+    """
     gridvals = (rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar, log_Kzz)
 
     return gridvals
@@ -452,14 +537,27 @@ def Photochem_1D_model(x):
 
     # For Tijuca
     rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar, log_Kzz = x
-    sol, soleq, pc, convergence_values, converged = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+    logging.info(f"starting photochem model for inputs: {x}")
+
+    sol, soleq, pc, convergence_values, converged_PC, status, error = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_paramext_K218b.h5')
+
+    if status not in ('Photochem-converged', 'Photochem-not-converged'):
+        # PICASO failure or Photochem exception: log the fingerprint
+        _append_crash_fingerprint(
+            stage='photochem',
+            x=x,
+            reason=status,
+            details=error,
+        )
 
     # Merge the sol & soleq & convergence arrays into a single dictionary
     modified_sol_dict = {key + "_sol": value for key, value in sol.items()}
     modified_soleq_dict = {key + "_soleq": value for key, value in soleq.items()}
     combined_dict = {**modified_sol_dict, **modified_soleq_dict}
     combined_dict['converged_TP'] = convergence_values
-    combined_dict['converged_PC'] = converged
+    combined_dict['converged_PC'] = converged_PC
+    combined_dict['status'] = np.array([status], dtype='S64')
+    combined_dict['error'] = np.array([error], dtype='S1024')
 
     return combined_dict 
 
@@ -470,6 +568,7 @@ if __name__ == "__main__":
     # mpiexec -n X python Photochem_grid_121625.py
     
     """
+    setup_rank_debug_logging()
     gridutils.make_grid(
         model_func=Photochem_1D_model,
         gridvals=get_gridvals_Photochem(),
