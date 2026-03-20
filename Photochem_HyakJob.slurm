@@ -3,11 +3,11 @@
 #SBATCH --job-name=Photochem_grid
 
 #SBATCH --account=stf
-#SBATCH --partition=cpu-g2
+#SBATCH --partition=compute
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=40
-#SBATCH --mem=200G
-#SBATCH --time=24:00:00
+#SBATCH --mem=150G
+#SBATCH --time=12:00:00
 
 #SBATCH --export=all
 #SBATCH --output=photochem_grid.stdout
