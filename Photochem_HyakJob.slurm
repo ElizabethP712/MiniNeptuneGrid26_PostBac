@@ -10,8 +10,8 @@
 #SBATCH --time=12:00:00
 
 #SBATCH --export=all
-#SBATCH --output=photochem_grid.stdout
-#SBATCH --error=photochem_grid.stderr
+#SBATCH --output=photochem_grid_%j.stdout
+#SBATCH --error=photochem_grid_%j.stderr
 
 # Run the script 
-mpiexec -np 80 python Photochem_grid_121625.py
+mpiexec -n 80 python Photochem_grid_121625.py

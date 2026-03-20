@@ -117,7 +117,7 @@ def _photochem_nan_result(nlayers=_PC_NLAYERS):
 
 # Finds the associated PT profile and calculates Photochemical Composition of a Planet
 
-def find_PT_grid(filename='results/PICASO_climate_updatop_full_exploration_reducerad.h5', rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, gridvals=PICASO_Climate_grid.get_gridvals_PICASO_TP()):
+def find_PT_grid(filename='results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.h5', rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, gridvals=PICASO_Climate_grid.get_gridvals_PICASO_TP()):
     """
     This finds the matching PT profile in the PICASO grid to be used for Photochem grid calculation.
     
@@ -539,7 +539,7 @@ def Photochem_1D_model(x):
     rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar, log_Kzz = x
     logging.info(f"starting photochem model for inputs: {x}")
 
-    sol, soleq, pc, convergence_values, converged_PC, status, error = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_full_exploration_reducerad.h5')
+    sol, soleq, pc, convergence_values, converged_PC, status, error = Photochem_Gas_Giant(rad_plan=rad_plan_earth_units, log10_planet_metallicity=log10_planet_metallicity, tint=tint_K, semi_major=semi_major_AU, ctoO=ctoO_solar, log_Kzz=log_Kzz, PT_filename='results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.h5')
 
     if status not in ('Photochem-converged', 'Photochem-not-converged'):
         # PICASO failure or Photochem exception: log the fingerprint
