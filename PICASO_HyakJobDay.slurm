@@ -7,7 +7,7 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=40
 #SBATCH --mem=700G
-#SBATCH --time=5:00:00
+#SBATCH --time=12:00:00
 
 #SBATCH --export=all
 #SBATCH --output=picaso_grid_%j.stdout
