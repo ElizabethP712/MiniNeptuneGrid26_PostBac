@@ -435,3 +435,19 @@
 2026-03-20T13:05:33Z rank=78 host=n3020 stage=initial input=[2.0, 3.5, 200.0, 6.0, 1.0] reason=picaso-status-error details=ZeroDivisionError: division by zero
 2026-03-20T13:08:48Z rank=109 host=n3021 stage=initial input=[2.0, 3.5, 300.0, 10.0, 0.2575] reason=picaso-status-error details=ZeroDivisionError: division by zero
 2026-03-20T13:44:36Z rank=38 host=n3003 stage=initial input=[2.0, 3.5, 300.0, 8.0, 0.2575] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T03:59:56Z rank=132 host=n3243 stage=initial input=[2.0, 3.5, 300.0, 10.0, 0.01] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T05:01:23Z rank=127 host=n3243 stage=initial input=[2.0, 3.5, 300.0, 6.0, 1.0] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T05:30:00Z rank=128 host=n3243 stage=initial input=[2.0, 3.5, 300.0, 8.0, 0.01] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T05:42:23Z rank=129 host=n3243 stage=initial input=[2.0, 3.5, 300.0, 8.0, 0.505] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T06:27:55Z rank=98 host=n3240 stage=initial input=[2.0, 3.5, 300.0, 1.0, 0.2575] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T07:22:32Z rank=82 host=n3240 stage=initial input=[2.0, 3.5, 250.0, 6.0, 0.2575] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T07:26:29Z rank=90 host=n3240 stage=initial input=[2.0, 3.5, 250.0, 10.0, 0.2575] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T08:45:41Z rank=85 host=n3240 stage=initial input=[2.0, 3.5, 250.0, 6.0, 1.0] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T09:22:40Z rank=133 host=n3243 stage=initial input=[2.0, 3.5, 300.0, 10.0, 0.505] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T09:27:46Z rank=93 host=n3240 stage=initial input=[2.0, 3.5, 250.0, 10.0, 1.0] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T09:43:09Z rank=78 host=n3006 stage=initial input=[2.0, 3.5, 250.0, 5.0, 0.2575] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T10:36:46Z rank=79 host=n3006 stage=initial input=[2.0, 3.5, 250.0, 5.0, 0.505] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T11:16:38Z rank=81 host=n3240 stage=initial input=[2.0, 3.5, 250.0, 5.0, 1.0] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T11:35:04Z rank=94 host=n3240 stage=initial input=[2.0, 3.5, 300.0, 0.7, 0.01] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-21T12:02:54Z rank=89 host=n3240 stage=initial input=[2.0, 3.5, 250.0, 8.0, 1.0] reason=picaso-status-error details=ZeroDivisionError: division by zero
+2026-03-23T13:49:46Z rank=50 host=n3241 stage=initial input=[2.0, 3.5, 300.0, 10.0, 1.0] reason=picaso-status-error details=ValueError: Convection zone grew to Top of atmosphere, Need to Stop
