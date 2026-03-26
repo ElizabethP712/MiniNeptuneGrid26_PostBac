@@ -451,3 +451,5 @@
 2026-03-21T11:35:04Z rank=94 host=n3240 stage=initial input=[2.0, 3.5, 300.0, 0.7, 0.01] reason=picaso-status-error details=ZeroDivisionError: division by zero
 2026-03-21T12:02:54Z rank=89 host=n3240 stage=initial input=[2.0, 3.5, 250.0, 8.0, 1.0] reason=picaso-status-error details=ZeroDivisionError: division by zero
 2026-03-23T13:49:46Z rank=50 host=n3241 stage=initial input=[2.0, 3.5, 300.0, 10.0, 1.0] reason=picaso-status-error details=ValueError: Convection zone grew to Top of atmosphere, Need to Stop
+2026-03-24T02:05:17Z rank=40 host=n3242 stage=initial input=[2.0, 3.5, 250.0, 3.0, 1.0] reason=picaso-status-error details=ValueError: Convection zone grew to Top of atmosphere, Need to Stop
+2026-03-25T06:41:24Z rank=13 host=n3242 stage=retry-1 input=[2.0, 3.125, 250.0, 4.0, 1.0] reason=picaso-status-error details=OSError: [Errno 122] Disk quota exceeded
