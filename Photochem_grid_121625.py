@@ -462,8 +462,8 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
     T = np.flip(np.array(T_extended)).copy()
     
     # Check if numpy array is sorted (investigating error)
-    sorted_P = np.flip(np.sort(P)).copy()
-    unsorted_indices = np.where(P != sorted_P)[0]
+    # sorted_P = np.flip(np.sort(P)).copy()
+    # unsorted_indices = np.where(P != sorted_P)[0]
     
     rxns_filename, thermo_filename = _ensure_photochem_input_files(atoms_names)
 
