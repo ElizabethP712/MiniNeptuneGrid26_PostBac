@@ -2,3 +2,70 @@
 2026-03-27T06:51:33Z rank=100 host=n3007 stage=photochem input=[2.0, 2.75, 50.0, 2.0, 0.01, 5.0] reason=Photochem-error details=AssertionError: 
 2026-03-27T06:52:45Z rank=41 host=n3004 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.01, 5.0] reason=Photochem-error details=AssertionError: 
 2026-03-27T06:56:13Z rank=116 host=n3007 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.01, 7.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:35:46Z rank=213 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 1.0, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:46Z rank=208 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.505, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:46Z rank=209 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.505, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:46Z rank=215 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 1.0, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:46Z rank=214 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 1.0, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:46Z rank=207 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.505, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:46Z rank=233 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.01, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:46Z rank=218 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.01, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:46Z rank=217 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.01, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:46Z rank=158 host=n3051 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.01, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:47Z rank=227 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.7525, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:47Z rank=226 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.7525, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:47Z rank=225 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.7525, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:47Z rank=204 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.2575, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:47Z rank=205 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.2575, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:47Z rank=206 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.2575, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:48Z rank=236 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.2575, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:48Z rank=235 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.2575, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:48Z rank=239 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.505, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:48Z rank=237 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.505, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:48Z rank=238 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.505, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:49Z rank=211 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.7525, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:49Z rank=210 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.7525, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:49Z rank=212 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.7525, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:49Z rank=230 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 1.0, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:49Z rank=229 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 1.0, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:49Z rank=228 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 1.0, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:51Z rank=221 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.2575, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:51Z rank=219 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.2575, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:35:52Z rank=220 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.2575, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=165 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.7525, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=185 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 4.0, 1.0, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=167 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.7525, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=184 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 4.0, 1.0, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=166 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.7525, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=186 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.01, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=190 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.2575, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=189 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.2575, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=194 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.505, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=191 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.2575, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=192 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.505, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=193 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.505, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=187 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.01, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=173 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 4.0, 0.01, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=188 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.01, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:57Z rank=183 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 4.0, 1.0, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:58Z rank=181 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 4.0, 0.7525, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:58Z rank=182 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 4.0, 0.7525, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:36:58Z rank=180 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 4.0, 0.7525, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:37:02Z rank=241 host=n3054 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.7525, 7.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:37:02Z rank=240 host=n3054 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.7525, 5.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:37:02Z rank=242 host=n3054 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.7525, 9.0] reason=Photochem-error details=Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27T21:38:00Z rank=141 host=n3051 stage=photochem input=[2.0, 2.75, 50.0, 2.0, 0.01, 5.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:38:46Z rank=163 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.505, 7.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:38:46Z rank=156 host=n3051 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.01, 5.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:38:54Z rank=168 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 1.0, 5.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:38:58Z rank=162 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.505, 5.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:40:35Z rank=175 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 4.0, 0.2575, 7.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:41:06Z rank=201 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 6.0, 0.01, 5.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:41:45Z rank=198 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 1.0, 5.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:41:53Z rank=196 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 5.0, 0.7525, 7.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:42:10Z rank=223 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.505, 7.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:42:12Z rank=243 host=n3054 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 1.0, 5.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:42:24Z rank=157 host=n3051 stage=photochem input=[2.0, 2.75, 50.0, 3.0, 0.01, 7.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:42:32Z rank=172 host=n3052 stage=photochem input=[2.0, 2.75, 50.0, 4.0, 0.01, 7.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:42:43Z rank=222 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 8.0, 0.505, 5.0] reason=Photochem-error details=AssertionError: 
+2026-03-27T21:42:51Z rank=232 host=n3053 stage=photochem input=[2.0, 2.75, 50.0, 10.0, 0.01, 7.0] reason=Photochem-error details=AssertionError: 

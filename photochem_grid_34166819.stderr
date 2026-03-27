@@ -1,0 +1,368 @@
+2026-03-27 14:35:41,923 INFO [rank=1 host=n3048]: starting photochem model for inputs: [  2.       2.375  200.       5.       0.2575   9.    ]
+2026-03-27 14:35:41,924 INFO [rank=4 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 3.000e+02 2.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,923 INFO [rank=6 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 3.000e+02 8.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,923 INFO [rank=7 host=n3048]: starting photochem model for inputs: [  2.      2.375 300.     10.      0.505   9.   ]
+2026-03-27 14:35:41,923 INFO [rank=8 host=n3048]: starting photochem model for inputs: [  2.       2.375  300.      10.       0.7525   5.    ]
+2026-03-27 14:35:41,924 INFO [rank=11 host=n3048]: starting photochem model for inputs: [  2.      2.375 350.      2.      0.505   9.   ]
+2026-03-27 14:35:41,924 INFO [rank=3 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 2.500e+02 1.000e+01 1.000e-02 5.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=9 host=n3048]: starting photochem model for inputs: [  2.      2.375 300.     10.      1.      5.   ]
+2026-03-27 14:35:41,924 INFO [rank=10 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 3.500e+02 2.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=12 host=n3048]: starting photochem model for inputs: [  2.       2.375  350.       2.       0.7525   9.    ]
+2026-03-27 14:35:41,924 INFO [rank=13 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 3.500e+02 3.000e+00 1.000e-02 9.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=15 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 3.500e+02 5.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=16 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 3.500e+02 6.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=17 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 3.500e+02 8.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=20 host=n3048]: starting photochem model for inputs: [  2.      2.375 400.      2.      0.505   5.   ]
+2026-03-27 14:35:41,924 INFO [rank=23 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 3.000e+00 2.575e-01 7.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=24 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 3.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=26 host=n3048]: starting photochem model for inputs: [  2.      2.375 400.      3.      0.505   7.   ]
+2026-03-27 14:35:41,924 INFO [rank=30 host=n3048]: starting photochem model for inputs: [  2.       2.375  400.       3.       0.7525   9.    ]
+2026-03-27 14:35:41,924 INFO [rank=18 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 3.500e+02 1.000e+01 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=27 host=n3048]: starting photochem model for inputs: [  2.      2.375 400.      3.      0.505   9.   ]
+2026-03-27 14:35:41,924 INFO [rank=28 host=n3048]: starting photochem model for inputs: [  2.       2.375  400.       3.       0.7525   5.    ]
+2026-03-27 14:35:41,924 INFO [rank=29 host=n3048]: starting photochem model for inputs: [  2.       2.375  400.       3.       0.7525   7.    ]
+2026-03-27 14:35:41,924 INFO [rank=33 host=n3048]: starting photochem model for inputs: [  2.      2.375 400.      3.      1.      9.   ]
+2026-03-27 14:35:41,924 INFO [rank=25 host=n3048]: starting photochem model for inputs: [  2.      2.375 400.      3.      0.505   5.   ]
+2026-03-27 14:35:41,924 INFO [rank=21 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 3.000e+00 1.000e-02 9.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=31 host=n3048]: starting photochem model for inputs: [  2.      2.375 400.      3.      1.      5.   ]
+2026-03-27 14:35:41,924 INFO [rank=32 host=n3048]: starting photochem model for inputs: [  2.      2.375 400.      3.      1.      7.   ]
+2026-03-27 14:35:41,924 INFO [rank=38 host=n3048]: starting photochem model for inputs: [  2.      2.375 400.      4.      0.505   9.   ]
+2026-03-27 14:35:41,924 INFO [rank=14 host=n3048]: starting photochem model for inputs: [  2.      2.375 350.      3.      0.505   9.   ]
+2026-03-27 14:35:41,924 INFO [rank=22 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 3.000e+00 2.575e-01 5.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=39 host=n3048]: starting photochem model for inputs: [  2.       2.375  400.       4.       0.7525   5.    ]
+2026-03-27 14:35:41,924 INFO [rank=35 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 4.000e+00 2.575e-01 7.000e+00]
+2026-03-27 14:35:41,924 INFO [rank=37 host=n3048]: starting photochem model for inputs: [  2.      2.375 400.      4.      0.505   5.   ]
+2026-03-27 14:35:41,924 INFO [rank=2 host=n3048]: starting photochem model for inputs: [  2.       2.375  200.       8.       0.7525   9.    ]
+2026-03-27 14:35:41,924 INFO [rank=5 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 3.000e+02 8.000e+00 1.000e-02 9.000e+00]
+2026-03-27 14:35:41,925 INFO [rank=36 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 4.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,925 INFO [rank=19 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 2.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,925 INFO [rank=34 host=n3048]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 4.000e+00 2.575e-01 5.000e+00]
+2026-03-27 14:35:41,927 INFO [rank=44 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 5.000e+00 2.575e-01 5.000e+00]
+2026-03-27 14:35:41,927 INFO [rank=48 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      5.      0.505   7.   ]
+2026-03-27 14:35:41,927 INFO [rank=50 host=n3049]: starting photochem model for inputs: [  2.       2.375  400.       5.       0.7525   5.    ]
+2026-03-27 14:35:41,927 INFO [rank=54 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 6.000e+00 1.000e-02 9.000e+00]
+2026-03-27 14:35:41,927 INFO [rank=60 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      6.      0.505   9.   ]
+2026-03-27 14:35:41,927 INFO [rank=66 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 8.000e+00 2.575e-01 5.000e+00]
+2026-03-27 14:35:41,927 INFO [rank=69 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      8.      0.505   5.   ]
+2026-03-27 14:35:41,927 INFO [rank=74 host=n3049]: starting photochem model for inputs: [  2.       2.375  400.       8.       0.7525   9.    ]
+2026-03-27 14:35:41,927 INFO [rank=63 host=n3049]: starting photochem model for inputs: [  2.       2.375  400.       6.       0.7525   9.    ]
+2026-03-27 14:35:41,927 INFO [rank=46 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 5.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,927 INFO [rank=47 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      5.      0.505   5.   ]
+2026-03-27 14:35:41,928 INFO [rank=80 host=n3050]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 1.000e+01 2.575e-01 7.000e+00]
+2026-03-27 14:35:41,927 INFO [rank=81 host=n3050]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 1.000e+01 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,927 INFO [rank=51 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      5.      1.      5.   ]
+2026-03-27 14:35:41,927 INFO [rank=82 host=n3050]: starting photochem model for inputs: [  2.      2.375 400.     10.      0.505   5.   ]
+2026-03-27 14:35:41,927 INFO [rank=84 host=n3050]: starting photochem model for inputs: [  2.      2.375 400.     10.      0.505   9.   ]
+2026-03-27 14:35:41,927 INFO [rank=85 host=n3050]: starting photochem model for inputs: [  2.       2.375  400.      10.       0.7525   5.    ]
+2026-03-27 14:35:41,927 INFO [rank=86 host=n3050]: starting photochem model for inputs: [  2.       2.375  400.      10.       0.7525   7.    ]
+2026-03-27 14:35:41,927 INFO [rank=90 host=n3050]: starting photochem model for inputs: [  2.      2.375 400.     10.      1.      9.   ]
+2026-03-27 14:35:41,927 INFO [rank=91 host=n3050]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 3.00e-01 1.00e-02 5.00e+00]
+2026-03-27 14:35:41,927 INFO [rank=41 host=n3049]: starting photochem model for inputs: [  2.       2.375  400.       4.       0.7525   9.    ]
+2026-03-27 14:35:41,928 INFO [rank=93 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      0.3     0.2575  7.    ]
+2026-03-27 14:35:41,927 INFO [rank=43 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 5.000e+00 1.000e-02 5.000e+00]
+2026-03-27 14:35:41,927 INFO [rank=95 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      0.3     0.7525  5.    ]
+2026-03-27 14:35:41,927 INFO [rank=96 host=n3050]: starting photochem model for inputs: [ 2.    2.75 50.    0.3   1.    5.  ]
+2026-03-27 14:35:41,927 INFO [rank=97 host=n3050]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 7.00e-01 1.00e-02 5.00e+00]
+2026-03-27 14:35:41,928 INFO [rank=100 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      0.7     0.2575  5.    ]
+2026-03-27 14:35:41,928 INFO [rank=87 host=n3050]: starting photochem model for inputs: [  2.       2.375  400.      10.       0.7525   9.    ]
+2026-03-27 14:35:41,927 INFO [rank=58 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      6.      0.505   5.   ]
+2026-03-27 14:35:41,927 INFO [rank=40 host=n3049]: starting photochem model for inputs: [  2.       2.375  400.       4.       0.7525   7.    ]
+2026-03-27 14:35:41,928 INFO [rank=98 host=n3050]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 7.00e-01 1.00e-02 7.00e+00]
+2026-03-27 14:35:41,928 INFO [rank=102 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      0.7     0.2575  9.    ]
+2026-03-27 14:35:41,928 INFO [rank=103 host=n3050]: starting photochem model for inputs: [ 2.     2.75  50.     0.7    0.505  5.   ]
+2026-03-27 14:35:41,928 INFO [rank=104 host=n3050]: starting photochem model for inputs: [ 2.     2.75  50.     0.7    0.505  7.   ]
+2026-03-27 14:35:41,928 INFO [rank=105 host=n3050]: starting photochem model for inputs: [ 2.     2.75  50.     0.7    0.505  9.   ]
+2026-03-27 14:35:41,928 INFO [rank=65 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      6.      1.      7.   ]
+2026-03-27 14:35:41,928 INFO [rank=107 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      0.7     0.7525  7.    ]
+2026-03-27 14:35:41,928 INFO [rank=68 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 8.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,928 INFO [rank=110 host=n3050]: starting photochem model for inputs: [ 2.    2.75 50.    0.7   1.    7.  ]
+2026-03-27 14:35:41,928 INFO [rank=57 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 6.000e+00 2.575e-01 9.000e+00]
+2026-03-27 14:35:41,928 INFO [rank=112 host=n3050]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 1.00e+00 1.00e-02 7.00e+00]
+2026-03-27 14:35:41,928 INFO [rank=45 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 5.000e+00 2.575e-01 7.000e+00]
+2026-03-27 14:35:41,928 INFO [rank=109 host=n3050]: starting photochem model for inputs: [ 2.    2.75 50.    0.7   1.    5.  ]
+2026-03-27 14:35:41,928 INFO [rank=52 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      5.      1.      7.   ]
+2026-03-27 14:35:41,928 INFO [rank=117 host=n3050]: starting photochem model for inputs: [ 2.     2.75  50.     1.     0.505  5.   ]
+2026-03-27 14:35:41,928 INFO [rank=64 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      6.      1.      5.   ]
+2026-03-27 14:35:41,928 INFO [rank=114 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      1.      0.2575  5.    ]
+2026-03-27 14:35:41,928 INFO [rank=72 host=n3049]: starting photochem model for inputs: [  2.       2.375  400.       8.       0.7525   5.    ]
+2026-03-27 14:35:41,928 INFO [rank=111 host=n3050]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 1.00e+00 1.00e-02 5.00e+00]
+2026-03-27 14:35:41,928 INFO [rank=77 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      8.      1.      9.   ]
+2026-03-27 14:35:41,928 INFO [rank=116 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      1.      0.2575  9.    ]
+2026-03-27 14:35:41,928 INFO [rank=83 host=n3050]: starting photochem model for inputs: [  2.      2.375 400.     10.      0.505   7.   ]
+2026-03-27 14:35:41,928 INFO [rank=118 host=n3050]: starting photochem model for inputs: [ 2.     2.75  50.     1.     0.505  7.   ]
+2026-03-27 14:35:41,928 INFO [rank=88 host=n3050]: starting photochem model for inputs: [  2.      2.375 400.     10.      1.      5.   ]
+2026-03-27 14:35:41,928 INFO [rank=79 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 1.000e+01 2.575e-01 5.000e+00]
+2026-03-27 14:35:41,928 INFO [rank=76 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      8.      1.      7.   ]
+2026-03-27 14:35:41,928 INFO [rank=99 host=n3050]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 7.00e-01 1.00e-02 9.00e+00]
+2026-03-27 14:35:41,928 INFO [rank=120 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      1.      0.7525  5.    ]
+2026-03-27 14:35:41,928 INFO [rank=124 host=n3051]: starting photochem model for inputs: [ 2.    2.75 50.    1.    1.    7.  ]
+2026-03-27 14:35:41,928 INFO [rank=113 host=n3050]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 1.00e+00 1.00e-02 9.00e+00]
+2026-03-27 14:35:41,928 INFO [rank=70 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      8.      0.505   7.   ]
+2026-03-27 14:35:41,928 INFO [rank=126 host=n3051]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 1.50e+00 1.00e-02 5.00e+00]
+2026-03-27 14:35:41,928 INFO [rank=128 host=n3051]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 1.50e+00 1.00e-02 9.00e+00]
+2026-03-27 14:35:41,928 INFO [rank=129 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      1.5     0.2575  5.    ]
+2026-03-27 14:35:41,928 INFO [rank=130 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      1.5     0.2575  7.    ]
+2026-03-27 14:35:41,928 INFO [rank=131 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      1.5     0.2575  9.    ]
+2026-03-27 14:35:41,928 INFO [rank=132 host=n3051]: starting photochem model for inputs: [ 2.     2.75  50.     1.5    0.505  5.   ]
+2026-03-27 14:35:41,928 INFO [rank=49 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      5.      0.505   9.   ]
+2026-03-27 14:35:41,928 INFO [rank=139 host=n3051]: starting photochem model for inputs: [ 2.    2.75 50.    1.5   1.    7.  ]
+2026-03-27 14:35:41,928 INFO [rank=108 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      0.7     0.7525  9.    ]
+2026-03-27 14:35:41,928 INFO [rank=42 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      4.      1.      5.   ]
+2026-03-27 14:35:41,928 INFO [rank=146 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      2.      0.2575  9.    ]
+2026-03-27 14:35:41,928 INFO [rank=152 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      2.      0.7525  9.    ]
+2026-03-27 14:35:41,928 INFO [rank=147 host=n3051]: starting photochem model for inputs: [ 2.     2.75  50.     2.     0.505  5.   ]
+2026-03-27 14:35:41,928 INFO [rank=150 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      2.      0.7525  5.    ]
+2026-03-27 14:35:41,928 INFO [rank=157 host=n3051]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 3.00e+00 1.00e-02 7.00e+00]
+2026-03-27 14:35:41,929 INFO [rank=121 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      1.      0.7525  7.    ]
+2026-03-27 14:35:41,929 INFO [rank=75 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      8.      1.      5.   ]
+2026-03-27 14:35:41,929 INFO [rank=123 host=n3051]: starting photochem model for inputs: [ 2.    2.75 50.    1.    1.    5.  ]
+2026-03-27 14:35:41,929 INFO [rank=94 host=n3050]: starting photochem model for inputs: [ 2.     2.75  50.     0.3    0.505  5.   ]
+2026-03-27 14:35:41,929 INFO [rank=138 host=n3051]: starting photochem model for inputs: [ 2.    2.75 50.    1.5   1.    5.  ]
+2026-03-27 14:35:41,928 INFO [rank=106 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      0.7     0.7525  5.    ]
+2026-03-27 14:35:41,929 INFO [rank=149 host=n3051]: starting photochem model for inputs: [ 2.     2.75  50.     2.     0.505  9.   ]
+2026-03-27 14:35:41,929 INFO [rank=119 host=n3050]: starting photochem model for inputs: [ 2.     2.75  50.     1.     0.505  9.   ]
+2026-03-27 14:35:41,929 INFO [rank=89 host=n3050]: starting photochem model for inputs: [  2.      2.375 400.     10.      1.      7.   ]
+2026-03-27 14:35:41,929 INFO [rank=59 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      6.      0.505   7.   ]
+2026-03-27 14:35:41,929 INFO [rank=133 host=n3051]: starting photochem model for inputs: [ 2.     2.75  50.     1.5    0.505  7.   ]
+2026-03-27 14:35:41,929 INFO [rank=115 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      1.      0.2575  7.    ]
+2026-03-27 14:35:41,929 INFO [rank=55 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 6.000e+00 2.575e-01 5.000e+00]
+2026-03-27 14:35:41,929 INFO [rank=142 host=n3051]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 2.00e+00 1.00e-02 7.00e+00]
+2026-03-27 14:35:41,929 INFO [rank=200 host=n3053]: starting photochem model for inputs: [ 2.    2.75 50.    5.    1.    9.  ]
+2026-03-27 14:35:41,929 INFO [rank=203 host=n3053]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 6.00e+00 1.00e-02 9.00e+00]
+2026-03-27 14:35:41,929 INFO [rank=61 host=n3049]: starting photochem model for inputs: [  2.       2.375  400.       6.       0.7525   5.    ]
+2026-03-27 14:35:41,929 INFO [rank=145 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      2.      0.2575  7.    ]
+2026-03-27 14:35:41,929 INFO [rank=204 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      6.      0.2575  5.    ]
+2026-03-27 14:35:41,929 INFO [rank=135 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      1.5     0.7525  5.    ]
+2026-03-27 14:35:41,929 INFO [rank=205 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      6.      0.2575  7.    ]
+2026-03-27 14:35:41,929 INFO [rank=209 host=n3053]: starting photochem model for inputs: [ 2.     2.75  50.     6.     0.505  9.   ]
+2026-03-27 14:35:41,929 INFO [rank=210 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      6.      0.7525  5.    ]
+2026-03-27 14:35:41,929 INFO [rank=220 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      8.      0.2575  7.    ]
+2026-03-27 14:35:41,929 INFO [rank=222 host=n3053]: starting photochem model for inputs: [ 2.     2.75  50.     8.     0.505  5.   ]
+2026-03-27 14:35:41,929 INFO [rank=151 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      2.      0.7525  7.    ]
+2026-03-27 14:35:41,929 INFO [rank=158 host=n3051]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 3.00e+00 1.00e-02 9.00e+00]
+2026-03-27 14:35:41,929 INFO [rank=159 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      3.      0.2575  5.    ]
+2026-03-27 14:35:41,929 INFO [rank=206 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      6.      0.2575  9.    ]
+2026-03-27 14:35:41,929 INFO [rank=53 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 6.000e+00 1.000e-02 5.000e+00]
+2026-03-27 14:35:41,929 INFO [rank=215 host=n3053]: starting photochem model for inputs: [ 2.    2.75 50.    6.    1.    9.  ]
+2026-03-27 14:35:41,929 INFO [rank=225 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      8.      0.7525  5.    ]
+2026-03-27 14:35:41,929 INFO [rank=226 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      8.      0.7525  7.    ]
+2026-03-27 14:35:41,929 INFO [rank=227 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      8.      0.7525  9.    ]
+2026-03-27 14:35:41,929 INFO [rank=148 host=n3051]: starting photochem model for inputs: [ 2.     2.75  50.     2.     0.505  7.   ]
+2026-03-27 14:35:41,929 INFO [rank=153 host=n3051]: starting photochem model for inputs: [ 2.    2.75 50.    2.    1.    5.  ]
+2026-03-27 14:35:41,929 INFO [rank=140 host=n3051]: starting photochem model for inputs: [ 2.    2.75 50.    1.5   1.    9.  ]
+2026-03-27 14:35:41,930 INFO [rank=216 host=n3053]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 8.00e+00 1.00e-02 5.00e+00]
+2026-03-27 14:35:41,929 INFO [rank=56 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 6.000e+00 2.575e-01 7.000e+00]
+2026-03-27 14:35:41,930 INFO [rank=235 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.     10.      0.2575  7.    ]
+2026-03-27 14:35:41,929 INFO [rank=73 host=n3049]: starting photochem model for inputs: [  2.       2.375  400.       8.       0.7525   7.    ]
+2026-03-27 14:35:41,930 INFO [rank=239 host=n3053]: starting photochem model for inputs: [ 2.     2.75  50.    10.     0.505  9.   ]
+2026-03-27 14:35:41,930 INFO [rank=237 host=n3053]: starting photochem model for inputs: [ 2.     2.75  50.    10.     0.505  5.   ]
+2026-03-27 14:35:41,929 INFO [rank=78 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 1.000e+01 1.000e-02 9.000e+00]
+2026-03-27 14:35:41,930 INFO [rank=92 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      0.3     0.2575  5.    ]
+2026-03-27 14:35:41,930 INFO [rank=122 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      1.      0.7525  9.    ]
+2026-03-27 14:35:41,929 INFO [rank=143 host=n3051]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 2.00e+00 1.00e-02 9.00e+00]
+2026-03-27 14:35:41,930 INFO [rank=224 host=n3053]: starting photochem model for inputs: [ 2.     2.75  50.     8.     0.505  9.   ]
+2026-03-27 14:35:41,930 INFO [rank=154 host=n3051]: starting photochem model for inputs: [ 2.    2.75 50.    2.    1.    7.  ]
+2026-03-27 14:35:41,930 INFO [rank=156 host=n3051]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 3.00e+00 1.00e-02 5.00e+00]
+2026-03-27 14:35:41,930 INFO [rank=201 host=n3053]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 6.00e+00 1.00e-02 5.00e+00]
+2026-03-27 14:35:41,930 INFO [rank=134 host=n3051]: starting photochem model for inputs: [ 2.     2.75  50.     1.5    0.505  9.   ]
+2026-03-27 14:35:41,930 INFO [rank=67 host=n3049]: starting photochem model for inputs: [2.000e+00 2.375e+00 4.000e+02 8.000e+00 2.575e-01 7.000e+00]
+2026-03-27 14:35:41,930 INFO [rank=223 host=n3053]: starting photochem model for inputs: [ 2.     2.75  50.     8.     0.505  7.   ]
+2026-03-27 14:35:41,930 INFO [rank=213 host=n3053]: starting photochem model for inputs: [ 2.    2.75 50.    6.    1.    5.  ]
+2026-03-27 14:35:41,930 INFO [rank=228 host=n3053]: starting photochem model for inputs: [ 2.    2.75 50.    8.    1.    5.  ]
+2026-03-27 14:35:41,930 INFO [rank=212 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      6.      0.7525  9.    ]
+2026-03-27 14:35:41,930 INFO [rank=211 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      6.      0.7525  7.    ]
+2026-03-27 14:35:41,930 INFO [rank=101 host=n3050]: starting photochem model for inputs: [ 2.      2.75   50.      0.7     0.2575  7.    ]
+2026-03-27 14:35:41,930 INFO [rank=229 host=n3053]: starting photochem model for inputs: [ 2.    2.75 50.    8.    1.    7.  ]
+2026-03-27 14:35:41,930 INFO [rank=231 host=n3053]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 1.00e+01 1.00e-02 5.00e+00]
+2026-03-27 14:35:41,931 INFO [rank=214 host=n3053]: starting photochem model for inputs: [ 2.    2.75 50.    6.    1.    7.  ]
+2026-03-27 14:35:41,930 INFO [rank=71 host=n3049]: starting photochem model for inputs: [  2.      2.375 400.      8.      0.505   9.   ]
+2026-03-27 14:35:41,931 INFO [rank=127 host=n3051]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 1.50e+00 1.00e-02 7.00e+00]
+2026-03-27 14:35:41,930 INFO [rank=136 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      1.5     0.7525  7.    ]
+2026-03-27 14:35:41,930 INFO [rank=141 host=n3051]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 2.00e+00 1.00e-02 5.00e+00]
+2026-03-27 14:35:41,931 INFO [rank=202 host=n3053]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 6.00e+00 1.00e-02 7.00e+00]
+2026-03-27 14:35:41,931 INFO [rank=207 host=n3053]: starting photochem model for inputs: [ 2.     2.75  50.     6.     0.505  5.   ]
+2026-03-27 14:35:41,931 INFO [rank=155 host=n3051]: starting photochem model for inputs: [ 2.    2.75 50.    2.    1.    9.  ]
+2026-03-27 14:35:41,931 INFO [rank=218 host=n3053]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 8.00e+00 1.00e-02 9.00e+00]
+2026-03-27 14:35:41,931 INFO [rank=232 host=n3053]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 1.00e+01 1.00e-02 7.00e+00]
+2026-03-27 14:35:41,931 INFO [rank=233 host=n3053]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 1.00e+01 1.00e-02 9.00e+00]
+2026-03-27 14:35:41,931 INFO [rank=234 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.     10.      0.2575  5.    ]
+2026-03-27 14:35:41,931 INFO [rank=219 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      8.      0.2575  5.    ]
+2026-03-27 14:35:41,932 INFO [rank=236 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.     10.      0.2575  9.    ]
+2026-03-27 14:35:41,932 INFO [rank=208 host=n3053]: starting photochem model for inputs: [ 2.     2.75  50.     6.     0.505  7.   ]
+2026-03-27 14:35:41,932 INFO [rank=125 host=n3051]: starting photochem model for inputs: [ 2.    2.75 50.    1.    1.    9.  ]
+2026-03-27 14:35:41,932 INFO [rank=217 host=n3053]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 8.00e+00 1.00e-02 7.00e+00]
+2026-03-27 14:35:41,931 INFO [rank=137 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      1.5     0.7525  9.    ]
+2026-03-27 14:35:41,932 INFO [rank=221 host=n3053]: starting photochem model for inputs: [ 2.      2.75   50.      8.      0.2575  9.    ]
+2026-03-27 14:35:41,931 INFO [rank=62 host=n3049]: starting photochem model for inputs: [  2.       2.375  400.       6.       0.7525   7.    ]
+2026-03-27 14:35:41,932 INFO [rank=230 host=n3053]: starting photochem model for inputs: [ 2.    2.75 50.    8.    1.    9.  ]
+2026-03-27 14:35:41,932 INFO [rank=238 host=n3053]: starting photochem model for inputs: [ 2.     2.75  50.    10.     0.505  7.   ]
+2026-03-27 14:35:41,932 INFO [rank=144 host=n3051]: starting photochem model for inputs: [ 2.      2.75   50.      2.      0.2575  5.    ]
+[213] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=1.0, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[214] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=1.0, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[209] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.505, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[215] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=1.0, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[207] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.505, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[208] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.505, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[233] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.01, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[218] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.01, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[217] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.01, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[158] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=3.0, ctoO=0.01, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[0] [UNCAUGHT EXCEPTION] rank=0 host=n3048
+[0] Traceback (most recent call last):
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Photochem_grid_121625.py", line 677, in <module>
+    gridutils.make_grid(
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 212, in make_grid
+    master(model_func, gridvals, filename, progress_filename)
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 135, in master
+    save_result_hdf5(filename, index, x, res, gridshape)
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 64, in save_result_hdf5
+    f['results'][key][unraveled_idx] = val
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[0]   File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+[0]   File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+[0]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/h5py/_hl/dataset.py", line 1081, in __setitem__
+    self.id.write(mspace, fspace, val, mtype, dxpl=self._dxpl)
+[0]   File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+[0]   File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+[0]   File "h5py/h5d.pyx", line 305, in h5py.h5d.DatasetID.write
+[0]   File "h5py/_proxy.pyx", line 119, in h5py._proxy.dset_rw
+[0] OSError: Can't synchronously write data (no appropriate function for conversion path)
+[227] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.7525, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[226] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.7525, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[225] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.7525, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[204] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.2575, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[205] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.2575, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[206] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.2575, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[236] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.2575, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[235] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.2575, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[239] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.505, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[237] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.505, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[238] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.505, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[211] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.7525, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[210] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.7525, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[212] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.7525, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[230] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=1.0, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[229] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=1.0, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[228] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=1.0, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[221] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.2575, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[219] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.2575, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[220] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.2575, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+2026-03-27 14:36:51,112 INFO [rank=259 host=n3054]: starting photochem model for inputs: [  2.     2.75 100.     0.3    1.     7.  ]
+2026-03-27 14:36:51,112 INFO [rank=266 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.7      0.2575   9.    ]
+2026-03-27 14:36:51,112 INFO [rank=253 host=n3054]: starting photochem model for inputs: [  2.      2.75  100.      0.3     0.505   7.   ]
+2026-03-27 14:36:51,112 INFO [rank=274 host=n3054]: starting photochem model for inputs: [  2.     2.75 100.     0.7    1.     7.  ]
+2026-03-27 14:36:51,112 INFO [rank=256 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.3      0.7525   7.    ]
+2026-03-27 14:36:51,112 INFO [rank=249 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.3      0.2575   5.    ]
+2026-03-27 14:36:51,113 INFO [rank=254 host=n3054]: starting photochem model for inputs: [  2.      2.75  100.      0.3     0.505   9.   ]
+2026-03-27 14:36:51,113 INFO [rank=272 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.7      0.7525   9.    ]
+2026-03-27 14:36:51,113 INFO [rank=270 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.7      0.7525   5.    ]
+2026-03-27 14:36:51,113 INFO [rank=263 host=n3054]: starting photochem model for inputs: [2.00e+00 2.75e+00 1.00e+02 7.00e-01 1.00e-02 9.00e+00]
+2026-03-27 14:36:51,113 INFO [rank=267 host=n3054]: starting photochem model for inputs: [  2.      2.75  100.      0.7     0.505   5.   ]
+2026-03-27 14:36:51,113 INFO [rank=246 host=n3054]: starting photochem model for inputs: [2.00e+00 2.75e+00 1.00e+02 3.00e-01 1.00e-02 5.00e+00]
+2026-03-27 14:36:51,113 INFO [rank=248 host=n3054]: starting photochem model for inputs: [2.00e+00 2.75e+00 1.00e+02 3.00e-01 1.00e-02 9.00e+00]
+2026-03-27 14:36:51,113 INFO [rank=260 host=n3054]: starting photochem model for inputs: [  2.     2.75 100.     0.3    1.     9.  ]
+2026-03-27 14:36:51,113 INFO [rank=241 host=n3054]: starting photochem model for inputs: [ 2.      2.75   50.     10.      0.7525  7.    ]
+2026-03-27 14:36:51,114 INFO [rank=261 host=n3054]: starting photochem model for inputs: [2.00e+00 2.75e+00 1.00e+02 7.00e-01 1.00e-02 5.00e+00]
+2026-03-27 14:36:51,114 INFO [rank=268 host=n3054]: starting photochem model for inputs: [  2.      2.75  100.      0.7     0.505   7.   ]
+2026-03-27 14:36:51,114 INFO [rank=251 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.3      0.2575   9.    ]
+2026-03-27 14:36:51,114 INFO [rank=240 host=n3054]: starting photochem model for inputs: [ 2.      2.75   50.     10.      0.7525  5.    ]
+2026-03-27 14:36:51,114 INFO [rank=243 host=n3054]: starting photochem model for inputs: [ 2.    2.75 50.   10.    1.    5.  ]
+2026-03-27 14:36:51,114 INFO [rank=247 host=n3054]: starting photochem model for inputs: [2.00e+00 2.75e+00 1.00e+02 3.00e-01 1.00e-02 7.00e+00]
+2026-03-27 14:36:51,114 INFO [rank=275 host=n3054]: starting photochem model for inputs: [  2.     2.75 100.     0.7    1.     9.  ]
+2026-03-27 14:36:51,114 INFO [rank=257 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.3      0.7525   9.    ]
+2026-03-27 14:36:51,115 INFO [rank=258 host=n3054]: starting photochem model for inputs: [  2.     2.75 100.     0.3    1.     5.  ]
+2026-03-27 14:36:51,114 INFO [rank=264 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.7      0.2575   5.    ]
+2026-03-27 14:36:51,115 INFO [rank=276 host=n3054]: starting photochem model for inputs: [2.00e+00 2.75e+00 1.00e+02 1.00e+00 1.00e-02 5.00e+00]
+2026-03-27 14:36:51,115 INFO [rank=250 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.3      0.2575   7.    ]
+2026-03-27 14:36:51,115 INFO [rank=252 host=n3054]: starting photochem model for inputs: [  2.      2.75  100.      0.3     0.505   5.   ]
+2026-03-27 14:36:51,115 INFO [rank=277 host=n3054]: starting photochem model for inputs: [2.00e+00 2.75e+00 1.00e+02 1.00e+00 1.00e-02 7.00e+00]
+2026-03-27 14:36:51,115 INFO [rank=278 host=n3054]: starting photochem model for inputs: [2.00e+00 2.75e+00 1.00e+02 1.00e+00 1.00e-02 9.00e+00]
+2026-03-27 14:36:51,115 INFO [rank=271 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.7      0.7525   7.    ]
+2026-03-27 14:36:51,116 INFO [rank=269 host=n3054]: starting photochem model for inputs: [  2.      2.75  100.      0.7     0.505   9.   ]
+2026-03-27 14:36:51,116 INFO [rank=255 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.3      0.7525   5.    ]
+2026-03-27 14:36:51,116 INFO [rank=279 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       1.       0.2575   5.    ]
+2026-03-27 14:36:51,116 INFO [rank=244 host=n3054]: starting photochem model for inputs: [ 2.    2.75 50.   10.    1.    7.  ]
+2026-03-27 14:36:51,117 INFO [rank=262 host=n3054]: starting photochem model for inputs: [2.00e+00 2.75e+00 1.00e+02 7.00e-01 1.00e-02 7.00e+00]
+2026-03-27 14:36:51,117 INFO [rank=265 host=n3054]: starting photochem model for inputs: [  2.       2.75   100.       0.7      0.2575   7.    ]
+2026-03-27 14:36:51,117 INFO [rank=242 host=n3054]: starting photochem model for inputs: [ 2.      2.75   50.     10.      0.7525  9.    ]
+2026-03-27 14:36:51,117 INFO [rank=245 host=n3054]: starting photochem model for inputs: [ 2.    2.75 50.   10.    1.    9.  ]
+2026-03-27 14:36:51,118 INFO [rank=273 host=n3054]: starting photochem model for inputs: [  2.     2.75 100.     0.7    1.     5.  ]
+2026-03-27 14:36:51,128 INFO [rank=171 host=n3052]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 4.00e+00 1.00e-02 5.00e+00]
+2026-03-27 14:36:51,128 INFO [rank=189 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      5.      0.2575  5.    ]
+2026-03-27 14:36:51,129 INFO [rank=190 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      5.      0.2575  7.    ]
+2026-03-27 14:36:51,130 INFO [rank=174 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      4.      0.2575  5.    ]
+2026-03-27 14:36:51,132 INFO [rank=178 host=n3052]: starting photochem model for inputs: [ 2.     2.75  50.     4.     0.505  7.   ]
+2026-03-27 14:36:51,133 INFO [rank=184 host=n3052]: starting photochem model for inputs: [ 2.    2.75 50.    4.    1.    7.  ]
+2026-03-27 14:36:51,133 INFO [rank=160 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      3.      0.2575  7.    ]
+2026-03-27 14:36:51,133 INFO [rank=173 host=n3052]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 4.00e+00 1.00e-02 9.00e+00]
+2026-03-27 14:36:51,133 INFO [rank=175 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      4.      0.2575  7.    ]
+2026-03-27 14:36:51,133 INFO [rank=188 host=n3052]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 5.00e+00 1.00e-02 9.00e+00]
+2026-03-27 14:36:51,134 INFO [rank=166 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      3.      0.7525  7.    ]
+2026-03-27 14:36:51,134 INFO [rank=183 host=n3052]: starting photochem model for inputs: [ 2.    2.75 50.    4.    1.    5.  ]
+2026-03-27 14:36:51,134 INFO [rank=186 host=n3052]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 5.00e+00 1.00e-02 5.00e+00]
+2026-03-27 14:36:51,134 INFO [rank=193 host=n3052]: starting photochem model for inputs: [ 2.     2.75  50.     5.     0.505  7.   ]
+2026-03-27 14:36:51,134 INFO [rank=163 host=n3052]: starting photochem model for inputs: [ 2.     2.75  50.     3.     0.505  7.   ]
+2026-03-27 14:36:51,134 INFO [rank=196 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      5.      0.7525  7.    ]
+2026-03-27 14:36:51,134 INFO [rank=198 host=n3052]: starting photochem model for inputs: [ 2.    2.75 50.    5.    1.    5.  ]
+2026-03-27 14:36:51,134 INFO [rank=161 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      3.      0.2575  9.    ]
+2026-03-27 14:36:51,134 INFO [rank=162 host=n3052]: starting photochem model for inputs: [ 2.     2.75  50.     3.     0.505  5.   ]
+2026-03-27 14:36:51,134 INFO [rank=170 host=n3052]: starting photochem model for inputs: [ 2.    2.75 50.    3.    1.    9.  ]
+2026-03-27 14:36:51,134 INFO [rank=179 host=n3052]: starting photochem model for inputs: [ 2.     2.75  50.     4.     0.505  9.   ]
+2026-03-27 14:36:51,134 INFO [rank=177 host=n3052]: starting photochem model for inputs: [ 2.     2.75  50.     4.     0.505  5.   ]
+2026-03-27 14:36:51,135 INFO [rank=164 host=n3052]: starting photochem model for inputs: [ 2.     2.75  50.     3.     0.505  9.   ]
+2026-03-27 14:36:51,135 INFO [rank=191 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      5.      0.2575  9.    ]
+2026-03-27 14:36:51,135 INFO [rank=167 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      3.      0.7525  9.    ]
+2026-03-27 14:36:51,135 INFO [rank=182 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      4.      0.7525  9.    ]
+2026-03-27 14:36:51,135 INFO [rank=165 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      3.      0.7525  5.    ]
+2026-03-27 14:36:51,135 INFO [rank=180 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      4.      0.7525  5.    ]
+2026-03-27 14:36:51,135 INFO [rank=199 host=n3052]: starting photochem model for inputs: [ 2.    2.75 50.    5.    1.    7.  ]
+2026-03-27 14:36:51,135 INFO [rank=187 host=n3052]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 5.00e+00 1.00e-02 7.00e+00]
+2026-03-27 14:36:51,135 INFO [rank=192 host=n3052]: starting photochem model for inputs: [ 2.     2.75  50.     5.     0.505  5.   ]
+2026-03-27 14:36:51,135 INFO [rank=195 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      5.      0.7525  5.    ]
+2026-03-27 14:36:51,135 INFO [rank=169 host=n3052]: starting photochem model for inputs: [ 2.    2.75 50.    3.    1.    7.  ]
+2026-03-27 14:36:51,136 INFO [rank=197 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      5.      0.7525  9.    ]
+2026-03-27 14:36:51,136 INFO [rank=185 host=n3052]: starting photochem model for inputs: [ 2.    2.75 50.    4.    1.    9.  ]
+2026-03-27 14:36:51,136 INFO [rank=181 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      4.      0.7525  7.    ]
+2026-03-27 14:36:51,137 INFO [rank=194 host=n3052]: starting photochem model for inputs: [ 2.     2.75  50.     5.     0.505  9.   ]
+2026-03-27 14:36:51,137 INFO [rank=172 host=n3052]: starting photochem model for inputs: [2.00e+00 2.75e+00 5.00e+01 4.00e+00 1.00e-02 7.00e+00]
+2026-03-27 14:36:51,137 INFO [rank=168 host=n3052]: starting photochem model for inputs: [ 2.    2.75 50.    3.    1.    5.  ]
+2026-03-27 14:36:51,138 INFO [rank=176 host=n3052]: starting photochem model for inputs: [ 2.      2.75   50.      4.      0.2575  9.    ]
+[165] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=3.0, ctoO=0.7525, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[167] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=3.0, ctoO=0.7525, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[184] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=4.0, ctoO=1.0, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[186] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.01, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[194] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.505, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[192] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.505, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[191] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.2575, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[187] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.01, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[190] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.2575, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[189] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.2575, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[166] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=3.0, ctoO=0.7525, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[193] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.505, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[185] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=4.0, ctoO=1.0, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[173] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=4.0, ctoO=0.01, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[188] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.01, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[183] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=4.0, ctoO=1.0, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[181] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=4.0, ctoO=0.7525, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[182] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=4.0, ctoO=0.7525, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[180] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=4.0, ctoO=0.7525, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[240] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.7525, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[241] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.7525, log_Kzz=7.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[242] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.7525, log_Kzz=9.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[141] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=2.0, ctoO=0.01, log_Kzz=5.0: AssertionError: 
+[163] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=3.0, ctoO=0.505, log_Kzz=7.0: AssertionError: 
+[156] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=3.0, ctoO=0.01, log_Kzz=5.0: AssertionError: 
+[168] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=3.0, ctoO=1.0, log_Kzz=5.0: AssertionError: 
+[162] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=3.0, ctoO=0.505, log_Kzz=5.0: AssertionError: 
+[175] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=4.0, ctoO=0.2575, log_Kzz=7.0: AssertionError: 
+[201] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=6.0, ctoO=0.01, log_Kzz=5.0: AssertionError: 
+[198] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=1.0, log_Kzz=5.0: AssertionError: 
+[196] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=5.0, ctoO=0.7525, log_Kzz=7.0: AssertionError: 
+[223] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.505, log_Kzz=7.0: AssertionError: 
+[243] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=1.0, log_Kzz=5.0: AssertionError: 
+[157] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=3.0, ctoO=0.01, log_Kzz=7.0: AssertionError: 
+[172] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=4.0, ctoO=0.01, log_Kzz=7.0: AssertionError: 
+[222] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=8.0, ctoO=0.505, log_Kzz=5.0: AssertionError: 
+[232] Photochem exception for inputs rad_plan=2.0, metal=2.75, tint=50.0, semi_major=10.0, ctoO=0.01, log_Kzz=7.0: AssertionError: 
+[2026-03-27T14:43:19.193] error: *** STEP 34166819.0 ON n3048 CANCELLED AT 2026-03-27T14:43:19 DUE to SIGNAL Terminated ***
+[2026-03-27T14:43:19.196] error: *** JOB 34166819 ON n3048 CANCELLED AT 2026-03-27T14:43:19 DUE to SIGNAL Terminated ***
