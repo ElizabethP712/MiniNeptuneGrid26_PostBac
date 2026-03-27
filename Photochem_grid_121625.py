@@ -598,7 +598,7 @@ def get_gridvals_Photochem():
     log_Kzz = np.array([5])
     
     """
-
+    """
     
     # Parameter Exploration
     rad_plan_earth_units = np.array([2]) # in units of xEarth radii
@@ -612,13 +612,12 @@ def get_gridvals_Photochem():
 
     # Parameter Exploration Refined
     rad_plan_earth_units = np.array([2]) # in units of xEarth radii
-    log10_planet_metallicity = np.linspace(0.5, 9, 3) # in units of solar metallicity
+    log10_planet_metallicity = np.linspace(0.5, 3.5, 9) # in units of solar metallicity
     tint_K = np.linspace(50, 400, 8) # in Kelvin
     semi_major_AU = np.array([0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10]) # in AU 
     ctoO_solar = np.linspace(0.01, 1, 5) # in units of solar C/O
     log_Kzz = np.array([5, 7, 9]) # In units of logspace (so 5 means 10^5 cm^2/s)
     
-    """
     gridvals = (rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar, log_Kzz)
 
     return gridvals
@@ -678,6 +677,6 @@ if __name__ == "__main__":
     gridutils.make_grid(
         model_func=Photochem_1D_model,
         gridvals=get_gridvals_Photochem(),
-        filename='results/Photochem_1D_updatop_paramext_test2.h5',
-        progress_filename='results/Photochem_1D_updatop_paramext_test2.log'
+        filename='results/Photochem_1D_updatop_paramext_reducerad_full_try2.h5',
+        progress_filename='results/Photochem_1D_updatop_paramext_reducerad_full_try2.log'
     )
