@@ -335,12 +335,15 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
     planet_Teq = PICASO_Climate_grid.calc_Teq_SUN(distance_AU=semi_major)
 
     # Dependent constant variables
-    if os.path.exists(f'sun_flux_file_{planet_Teq}'):
-        stellar_flux_file = f'sun_flux_file_{planet_Teq}'
-        print(f"The stellar flux file already exists")
-    else:
-        wv, F = star_spectrum.solar_spectrum(Teq=planet_Teq, outputfile= f'sun_flux_file_{planet_Teq}')
-        stellar_flux_file = f'sun_flux_file_{planet_Teq}'
+    stellar_flux_file = f'sun_flux_file_{planet_Teq}'
+    comm = MPI.COMM_WORLD
+    rank = comm.Get_rank()
+    if rank == 0 and not os.path.exists(stellar_flux_file):
+        star_spectrum.solar_spectrum(Teq=planet_Teq, outputfile=stellar_flux_file)
+    # Ensure all ranks wait until rank 0 finishes writing the file.
+    comm.Barrier()
+    if not os.path.exists(stellar_flux_file):
+        raise FileNotFoundError(f"Expected stellar flux file was not created: {stellar_flux_file}")
 
     PT_list, convergence_values, picaso_status, picaso_error = find_PT_grid(filename=PT_filename, rad_plan=rad_plan, log10_planet_metallicity=log10_planet_metallicity, tint=tint, semi_major=semi_major, ctoO=ctoO)
 
@@ -497,7 +500,7 @@ def get_gridvals_Photochem():
     log_Kzz = np.array([7, 9]) # in cm^2/s 
     
     """
-
+    """
     # Test Case:
     rad_plan_earth_units = np.array([2]) # in units of xEarth radii
     log10_planet_metallicity = np.array([3.5]) # in units of solar metallicity
@@ -512,10 +515,11 @@ def get_gridvals_Photochem():
     # Parameter Exploration
     rad_plan_earth_units = np.array([2]) # in units of xEarth radii
     log10_planet_metallicity = np.array([3.5]) # in units of solar metallicity
-    tint_K = np.array([50, 100, 250]) # in Kelvin
-    semi_major_AU = np.array([0.3, 5, 10]) # in AU 
+    tint_K = np.array([50]) # in Kelvin
+    semi_major_AU = np.array([0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10]) # in AU 
     ctoO_solar = np.array([0.01]) # in units of solar C/O
     log_Kzz = np.array([5]) # In units of logspace (so 5 means 10^5 cm^2/s)
+    
     """
 
     # Parameter Exploration Refined
