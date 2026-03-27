@@ -50,10 +50,13 @@ import logging
 import faulthandler
 import traceback
 import socket
+import builtins
 from datetime import datetime
 
 # set up simple logging to stderr with timestamps
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
+
+_ORIGINAL_PRINT = builtins.print
 
 def setup_rank_debug_logging():
     """Attach rank/host metadata to logs and print uncaught tracebacks per MPI rank."""
@@ -73,6 +76,17 @@ def setup_rank_debug_logging():
     root_logger = logging.getLogger()
     for handler in root_logger.handlers:
         handler.setFormatter(formatter)
+
+    # Prefix Python print output with the MPI rank to mirror tagged stdout like [1].
+    if not getattr(builtins.print, '_rank_wrapped', False):
+        def _ranked_print(*args, **kwargs):
+            kwargs_local = dict(kwargs)
+            sep = kwargs_local.pop('sep', ' ')
+            text = sep.join(str(arg) for arg in args)
+            _ORIGINAL_PRINT(f'[{rank}] {text}', **kwargs_local)
+
+        _ranked_print._rank_wrapped = True
+        builtins.print = _ranked_print
 
 def _append_crash_fingerprint(stage, x, reason, details=None):
     """
@@ -484,14 +498,14 @@ def get_gridvals_Photochem():
     
     """
 
-    """
     # Test Case:
-    rad_plan_earth_units = np.array([2.61]) # in units of xEarth radii
-    log10_planet_metallicity = np.array(['3.5']) # in units of solar metallicity
-    tint_K = np.array([155]) # in Kelvin
-    semi_major_AU = np.array([1]) # in AU 
+    rad_plan_earth_units = np.array([2]) # in units of xEarth radii
+    log10_planet_metallicity = np.array([3.5]) # in units of solar metallicity
+    tint_K = np.array([50]) # in Kelvin
+    semi_major_AU = np.array([0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10]) # in AU 
     ctoO_solar = np.array([0.01]) # in units of solar C/O
     log_Kzz = np.array([5])
+    
     """
 
     
@@ -572,6 +586,6 @@ if __name__ == "__main__":
     gridutils.make_grid(
         model_func=Photochem_1D_model,
         gridvals=get_gridvals_Photochem(),
-        filename='results/Photochem_1D_updatop_paramext_test1.h5',
-        progress_filename='results/Photochem_1D_updatop_paramext_test1.log'
+        filename='results/Photochem_1D_updatop_paramext_test2.h5',
+        progress_filename='results/Photochem_1D_updatop_paramext_test2.log'
     )
