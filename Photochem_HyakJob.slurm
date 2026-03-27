@@ -4,7 +4,7 @@
 
 #SBATCH --account=stf
 #SBATCH --partition=compute
-#SBATCH --nodes=13
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=40
 #SBATCH --mem=150G
 #SBATCH --time=24:00:00
@@ -14,4 +14,4 @@
 #SBATCH --error=photochem_grid_%j.stderr
 
 # Run the script 
-mpiexec -n 520 python Photochem_grid_121625.py
+mpiexec -n 40 python Photochem_grid_121625.py

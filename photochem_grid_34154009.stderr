@@ -1,0 +1,19 @@
+2026-03-26 19:54:50,131 INFO [rank=7 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 4.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,131 INFO [rank=11 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.0e+01 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,131 INFO [rank=1 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 3.0e-01 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,131 INFO [rank=10 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 8.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,131 INFO [rank=3 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,131 INFO [rank=5 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 2.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,131 INFO [rank=6 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 3.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,131 INFO [rank=8 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 5.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,132 INFO [rank=2 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 7.0e-01 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,132 INFO [rank=4 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.5e+00 1.0e-02 5.0e+00]
+2026-03-26 19:54:50,132 INFO [rank=9 host=n3361]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 6.0e+00 1.0e-02 5.0e+00]
+[1] Photochem exception for inputs rad_plan=2.0, metal=3.5, tint=50.0, semi_major=0.3, ctoO=0.01, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[9] Photochem exception for inputs rad_plan=2.0, metal=3.5, tint=50.0, semi_major=6.0, ctoO=0.01, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[11] Photochem exception for inputs rad_plan=2.0, metal=3.5, tint=50.0, semi_major=10.0, ctoO=0.01, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[7] Photochem exception for inputs rad_plan=2.0, metal=3.5, tint=50.0, semi_major=4.0, ctoO=0.01, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[10] Photochem exception for inputs rad_plan=2.0, metal=3.5, tint=50.0, semi_major=8.0, ctoO=0.01, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[8] Photochem exception for inputs rad_plan=2.0, metal=3.5, tint=50.0, semi_major=5.0, ctoO=0.01, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[6] Photochem exception for inputs rad_plan=2.0, metal=3.5, tint=50.0, semi_major=3.0, ctoO=0.01, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
+[2] Photochem exception for inputs rad_plan=2.0, metal=3.5, tint=50.0, semi_major=0.7, ctoO=0.01, log_Kzz=5.0: Exception: BOA in photochemical model wants to be deeper than BOA of climate model.
