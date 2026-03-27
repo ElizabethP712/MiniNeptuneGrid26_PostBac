@@ -243,7 +243,7 @@ def _photochem_nan_result(nlayers=_PC_NLAYERS):
     nan_arr = np.full(nlayers, np.nan)
     sol_nan = {'pressure': nan_arr.copy(), 'temperature': nan_arr.copy(), 'Kzz': nan_arr.copy()}
     soleq_nan = {'pressure': nan_arr.copy(), 'temperature': nan_arr.copy(), 'Kzz': nan_arr.copy()}
-    zero_arr = np.zeros(nlayers)
+    zero_arr = np.zeros(nlayers, dtype=np.uint8)
     return sol_nan, soleq_nan, zero_arr, zero_arr
 
 # Finds the associated PT profile and calculates Photochemical Composition of a Planet
@@ -529,8 +529,16 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
         # Call the interpolation of the grid 
         sol = interpolate_photochem_result_to_nlayers(out=sol_raw, nlayers=100)
         soleq = interpolate_photochem_result_to_nlayers(out=soleq_raw, nlayers=100)
-        convergence_values = np.full(len(sol['pressure']), convergence_values[0])
-        converged_PC_arr = np.full(len(sol['pressure']), converged_PC)
+        convergence_values = np.full(
+            len(sol['pressure']),
+            np.uint8(convergence_values[0]),
+            dtype=np.uint8,
+        )
+        converged_PC_arr = np.full(
+            len(sol['pressure']),
+            np.uint8(1 if converged_PC else 0),
+            dtype=np.uint8,
+        )
 
         # Print out the lengths of arrays: Save the size of the grid for future reference.
         print(f"This is for the input value of planet radius:{rad_plan}, metal:{float(log10_planet_metallicity)}, tint:{tint}, semi major:{semi_major}, ctoO: {ctoO}, log_Kzz: {log_Kzz}")
@@ -659,10 +667,10 @@ def Photochem_1D_model(x):
     modified_sol_dict = {key + "_sol": value for key, value in sol.items()}
     modified_soleq_dict = {key + "_soleq": value for key, value in soleq.items()}
     combined_dict = {**modified_sol_dict, **modified_soleq_dict}
-    combined_dict['converged_TP'] = convergence_values
-    combined_dict['converged_PC'] = converged_PC
-    combined_dict['status'] = np.array([status], dtype='S64')
-    combined_dict['error'] = np.array([error], dtype='S1024')
+    combined_dict['converged_TP'] = np.asarray(convergence_values, dtype=np.uint8)
+    combined_dict['converged_PC'] = np.asarray(converged_PC, dtype=np.uint8)
+    combined_dict['status'] = np.array([str(status)], dtype='S64')
+    combined_dict['error'] = np.array([str(error)], dtype='S1024')
 
     return combined_dict 
 
