@@ -2,6 +2,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 import os
+import time
 from pathlib import Path
 
 current_directory = Path.cwd()
@@ -10,26 +11,13 @@ PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/t
 os.environ['picaso_refdata']= os.path.join(current_directory, references_directory_path)
 os.environ['PYSYN_CDBS']= os.path.join(current_directory, PYSYN_directory_path)
 
-import picaso.justdoit as jdi
-import picaso.justplotit as jpi
-import astropy.units as u
-import astropy.constants as const
 import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
 #%matplotlib inline
 
-from astropy import constants
 from photochem.utils import zahnle_rx_and_thermo_files
 from photochem.extensions import gasgiants # Import the gasgiant extensions
 
-import json
-from astroquery.mast import Observations
-from photochem.utils import stars
-
 import star_spectrum
-import pickle
-import requests
 
 from mpi4py import MPI
 
@@ -37,12 +25,7 @@ from mpi4py import MPI
 from threadpoolctl import threadpool_limits
 _ = threadpool_limits(limits=1)
 
-from bs4 import BeautifulSoup
-import os
-from urllib.parse import urljoin, urlparse
-import tarfile
 import gridutils
-import star_spectrum
 import h5py
 import PICASO_Climate_grid_121625 as PICASO_Climate_grid
 import sys
@@ -57,6 +40,140 @@ from datetime import datetime
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
 
 _ORIGINAL_PRINT = builtins.print
+_PICASO_PT_CACHE = {}
+_READY_STELLAR_FLUX_FILES = set()
+_CHEMISTRY_FILES_READY = False
+_FILE_READY_POLL_S = 0.1
+_FILE_READY_TIMEOUT_S = 300.0
+
+def _files_are_ready(paths):
+    """A shared file is ready once it exists and has non-zero size."""
+    for path in paths:
+        if not os.path.exists(path):
+            return False
+        try:
+            if os.path.getsize(path) <= 0:
+                return False
+        except OSError:
+            return False
+    return True
+
+def _wait_for_files(paths, timeout_s=_FILE_READY_TIMEOUT_S):
+    """Wait until a set of files exists and has non-zero size."""
+    deadline = None if timeout_s is None else time.monotonic() + timeout_s
+    while not _files_are_ready(paths):
+        if deadline is not None and time.monotonic() >= deadline:
+            raise TimeoutError(f"Timed out waiting for files: {paths}")
+        time.sleep(_FILE_READY_POLL_S)
+
+def _try_acquire_lock(lock_path):
+    """Attempt to create a lock file atomically."""
+    try:
+        lock_fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError:
+        return False
+    os.close(lock_fd)
+    return True
+
+def _ensure_stellar_flux_file(planet_Teq):
+    """Create each stellar flux file once and reuse it across subsequent model calls."""
+    stellar_flux_file = f'sun_flux_file_{planet_Teq}'
+    if stellar_flux_file in _READY_STELLAR_FLUX_FILES and _files_are_ready([stellar_flux_file]):
+        return stellar_flux_file
+
+    lock_path = f'{stellar_flux_file}.lock'
+    temp_path = f'{stellar_flux_file}.tmp.{socket.gethostname()}.{os.getpid()}'
+    lock_acquired = False
+    try:
+        if not _files_are_ready([stellar_flux_file]):
+            lock_acquired = _try_acquire_lock(lock_path)
+            if lock_acquired:
+                try:
+                    if not _files_are_ready([stellar_flux_file]):
+                        star_spectrum.solar_spectrum(Teq=planet_Teq, outputfile=temp_path)
+                        os.replace(temp_path, stellar_flux_file)
+                finally:
+                    if os.path.exists(temp_path):
+                        os.remove(temp_path)
+                    if os.path.exists(lock_path):
+                        os.remove(lock_path)
+                    lock_acquired = False
+            else:
+                _wait_for_files([stellar_flux_file])
+
+        _wait_for_files([stellar_flux_file])
+        _READY_STELLAR_FLUX_FILES.add(stellar_flux_file)
+        return stellar_flux_file
+    finally:
+        if lock_acquired and os.path.exists(lock_path):
+            os.remove(lock_path)
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
+
+def _ensure_photochem_input_files(atoms_names):
+    """Generate shared Photochem chemistry files once and reuse them."""
+    global _CHEMISTRY_FILES_READY
+
+    rxns_filename = 'photochem_rxns.yaml'
+    thermo_filename = 'photochem_thermo.yaml'
+    file_paths = [rxns_filename, thermo_filename]
+    if _CHEMISTRY_FILES_READY and _files_are_ready(file_paths):
+        return rxns_filename, thermo_filename
+
+    lock_path = 'photochem_inputs.lock'
+    lock_acquired = False
+    try:
+        if not _files_are_ready(file_paths):
+            lock_acquired = _try_acquire_lock(lock_path)
+            if lock_acquired:
+                try:
+                    if not _files_are_ready(file_paths):
+                        zahnle_rx_and_thermo_files(
+                        atoms_names=atoms_names,
+                        rxns_filename=rxns_filename,
+                        thermo_filename=thermo_filename,
+                        remove_reaction_particles=True # For gas giants, we should always leave out reaction particles.
+                        )
+                finally:
+                    if os.path.exists(lock_path):
+                        os.remove(lock_path)
+                    lock_acquired = False
+            else:
+                _wait_for_files(file_paths)
+
+        _wait_for_files(file_paths)
+        _CHEMISTRY_FILES_READY = True
+        return rxns_filename, thermo_filename
+    finally:
+        if lock_acquired and os.path.exists(lock_path):
+            os.remove(lock_path)
+
+def _build_value_index(values):
+    """Map exact grid values to integer indices for fast lookup."""
+    return {float(value): index for index, value in enumerate(np.asarray(values, dtype=float))}
+
+def _get_picaso_pt_cache(filename, gridvals):
+    """Load the PICASO PT grid once per rank and cache direct index maps."""
+    cache = _PICASO_PT_CACHE.get(filename)
+    if cache is None:
+        with h5py.File(filename, 'r') as f:
+            results = f['results']
+            cache = {
+                'index_maps': {
+                    'planet_radius': _build_value_index(gridvals[0]),
+                    'planet_metallicity': _build_value_index(gridvals[1]),
+                    'tint': _build_value_index(gridvals[2]),
+                    'semi_major': _build_value_index(gridvals[3]),
+                    'ctoO': _build_value_index(gridvals[4]),
+                },
+                'pressure': np.array(results['pressure']),
+                'temperature': np.array(results['temperature']),
+                'converged': np.array(results['converged']),
+                'status': np.array(results['status']) if 'status' in results else None,
+                'error': np.array(results['error']) if 'error' in results else None,
+            }
+        _PICASO_PT_CACHE[filename] = cache
+    return cache
 
 def setup_rank_debug_logging():
     """Attach rank/host metadata to logs and print uncaught tracebacks per MPI rank."""
@@ -158,57 +275,41 @@ def find_PT_grid(filename='results/PICASO_climate_updatop_full_exploration_reduc
         This provides whether or not the PICASO model converged (0 = False, 1 = True).
     
     """
-    gridvals_metal = [float(s) for s in gridvals[1]]
-    gridvals_ctoO = [float(s) for s in gridvals[4]]
-    
-    gridvals_dict = {'planet_radius':gridvals[0],
-                     'planet_metallicity': np.array(gridvals_metal),
-                     'tint':gridvals[2],
-                     'semi_major':gridvals[3], 
-                     'ctoO': np.array(gridvals_ctoO)}
+    cache = _get_picaso_pt_cache(filename, gridvals)
 
-    with h5py.File(filename, 'r') as f:
-        input_list = np.array([rad_plan, log10_planet_metallicity, tint, semi_major, ctoO])
-        matches = list(f['inputs'] == input_list)
-        print(f"This is the input list: {input_list}")
-        row_matches = np.all(matches, axis=1)
-        matching_indicies = np.where(row_matches)
+    try:
+        indices = (
+            cache['index_maps']['planet_radius'][float(rad_plan)],
+            cache['index_maps']['planet_metallicity'][float(log10_planet_metallicity)],
+            cache['index_maps']['tint'][float(tint)],
+            cache['index_maps']['semi_major'][float(semi_major)],
+            cache['index_maps']['ctoO'][float(ctoO)],
+        )
+    except KeyError:
+        print('A match given total flux, planet metallicity, and tint does not exist')
+        return None, None, 'PICASO Not Converged/Error Value', 'No matching PICASO grid point found'
 
-        matching_indicies_radius = np.where(list(gridvals_dict['planet_radius'] == input_list[0]))
-        matching_indicies_metal = np.where(list(gridvals_dict['planet_metallicity'] == input_list[1]))
-        #print(matching_indicies_metal)
-        matching_indicies_tint = np.where(list(gridvals_dict['tint'] == input_list[2]))
-        matching_indicies_semi_major = np.where(list(gridvals_dict['semi_major'] == input_list[3]))
-        matching_indicies_ctoO = np.where(list(gridvals_dict['ctoO'] == input_list[4]))
+    pressure_values = np.array(cache['pressure'][indices])
+    temperature_values = np.array(cache['temperature'][indices])
+    convergence_values = np.array(cache['converged'][indices])
+    PT_list = pressure_values, temperature_values
 
-        radius_index, metal_index, tint_index, semi_major_index, ctoO_index = matching_indicies_radius[0], matching_indicies_metal[0], matching_indicies_tint[0], matching_indicies_semi_major[0], matching_indicies_ctoO[0]
+    # Read PICASO status and error if available; guard against old h5 files.
+    picaso_status = b'converged'
+    picaso_error = b''
+    if cache['status'] is not None:
+        picaso_status = np.array(cache['status'][indices]).flat[0]
+    if cache['error'] is not None:
+        picaso_error = np.array(cache['error'][indices]).flat[0]
 
-        if matching_indicies[0].size == 0:
-            print(f'A match given total flux, planet metallicity, and tint does not exist')
-            return None, None, 'PICASO Not Converged/Error Value', 'No matching PICASO grid point found'
-            
-        else:
-            pressure_values = np.array(f['results']['pressure'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]])
-            temperature_values = np.array(f['results']['temperature'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]])
-            convergence_values = np.array(f['results']['converged'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]])
-            PT_list = pressure_values, temperature_values
+    if picaso_status != b'converged' or picaso_error != b'':
+        status_str = picaso_status.decode('utf-8') if isinstance(picaso_status, bytes) else str(picaso_status)
+        error_str = picaso_error.decode('utf-8') if isinstance(picaso_error, bytes) else str(picaso_error)
+        print(f'PICASO did not converge or has an error: status={status_str}, error={error_str}')
+        return None, None, f'PICASO: {status_str}', error_str
 
-            # Read PICASO status and error if available; guard against old h5 files.
-            picaso_status = b'converged'
-            picaso_error = b''
-            if 'status' in f['results']:
-                picaso_status = np.array(f['results']['status'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]]).flat[0]
-            if 'error' in f['results']:
-                picaso_error = np.array(f['results']['error'][radius_index[0]][metal_index[0]][tint_index[0]][semi_major_index[0]][ctoO_index[0]]).flat[0]
-
-            if picaso_status != b'converged' or picaso_error != b'':
-                status_str = picaso_status.decode('utf-8') if isinstance(picaso_status, bytes) else str(picaso_status)
-                error_str = picaso_error.decode('utf-8') if isinstance(picaso_error, bytes) else str(picaso_error)
-                print(f'PICASO did not converge or has an error: status={status_str}, error={error_str}')
-                return None, None, f'PICASO: {status_str}', error_str
-
-            print(f'Was able to successfully find your input parameters in the PICASO TP profile grid!')
-            return PT_list, convergence_values, 'PICASO-converged', ''
+    print('Was able to successfully find your input parameters in the PICASO TP profile grid!')
+    return PT_list, convergence_values, 'PICASO-converged', ''
 
 def linear_extrapolate_TP(P, T):
     
@@ -335,15 +436,8 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
     planet_Teq = PICASO_Climate_grid.calc_Teq_SUN(distance_AU=semi_major)
 
     # Dependent constant variables
-    stellar_flux_file = f'sun_flux_file_{planet_Teq}'
-    comm = MPI.COMM_WORLD
-    rank = comm.Get_rank()
-    if rank == 0 and not os.path.exists(stellar_flux_file):
-        star_spectrum.solar_spectrum(Teq=planet_Teq, outputfile=stellar_flux_file)
-    # Ensure all ranks wait until rank 0 finishes writing the file.
-    comm.Barrier()
-    if not os.path.exists(stellar_flux_file):
-        raise FileNotFoundError(f"Expected stellar flux file was not created: {stellar_flux_file}")
+    stellar_flux_file = _ensure_stellar_flux_file(planet_Teq)
+    rank = MPI.COMM_WORLD.Get_rank()
 
     PT_list, convergence_values, picaso_status, picaso_error = find_PT_grid(filename=PT_filename, rad_plan=rad_plan, log10_planet_metallicity=log10_planet_metallicity, tint=tint, semi_major=semi_major, ctoO=ctoO)
 
@@ -371,24 +465,18 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
     sorted_P = np.flip(np.sort(P)).copy()
     unsorted_indices = np.where(P != sorted_P)[0]
     
-    # Generate reaction & thermodynamic files for gas giants
-    zahnle_rx_and_thermo_files(
-    atoms_names=atoms_names,
-    rxns_filename='photochem_rxns.yaml',
-    thermo_filename='photochem_thermo.yaml',
-    remove_reaction_particles=True # For gas giants, we should always leave out reaction particles.
-    )
+    rxns_filename, thermo_filename = _ensure_photochem_input_files(atoms_names)
 
     try:
         # Initialize ExoAtmosphereGasGiant
         # Assigns 
         pc = gasgiants.EvoAtmosphereGasGiant(
-            mechanism_file='photochem_rxns.yaml',
+            mechanism_file=rxns_filename,
             stellar_flux_file=stellar_flux_file,
             planet_mass=mass_planet,
             planet_radius=radius_planet,
             solar_zenith_angle=solar_zenith_angle,
-            thermo_file='photochem_thermo.yaml'
+            thermo_file=thermo_filename
         )
         # Adjust convergence parameters:
         pc.var.conv_longdy = 0.03 # converges at 3% (change of mixing ratios over long time)
@@ -441,8 +529,8 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
         # Call the interpolation of the grid 
         sol = interpolate_photochem_result_to_nlayers(out=sol_raw, nlayers=100)
         soleq = interpolate_photochem_result_to_nlayers(out=soleq_raw, nlayers=100)
-        convergence_values = np.array([convergence_values[0] for _ in range(len(sol['pressure']))])
-        converged_PC_arr = np.array([converged_PC for _ in range(len(sol['pressure']))])
+        convergence_values = np.full(len(sol['pressure']), convergence_values[0])
+        converged_PC_arr = np.full(len(sol['pressure']), converged_PC)
 
         # Print out the lengths of arrays: Save the size of the grid for future reference.
         print(f"This is for the input value of planet radius:{rad_plan}, metal:{float(log10_planet_metallicity)}, tint:{tint}, semi major:{semi_major}, ctoO: {ctoO}, log_Kzz: {log_Kzz}")
