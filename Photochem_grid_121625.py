@@ -685,6 +685,6 @@ if __name__ == "__main__":
     gridutils.make_grid(
         model_func=Photochem_1D_model,
         gridvals=get_gridvals_Photochem(),
-        filename='results/Photochem_1D_updatop_paramext_reducedrad_full_try2.h5',
-        progress_filename='results/Photochem_1D_updatop_paramext_reducedrad_full_try2.log'
+        filename='results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5',
+        progress_filename='results/Photochem_1D_updatop_paramext_reducedrad_full_try3.log'
     )
