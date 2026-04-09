@@ -40,12 +40,32 @@ import Photochem_grid_121625 as Photochem_grid
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
 
 # ---------------------------------------------------------------------------
-# Opacity (global, loaded once per process)
+# Worker-only initializations (rank 0 is the MPI master and never runs the
+# model, so it skips the expensive opacity and Photochem loads entirely).
+# Each worker loads these once at startup and reuses them for every case.
 # ---------------------------------------------------------------------------
-opacity_file_path = "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
-print(os.path.join(current_directory, opacity_file_path))
-opacity_path = os.path.join(current_directory, opacity_file_path)
-OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])
+_comm = MPI.COMM_WORLD
+_rank = _comm.Get_rank()
+
+OPACITY = None
+PHOTOCHEM_INPUTS   = None   # float array (N_rows, 6): [rad, metal, tint, semi, ctoO, kzz]
+PHOTOCHEM_RESULTS  = None   # dict key -> ndarray with full grid shape
+
+if _rank != 0:
+    # --- Opacity ---
+    opacity_file_path = "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
+    opacity_path = os.path.join(current_directory, opacity_file_path)
+    logging.info("rank %d: loading opacity from %s", _rank, opacity_path)
+    OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])
+    logging.info("rank %d: opacity loaded", _rank)
+
+    # --- Photochem results (loaded once, kept in RAM) ---
+    _photochem_file = 'results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5'
+    logging.info("rank %d: loading Photochem data from %s", _rank, _photochem_file)
+    with h5py.File(_photochem_file, 'r') as _f:
+        PHOTOCHEM_INPUTS  = np.array(_f['inputs'])
+        PHOTOCHEM_RESULTS = {key: np.array(_f['results'][key]) for key in _f['results'].keys()}
+    logging.info("rank %d: Photochem data loaded (%d rows)", _rank, len(PHOTOCHEM_INPUTS))
 
 # ---------------------------------------------------------------------------
 # Planet/star physics helpers (defined locally to avoid cross-module issues)
@@ -82,13 +102,14 @@ def mass_from_radius_chen_kipping_2017(R_rearth):
 # ---------------------------------------------------------------------------
 
 def find_Photochem_match(
-    filename='results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5',
     rad_plan=None, log10_planet_metallicity=None, tint=None,
     semi_major=None, ctoO=None, Kzz=None,
     gridvals=Photochem_grid.get_gridvals_Photochem()
 ):
     """
     Find the matching Photochem solution for the given input parameters.
+    Searches the in-memory PHOTOCHEM_INPUTS / PHOTOCHEM_RESULTS globals
+    (loaded once at worker startup) instead of reopening the HDF5 file.
 
     Returns (sol_dict, soleq_dict, PT_list, convergence_PC, convergence_TP).
     All are None if no match is found.
@@ -97,51 +118,51 @@ def find_Photochem_match(
     gridvals_ctoO  = [float(s) for s in gridvals[4]]
 
     planet_metallicity = float(log10_planet_metallicity)
+    input_list = np.array([rad_plan, planet_metallicity, tint, semi_major, ctoO, Kzz])
+
+    # Search in-memory inputs array — no file I/O
+    row_matches = np.all(PHOTOCHEM_INPUTS == input_list, axis=1)
+    matching_indicies = np.where(row_matches)[0]
+
+    if matching_indicies.size == 0:
+        print(f'No Photochem match found for inputs: {input_list}')
+        return None, None, None, None, None
+
+    # Find per-axis indices for multi-dimensional result lookup
     gridvals_dict = {
-        'rad_plan':         gridvals[0],
-        'planet_metallicity': gridvals_metal,
-        'tint':             gridvals[2],
-        'semi_major':       gridvals[3],
-        'ctoO':             gridvals_ctoO,
-        'Kzz':              gridvals[5],
+        'rad_plan':           np.array(gridvals[0]),
+        'planet_metallicity': np.array(gridvals_metal),
+        'tint':               np.array(gridvals[2]),
+        'semi_major':         np.array(gridvals[3]),
+        'ctoO':               np.array(gridvals_ctoO),
+        'Kzz':                np.array(gridvals[5]),
     }
+    ri = np.where(gridvals_dict['rad_plan']           == input_list[0])[0]
+    mi = np.where(gridvals_dict['planet_metallicity'] == input_list[1])[0]
+    ti = np.where(gridvals_dict['tint']               == input_list[2])[0]
+    si = np.where(gridvals_dict['semi_major']         == input_list[3])[0]
+    ci = np.where(gridvals_dict['ctoO']               == input_list[4])[0]
+    ki = np.where(gridvals_dict['Kzz']                == input_list[5])[0]
 
-    with h5py.File(filename, 'r') as f:
-        input_list = np.array([rad_plan, planet_metallicity, tint, semi_major, ctoO, Kzz])
-        matches = list(f['inputs'] == input_list)
-        row_matches = np.all(matches, axis=1)
-        matching_indicies = np.where(row_matches)
+    sol_dict   = {}
+    soleq_dict = {}
+    for key, arr in PHOTOCHEM_RESULTS.items():
+        if key.endswith('sol'):
+            sol_dict[key]   = arr[ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
+        elif key.endswith('soleq'):
+            soleq_dict[key] = arr[ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
 
-        ri = np.where(list(gridvals_dict['rad_plan']          == input_list[0]))[0]
-        mi = np.where(list(gridvals_dict['planet_metallicity'] == input_list[1]))[0]
-        ti = np.where(list(gridvals_dict['tint']              == input_list[2]))[0]
-        si = np.where(list(gridvals_dict['semi_major']        == input_list[3]))[0]
-        ci = np.where(list(gridvals_dict['ctoO']              == input_list[4]))[0]
-        ki = np.where(list(gridvals_dict['Kzz']               == input_list[5]))[0]
+    sol_dict   = {k.removesuffix('_sol')   if k.endswith('_sol')   else k: v for k, v in sol_dict.items()}
+    soleq_dict = {k.removesuffix('_soleq') if k.endswith('_soleq') else k: v for k, v in soleq_dict.items()}
 
-        if matching_indicies[0].size == 0:
-            print(f'No Photochem match found for inputs: {input_list}')
-            return None, None, None, None, None
+    pressure_values    = PHOTOCHEM_RESULTS['pressure_sol'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
+    temperature_values = PHOTOCHEM_RESULTS['temperature_sol'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
+    convergence_PC     = PHOTOCHEM_RESULTS['converged_PC'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
+    convergence_TP     = PHOTOCHEM_RESULTS['converged_TP'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
+    PT_list = pressure_values, temperature_values
 
-        sol_dict   = {}
-        soleq_dict = {}
-        for key in list(f['results']):
-            if key.endswith('sol'):
-                sol_dict[key]   = np.array(f['results'][key][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]])
-            elif key.endswith('soleq'):
-                soleq_dict[key] = np.array(f['results'][key][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]])
-
-        sol_dict   = {k.removesuffix('_sol')   if k.endswith('_sol')   else k: v for k, v in sol_dict.items()}
-        soleq_dict = {k.removesuffix('_soleq') if k.endswith('_soleq') else k: v for k, v in soleq_dict.items()}
-
-        pressure_values    = np.array(f['results']['pressure_sol'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]])
-        temperature_values = np.array(f['results']['temperature_sol'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]])
-        convergence_PC = np.array(f['results']['converged_PC'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]])
-        convergence_TP = np.array(f['results']['converged_TP'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]])
-        PT_list = pressure_values, temperature_values
-
-        print(f'Photochem match found for inputs: {input_list}')
-        return sol_dict, soleq_dict, PT_list, convergence_PC, convergence_TP
+    print(f'Photochem match found for inputs: {input_list}')
+    return sol_dict, soleq_dict, PT_list, convergence_PC, convergence_TP
 
 
 def find_pbot(sol=None, solaer=None, tol=0.9):
@@ -200,12 +221,14 @@ def make_picaso_atm(sol):
 def reflected_spectrum_planet_Sun(
     rad_plan=None, planet_metal=None, tint=None, semi_major=None,
     ctoO=None, Kzz=None, phase_angle=None,
-    Photochem_file='results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5',
     atmosphere_kwargs={}
 ):
     """
     Calculate the reflected spectrum of a mini-Neptune around a Sun-like star,
     using composition from the Photochem grid.
+
+    Photochem data is read from the PHOTOCHEM_INPUTS / PHOTOCHEM_RESULTS globals
+    loaded once at worker startup — no file I/O per call.
 
     Parameters
     ----------
@@ -223,8 +246,6 @@ def reflected_spectrum_planet_Sun(
         log10(eddy diffusion coefficient / cm^2 s^-1).
     phase_angle : float
         Phase angle in radians.
-    Photochem_file : str
-        Path to the Photochem HDF5 results file.
     atmosphere_kwargs : dict
         Optional; pass {'exclude_mol': ['O2']} to zero out a species.
 
@@ -266,9 +287,8 @@ def reflected_spectrum_planet_Sun(
         semi_major_unit=jdi.u.au
     )
 
-    # Look up Photochem composition
+    # Look up Photochem composition (searches in-memory globals, no file I/O)
     sol_dict, soleq_dict, PT_list, convergence_PC, convergence_TP = find_Photochem_match(
-        filename=Photochem_file,
         rad_plan=rad_plan, log10_planet_metallicity=planet_metal,
         tint=tint, semi_major=semi_major, ctoO=ctoO, Kzz=Kzz
     )
@@ -320,15 +340,14 @@ def reflected_spectrum_planet_Sun(
 
 
 def make_case_RSM(rad_plan=None, planet_metal=None, tint=None, semi_major=None,
-                  ctoO=None, Kzz=None, phase_angle=None,
-                  Photochem_file='results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5'):
+                  ctoO=None, Kzz=None, phase_angle=None):
     """
     Thin wrapper around reflected_spectrum_planet_Sun that returns a result dict.
     """
     wno, fpfs, albedo, clouds = reflected_spectrum_planet_Sun(
         rad_plan=rad_plan, planet_metal=planet_metal, tint=tint,
         semi_major=semi_major, ctoO=ctoO, Kzz=Kzz,
-        phase_angle=phase_angle, Photochem_file=Photochem_file
+        phase_angle=phase_angle
     )
     return {'wno': wno, 'fpfs': fpfs, 'albedo': albedo, 'clouds': clouds}
 
