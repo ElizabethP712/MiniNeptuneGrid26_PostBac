@@ -2,11 +2,11 @@
 
 #SBATCH --job-name=RSM_specific
 
-#SBATCH --account=stf
-#SBATCH --partition=compute
-#SBATCH --nodes=3
+#SBATCH --account=vsm
+#SBATCH --partition=compute-hugemem
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=40
-#SBATCH --mem=150G
+#SBATCH --mem=500G
 #SBATCH --time=12:00:00
 
 #SBATCH --export=all
@@ -21,7 +21,7 @@
 #
 # Leave unset to use the default K2-18b test cases built into the script.
 # --------------------------------------------------------------------------
-export RSM_CASE_LIST="results/my_specific_cases.npy"
+export RSM_CASE_LIST="results/modernearth_175minimatches_phase0.npy"
 
 # --------------------------------------------------------------------------
 # Optional: set the Photochem results file if different from the default.
@@ -31,4 +31,4 @@ export RSM_CASE_LIST="results/my_specific_cases.npy"
 # --------------------------------------------------------------------------
 
 # Run the script (nodes * ntasks-per-node = total MPI ranks)
-mpiexec -n 120 python Reflected_Spectra_SpecificInputs.py
+mpiexec -n 80 python Reflected_Spectra_SpecificInputs.py
