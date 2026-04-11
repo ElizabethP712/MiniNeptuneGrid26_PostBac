@@ -56,7 +56,7 @@ if _rank != 0:
     opacity_file_path = "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
     opacity_path = os.path.join(current_directory, opacity_file_path)
     logging.info("rank %d: loading opacity from %s", _rank, opacity_path)
-    OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])
+    OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.1, 2.5])
     logging.info("rank %d: opacity loaded", _rank)
 
     # --- Photochem results (loaded once, kept in RAM) ---
@@ -300,12 +300,27 @@ def reflected_spectrum_planet_Sun(
         )
 
     atm, sol_dict_aer = make_picaso_atm(sol_dict)
-    df_atmo = jdi.pd.DataFrame(atm)
+
+    # Limit atmosphere to layers where temperature < 1000 K.
+    # O3 opacity is not valid at temperatures >= 1000 K, so those layers
+    # are dropped before passing to PICASO.
+    t_threshold = 1000  # K
+    temp_arr = np.array(atm['temperature'])
+    filtered_temp = temp_arr[temp_arr < t_threshold]
+    n_keep = len(filtered_temp)
+    atm_filtered = {}
+    atm_filtered['temperature'] = filtered_temp
+    atm_filtered['pressure'] = np.array(atm['pressure'])[:n_keep]
+    for key, value in atm.items():
+        if key not in {'pressure', 'temperature'}:
+            atm_filtered[key] = np.array(value)[:n_keep]
+
+    df_atmo = jdi.pd.DataFrame(atm_filtered)
 
     if 'exclude_mol' in atmosphere_kwargs:
-        sp = atmosphere_kwargs['exclude_mol'][0]
-        if sp in df_atmo:
-            df_atmo[sp] *= 0
+        for sp in atmosphere_kwargs['exclude_mol']:
+            if sp in df_atmo:
+                df_atmo[sp] *= 0
 
     start_case.atmosphere(df=df_atmo)
     df_cldfree = start_case.spectrum(opacity, calculation='reflected', full_output=True)
@@ -317,7 +332,7 @@ def reflected_spectrum_planet_Sun(
 
     # Optionally add H2O water cloud
     if 'H2Oaer' in sol_dict_aer:
-        pbot = find_pbot(sol=atm, solaer=sol_dict_aer)
+        pbot = find_pbot(sol=atm_filtered, solaer=sol_dict_aer)
         if pbot is not None:
             logpbot = np.log10(pbot)
             ptop_earth, pbot_earth = 0.6, 0.7
@@ -654,8 +669,8 @@ def Reflected_Spectra_model_specific(x):
             'status': np.array([status_str], dtype='S'),
         }
 
-    logging.info("Starting RSM for inputs: rad=%.3f, metal=%.2f, tint=%.1f, "
-                 "semi_major=%.3f, ctoO=%.4f, kzz=%.1f, phase=%.4f",
+    logging.info("Starting RSM for inputs: rad=%g, metal=%g, tint=%g, "
+                 "semi_major=%g, ctoO=%g, kzz=%g, phase=%g",
                  rad, metal, tint, semi_major, ctoO, kzz, phase_angle)
 
     try:
