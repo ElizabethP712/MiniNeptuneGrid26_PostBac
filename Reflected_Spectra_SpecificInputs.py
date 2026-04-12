@@ -34,8 +34,6 @@ import faulthandler
 import traceback
 from tqdm import tqdm
 
-import Photochem_grid_121625 as Photochem_grid
-
 # Set up logging with timestamps
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
 
@@ -47,7 +45,8 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(mes
 _comm = MPI.COMM_WORLD
 _rank = _comm.Get_rank()
 
-OPACITY = None
+OPACITY            = None
+N_WNO              = None   # actual output length of mean_regrid(R=150) for this wave range
 PHOTOCHEM_INPUTS   = None   # float array (N_rows, 6): [rad, metal, tint, semi, ctoO, kzz]
 PHOTOCHEM_RESULTS  = None   # dict key -> ndarray with full grid shape
 
@@ -58,6 +57,12 @@ if _rank != 0:
     logging.info("rank %d: loading opacity from %s", _rank, opacity_path)
     OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.1, 2.5])
     logging.info("rank %d: opacity loaded", _rank)
+
+    # Compute the actual output grid length from mean_regrid once so that
+    # error-result arrays always match the length of successful results.
+    _test_wno, _ = jdi.mean_regrid(OPACITY.wno, np.ones(len(OPACITY.wno)), R=150)
+    N_WNO = len(_test_wno)
+    logging.info("rank %d: mean_regrid output length = %d", _rank, N_WNO)
 
     # --- Photochem results (loaded once, kept in RAM) ---
     _photochem_file = 'results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5'
@@ -104,19 +109,20 @@ def mass_from_radius_chen_kipping_2017(R_rearth):
 def find_Photochem_match(
     rad_plan=None, log10_planet_metallicity=None, tint=None,
     semi_major=None, ctoO=None, Kzz=None,
-    gridvals=Photochem_grid.get_gridvals_Photochem()
 ):
     """
     Find the matching Photochem solution for the given input parameters.
     Searches the in-memory PHOTOCHEM_INPUTS / PHOTOCHEM_RESULTS globals
     (loaded once at worker startup) instead of reopening the HDF5 file.
 
+    Uses np.unravel_index on the flat row match to derive the multi-dimensional
+    index directly from the results array shape, so it is not sensitive to
+    whether get_gridvals_Photochem() matches the gridvals used when the HDF5
+    was originally created.
+
     Returns (sol_dict, soleq_dict, PT_list, convergence_PC, convergence_TP).
     All are None if no match is found.
     """
-    gridvals_metal = [float(s) for s in gridvals[1]]
-    gridvals_ctoO  = [float(s) for s in gridvals[4]]
-
     planet_metallicity = float(log10_planet_metallicity)
     input_list = np.array([rad_plan, planet_metallicity, tint, semi_major, ctoO, Kzz])
 
@@ -128,37 +134,30 @@ def find_Photochem_match(
         print(f'No Photochem match found for inputs: {input_list}')
         return None, None, None, None, None
 
-    # Find per-axis indices for multi-dimensional result lookup
-    gridvals_dict = {
-        'rad_plan':           np.array(gridvals[0]),
-        'planet_metallicity': np.array(gridvals_metal),
-        'tint':               np.array(gridvals[2]),
-        'semi_major':         np.array(gridvals[3]),
-        'ctoO':               np.array(gridvals_ctoO),
-        'Kzz':                np.array(gridvals[5]),
-    }
-    ri = np.where(gridvals_dict['rad_plan']           == input_list[0])[0]
-    mi = np.where(gridvals_dict['planet_metallicity'] == input_list[1])[0]
-    ti = np.where(gridvals_dict['tint']               == input_list[2])[0]
-    si = np.where(gridvals_dict['semi_major']         == input_list[3])[0]
-    ci = np.where(gridvals_dict['ctoO']               == input_list[4])[0]
-    ki = np.where(gridvals_dict['Kzz']                == input_list[5])[0]
+    # Convert the flat match index to a multi-dimensional index using the
+    # actual shape of the stored results array. This avoids relying on
+    # get_gridvals_Photochem() returning the exact same values used when
+    # the HDF5 was created — if gridvals has changed, per-axis index lookups
+    # would go out of bounds even though the input exists in the file.
+    _first_sol_key = next(k for k in PHOTOCHEM_RESULTS if k.endswith('sol'))
+    grid_shape = PHOTOCHEM_RESULTS[_first_sol_key].shape[:-1]  # drop trailing spectrum axis
+    multi_idx  = np.unravel_index(matching_indicies[0], grid_shape)
 
     sol_dict   = {}
     soleq_dict = {}
     for key, arr in PHOTOCHEM_RESULTS.items():
         if key.endswith('sol'):
-            sol_dict[key]   = arr[ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
+            sol_dict[key]   = arr[multi_idx]
         elif key.endswith('soleq'):
-            soleq_dict[key] = arr[ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
+            soleq_dict[key] = arr[multi_idx]
 
     sol_dict   = {k.removesuffix('_sol')   if k.endswith('_sol')   else k: v for k, v in sol_dict.items()}
     soleq_dict = {k.removesuffix('_soleq') if k.endswith('_soleq') else k: v for k, v in soleq_dict.items()}
 
-    pressure_values    = PHOTOCHEM_RESULTS['pressure_sol'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
-    temperature_values = PHOTOCHEM_RESULTS['temperature_sol'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
-    convergence_PC     = PHOTOCHEM_RESULTS['converged_PC'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
-    convergence_TP     = PHOTOCHEM_RESULTS['converged_TP'][ri[0]][mi[0]][ti[0]][si[0]][ci[0]][ki[0]]
+    pressure_values    = PHOTOCHEM_RESULTS['pressure_sol'][multi_idx]
+    temperature_values = PHOTOCHEM_RESULTS['temperature_sol'][multi_idx]
+    convergence_PC     = PHOTOCHEM_RESULTS['converged_PC'][multi_idx]
+    convergence_TP     = PHOTOCHEM_RESULTS['converged_TP'][multi_idx]
     PT_list = pressure_values, temperature_values
 
     print(f'Photochem match found for inputs: {input_list}')
@@ -571,7 +570,7 @@ def _master(model_func, cases, filename, progress_filename):
 def _worker():
     comm = MPI.COMM_WORLD
     status = MPI.Status()
-    n_wno = 150
+    n_wno = N_WNO
 
     while True:
         data = comm.recv(source=0, tag=MPI.ANY_TAG, status=status)
@@ -658,7 +657,7 @@ def Reflected_Spectra_model_specific(x):
     dict with keys: wno, fpfs, albedo, clouds, status (all np.ndarray)
     """
     rad, metal, tint, semi_major, ctoO, kzz, phase_angle = [float(v) for v in x]
-    n_wno = 150
+    n_wno = N_WNO
 
     def _error_res(status_str):
         return {
@@ -734,6 +733,6 @@ if __name__ == "__main__":
     make_specific_grid(
         model_func=Reflected_Spectra_model_specific,
         cases=cases,
-        filename='results/ReflectedSpectra_SpecificInputsModernEarth_fv.h5',
-        progress_filename='results/ReflectedSpectra_SpecificInputsModernEarth_fv.log',
+        filename='results/ReflectedSpectra_SpecificInputsModernEarth_try2_fv.h5',
+        progress_filename='results/ReflectedSpectra_SpecificInputsModernEarth_try2_fv.log',
     )
