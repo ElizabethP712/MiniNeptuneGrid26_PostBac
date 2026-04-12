@@ -236,6 +236,171 @@ def plot_full_pairwise_panel(h5_path, highlight_inputs_path, output_path, param_
     plt.close(fig)
 
 
+def plot_slice_panel(
+    h5_path,
+    x_param,
+    y_param,
+    row_param,
+    col_param,
+    fixed_params=None,
+    highlight_inputs_path=None,
+    output_path="failure_slices.png",
+    param_names=None,
+):
+    """
+    True 2D cross-section panel — no worst-case collapsing of the displayed axes.
+
+    Parameters
+    ----------
+    x_param, y_param : int
+        Axis indices plotted on x/y of each heatmap.
+    row_param, col_param : int
+        Axis indices used to create the grid of subplots (rows and columns).
+    fixed_params : dict {axis_index: float_value}, optional
+        Fix remaining axes at specific parameter values.  Axes not listed here
+        are collapsed via worst-case (max) projection.
+    highlight_inputs_path : str or None
+        Path to highlights file.  If provided, highlights matching each
+        (row, col) slice are overlaid as open circles.
+    output_path : str
+        Path for the output PNG.
+    param_names : list of str, optional
+        Names for each axis in grid order.
+
+    Returns
+    -------
+    str : output_path
+    """
+    loaded = load_failure_cube(h5_path)
+    category = loaded["category"]
+    axis_values = loaded["axis_values"]
+    ndims = len(axis_values)
+
+    if param_names is None:
+        param_names = DEFAULT_PARAM_NAMES[:ndims]
+    if fixed_params is None:
+        fixed_params = {}
+
+    active = {x_param, y_param, row_param, col_param}
+    remaining = sorted([k for k in range(ndims) if k not in active], reverse=True)
+
+    # Collapse remaining axes in descending index order so earlier indices don't shift.
+    arr = category.copy().astype(np.uint8)
+    for ax in remaining:
+        if ax in fixed_params:
+            idx = _nearest_index(axis_values[ax], fixed_params[ax])
+            arr = np.take(arr, idx, axis=ax)
+        else:
+            arr = np.max(arr, axis=ax)
+
+    # After collapsing, the 4 active axes remain in their original relative order.
+    active_in_order = sorted(active)
+    arr_pos = {orig: i for i, orig in enumerate(active_in_order)}
+
+    # Transpose to (row, col, y, x).
+    arr = np.transpose(
+        arr,
+        [arr_pos[row_param], arr_pos[col_param], arr_pos[y_param], arr_pos[x_param]],
+    )
+
+    n_row = len(axis_values[row_param])
+    n_col = len(axis_values[col_param])
+
+    # Load highlights.
+    highlight_indices = None
+    if highlight_inputs_path is not None:
+        hi = _load_highlight_inputs(highlight_inputs_path)
+        highlight_indices = np.zeros((hi.shape[0], ndims), dtype=int)
+        for dim in range(ndims):
+            for k in range(hi.shape[0]):
+                highlight_indices[k, dim] = _nearest_index(axis_values[dim], hi[k, dim])
+
+    cmap = ListedColormap(["#2ca25f", "#de2d26", "#fdae6b", "#6a51a3", "#969696"])
+    norm = BoundaryNorm([-0.5, 0.5, 1.5, 2.5, 3.5, 4.5], cmap.N)
+
+    fig, axs = plt.subplots(
+        n_row, n_col, figsize=(2.8 * n_col, 2.8 * n_row), squeeze=False
+    )
+
+    for ri in range(n_row):
+        for ci in range(n_col):
+            ax = axs[ri, ci]
+            slab = arr[ri, ci]  # shape (n_y, n_x)
+
+            ax.imshow(slab, origin="lower", aspect="auto", cmap=cmap, norm=norm)
+
+            if highlight_indices is not None:
+                mask = (
+                    (highlight_indices[:, row_param] == ri)
+                    & (highlight_indices[:, col_param] == ci)
+                )
+                if mask.any():
+                    ax.scatter(
+                        highlight_indices[mask, x_param],
+                        highlight_indices[mask, y_param],
+                        s=30,
+                        marker="o",
+                        facecolors="none",
+                        edgecolors="black",
+                        linewidths=1.0,
+                    )
+
+            x_ticks, x_labels = _make_tick_labels(axis_values[x_param])
+            y_ticks, y_labels = _make_tick_labels(axis_values[y_param])
+            ax.set_xticks(x_ticks)
+            ax.set_xticklabels(x_labels, rotation=45, ha="right", fontsize=7)
+            ax.set_yticks(y_ticks)
+            ax.set_yticklabels(y_labels, fontsize=7)
+
+            if ri == 0:
+                col_val = axis_values[col_param][ci]
+                ax.set_title(f"{param_names[col_param]}={col_val:g}", fontsize=8)
+            if ci == 0:
+                row_val = axis_values[row_param][ri]
+                ax.set_ylabel(
+                    f"{param_names[row_param]}={row_val:g}\n{param_names[y_param]}",
+                    fontsize=7,
+                )
+            if ri == n_row - 1:
+                ax.set_xlabel(param_names[x_param], fontsize=8)
+
+    legend_items = [
+        Patch(facecolor="#2ca25f", edgecolor="none", label="0 good"),
+        Patch(facecolor="#de2d26", edgecolor="none", label="1 TP/PICASO fail"),
+        Patch(facecolor="#fdae6b", edgecolor="none", label="2 Photochem not converged"),
+        Patch(facecolor="#6a51a3", edgecolor="none", label="3 status/error issue"),
+        Patch(facecolor="#969696", edgecolor="none", label="4 incomplete"),
+        Patch(facecolor="white", edgecolor="black", label="highlighted inputs"),
+    ]
+
+    remaining_parts = []
+    for ax_idx in sorted(k for k in range(ndims) if k not in active):
+        if ax_idx in fixed_params:
+            remaining_parts.append(f"{param_names[ax_idx]}={fixed_params[ax_idx]:g} (fixed)")
+        else:
+            remaining_parts.append(f"{param_names[ax_idx]} (projected)")
+    remaining_str = ",  ".join(remaining_parts)
+
+    title = (
+        f"Failure slices: x={param_names[x_param]}, y={param_names[y_param]}\n"
+        f"rows={param_names[row_param]}, cols={param_names[col_param]}"
+        + (f"\n{remaining_str}" if remaining_str else "")
+    )
+
+    fig.legend(
+        handles=legend_items,
+        loc="lower center",
+        ncol=3,
+        frameon=False,
+        bbox_to_anchor=(0.5, 0.0),
+    )
+    fig.suptitle(title, y=1.01)
+    fig.tight_layout(rect=[0, 0.07, 1, 1])
+    fig.savefig(output_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    return output_path
+
+
 def _parse_param_names(arg, ndims):
     if arg is None:
         return DEFAULT_PARAM_NAMES[:ndims]
