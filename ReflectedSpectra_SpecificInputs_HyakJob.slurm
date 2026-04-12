@@ -7,7 +7,7 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=40
 #SBATCH --mem=500G
-#SBATCH --time=12:00:00
+#SBATCH --time=3-00:00:00
 
 #SBATCH --export=all
 #SBATCH --output=rsm_specific_%j.stdout
@@ -21,7 +21,7 @@
 #
 # Leave unset to use the default K2-18b test cases built into the script.
 # --------------------------------------------------------------------------
-export RSM_CASE_LIST="results/modernearth_175minimatches_phase0.npy"
+export RSM_CASE_LIST="results/archeanearth_5622minimatches_phase0.npy"
 
 # --------------------------------------------------------------------------
 # Optional: set the Photochem results file if different from the default.
