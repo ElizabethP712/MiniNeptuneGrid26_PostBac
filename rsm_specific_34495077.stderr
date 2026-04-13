@@ -1,0 +1,826 @@
+2026-04-09 18:16:51,088 INFO: rank 40: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,088 INFO: rank 48: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,088 INFO: rank 49: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,088 INFO: rank 64: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,088 INFO: rank 79: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,089 INFO: rank 58: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,089 INFO: rank 67: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,089 INFO: rank 57: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,089 INFO: rank 62: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,089 INFO: rank 72: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,089 INFO: rank 74: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,089 INFO: rank 78: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,090 INFO: rank 46: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,090 INFO: rank 75: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,090 INFO: rank 51: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,090 INFO: rank 59: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,090 INFO: rank 41: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,090 INFO: rank 45: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,090 INFO: rank 76: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,090 INFO: rank 47: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 65: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 70: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 42: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 50: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 44: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 61: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 43: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 52: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 55: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,091 INFO: rank 69: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,092 INFO: rank 56: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,092 INFO: rank 63: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,092 INFO: rank 68: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,092 INFO: rank 66: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,092 INFO: rank 60: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,092 INFO: rank 53: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,092 INFO: rank 71: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,093 INFO: rank 54: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,093 INFO: rank 77: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:16:51,093 INFO: rank 73: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,613 INFO: rank 1: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,613 INFO: rank 4: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,613 INFO: rank 9: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 34: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 24: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 31: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 11: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 12: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 19: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 16: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 21: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 37: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,614 INFO: rank 13: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 38: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 17: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 3: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 14: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 28: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 36: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 27: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 29: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 26: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,615 INFO: rank 25: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,616 INFO: rank 6: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,616 INFO: rank 35: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,616 INFO: rank 2: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,616 INFO: rank 15: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,616 INFO: rank 7: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,616 INFO: rank 23: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,616 INFO: rank 39: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,616 INFO: rank 5: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,616 INFO: rank 22: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,617 INFO: rank 8: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,617 INFO: rank 20: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,617 INFO: rank 10: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,618 INFO: rank 33: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,618 INFO: rank 32: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,619 INFO: rank 30: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,619 INFO: rank 18: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 18:17:10,619 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:17:10,707 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:21:27,247 INFO: rank 4: opacity loaded
+2026-04-09 18:21:27,247 INFO: rank 4: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,247 INFO: rank 13: opacity loaded
+2026-04-09 18:21:27,247 INFO: rank 13: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 1: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 1: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 5: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 5: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 12: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 12: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 15: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 15: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 20: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 20: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 24: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 24: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 25: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 25: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 35: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 35: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 19: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 21: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 21: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 34: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 34: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 39: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 39: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 19: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 27: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 27: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 9: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 14: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 9: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 26: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 14: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 26: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 2: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 2: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 23: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 23: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,248 INFO: rank 32: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 33: opacity loaded
+2026-04-09 18:21:27,248 INFO: rank 3: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 32: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 33: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 3: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 22: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 38: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 22: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 38: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 17: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 17: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 36: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 36: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 28: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 28: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 10: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 10: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 16: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 16: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 18: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 18: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 11: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 6: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 7: opacity loaded
+2026-04-09 18:21:27,249 INFO: rank 11: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 6: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,249 INFO: rank 7: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,250 INFO: rank 31: opacity loaded
+2026-04-09 18:21:27,250 INFO: rank 31: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,250 INFO: rank 30: opacity loaded
+2026-04-09 18:21:27,250 INFO: rank 30: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,252 INFO: rank 37: opacity loaded
+2026-04-09 18:21:27,252 INFO: rank 8: opacity loaded
+2026-04-09 18:21:27,252 INFO: rank 37: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,252 INFO: rank 29: opacity loaded
+2026-04-09 18:21:27,252 INFO: rank 8: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:27,252 INFO: rank 29: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,186 INFO: rank 41: opacity loaded
+2026-04-09 18:21:35,186 INFO: rank 41: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,186 INFO: rank 71: opacity loaded
+2026-04-09 18:21:35,186 INFO: rank 71: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,187 INFO: rank 66: opacity loaded
+2026-04-09 18:21:35,187 INFO: rank 66: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,187 INFO: rank 49: opacity loaded
+2026-04-09 18:21:35,187 INFO: rank 49: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,187 INFO: rank 72: opacity loaded
+2026-04-09 18:21:35,187 INFO: rank 72: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,188 INFO: rank 59: opacity loaded
+2026-04-09 18:21:35,188 INFO: rank 59: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,188 INFO: rank 45: opacity loaded
+2026-04-09 18:21:35,188 INFO: rank 50: opacity loaded
+2026-04-09 18:21:35,188 INFO: rank 50: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,188 INFO: rank 45: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,188 INFO: rank 75: opacity loaded
+2026-04-09 18:21:35,189 INFO: rank 75: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,188 INFO: rank 68: opacity loaded
+2026-04-09 18:21:35,188 INFO: rank 76: opacity loaded
+2026-04-09 18:21:35,189 INFO: rank 68: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,189 INFO: rank 76: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,189 INFO: rank 67: opacity loaded
+2026-04-09 18:21:35,189 INFO: rank 67: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,189 INFO: rank 42: opacity loaded
+2026-04-09 18:21:35,189 INFO: rank 42: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,189 INFO: rank 61: opacity loaded
+2026-04-09 18:21:35,189 INFO: rank 74: opacity loaded
+2026-04-09 18:21:35,189 INFO: rank 61: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,189 INFO: rank 74: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,189 INFO: rank 62: opacity loaded
+2026-04-09 18:21:35,189 INFO: rank 62: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,189 INFO: rank 56: opacity loaded
+2026-04-09 18:21:35,189 INFO: rank 58: opacity loaded
+2026-04-09 18:21:35,189 INFO: rank 56: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,189 INFO: rank 58: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,189 INFO: rank 65: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 65: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 43: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 43: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 57: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 57: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 46: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 46: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 44: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 44: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 48: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 48: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 52: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 52: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 51: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 51: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 70: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 70: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 54: opacity loaded
+2026-04-09 18:21:35,191 INFO: rank 54: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,190 INFO: rank 63: opacity loaded
+2026-04-09 18:21:35,190 INFO: rank 60: opacity loaded
+2026-04-09 18:21:35,191 INFO: rank 63: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,191 INFO: rank 60: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,191 INFO: rank 40: opacity loaded
+2026-04-09 18:21:35,191 INFO: rank 40: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,191 INFO: rank 77: opacity loaded
+2026-04-09 18:21:35,191 INFO: rank 77: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,191 INFO: rank 55: opacity loaded
+2026-04-09 18:21:35,191 INFO: rank 55: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,191 INFO: rank 53: opacity loaded
+2026-04-09 18:21:35,191 INFO: rank 53: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,191 INFO: rank 47: opacity loaded
+2026-04-09 18:21:35,191 INFO: rank 47: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,191 INFO: rank 73: opacity loaded
+2026-04-09 18:21:35,192 INFO: rank 73: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,192 INFO: rank 78: opacity loaded
+2026-04-09 18:21:35,192 INFO: rank 78: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,195 INFO: rank 64: opacity loaded
+2026-04-09 18:21:35,195 INFO: rank 64: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,196 INFO: rank 69: opacity loaded
+2026-04-09 18:21:35,197 INFO: rank 69: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:21:35,199 INFO: rank 79: opacity loaded
+2026-04-09 18:21:35,199 INFO: rank 79: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 18:32:02,521 INFO: rank 42: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 66: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 71: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 73: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 46: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 60: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 78: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 62: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 64: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 68: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 75: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 41: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 44: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 51: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 79: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 43: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,521 INFO: rank 67: Photochem data loaded (11880 rows)
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:02,524 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:03,873 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,873 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,873 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,873 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,873 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,874 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,875 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:03,875 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=5.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=150.0, semi_major=0.700, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=1.500, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=0.700, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.500, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=3.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=4.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=0.700, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=1.500, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=0.700, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=0.700, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.500, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=2.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:32:05,496 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=3.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:32:05,497 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:32:14,916 INFO: rank 59: Photochem data loaded (11880 rows)
+2026-04-09 18:32:14,917 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:32:14,918 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:32:14,918 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=1.000, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:34:26,597 INFO: rank 72: Photochem data loaded (11880 rows)
+2026-04-09 18:34:26,597 INFO: rank 47: Photochem data loaded (11880 rows)
+2026-04-09 18:34:26,598 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:34:26,598 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:34:26,598 INFO: rank 65: Photochem data loaded (11880 rows)
+2026-04-09 18:34:26,599 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:34:26,599 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:34:26,599 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=150.0, semi_major=0.700, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:34:26,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:34:26,599 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.000, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:34:26,600 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:34:26,601 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=0.700, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:35:30,941 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:35:30,950 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:35:30,973 ERROR: RSM failed: KeyError: 'O3_530'
+2026-04-09 18:35:31,013 ERROR: RSM failed: KeyError: 'O3_531'
+2026-04-09 18:35:31,063 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 18:35:31,079 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:35:31,080 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:35:31,085 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 18:35:31,085 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:35:31,084 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:35:31,090 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:35:31,091 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:35:31,095 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:35:31,100 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:35:31,102 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:35:31,105 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:35:31,125 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:35:31,134 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:35:35,251 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=2.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:35:35,267 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=2.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:35:35,269 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=2.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:35:35,273 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=2.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:35:35,279 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=3.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:35:35,278 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=3.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:35:35,282 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=0.700, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:35:35,288 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=0.700, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:35:35,288 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:35:35,292 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.000, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:35:35,295 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.000, ctoO=0.5050, kzz=9.0, phase=0.0000
+2026-04-09 18:35:35,298 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:35:35,301 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.500, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:35:35,311 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.500, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:35:35,319 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.500, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:35:35,325 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.500, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:35:35,326 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.500, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:35:35,331 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=1.500, ctoO=0.5050, kzz=9.0, phase=0.0000
+2026-04-09 18:36:32,959 INFO: rank 56: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,959 INFO: rank 63: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,960 INFO: rank 74: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,960 INFO: rank 45: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,960 INFO: rank 49: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,960 INFO: rank 50: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,960 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,961 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,960 INFO: rank 70: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,961 INFO: rank 48: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,961 INFO: rank 61: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,961 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,961 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,962 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,961 INFO: rank 55: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,962 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,962 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,962 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,962 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,962 INFO: rank 54: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,962 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,962 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,962 INFO: rank 40: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,962 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,962 INFO: rank 53: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,962 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,963 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,963 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=1.500, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:36:32,963 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=1.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:36:32,963 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,963 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,963 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,963 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.500, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:36:32,963 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=150.0, semi_major=1.000, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:36:32,963 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,963 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,963 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,963 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,963 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=150.0, semi_major=0.700, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:36:32,962 INFO: rank 77: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,963 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:36:32,963 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=150.0, semi_major=0.700, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:36:32,964 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,964 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,964 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,964 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,964 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=0.700, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:36:32,964 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,964 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=0.700, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:36:32,964 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=0.700, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:36:32,964 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=2.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:36:32,966 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=150.0, semi_major=1.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:36:32,966 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=1.500, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:36:32,966 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,965 INFO: rank 57: Photochem data loaded (11880 rows)
+2026-04-09 18:36:32,967 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,967 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:36:32,968 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.500, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:36:32,968 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:36:32,970 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=1.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:37:15,230 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:37:15,234 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:37:15,246 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:37:15,363 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=2.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:37:15,373 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=2.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:37:15,380 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=2.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:37:51,866 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:37:51,870 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:37:51,907 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 18:37:51,912 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=2.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:37:51,915 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=2.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:37:51,951 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=2.000, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:37:51,987 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 18:37:52,023 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=3.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:37:52,030 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:37:52,050 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:37:52,064 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=4.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:37:52,075 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:37:52,077 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:37:52,079 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:37:52,085 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:37:52,092 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:37:52,096 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:37:52,105 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:37:52,113 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:37:52,116 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:37:52,119 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:37:52,136 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:37:52,156 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:37:52,218 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=5.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:37:52,226 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=5.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:37:52,231 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=300.0, semi_major=6.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:37:52,234 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=0.700, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:37:52,237 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=0.700, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:37:52,240 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=0.700, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:37:52,243 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=0.700, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:37:52,246 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=0.700, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:37:52,248 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:37:52,251 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:37:52,254 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:37:52,257 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:37:52,259 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:38:50,862 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:38:50,866 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:38:50,909 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:38:50,928 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 18:38:50,934 ERROR: RSM failed: KeyError: 'O3_531'
+2026-04-09 18:38:50,954 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:38:50,955 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:38:50,958 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:38:50,960 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.000, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:38:50,965 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:38:50,967 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.000, ctoO=0.5050, kzz=9.0, phase=0.0000
+2026-04-09 18:38:50,971 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:38:50,973 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.500, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:38:50,974 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:38:50,974 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:38:50,976 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:38:50,981 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:38:50,982 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 18:38:50,988 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:38:51,001 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.500, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:38:51,046 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.500, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:38:51,051 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.500, ctoO=0.2575, kzz=9.0, phase=0.0000
+2026-04-09 18:38:51,054 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.500, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:38:51,057 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.500, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:38:51,064 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=1.500, ctoO=0.5050, kzz=9.0, phase=0.0000
+2026-04-09 18:38:51,068 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=2.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:38:51,074 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=2.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:38:51,078 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=2.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:38:51,081 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=2.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:38:51,083 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=2.000, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,438 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:40:11,512 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 18:40:11,523 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=3.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:40:11,535 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=3.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,542 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 18:40:11,558 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=3.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:40:11,599 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:40:11,639 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,639 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=6.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:40:11,648 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=6.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,664 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:40:11,665 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 18:40:11,680 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:40:11,682 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=6.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,689 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=350.0, semi_major=8.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:40:11,697 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,699 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=0.700, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:40:11,701 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:40:11,706 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=0.700, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,706 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,706 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,710 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,716 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,718 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:40:11,720 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:40:11,721 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,722 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,722 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:40:11,723 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:40:11,725 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,728 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,730 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:40:11,731 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,738 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.000, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,739 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:11,742 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:40:11,745 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.500, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,748 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.500, ctoO=0.0100, kzz=9.0, phase=0.0000
+2026-04-09 18:40:11,750 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.500, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:40:11,753 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.500, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:40:11,756 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.500, ctoO=0.2575, kzz=9.0, phase=0.0000
+2026-04-09 18:40:11,758 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.500, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:40:58,823 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,828 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,834 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,843 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,844 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,845 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,847 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:40:58,852 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,854 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,854 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,855 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,856 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,859 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,864 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,867 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:40:58,868 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.500, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:40:58,895 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=1.500, ctoO=0.5050, kzz=9.0, phase=0.0000
+2026-04-09 18:40:58,898 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=2.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:40:58,903 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=2.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:40:58,948 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=2.000, ctoO=0.0100, kzz=9.0, phase=0.0000
+2026-04-09 18:40:58,986 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=2.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:40:58,990 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=2.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:40:58,992 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=2.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:40:58,995 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=2.000, ctoO=0.5050, kzz=7.0, phase=0.0000
+2026-04-09 18:40:58,998 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=2.000, ctoO=0.5050, kzz=9.0, phase=0.0000
+2026-04-09 18:40:59,000 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=3.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:40:59,003 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=3.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 18:40:59,006 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=3.000, ctoO=0.0100, kzz=9.0, phase=0.0000
+2026-04-09 18:40:59,008 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=3.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:40:59,011 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=3.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:42:06,239 INFO: rank 76: Photochem data loaded (11880 rows)
+2026-04-09 18:42:06,240 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:42:06,241 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:42:06,241 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.500, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 18:42:06,241 INFO: rank 52: Photochem data loaded (11880 rows)
+2026-04-09 18:42:06,242 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:42:06,243 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:42:06,244 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=0.700, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:42:44,504 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,559 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,715 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,717 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,741 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,744 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,747 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,747 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,750 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,760 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,763 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,763 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,763 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,767 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,772 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,782 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,793 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,799 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,803 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,810 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,810 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,811 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,811 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,817 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:42:44,822 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,824 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,825 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,831 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,835 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,841 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,841 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,845 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,847 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:42:44,847 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,852 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:44,854 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:42:45,110 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=3.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:42:45,121 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=4.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:42:45,128 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=4.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:42:45,133 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=5.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:42:45,135 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=10.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 18:42:45,139 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=400.0, semi_major=10.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:45:29,355 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:45:29,356 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:45:29,356 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:45:29,357 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:45:29,359 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:45:29,382 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 18:45:29,405 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 18:45:29,429 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 18:48:07,084 INFO: rank 58: Photochem data loaded (11880 rows)
+2026-04-09 18:48:07,084 INFO: rank 69: Photochem data loaded (11880 rows)
+2026-04-09 18:48:07,086 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:48:07,086 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 18:48:07,088 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:48:07,088 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 18:48:07,089 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=250.0, semi_major=1.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 18:48:07,089 INFO: Starting RSM for inputs: rad=2.000, metal=3.50, tint=200.0, semi_major=1.000, ctoO=0.5050, kzz=5.0, phase=0.0000
+2026-04-09 18:51:34,023 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 18:51:34,039 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 19:21:16,108 INFO: rank 9: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,108 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,109 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,109 INFO: rank 14: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,108 INFO: rank 30: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,109 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,109 INFO: rank 35: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,109 INFO: rank 3: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,109 INFO: rank 7: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,109 INFO: rank 22: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,110 INFO: rank 4: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,109 INFO: rank 21: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,110 INFO: rank 31: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,110 INFO: rank 6: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,110 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,110 INFO: rank 10: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,110 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,110 INFO: rank 11: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,110 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,110 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,110 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,110 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,110 INFO: rank 2: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,110 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,110 INFO: rank 27: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,110 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,111 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,111 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,111 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,111 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,111 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,111 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,111 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,111 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,111 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,111 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,111 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,111 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,111 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,111 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,112 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,112 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,112 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,112 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,112 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,114 INFO: rank 24: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 23: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 38: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 15: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 5: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 36: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 18: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 33: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 16: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 20: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 25: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 1: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,114 INFO: rank 26: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: rank 19: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,114 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: rank 8: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: rank 34: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: rank 12: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,115 INFO: rank 28: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,115 INFO: rank 32: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: rank 13: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,115 INFO: rank 39: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,115 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,115 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,115 INFO: rank 17: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,115 INFO: rank 37: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,115 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,116 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: rank 29: Photochem data loaded (11880 rows)
+2026-04-09 19:21:16,116 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,116 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,116 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,117 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,117 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,117 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,117 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:16,117 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=200.0, semi_major=1.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=250.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=300.0, semi_major=2.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=150.0, semi_major=0.700, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=150.0, semi_major=1.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=150.0, semi_major=2.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=200.0, semi_major=0.700, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=200.0, semi_major=1.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=300.0, semi_major=1.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=300.0, semi_major=1.500, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=350.0, semi_major=3.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=1.000, ctoO=0.2575, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=150.0, semi_major=0.700, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=150.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=200.0, semi_major=0.700, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=200.0, semi_major=1.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=200.0, semi_major=2.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=250.0, semi_major=0.700, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=300.0, semi_major=0.700, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=300.0, semi_major=1.500, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=350.0, semi_major=1.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=350.0, semi_major=1.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=350.0, semi_major=1.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=350.0, semi_major=2.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=350.0, semi_major=3.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=1.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=1.500, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=300.0, semi_major=1.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,339 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=300.0, semi_major=1.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=300.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=300.0, semi_major=2.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=350.0, semi_major=1.500, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=350.0, semi_major=2.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,339 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=1.000, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,339 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,338 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=1.500, ctoO=0.0100, kzz=7.0, phase=0.0000
+2026-04-09 19:21:17,339 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=400.0, semi_major=2.000, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,339 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=250.0, semi_major=1.000, ctoO=0.2575, kzz=5.0, phase=0.0000
+2026-04-09 19:21:17,339 INFO: Starting RSM for inputs: rad=2.000, metal=3.12, tint=350.0, semi_major=1.500, ctoO=0.0100, kzz=5.0, phase=0.0000
+2026-04-09 19:25:56,599 ERROR: RSM failed: KeyError: 'O3_529'
+2026-04-09 19:25:56,612 ERROR: RSM failed: KeyError: 'O3_530'
+2026-04-09 19:25:56,622 ERROR: RSM failed: KeyError: 'O3_531'
+2026-04-09 19:25:56,624 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 19:25:56,628 ERROR: RSM failed: KeyError: 'O3_531'
+2026-04-09 19:25:56,686 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 19:25:56,705 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 19:25:56,712 ERROR: RSM failed: KeyError: 'O3_528'
+2026-04-09 19:25:56,826 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 19:25:56,854 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 19:25:56,884 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 19:25:56,892 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,911 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,919 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,920 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,924 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 19:25:56,957 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,962 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,971 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,972 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,972 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,974 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,975 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 19:25:56,977 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,981 ERROR: RSM failed: KeyError: 'O3_527'
+2026-04-09 19:25:56,984 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,990 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:56,994 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:57,003 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 19:25:57,008 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:57,009 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:57,009 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 19:25:57,010 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:57,017 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:57,025 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 19:25:57,029 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:57,033 ERROR: RSM failed: KeyError: 'O3_525'
+2026-04-09 19:25:57,053 ERROR: RSM failed: KeyError: 'O3_526'
+2026-04-09 19:25:57,091 ERROR: RSM failed: KeyError: 'O3_526'

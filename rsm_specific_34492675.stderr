@@ -1,0 +1,476 @@
+2026-04-09 16:57:41,480 INFO: rank 10: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,481 INFO: rank 21: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,480 INFO: rank 22: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,481 INFO: rank 26: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,480 INFO: rank 28: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,480 INFO: rank 36: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,481 INFO: rank 8: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,481 INFO: rank 14: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,481 INFO: rank 19: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,481 INFO: rank 24: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,481 INFO: rank 25: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,481 INFO: rank 31: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,481 INFO: rank 5: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,482 INFO: rank 20: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,482 INFO: rank 7: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,482 INFO: rank 38: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,482 INFO: rank 23: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,482 INFO: rank 30: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,482 INFO: rank 12: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,482 INFO: rank 39: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 2: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 9: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 1: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 13: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 32: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 17: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 27: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 35: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 4: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,484 INFO: rank 16: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,483 INFO: rank 37: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,484 INFO: rank 11: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,484 INFO: rank 15: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,484 INFO: rank 3: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,484 INFO: rank 33: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,485 INFO: rank 29: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,485 INFO: rank 6: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,486 INFO: rank 34: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,489 INFO: rank 18: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:41,490 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 16:57:41,572 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 16:57:42,889 INFO: rank 41: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,889 INFO: rank 48: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,889 INFO: rank 54: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,889 INFO: rank 58: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,889 INFO: rank 77: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,889 INFO: rank 56: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 45: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 53: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 64: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 55: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 40: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 62: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 69: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 51: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 66: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 73: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,890 INFO: rank 78: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 71: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 76: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 68: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 42: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 50: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 59: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 44: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 47: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 61: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 74: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,891 INFO: rank 79: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,892 INFO: rank 52: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,892 INFO: rank 57: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,892 INFO: rank 65: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,892 INFO: rank 46: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,892 INFO: rank 72: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,892 INFO: rank 60: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,893 INFO: rank 63: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,893 INFO: rank 43: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,894 INFO: rank 75: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,894 INFO: rank 49: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,894 INFO: rank 70: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 16:57:42,895 INFO: rank 67: loading opacity from /mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db
+2026-04-09 17:03:06,941 INFO: rank 9: opacity loaded
+2026-04-09 17:03:06,941 INFO: rank 9: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,941 INFO: rank 14: opacity loaded
+2026-04-09 17:03:06,941 INFO: rank 14: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,941 INFO: rank 21: opacity loaded
+2026-04-09 17:03:06,941 INFO: rank 32: opacity loaded
+2026-04-09 17:03:06,941 INFO: rank 32: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,941 INFO: rank 13: opacity loaded
+2026-04-09 17:03:06,941 INFO: rank 21: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,941 INFO: rank 13: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,941 INFO: rank 30: opacity loaded
+2026-04-09 17:03:06,942 INFO: rank 30: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,942 INFO: rank 29: opacity loaded
+2026-04-09 17:03:06,942 INFO: rank 8: opacity loaded
+2026-04-09 17:03:06,942 INFO: rank 29: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,942 INFO: rank 8: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,942 INFO: rank 26: opacity loaded
+2026-04-09 17:03:06,942 INFO: rank 3: opacity loaded
+2026-04-09 17:03:06,943 INFO: rank 3: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,943 INFO: rank 20: opacity loaded
+2026-04-09 17:03:06,943 INFO: rank 20: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,942 INFO: rank 26: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,942 INFO: rank 34: opacity loaded
+2026-04-09 17:03:06,943 INFO: rank 34: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,943 INFO: rank 1: opacity loaded
+2026-04-09 17:03:06,943 INFO: rank 1: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,943 INFO: rank 6: opacity loaded
+2026-04-09 17:03:06,943 INFO: rank 6: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,943 INFO: rank 17: opacity loaded
+2026-04-09 17:03:06,943 INFO: rank 17: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,943 INFO: rank 25: opacity loaded
+2026-04-09 17:03:06,943 INFO: rank 25: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,943 INFO: rank 35: opacity loaded
+2026-04-09 17:03:06,943 INFO: rank 35: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,943 INFO: rank 2: opacity loaded
+2026-04-09 17:03:06,943 INFO: rank 2: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,943 INFO: rank 18: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 18: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 10: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 10: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 19: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 19: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 22: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 27: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 27: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 33: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 33: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 37: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 37: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 38: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 38: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 7: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 7: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 22: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 36: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 36: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 15: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 15: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 16: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 39: opacity loaded
+2026-04-09 17:03:06,944 INFO: rank 39: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,944 INFO: rank 16: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,945 INFO: rank 11: opacity loaded
+2026-04-09 17:03:06,945 INFO: rank 24: opacity loaded
+2026-04-09 17:03:06,945 INFO: rank 11: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,945 INFO: rank 24: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,945 INFO: rank 28: opacity loaded
+2026-04-09 17:03:06,945 INFO: rank 23: opacity loaded
+2026-04-09 17:03:06,945 INFO: rank 28: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,945 INFO: rank 23: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,945 INFO: rank 31: opacity loaded
+2026-04-09 17:03:06,946 INFO: rank 31: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,946 INFO: rank 4: opacity loaded
+2026-04-09 17:03:06,946 INFO: rank 4: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,946 INFO: rank 5: opacity loaded
+2026-04-09 17:03:06,947 INFO: rank 5: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:06,948 INFO: rank 12: opacity loaded
+2026-04-09 17:03:06,948 INFO: rank 12: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,307 INFO: rank 44: opacity loaded
+2026-04-09 17:03:10,307 INFO: rank 44: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,307 INFO: rank 53: opacity loaded
+2026-04-09 17:03:10,307 INFO: rank 53: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,307 INFO: rank 78: opacity loaded
+2026-04-09 17:03:10,307 INFO: rank 78: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 50: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 59: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 59: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 50: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 63: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 63: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 51: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 61: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 65: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 51: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 61: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 65: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 71: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 42: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 71: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 42: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 48: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 41: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 48: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 52: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 52: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 41: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 68: opacity loaded
+2026-04-09 17:03:10,308 INFO: rank 68: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,308 INFO: rank 76: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 76: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,309 INFO: rank 57: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 57: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,309 INFO: rank 69: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 62: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 66: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 69: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,309 INFO: rank 45: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 62: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,309 INFO: rank 45: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,309 INFO: rank 66: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,309 INFO: rank 64: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 46: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 64: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,309 INFO: rank 46: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,309 INFO: rank 47: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 47: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,309 INFO: rank 79: opacity loaded
+2026-04-09 17:03:10,309 INFO: rank 56: opacity loaded
+2026-04-09 17:03:10,310 INFO: rank 79: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,310 INFO: rank 56: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,310 INFO: rank 43: opacity loaded
+2026-04-09 17:03:10,310 INFO: rank 43: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,310 INFO: rank 73: opacity loaded
+2026-04-09 17:03:10,310 INFO: rank 73: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,310 INFO: rank 54: opacity loaded
+2026-04-09 17:03:10,310 INFO: rank 54: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,310 INFO: rank 58: opacity loaded
+2026-04-09 17:03:10,310 INFO: rank 58: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,310 INFO: rank 77: opacity loaded
+2026-04-09 17:03:10,310 INFO: rank 74: opacity loaded
+2026-04-09 17:03:10,310 INFO: rank 77: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,310 INFO: rank 74: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,310 INFO: rank 72: opacity loaded
+2026-04-09 17:03:10,311 INFO: rank 72: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,310 INFO: rank 55: opacity loaded
+2026-04-09 17:03:10,311 INFO: rank 55: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,311 INFO: rank 60: opacity loaded
+2026-04-09 17:03:10,311 INFO: rank 60: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,311 INFO: rank 70: opacity loaded
+2026-04-09 17:03:10,311 INFO: rank 49: opacity loaded
+2026-04-09 17:03:10,311 INFO: rank 70: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,311 INFO: rank 49: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,311 INFO: rank 67: opacity loaded
+2026-04-09 17:03:10,312 INFO: rank 67: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,312 INFO: rank 40: opacity loaded
+2026-04-09 17:03:10,312 INFO: rank 40: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:03:10,313 INFO: rank 75: opacity loaded
+2026-04-09 17:03:10,313 INFO: rank 75: loading Photochem data from results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+2026-04-09 17:06:07,597 INFO: rank 41: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 43: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 46: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 49: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 53: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 54: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 55: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 58: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 60: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 61: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 62: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 64: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 71: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 73: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 74: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,597 INFO: rank 77: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,598 INFO: rank 76: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,598 INFO: rank 72: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: rank 67: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: rank 70: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,599 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,600 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,600 INFO: rank 79: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,601 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,617 INFO: rank 69: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,617 INFO: rank 59: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,617 INFO: rank 48: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,617 INFO: rank 40: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,617 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,617 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,617 INFO: rank 51: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,618 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,618 INFO: rank 68: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,618 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,618 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,618 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,633 INFO: rank 47: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,634 INFO: rank 50: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,634 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,634 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,634 INFO: rank 78: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,635 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,636 INFO: rank 42: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,637 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,650 INFO: rank 56: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,650 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,651 INFO: rank 63: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,651 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,663 INFO: rank 44: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,663 INFO: rank 75: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,664 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,664 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,675 INFO: rank 57: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,676 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,684 INFO: rank 45: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,685 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,685 INFO: rank 65: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,685 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,771 INFO: rank 52: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,771 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:07,788 INFO: rank 66: Photochem data loaded (11880 rows)
+2026-04-09 17:06:07,788 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:09,195 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,195 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,195 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,195 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,195 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,195 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,195 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,195 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,195 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,196 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:09,197 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,409 INFO: rank 1: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,409 INFO: rank 7: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,409 INFO: rank 8: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,408 INFO: rank 10: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,409 INFO: rank 11: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,410 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,408 INFO: rank 16: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,409 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,408 INFO: rank 19: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,409 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,408 INFO: rank 22: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,409 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,409 INFO: rank 24: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: rank 25: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,410 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,409 INFO: rank 26: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,409 INFO: rank 27: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,410 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,408 INFO: rank 31: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,409 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,408 INFO: rank 33: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,409 INFO: rank 35: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,409 INFO: rank 36: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,409 INFO: rank 37: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,409 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,409 INFO: rank 38: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,410 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,410 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,410 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,411 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,415 INFO: rank 13: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,415 INFO: rank 6: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,415 INFO: rank 14: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,415 INFO: rank 34: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,415 INFO: rank 21: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,415 INFO: rank 17: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,415 INFO: rank 29: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,415 INFO: rank 9: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: rank 4: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: rank 32: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: rank 23: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: rank 30: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: rank 15: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: rank 39: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: rank 3: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: rank 28: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: rank 2: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: rank 5: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,416 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,416 INFO: rank 18: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,416 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,416 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,416 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,417 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,417 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,417 INFO: rank 20: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,417 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,418 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,418 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,418 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,419 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)
+2026-04-09 17:06:12,435 INFO: rank 12: Photochem data loaded (11880 rows)
+2026-04-09 17:06:12,436 INFO: Resolved case-list file: results/modernearth_175minimatches_phase0.npy
+2026-04-09 17:06:12,436 INFO: Loaded case list: results/modernearth_175minimatches_phase0.npy  shape=(175, 7)

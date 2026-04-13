@@ -1,0 +1,8 @@
+/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference
+/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/grp/redcat/trds
+/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/reference
+/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation&Setup_Instructions/picasofiles/grp/redcat/trds
+Loaded case list: results/archeanearth_5622minimatches_phase0.npy  (5622 cases)
+make_specific_grid: 5622 cases, saving to 'results/ReflectedSpectra_SpecificInputsArcheanEarth_fv.h5'
+Initializing HDF5 output for 5622 cases...
+Cases total: 5622 | Completed: 0 | Remaining: 5622
