@@ -7,7 +7,7 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=40
 #SBATCH --mem=500G
-#SBATCH --time=3-00:00:00
+#SBATCH --time=2-00:00:00
 
 #SBATCH --export=all
 #SBATCH --output=rsm_specific_%j.stdout
