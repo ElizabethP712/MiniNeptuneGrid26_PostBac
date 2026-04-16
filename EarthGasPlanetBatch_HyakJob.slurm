@@ -5,7 +5,7 @@
 #SBATCH --account=vsm
 #SBATCH --partition=compute-hugemem
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=14
+#SBATCH --ntasks-per-node=17
 #SBATCH --mem=500G
 #SBATCH --time=24:00:00
 
@@ -26,4 +26,4 @@ export BATCH_CASE_LIST="batch_cases.json"
 
 # Run the script (nodes * ntasks-per-node = total MPI ranks)
 # Rank 0 is the master; all others are workers.
-mpiexec -n 14 python EarthGasPlanetBatch_HyakJob.py
+mpiexec -n 17 python EarthGasPlanetBatch_HyakJob.py
