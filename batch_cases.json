@@ -202,7 +202,9 @@
     "Kzz":          5,
     "phase_angle":  0.0,
 
-    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "Photochem_file": true,
+    "sol_path":  "sol_2.61_3.5_155_1_0.01_5.pkl",
+    "soleq_path": "soleq_2.61_3.5_155_1_0.01_5.pkl",
 
     "cloud_frac":    0.5,
     "forced_nocld":  false,
@@ -226,7 +228,9 @@
     "Kzz":          5,
     "phase_angle":  0.0,
 
-    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "Photochem_file": true,
+    "sol_path":  "sol_2.61_3.5_155_1_0.01_5.pkl",
+    "soleq_path": "soleq_2.61_3.5_155_1_0.01_5.pkl",
 
     "cloud_frac":    0.5,
     "forced_nocld":  false,
