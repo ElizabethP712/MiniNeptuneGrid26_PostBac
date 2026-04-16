@@ -35,6 +35,14 @@ os.environ['PYSYN_CDBS']= os.path.join(current_directory, PYSYN_directory_path)
 import picaso.justdoit as jdi
 import picaso.justplotit as jpi
 
+# ── Global opacity object — loaded once per process ───────────────────────────
+opacity_path = os.path.join(
+    current_directory,
+    "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
+)
+print(opacity_path)
+OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.1, 2.5])
+
 
 def find_pbot(sol=None, solaer=None, tol=0.9):
 
@@ -133,11 +141,7 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
 
     # Create and empty dictionary for later results
 
-    current_directory = Path.cwd()
-    opacity_file_path = "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
-    opacity_path=os.path.join(current_directory, opacity_file_path)
-    print(opacity_path)
-    opacity = jdi.opannection(filename_db=opacity_path, wave_range=[0.1,2.5])
+    opacity = OPACITY  # module-level global; loaded once per process
 
     planet_metal = float(planet_metal)
 
@@ -248,17 +252,6 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
     if surface_albedo is not None:
         start_case.surface_reflect(surface_albedo, opacity.wno)
 
-    if no_rayleigh:
-        for mol in opacity.rayleigh_opa:
-            opacity.rayleigh_opa[mol] = np.zeros_like(opacity.rayleigh_opa[mol])
-
-    df_cldfree = start_case.spectrum(opacity, calculation='reflected', full_output=True)
-    wno_cldfree, alb_cldfree, fpfs_cldfree = df_cldfree['wavenumber'], df_cldfree['albedo'], df_cldfree['fpfs_reflected']
-    _, alb_cldfree_grid = jdi.mean_regrid(wno_cldfree, alb_cldfree, R=150)
-    wno_cldfree_grid, fpfs_cldfree_grid = jdi.mean_regrid(wno_cldfree, fpfs_cldfree, R=150)
-
-    print(f'This is the length of the grids created: {len(wno_cldfree_grid)}, {len(fpfs_cldfree_grid)}')
-
     # Build pickle filename suffix from active options
     if outputfile is not None:
         _suffix = ''
@@ -278,106 +271,72 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
         pkl_name = str(_out.parent / f'RLS_{_out.name}{_suffix}')
         Path(pkl_name).parent.mkdir(parents=True, exist_ok=True)
 
-    # Determine Whether to Add Clouds or Not?
+    # Backup Rayleigh opacity before spectrum calls; zero if no_rayleigh requested.
+    # Restore afterward so the global OPACITY is not corrupted for subsequent cases.
+    _rayleigh_backup = None
+    if no_rayleigh:
+        _rayleigh_backup = {mol: arr.copy() for mol, arr in opacity.rayleigh_opa.items()}
+        for mol in opacity.rayleigh_opa:
+            opacity.rayleigh_opa[mol] = np.zeros_like(opacity.rayleigh_opa[mol])
 
-    if "H2Oaer" in sol_dict_aer and forced_nocld == False:
-        # What if we added Grey Earth-like Clouds?
+    df_cldfree = start_case.spectrum(opacity, calculation='reflected', full_output=True)
+    wno_cldfree, alb_cldfree, fpfs_cldfree = df_cldfree['wavenumber'], df_cldfree['albedo'], df_cldfree['fpfs_reflected']
+    _, alb_cldfree_grid = jdi.mean_regrid(wno_cldfree, alb_cldfree, R=150)
+    wno_cldfree_grid, fpfs_cldfree_grid = jdi.mean_regrid(wno_cldfree, fpfs_cldfree, R=150)
 
-        # Calculate pbot:
-        pbot = find_pbot(sol = atm, solaer=sol_dict_aer)
+    print(f'This is the length of the grids created: {len(wno_cldfree_grid)}, {len(fpfs_cldfree_grid)}')
 
+    # Default to cloud-free result; overwrite below if clouds are added
+    wno = wno_cldfree_grid.copy()
+    alb = alb_cldfree_grid.copy()
+    fpfs = fpfs_cldfree_grid.copy()
+    clouds = [0] * len(wno)
+    df_cld = None
+
+    if "H2Oaer" in sol_dict_aer and not forced_nocld:
+        pbot = find_pbot(sol=atm, solaer=sol_dict_aer)
         if pbot is not None:
             print(f'pbot was calculated, there is H2Oaer and a cloud was implemented')
             logpbot = np.log10(pbot)
-
-            # Calculate logdp:
             ptop_earth = 0.6
             pbot_earth = 0.7
             logdp = np.log10(pbot_earth) - np.log10(ptop_earth)
-
-            # Default opd (optical depth), w0 (single scattering albedo), g0 (asymmetry parameter)
-            start_case.clouds(w0=[0.99], g0=[0.85],
-                              p = [logpbot], dp = [logdp], opd=[10])
-            # Cloud spectrum
-            df_cld = start_case.spectrum(opacity,full_output=True)
-
-            # Average the two spectra - This differs between Calculating Earth Reflected Spectra
-            wno_c, alb_c, fpfs_c, albedo_c = df_cld['wavenumber'],df_cld['albedo'],df_cld['fpfs_reflected'], df_cld['albedo']
-            _, alb = jdi.mean_regrid(wno_cldfree, (1 -cloud_frac)*alb_cldfree+cloud_frac*albedo_c,R=150)
-            wno, fpfs = jdi.mean_regrid(wno_cldfree, (1 -cloud_frac)*fpfs_cldfree+cloud_frac*fpfs_c,R=150)
-
-            # Match the length of the clouds array with the length of wno or alb (fpfs is different length)
+            start_case.clouds(w0=[0.99], g0=[0.85], p=[logpbot], dp=[logdp], opd=[10])
+            df_cld = start_case.spectrum(opacity, full_output=True)
+            wno_c, alb_c, fpfs_c, albedo_c = df_cld['wavenumber'], df_cld['albedo'], df_cld['fpfs_reflected'], df_cld['albedo']
+            _, alb = jdi.mean_regrid(wno_cldfree, (1 - cloud_frac)*alb_cldfree + cloud_frac*albedo_c, R=150)
+            wno, fpfs = jdi.mean_regrid(wno_cldfree, (1 - cloud_frac)*fpfs_cldfree + cloud_frac*fpfs_c, R=150)
             clouds = [1] * len(wno)
-
-
-            if outputfile == None:
-                return wno, fpfs, alb, np.array(clouds), df_cld, df_cldfree
-            else:
-                RSM_outputs = {"wno":wno,
-                               "fpfs":fpfs,
-                               "alb":alb,
-                               "clouds":np.array(clouds),
-                               "df_cld":df_cld,
-                               "df_cldfree":df_cldfree}
-
-                with open(f'{pkl_name}.pkl', 'wb') as f:
-                    pickle.dump(RSM_outputs, f)
-                return wno, fpfs, alb, np.array(clouds), df_cld, df_cldfree
-
         else:
-            print(f'pbot is empty and/or forced_nocld is False, so no cloud is implemented')
-            wno = wno_cldfree_grid.copy()
-            alb = alb_cldfree_grid.copy()
-            fpfs = fpfs_cldfree_grid.copy()
-
-            # Match the length of the clouds array with the length of wno or alb (fpfs is different length)
-            clouds = [0] * len(wno)
-
+            print(f'pbot is empty, no cloud implemented')
             print(f'This is the length of the values I want to save: wno {len(wno)}, alb {len(alb)}, fpfs {len(fpfs)}, clouds {len(clouds)}')
-
-            if outputfile == None:
-                return wno, fpfs, alb, np.array(clouds), df_cld, df_cldfree
-            else:
-                RSM_outputs = {"wno":wno,
-                               "fpfs":fpfs,
-                               "alb":alb,
-                               "clouds":np.array(clouds),
-                               "df_cld":df_cld,
-                               "df_cldfree":df_cldfree}
-
-                with open(f'{pkl_name}.pkl', 'wb') as f:
-                    pickle.dump(RSM_outputs, f)
-                return wno, fpfs, alb, np.array(clouds), df_cld, df_cldfree
-
     else:
         if forced_nocld:
             print(f'forced_nocld=True, skipping cloud calculation')
         else:
             print(f'H2Oaer is not in solutions, no cloud implemented')
-        wno = wno_cldfree_grid.copy()
-        alb = alb_cldfree_grid.copy()
-        fpfs = fpfs_cldfree_grid.copy()
         print(f'For the inputs: {rad_plan}, {planet_metal}, {tint}, {semi_major}, {ctoO}, {Kzz}, {phase_angle}, The length should match: wno - {len(wno)}, alb - {len(alb)}, fpfs - {len(fpfs)}')
 
-        # Match the length of the clouds array with the length of wno or alb (fpfs is different length)
-        clouds = [0] * len(wno) # This means that there are no clouds
+    # Restore Rayleigh opacity after all spectrum calculations
+    if _rayleigh_backup is not None:
+        for mol, arr in _rayleigh_backup.items():
+            opacity.rayleigh_opa[mol] = arr
 
-        df_cld = None
-
-        if outputfile == None:
-                return wno, fpfs, alb, np.array(clouds), df_cld, df_cldfree
-        else:
-            RSM_outputs = {"wno":wno,
-                           "fpfs":fpfs,
-                           "alb":alb,
-                           "clouds":np.array(clouds),
-                           "df_cld":df_cld,
-                           "df_cldfree":df_cldfree}
-
-            with open(f'{pkl_name}.pkl', 'wb') as f:
-                pickle.dump(RSM_outputs, f)
-
-            return wno, fpfs, alb, np.array(clouds), df_cld, df_cldfree
+    # Single save/return point
+    if outputfile is None:
+        return wno, fpfs, alb, np.array(clouds), df_cld, df_cldfree
+    else:
+        RSM_outputs = {
+            "wno": wno,
+            "fpfs": fpfs,
+            "alb": alb,
+            "clouds": np.array(clouds),
+            "df_cld": df_cld,
+            "df_cldfree": df_cldfree,
+        }
+        with open(f'{pkl_name}.pkl', 'wb') as f:
+            pickle.dump(RSM_outputs, f)
+        return wno, fpfs, alb, np.array(clouds), df_cld, df_cldfree
 
 
 # Default Modern and Archean Earth Mixing Ratio Compositions
@@ -400,7 +359,6 @@ df_mol_modern_earth = {
 
 
 def earth_spectrum(
-    opacity_path=None,
     df_mol_earth=None,
     phase=0.0,
     atmosphere_kwargs=None,
@@ -450,8 +408,7 @@ def earth_spectrum(
                   mass=1, mass_unit=jdi.u.Unit('M_earth'))
     earth.approx(raman="none")
 
-    opacity = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])
-    earth.star(opannection=opacity, temp=5778, logg=4.4, semi_major=1,
+    earth.star(opannection=OPACITY, temp=5778, logg=4.4, semi_major=1,
                metal=0.0, semi_major_unit=u.Unit('au'))
 
     P = np.logspace(-6, np.log10(p_surface_bar), nlevel)
@@ -480,16 +437,22 @@ def earth_spectrum(
         earth.atmosphere(df=df_atmo_earth, exclude_mol=gas_names)
     else:
         earth.atmosphere(df=df_atmo_earth)
-    earth.surface_reflect(0.1, opacity.wno)
+    earth.surface_reflect(0.1, OPACITY.wno)
 
+    _rayleigh_backup = None
     if no_rayleigh:
-        for mol in opacity.rayleigh_opa:
-            opacity.rayleigh_opa[mol] = np.zeros_like(opacity.rayleigh_opa[mol])
+        _rayleigh_backup = {mol: arr.copy() for mol, arr in OPACITY.rayleigh_opa.items()}
+        for mol in OPACITY.rayleigh_opa:
+            OPACITY.rayleigh_opa[mol] = np.zeros_like(OPACITY.rayleigh_opa[mol])
 
-    df_cldfree = earth.spectrum(opacity, calculation='reflected', full_output=True)
+    df_cldfree = earth.spectrum(OPACITY, calculation='reflected', full_output=True)
 
     _add_cloud_deck(earth, cloud_ptop_bar, cloud_pbot_bar)
-    df_cld = earth.spectrum(opacity, full_output=True)
+    df_cld = earth.spectrum(OPACITY, full_output=True)
+
+    if _rayleigh_backup is not None:
+        for mol, arr in _rayleigh_backup.items():
+            OPACITY.rayleigh_opa[mol] = arr
 
     wno = df_cldfree['wavenumber']
     fpfs_cf = df_cldfree['fpfs_reflected']
@@ -526,7 +489,6 @@ def earth_spectrum(
 
 
 def make_case_earth(
-    opacity_path=opacity_path,
     df_mol_earth=None,
     phase=0,
     species=None,
@@ -543,7 +505,6 @@ def make_case_earth(
     species = ['O2', 'H2O', 'CO2', 'O3', 'CH4']
     """
     kwargs = dict(
-        opacity_path=opacity_path,
         df_mol_earth=df_mol_earth,
         phase=phase,
         cloud_frac=cloud_frac,

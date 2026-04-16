@@ -2,8 +2,6 @@
   {
     "type": "earth",
 
-    "opacity_path": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
-
     "df_mol_earth": {
       "N2":  0.945,
       "CO2": 0.05,
@@ -24,8 +22,6 @@
 
   {
     "type": "earth",
-
-    "opacity_path": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
 
     "df_mol_earth": {
       "N2":  0.945,
@@ -48,8 +44,6 @@
     {
     "type": "earth",
 
-    "opacity_path": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
-
     "df_mol_earth": {
       "N2":  0.945,
       "CO2": 0.05,
@@ -70,8 +64,6 @@
 
       {
     "type": "earth",
-
-    "opacity_path": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
 
     "df_mol_earth": {
       "N2":  0.945,
@@ -95,8 +87,6 @@
         {
     "type": "earth",
 
-    "opacity_path": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
-
     "df_mol_earth": {
       "N2":  0.945,
       "CO2": 0.05,
@@ -117,8 +107,6 @@
 
 
    { "type": "earth",
-
-    "opacity_path": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
 
     "df_mol_earth": {
       "N2":0.79,
@@ -141,8 +129,6 @@
 
      { "type": "earth",
 
-    "opacity_path": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
-
     "df_mol_earth": {
       "N2":0.79,
         "O2":0.21,
@@ -164,8 +150,6 @@
 
        { "type": "earth",
 
-    "opacity_path": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
-
     "df_mol_earth": {
       "N2":0.79,
         "O2":0.21,
@@ -186,8 +170,6 @@
   },
 
          { "type": "earth",
-
-    "opacity_path": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
 
     "df_mol_earth": {
       "N2":0.79,
