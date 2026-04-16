@@ -35,13 +35,17 @@ os.environ['PYSYN_CDBS']= os.path.join(current_directory, PYSYN_directory_path)
 import picaso.justdoit as jdi
 import picaso.justplotit as jpi
 
-# ── Global opacity object — loaded once per process ───────────────────────────
+# ── Global opacity objects — loaded once per process ─────────────────────────
+# Two objects needed: Earth spectra require [0.3, 2.5] to avoid Rayleigh NaNs
+# at short wavelengths (Rayleigh ∝ λ⁻⁴ → enormous optical depth below 0.3 μm).
+# Gas planet spectra use [0.1, 2.5] to capture the full UV range.
 opacity_path = os.path.join(
     current_directory,
     "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
 )
 print(opacity_path)
-OPACITY = jdi.opannection(filename_db=opacity_path, wave_range=[0.1, 2.5])
+OPACITY_EARTH = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])
+OPACITY_GAS   = jdi.opannection(filename_db=opacity_path, wave_range=[0.1, 2.5])
 
 
 def find_pbot(sol=None, solaer=None, tol=0.9):
@@ -141,7 +145,7 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
 
     # Create and empty dictionary for later results
 
-    opacity = OPACITY  # module-level global; loaded once per process
+    opacity = OPACITY_GAS  # module-level global; loaded once per process
 
     planet_metal = float(planet_metal)
 
@@ -408,7 +412,7 @@ def earth_spectrum(
                   mass=1, mass_unit=jdi.u.Unit('M_earth'))
     earth.approx(raman="none")
 
-    earth.star(opannection=OPACITY, temp=5778, logg=4.4, semi_major=1,
+    earth.star(opannection=OPACITY_EARTH, temp=5778, logg=4.4, semi_major=1,
                metal=0.0, semi_major_unit=u.Unit('au'))
 
     P = np.logspace(-6, np.log10(p_surface_bar), nlevel)
@@ -437,22 +441,22 @@ def earth_spectrum(
         earth.atmosphere(df=df_atmo_earth, exclude_mol=gas_names)
     else:
         earth.atmosphere(df=df_atmo_earth)
-    earth.surface_reflect(0.1, OPACITY.wno)
+    earth.surface_reflect(0.1, OPACITY_EARTH.wno)
 
     _rayleigh_backup = None
     if no_rayleigh:
-        _rayleigh_backup = {mol: arr.copy() for mol, arr in OPACITY.rayleigh_opa.items()}
-        for mol in OPACITY.rayleigh_opa:
-            OPACITY.rayleigh_opa[mol] = np.zeros_like(OPACITY.rayleigh_opa[mol])
+        _rayleigh_backup = {mol: arr.copy() for mol, arr in OPACITY_EARTH.rayleigh_opa.items()}
+        for mol in OPACITY_EARTH.rayleigh_opa:
+            OPACITY_EARTH.rayleigh_opa[mol] = np.zeros_like(OPACITY_EARTH.rayleigh_opa[mol])
 
-    df_cldfree = earth.spectrum(OPACITY, calculation='reflected', full_output=True)
+    df_cldfree = earth.spectrum(OPACITY_EARTH, calculation='reflected', full_output=True)
 
     _add_cloud_deck(earth, cloud_ptop_bar, cloud_pbot_bar)
-    df_cld = earth.spectrum(OPACITY, full_output=True)
+    df_cld = earth.spectrum(OPACITY_EARTH, full_output=True)
 
     if _rayleigh_backup is not None:
         for mol, arr in _rayleigh_backup.items():
-            OPACITY.rayleigh_opa[mol] = arr
+            OPACITY_EARTH.rayleigh_opa[mol] = arr
 
     wno = df_cldfree['wavenumber']
     fpfs_cf = df_cldfree['fpfs_reflected']
