@@ -22,7 +22,7 @@
 # See the docstring at the top of EarthGasPlanetBatch_HyakJob.py for the
 # full JSON format and an example.
 # --------------------------------------------------------------------------
-export BATCH_CASE_LIST="batch_cases.json"
+export BATCH_CASE_LIST="batch_cases_finalpap.json"
 
 # Run the script (nodes * ntasks-per-node = total MPI ranks)
 # Rank 0 is the master; all others are workers.

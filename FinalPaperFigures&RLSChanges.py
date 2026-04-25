@@ -248,8 +248,11 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
                 print(df_atmo[sp])
 
     if exclude_all_gas:
-        gas_names = [col for col in df_atmo.columns if col not in ['pressure', 'temperature']]
-        start_case.atmosphere(df=df_atmo, exclude_mol=gas_names)
+        _excl = {sp: ['line', 'continuum'] for sp in df_atmo.columns if sp not in ['pressure', 'temperature']}
+        start_case.atmosphere(df=df_atmo, exclude_mol=_excl)
+    elif no_rayleigh:
+        _excl = {sp: ['rayleigh'] for sp in df_atmo.columns if sp not in ['pressure', 'temperature']}
+        start_case.atmosphere(df=df_atmo, exclude_mol=_excl)
     else:
         start_case.atmosphere(df=df_atmo)
 
@@ -274,14 +277,6 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
         _out = Path(outputfile)
         pkl_name = str(_out.parent / f'RLS_{_out.name}{_suffix}')
         Path(pkl_name).parent.mkdir(parents=True, exist_ok=True)
-
-    # Backup Rayleigh opacity before spectrum calls; zero if no_rayleigh requested.
-    # Restore afterward so the global OPACITY is not corrupted for subsequent cases.
-    _rayleigh_backup = None
-    if no_rayleigh:
-        _rayleigh_backup = {mol: arr.copy() for mol, arr in opacity.rayleigh_opa.items()}
-        for mol in opacity.rayleigh_opa:
-            opacity.rayleigh_opa[mol] = np.zeros_like(opacity.rayleigh_opa[mol])
 
     df_cldfree = start_case.spectrum(opacity, calculation='reflected', full_output=True)
     wno_cldfree, alb_cldfree, fpfs_cldfree = df_cldfree['wavenumber'], df_cldfree['albedo'], df_cldfree['fpfs_reflected']
@@ -320,11 +315,6 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
         else:
             print(f'H2Oaer is not in solutions, no cloud implemented')
         print(f'For the inputs: {rad_plan}, {planet_metal}, {tint}, {semi_major}, {ctoO}, {Kzz}, {phase_angle}, The length should match: wno - {len(wno)}, alb - {len(alb)}, fpfs - {len(fpfs)}')
-
-    # Restore Rayleigh opacity after all spectrum calculations
-    if _rayleigh_backup is not None:
-        for mol, arr in _rayleigh_backup.items():
-            opacity.rayleigh_opa[mol] = arr
 
     # Single save/return point
     if outputfile is None:
@@ -437,26 +427,19 @@ def earth_spectrum(
                 df_atmo_earth[sp] *= 0
 
     if exclude_all_gas:
-        gas_names = [col for col in df_atmo_earth.columns if col not in ['pressure', 'temperature']]
-        earth.atmosphere(df=df_atmo_earth, exclude_mol=gas_names)
+        _excl = {sp: ['line', 'continuum'] for sp in df_atmo_earth.columns if sp not in ['pressure', 'temperature']}
+        earth.atmosphere(df=df_atmo_earth, exclude_mol=_excl)
+    elif no_rayleigh:
+        _excl = {sp: ['rayleigh'] for sp in df_atmo_earth.columns if sp not in ['pressure', 'temperature']}
+        earth.atmosphere(df=df_atmo_earth, exclude_mol=_excl)
     else:
         earth.atmosphere(df=df_atmo_earth)
     earth.surface_reflect(0.1, OPACITY_EARTH.wno)
-
-    _rayleigh_backup = None
-    if no_rayleigh:
-        _rayleigh_backup = {mol: arr.copy() for mol, arr in OPACITY_EARTH.rayleigh_opa.items()}
-        for mol in OPACITY_EARTH.rayleigh_opa:
-            OPACITY_EARTH.rayleigh_opa[mol] = np.zeros_like(OPACITY_EARTH.rayleigh_opa[mol])
 
     df_cldfree = earth.spectrum(OPACITY_EARTH, calculation='reflected', full_output=True)
 
     _add_cloud_deck(earth, cloud_ptop_bar, cloud_pbot_bar)
     df_cld = earth.spectrum(OPACITY_EARTH, full_output=True)
-
-    if _rayleigh_backup is not None:
-        for mol, arr in _rayleigh_backup.items():
-            OPACITY_EARTH.rayleigh_opa[mol] = arr
 
     wno = df_cldfree['wavenumber']
     fpfs_cf = df_cldfree['fpfs_reflected']

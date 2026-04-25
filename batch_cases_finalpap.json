@@ -1,0 +1,26 @@
+[
+    {
+    "type": "gas_planet",
+
+    "rad_plan":     2,
+    "planet_metal": 3.125,
+    "tint":         200,
+    "semi_major":   1.5,
+    "ctoO":         1,
+    "Kzz":          7,
+    "phase_angle":  0.0,
+
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+
+    "atmosphere_kwargs": {},
+
+    "outputfile": "RLS_results/H2_CO_MiniNep_RLS_R15000"
+  }
+
+]
