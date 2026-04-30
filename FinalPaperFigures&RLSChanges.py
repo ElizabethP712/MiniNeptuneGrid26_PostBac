@@ -44,8 +44,18 @@ opacity_path = os.path.join(
     "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
 )
 print(opacity_path)
-OPACITY_EARTH = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])
-OPACITY_GAS   = jdi.opannection(filename_db=opacity_path, wave_range=[0.1, 2.5])
+# RUN_CASE_TYPE env var controls which opacity is loaded (set by run_single_case.py).
+# 'earth' loads only OPACITY_EARTH [0.3, 2.5]; 'gas_planet' loads only OPACITY_GAS [0.1, 2.5].
+# Unset (interactive/notebook use) loads both.
+_run_case_type = os.environ.get('RUN_CASE_TYPE', 'all')
+if _run_case_type in ('earth', 'all'):
+    OPACITY_EARTH = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])
+else:
+    OPACITY_EARTH = None
+if _run_case_type in ('gas_planet', 'all'):
+    OPACITY_GAS = jdi.opannection(filename_db=opacity_path, wave_range=[0.1, 2.5])
+else:
+    OPACITY_GAS = None
 
 
 def find_pbot(sol=None, solaer=None, tol=0.9):
@@ -106,7 +116,7 @@ def _add_cloud_deck(case, ptop_bar, pbot_bar, w0=0.99, g0=0.85, opd=10):
 
 # Calculates the reflected spectrum of the mini-Neptune planet but allows you to adjust the cloud fraction, the abundance of certain molecules (combine atmosphere_kwargs w/ kwarg_factor variables)
 
-def reflected_spectrum_gas_planet_Sun(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, Kzz=None, phase_angle=None, sol_path=None, soleq_path=None, Photochem_file=False, atmosphere_kwargs={}, kwarg_factor=0,  outputfile=None, forced_nocld=False, cloud_frac=0.5, no_rayleigh=False, surface_albedo=None, plot_pt=False, exclude_all_gas=False):
+def reflected_spectrum_gas_planet_Sun(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, Kzz=None, phase_angle=None, sol_path=None, soleq_path=None, Photochem_file=False, atmosphere_kwargs={}, kwarg_factor=0,  outputfile=None, forced_nocld=False, cloud_frac=0.5, no_rayleigh=False, surface_albedo=None, plot_pt=False, exclude_all_gas=False, opacity_file=None, wave_range=None, regrid_R=150):
 
     """
     This finds the reflected spectra of a planet similar to K218b around a Sun.
@@ -145,7 +155,12 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
 
     # Create and empty dictionary for later results
 
-    opacity = OPACITY_GAS  # module-level global; loaded once per process
+    if opacity_file is not None:
+        _wrange = wave_range if wave_range is not None else [0.1, 2.5]
+        opacity = jdi.opannection(filename_db=opacity_file, wave_range=_wrange)
+        print(f"Loaded opacity from: {opacity_file}, wave_range={_wrange}")
+    else:
+        opacity = OPACITY_GAS  # module-level global; loaded once per process
 
     planet_metal = float(planet_metal)
 
@@ -251,7 +266,12 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
         _excl = {sp: ['line', 'continuum'] for sp in df_atmo.columns if sp not in ['pressure', 'temperature']}
         start_case.atmosphere(df=df_atmo, exclude_mol=_excl)
     elif no_rayleigh:
-        _excl = {sp: ['rayleigh'] for sp in df_atmo.columns if sp not in ['pressure', 'temperature']}
+        _rayleigh_mols = {'H2','He','N2','O2','O3','H2O','CH4','CO','CO2','NH3','HCN',
+                          'PH3','SO2','SO3','C2H2','H2S','NO','NO2','H3+','OH','Na','K',
+                          'Li','Rb','Cs','TiO','VO','AlO','SiO','CaO','TiH','MgH','NaH',
+                          'AlH','CrH','FeH','CaH','BeH','ScH'}
+        _excl = {sp: ['rayleigh'] for sp in df_atmo.columns
+                 if sp not in ['pressure', 'temperature'] and sp in _rayleigh_mols}
         start_case.atmosphere(df=df_atmo, exclude_mol=_excl)
     else:
         start_case.atmosphere(df=df_atmo)
@@ -278,10 +298,23 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
         pkl_name = str(_out.parent / f'RLS_{_out.name}{_suffix}')
         Path(pkl_name).parent.mkdir(parents=True, exist_ok=True)
 
+    # For no_rayleigh: diffuse ghost spanning full atmosphere so ω₀ > 0 in every layer.
+    # Same fix as earth_spectrum — narrow ghost only covers a few layers, leaving the
+    # rest with ω₀=0 which NaN's PICASO's RT solver even when a real cloud is present.
+    if no_rayleigh:
+        _p_bot_log_gas  = float(np.log10(df_atmo['pressure'].max()))
+        _p_top_log_gas  = float(np.log10(df_atmo['pressure'].min()))
+        _logdp_full_gas = _p_bot_log_gas - _p_top_log_gas
+        start_case.clouds(w0=[0.99], g0=[0.85],
+                          p=[_p_bot_log_gas], dp=[_logdp_full_gas], opd=[1e-10])
+
     df_cldfree = start_case.spectrum(opacity, calculation='reflected', full_output=True)
     wno_cldfree, alb_cldfree, fpfs_cldfree = df_cldfree['wavenumber'], df_cldfree['albedo'], df_cldfree['fpfs_reflected']
-    _, alb_cldfree_grid = jdi.mean_regrid(wno_cldfree, alb_cldfree, R=150)
-    wno_cldfree_grid, fpfs_cldfree_grid = jdi.mean_regrid(wno_cldfree, fpfs_cldfree, R=150)
+
+    print(f'DIAGNOSTIC cloud-free: alb NaN={np.sum(np.isnan(alb_cldfree))}/{len(alb_cldfree)}, fpfs NaN={np.sum(np.isnan(fpfs_cldfree))}/{len(fpfs_cldfree)}')
+
+    _, alb_cldfree_grid = jdi.mean_regrid(wno_cldfree, alb_cldfree, R=regrid_R)
+    wno_cldfree_grid, fpfs_cldfree_grid = jdi.mean_regrid(wno_cldfree, fpfs_cldfree, R=regrid_R)
 
     print(f'This is the length of the grids created: {len(wno_cldfree_grid)}, {len(fpfs_cldfree_grid)}')
 
@@ -300,11 +333,20 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
             ptop_earth = 0.6
             pbot_earth = 0.7
             logdp = np.log10(pbot_earth) - np.log10(ptop_earth)
-            start_case.clouds(w0=[0.99], g0=[0.85], p=[logpbot], dp=[logdp], opd=[10])
+            if no_rayleigh:
+                # Pass ghost + real cloud together so ghost isn't overwritten
+                start_case.clouds(w0=[0.99,           0.99],
+                                  g0=[0.85,           0.85],
+                                  p=[_p_bot_log_gas,  logpbot],
+                                  dp=[_logdp_full_gas, logdp],
+                                  opd=[1e-4,          10.0])
+            else:
+                start_case.clouds(w0=[0.99], g0=[0.85], p=[logpbot], dp=[logdp], opd=[10])
             df_cld = start_case.spectrum(opacity, full_output=True)
             wno_c, alb_c, fpfs_c, albedo_c = df_cld['wavenumber'], df_cld['albedo'], df_cld['fpfs_reflected'], df_cld['albedo']
-            _, alb = jdi.mean_regrid(wno_cldfree, (1 - cloud_frac)*alb_cldfree + cloud_frac*albedo_c, R=150)
-            wno, fpfs = jdi.mean_regrid(wno_cldfree, (1 - cloud_frac)*fpfs_cldfree + cloud_frac*fpfs_c, R=150)
+            print(f'DIAGNOSTIC cloudy: alb NaN={np.sum(np.isnan(albedo_c))}/{len(albedo_c)}, fpfs NaN={np.sum(np.isnan(fpfs_c))}/{len(fpfs_c)}')
+            _, alb = jdi.mean_regrid(wno_cldfree, (1 - cloud_frac)*alb_cldfree + cloud_frac*albedo_c, R=regrid_R)
+            wno, fpfs = jdi.mean_regrid(wno_cldfree, (1 - cloud_frac)*fpfs_cldfree + cloud_frac*fpfs_c, R=regrid_R)
             clouds = [1] * len(wno)
         else:
             print(f'pbot is empty, no cloud implemented')
@@ -436,10 +478,37 @@ def earth_spectrum(
         earth.atmosphere(df=df_atmo_earth)
     earth.surface_reflect(0.1, OPACITY_EARTH.wno)
 
-    df_cldfree = earth.spectrum(OPACITY_EARTH, calculation='reflected', full_output=True)
+    if no_rayleigh:
+        # With all gas Rayleigh excluded, every clear-sky layer has ω₀=0 which causes
+        # 1/0 NaN in PICASO's RT solver — even a real cloud deck at 0.6–0.7 bar doesn't
+        # help because layers above and below it still have ω₀=0. Fix: add a diffuse ghost
+        # cloud spanning the FULL atmosphere (opd=1e-4) so ω₀ > 0 in every layer.
+        # For the cloudy run, pass ghost + real cloud together in one clouds() call so
+        # neither overwrites the other.
+        _p_top_log  = float(np.log10(P[0]))
+        _p_bot_log  = float(np.log10(P[-1]))
+        _logdp_full = _p_bot_log - _p_top_log
+        _logdp_cld  = np.log10(cloud_pbot_bar) - np.log10(cloud_ptop_bar)
 
-    _add_cloud_deck(earth, cloud_ptop_bar, cloud_pbot_bar)
-    df_cld = earth.spectrum(OPACITY_EARTH, full_output=True)
+        # Cloud-free: diffuse ghost only
+        earth.clouds(w0=[0.99], g0=[0.85],
+                     p=[_p_bot_log], dp=[_logdp_full], opd=[1e-10])
+        df_cldfree = earth.spectrum(OPACITY_EARTH, calculation='reflected', full_output=True)
+
+        # Cloudy: ghost + real cloud deck in one call
+        earth.clouds(w0=[0.99,        0.99],
+                     g0=[0.85,        0.85],
+                     p=[_p_bot_log,   np.log10(cloud_pbot_bar)],
+                     dp=[_logdp_full, _logdp_cld],
+                     opd=[1e-4,       10.0])
+        df_cld = earth.spectrum(OPACITY_EARTH, calculation='reflected', full_output=True)
+    else:
+        df_cldfree = earth.spectrum(OPACITY_EARTH, calculation='reflected', full_output=True)
+        _add_cloud_deck(earth, cloud_ptop_bar, cloud_pbot_bar)
+        df_cld = earth.spectrum(OPACITY_EARTH, calculation='reflected', full_output=True)
+
+    print(f'DIAGNOSTIC earth cloud-free: alb NaN={np.sum(np.isnan(df_cldfree["albedo"]))}/{len(df_cldfree["albedo"])}, fpfs NaN={np.sum(np.isnan(df_cldfree["fpfs_reflected"]))}/{len(df_cldfree["fpfs_reflected"])}')
+    print(f'DIAGNOSTIC earth cloudy: alb NaN={np.sum(np.isnan(df_cld["albedo"]))}/{len(df_cld["albedo"])}, fpfs NaN={np.sum(np.isnan(df_cld["fpfs_reflected"]))}/{len(df_cld["fpfs_reflected"])}')
 
     wno = df_cldfree['wavenumber']
     fpfs_cf = df_cldfree['fpfs_reflected']
