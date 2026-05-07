@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Run a single case from batch_cases_finalpap.json without MPI.
+Run a single case from batch_cases_finalpap_ver2.json without MPI.
 Usage: python run_single_case.py [case_index]  (default: 0)
 """
 import json
@@ -17,7 +17,7 @@ os.environ['PYSYN_CDBS']     = str(current_directory / "Installation&Setup_Instr
 
 # --- Load case from JSON first so we know the type before importing FPF ---
 case_index = int(sys.argv[1]) if len(sys.argv) > 1 else 0
-case_file  = current_directory / "batch_cases_finalpap.json"
+case_file  = current_directory / "batch_cases_finalpap_ver2.json"
 
 with open(case_file, 'r') as f:
     cases = json.load(f)
