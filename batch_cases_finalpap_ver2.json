@@ -668,7 +668,293 @@
     "regrid_R": 3000,
 
     "outputfile": "RLS_results/H2HeRich_MiniNep_R60000"
-  }
+  },
 
+      {
+    "type": "gas_planet",
+
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+
+    "exclude_all_gas": true,
+    "atmosphere_kwargs": {},
+
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000"
+  },
+
+  {
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["H2"]},
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000"
+  },
+
+  {
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["He"]},
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000"
+  },
+
+  {
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["H2O"]},
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000"
+  },
+
+  {
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["CH4"]},
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000"
+  },
+
+  {
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["CO"]},
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000"
+  },
+
+  {
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["CO2"]},
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000"
+  },
+
+  {
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["N2"]},
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000"
+  },
+
+    {
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["O3"]},
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000"
+  },
+
+  { "type": "earth",
+    "df_mol_earth": {
+      "N2":  0.945,
+      "CO2": 0.05,
+      "CO":  0.0005,
+      "CH4": 0.005,
+      "H2O": 0.003
+    },
+    "phase":         0.52359878,
+    "cloud_frac":    0.5,
+    "p_surface_bar": 1000.0,
+    "no_rayleigh":   false,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {},
+    "outputfile": "RLS_results/ArcheanEarth_ghostclde10"
+  },
+
+  { "type": "earth",
+    "df_mol_earth": {
+      "N2":  0.945,
+      "CO2": 0.05,
+      "CO":  0.0005,
+      "CH4": 0.005,
+      "H2O": 0.003
+    },
+    "phase":         0.52359878,
+    "cloud_frac":    0.5,
+    "p_surface_bar": 1.0,
+    "no_rayleigh":   false,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["N2"]},
+    "outputfile": "RLS_results/ArcheanEarth_ghostclde10"
+  },
+
+  { "type": "earth",
+    "df_mol_earth": {
+      "N2":  0.945,
+      "CO2": 0.05,
+      "CO":  0.0005,
+      "CH4": 0.005,
+      "H2O": 0.003
+    },
+    "phase":         0.52359878,
+    "cloud_frac":    0.5,
+    "p_surface_bar": 1.0,
+    "no_rayleigh":   false,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["CO2"]},
+    "outputfile": "RLS_results/ArcheanEarth_ghostclde10"
+  },
+
+  { "type": "earth",
+    "df_mol_earth": {
+      "N2":  0.945,
+      "CO2": 0.05,
+      "CO":  0.0005,
+      "CH4": 0.005,
+      "H2O": 0.003
+    },
+    "phase":         0.52359878,
+    "cloud_frac":    0.5,
+    "p_surface_bar": 1.0,
+    "no_rayleigh":   false,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["CO"]},
+    "outputfile": "RLS_results/ArcheanEarth_ghostclde10"
+  },
+
+  { "type": "earth",
+    "df_mol_earth": {
+      "N2":  0.945,
+      "CO2": 0.05,
+      "CO":  0.0005,
+      "CH4": 0.005,
+      "H2O": 0.003
+    },
+    "phase":         0.52359878,
+    "cloud_frac":    0.5,
+    "p_surface_bar": 1.0,
+    "no_rayleigh":   false,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["CH4"]},
+    "outputfile": "RLS_results/ArcheanEarth_ghostclde10"
+  },
+
+  { "type": "earth",
+    "df_mol_earth": {
+      "N2":  0.945,
+      "CO2": 0.05,
+      "CO":  0.0005,
+      "CH4": 0.005,
+      "H2O": 0.003
+    },
+    "phase":         0.52359878,
+    "cloud_frac":    0.5,
+    "p_surface_bar": 1.0,
+    "no_rayleigh":   false,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["H2O"]},
+    "outputfile": "RLS_results/ArcheanEarth_ghostclde10"
+  }
 
 ]

@@ -41,7 +41,7 @@ import picaso.justplotit as jpi
 # Gas planet spectra use [0.1, 2.5] to capture the full UV range.
 opacity_path = os.path.join(
     current_directory,
-    "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
+    "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000_v2.db"
 )
 print(opacity_path)
 # RUN_CASE_TYPE env var controls which opacity is loaded (set by run_single_case.py).
@@ -49,7 +49,7 @@ print(opacity_path)
 # Unset (interactive/notebook use) loads both.
 _run_case_type = os.environ.get('RUN_CASE_TYPE', 'all')
 if _run_case_type in ('earth', 'all'):
-    OPACITY_EARTH = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])
+    OPACITY_EARTH = jdi.opannection(filename_db=opacity_path, wave_range=[0.2, 2.5])
 else:
     OPACITY_EARTH = None
 if _run_case_type in ('gas_planet', 'all'):
@@ -116,7 +116,7 @@ def _add_cloud_deck(case, ptop_bar, pbot_bar, w0=0.99, g0=0.85, opd=10):
 
 # Calculates the reflected spectrum of the mini-Neptune planet but allows you to adjust the cloud fraction, the abundance of certain molecules (combine atmosphere_kwargs w/ kwarg_factor variables)
 
-def reflected_spectrum_gas_planet_Sun(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, Kzz=None, phase_angle=None, sol_path=None, soleq_path=None, Photochem_file=False, atmosphere_kwargs={}, kwarg_factor=0,  outputfile=None, forced_nocld=False, cloud_frac=0.5, no_rayleigh=False, surface_albedo=None, plot_pt=False, exclude_all_gas=False, opacity_file=None, wave_range=None, regrid_R=150):
+def reflected_spectrum_gas_planet_Sun(rad_plan=None, planet_metal=None, tint=None, semi_major=None, ctoO=None, Kzz=None, phase_angle=None, sol_path=None, soleq_path=None, Photochem_file=False, atmosphere_kwargs={}, kwarg_factor=0,  outputfile=None, forced_nocld=False, cloud_frac=0.5, no_rayleigh=False, surface_albedo=None, plot_pt=False, exclude_all_gas=False, opacity_file=None, wave_range=None, regrid_R=150, temporary_temp_fix=False):
 
     """
     This finds the reflected spectra of a planet similar to K218b around a Sun.
@@ -211,43 +211,23 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
     print(type(atm['pressure']))
     print(f'Length of pressure vs other element: {len(atm['pressure'])} vs {len(atm['He'])}')
 
-    # Limit atmosphere to pressures 1000 bars and below.
+    # FIX: Limit atmosphere to temperatures 1000K and below without removing atmosphere.
+    original_temp = atm['temperature'].copy()
+    if temporary_temp_fix == True:
+        atm['temperature'] = np.minimum(atm['temperature'], 999.999)
+        print(f"Applied temporary temperature fix: capped temperatures at 999.999 K to avoid PICASO issues with T=1000 K.")
 
-    atm_filtered = {}
-
-    # Threshold value
-    threshold = 1000
-
-    # Filter the list for a specific key (e.g., 'key1')
-    # Convert list to NumPy array for efficient filtering
-    arr = np.array(atm['temperature'])
-
-    # Use boolean indexing to filter values less than the threshold
-    filtered_arr = arr[arr < threshold]
-
-    # Update the dictionary (optional: convert back to list)
-    atm_filtered['temperature'] = filtered_arr # or keep as a NumPy array: data['key1'] = filtered_arr
-    atm_filtered['pressure'] = atm['pressure'][:len(atm_filtered['temperature'])] # filter temperature by index
-
-   # Define keys to ignore
-    exclude = {'pressure', 'temperature'}
-
-    for key, value in atm.items():
-        if key not in exclude:
-            atm_filtered[key] = value[:len(atm_filtered['temperature'])]
-            #print(f'updated with {key}: {atm_filtered}')
-
+    # Create defined atmosphere
+    df_atmo = jdi.pd.DataFrame(atm)
 
     #print(f"Original dictionary: {atm.keys()}")
     #print(f"Filtered 'pressure' values (below {threshold}): {len(atm_filtered['pressure'])}, then temperature should be the same length as new pressure: {len(atm_filtered['temperature'])}")
     #print(f"Quick check with PT association of old and new dictionaries: filtered pres: {atm_filtered['pressure'][5]}, filtered temp: {atm_filtered['temperature'][5]}, original pres: {atm['pressure'][5]}, original temp: {atm['temperature'][5]}")
 
-    df_atmo = jdi.pd.DataFrame(atm_filtered)
-
     if plot_pt:
         plt.gca().invert_yaxis()
         plt.semilogy(df_atmo['temperature'], df_atmo['pressure'], ls='-', c='red')
-        plt.semilogy(atm['temperature'], atm['pressure'], ls='--', c='blue')
+        plt.semilogy(original_temp, atm['pressure'], ls='--', c='blue')
         plt.title("Filtered PT Profile")
         plt.xlabel("Temperature in K")
         plt.ylabel("Pressure in bars")

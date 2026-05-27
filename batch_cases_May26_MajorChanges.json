@@ -1,0 +1,164 @@
+[
+
+{
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {},
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000_newopacity"
+  },
+
+  {
+    "type": "gas_planet",
+    "rad_plan":     2,
+    "planet_metal": 2,
+    "tint":         50,
+    "semi_major":   1,
+    "ctoO":         0.7525,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {},
+    "opacity_file": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
+    "temporary_temp_fix" : true,
+    "outputfile": "RLS_results/H2HeRich_MiniNep_R15000_updatedtempfix"
+  },
+
+  {
+    "type": "gas_planet",
+
+    "rad_plan":     2,
+    "planet_metal": 3.125,
+    "tint":         200,
+    "semi_major":   1,
+    "ctoO":         0.01,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {},
+
+    "outputfile": "RLS_results/O2_MiniNep_R15000_newopacity"
+  },
+
+  {
+    "type": "gas_planet",
+
+    "rad_plan":     2,
+    "planet_metal": 3.125,
+    "tint":         200,
+    "semi_major":   1,
+    "ctoO":         0.01,
+    "Kzz":          5,
+    "phase_angle":  0.0,
+
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {},
+    "opacity_file": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
+    "temporary_temp_fix" : true,
+    "outputfile": "RLS_results/O2_MiniNep_R15000_updatedtempfix"
+  },
+
+  {
+    "type": "gas_planet",
+
+    "rad_plan":     2,
+    "planet_metal": 3.125,
+    "tint":         200,
+    "semi_major":   1.5,
+    "ctoO":         1.0,
+    "Kzz":          7,
+    "phase_angle":  0.0,
+
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {},
+
+    "outputfile": "RLS_results/H2CORich_MiniNep_R15000_newopacity"
+  },
+
+  {
+    "type": "gas_planet",
+
+    "rad_plan":     2,
+    "planet_metal": 3.125,
+    "tint":         200,
+    "semi_major":   1.5,
+    "ctoO":         1.0,
+    "Kzz":          7,
+    "phase_angle":  0.0,
+
+    "Photochem_file": "results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+
+    "cloud_frac":    0.5,
+    "forced_nocld":  false,
+    "no_rayleigh":   false,
+    "surface_albedo": null,
+    "kwarg_factor":  0,
+
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {},
+    "opacity_file": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db",
+    "temporary_temp_fix" : true,
+    "outputfile": "RLS_results/H2CORich_MiniNep_R15000_updatedtempfix"
+  },
+
+  { "type": "earth",
+    "df_mol_earth": {
+      "N2":  0.945,
+      "CO2": 0.05,
+      "CO":  0.0005,
+      "CH4": 0.005,
+      "H2O": 0.003
+    },
+    "phase":         0.52359878,
+    "cloud_frac":    0.5,
+    "p_surface_bar": 1.0,
+    "no_rayleigh":   false,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {},
+    "outputfile": "RLS_results/ArcheanEarth_ghostclde10_newopacityandwv"
+  }
+
+]

@@ -17,7 +17,7 @@ os.environ['PYSYN_CDBS']     = str(current_directory / "Installation&Setup_Instr
 
 # --- Load case from JSON first so we know the type before importing FPF ---
 case_index = int(sys.argv[1]) if len(sys.argv) > 1 else 0
-case_file  = current_directory / "batch_cases_finalpap_ver2.json"
+case_file  = current_directory / "batch_cases_May26_MajorChanges.json"
 
 with open(case_file, 'r') as f:
     cases = json.load(f)
