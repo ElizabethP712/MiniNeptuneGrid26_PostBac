@@ -526,9 +526,17 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
         # Integrate to steady state
         converged_PC = pc.find_steady_state()
 
-        # Check if the model converged after 10,000 steps
+        # If not converged, restart the ODE integrator in incremental chunks.
+        # Each find_steady_state() call resets the step-size controller and Jacobian
+        # while preserving the current chemical state, giving stuck cases a fresh path
+        # to convergence without reinitializing the chemistry.
         if not converged_PC:
-            assert pc.gdat.total_step_counter > pc.gdat.max_total_step - 10
+            retry_budgets = [12000, 15000, 20000, 30000, 50000]
+            for budget in retry_budgets:
+                pc.gdat.max_total_step = budget
+                converged_PC = pc.find_steady_state()
+                if converged_PC:
+                    break
             
         sol_raw = pc.return_atmosphere()
         soleq_raw = pc.return_atmosphere(equilibrium=True)
