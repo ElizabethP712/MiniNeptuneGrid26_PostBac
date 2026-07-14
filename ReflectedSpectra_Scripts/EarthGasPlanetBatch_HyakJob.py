@@ -57,8 +57,8 @@ PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/t
 os.environ['picaso_refdata'] = os.path.join(current_directory, references_directory_path)
 os.environ['PYSYN_CDBS'] = os.path.join(current_directory, PYSYN_directory_path)
 
-# ── Import FinalPaperFigures&RLSChanges (& in filename requires importlib) ────
-_fpf_path = current_directory / "ReflectedSpectra_Scripts/FinalPaperFigures&RLSChanges.py"
+# ── Import FinalPaperFigures_RLSChanges ────────────────────────────────────────
+_fpf_path = current_directory / "ReflectedSpectra_Scripts/FinalPaperFigures_RLSChanges.py"
 _spec = importlib.util.spec_from_file_location("FPF", _fpf_path)
 FPF = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(FPF)

@@ -40,10 +40,10 @@ print(f"Running case {case_index} (type='{case_type}'): {case.get('outputfile', 
 # Tell FPF which opacity to load (earth=[0.3,2.5] only; gas_planet=[0.1,2.5] only)
 os.environ['RUN_CASE_TYPE'] = case_type
 
-# --- Load FinalPaperFigures&RLSChanges (& in filename requires importlib) ---
-print("Loading FinalPaperFigures&RLSChanges (includes opacity load) ...")
+# --- Load FinalPaperFigures_RLSChanges ---
+print("Loading FinalPaperFigures_RLSChanges (includes opacity load) ...")
 tracemalloc.start()
-_fpf_path = current_directory / "ReflectedSpectra_Scripts/FinalPaperFigures&RLSChanges.py"
+_fpf_path = current_directory / "ReflectedSpectra_Scripts/FinalPaperFigures_RLSChanges.py"
 _spec = importlib.util.spec_from_file_location("FPF", _fpf_path)
 FPF = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(FPF)
