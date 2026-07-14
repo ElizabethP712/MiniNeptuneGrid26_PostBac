@@ -1,0 +1,280 @@
+[21] Traceback (most recent call last):
+[21]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[3] Traceback (most recent call last):
+[3]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[20] Traceback (most recent call last):
+[20]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[21]     import gridutils
+[3]     import gridutils
+[3]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[3]     rom threadpoolctl import threadpool_limits
+[3]         ^[21]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[21]     rom threadpoolctl import threadpool_limits
+[21]         ^^^^^^^^^^^^^
+[21] SyntaxError: invalid syntax
+[3] ^^^^^^^^^^^^
+[3] SyntaxError: invalid syntax
+[12] Traceback (most recent call last):
+[12]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[39] Traceback (most recent call last):
+[39]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[7] Traceback (most recent call last):
+[7]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[15] Traceback (most recent call last):
+[15]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[27] Traceback (most recent call last):
+[27]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[18] Traceback (most recent call last):
+[18]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[22] Traceback (most recent call last):
+[22]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[20]     import gridutils
+[20]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[20]     rom threadpoolctl import threadpool_limits
+[20]         ^^^^^^^[20] ^^^^^^
+[20] SyntaxError: invalid syntax
+[33] Traceback (most recent call last):
+[33]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[39]     import gridutils
+[12]     import gridutils
+[15]     import gridutils
+[12]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[12]     rom threadpoolctl import threadpool_limits
+[12]         [15]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[15]     rom threadpoolctl import threadpool_limits
+[15]         ^^^^^^^^^^^^^
+[15] SyntaxError[27]     import gridutils
+[39]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[39]     rom threadpoolctl import threadpool_limits
+[39]         ^^^^^^^^^^^^^
+[39] SyntaxError: invalid syntax
+[12] ^^^^^^^^^^^^^
+[12] SyntaxError: invalid syntax
+[15] : invalid syntax
+[27]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[27]     rom threadpoolctl import threadpool_limits
+[27]         ^^^^^^^^^^^^^
+[27] SyntaxError: invalid syntax
+[7]     import gridutils
+[7]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[7]     rom threadpoolctl import threadpool_limits
+[7]         ^^^^^^[18]     import gridutils
+[7] ^^^^^^^
+[7] SyntaxError: invalid syntax
+[18]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[18]     rom threadpoolctl import threadpool_limits
+[18]         ^^^^^^^^^^^^^
+[18] SyntaxError: invalid syntax
+[22]     import gridutils
+[22]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[22]     rom threadpoolctl import threadpool_limits
+[22]         ^^^^^^^^[22] ^^^^^
+[22] SyntaxError: invalid syntax
+[33]     import gridutils
+[33]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[33]     rom threadpoolctl import threadpool_limits
+[33]         ^^^[33] ^^^^^^^^^^
+[33] SyntaxError: invalid syntax
+[11] Traceback (most recent call last):
+[11]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[0] Traceback (most recent call last):
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[38] Traceback (most recent call last):
+[38]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[34] Traceback (most recent call last):
+[34]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[23] Traceback (most recent call last):
+[23]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[36] Traceback (most recent call last):
+[36]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[5] Traceback (most recent call last):
+[5]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[6] Traceback (most recent call last):
+[6]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[11]     import gridutils
+[11]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[11]     rom threadpoolctl import threadpool_limits
+[11]         ^^^[2] Traceback (most recent call last):
+[2]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[11] ^^^^^^^^^^
+[11] SyntaxError: invalid syntax
+[0]     import gridutils
+[38]     import gridutils
+[0]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[0]     rom threadpoolctl import threadpool_limits
+[0]         ^^^^^^^^^^^^^
+[0] SyntaxError: invalid syntax
+[38]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[38]     rom threadpoolctl import threadpool_limits
+[38]         ^^^^^^^^^^^^^
+[38] SyntaxError: invalid syntax
+[23]     import gridutils
+[34]     import gridutils
+[23]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[23]     rom threadpoolctl import threadpool_limits
+[23]         ^^^^^^^^^^^^^
+[23] SyntaxError[23] : invalid syntax
+[34]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[34]     rom threadpoolctl import threadpool_limits
+[34]         ^^^^^^^^^^^^^
+[34] SyntaxError: invalid syntax
+[5]     import gridutils
+[16] Traceback (most recent call last):
+[16]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[36]     import gridutils
+[6]     import gridutils
+[36]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[36]     rom threadpoolctl import threadpool_limits
+[36]         ^^^[5]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[5]     rom threadpoolctl import threadpool_limits
+[5]         ^^^^^^^^^^^^^
+[5] SyntaxError: invalid syntax
+[36] ^^^^^^^^^^
+[36] SyntaxError: invalid syntax
+[6]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[6]     rom threadpoolctl import threadpool_limits
+[6]         ^^^^^^^^^^^^[32] Traceback (most recent call last):
+[32]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[6] ^
+[6] SyntaxError: invalid syntax
+[30] Traceback (most recent call last):
+[30]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[2]     import gridutils
+[2]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[2]     rom threadpoolctl import threadpool_limits
+[2]         ^^^^^^^^[2] ^^^^^
+[2] SyntaxError: invalid syntax
+[25] Traceback (most recent call last):
+[25]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[35] Traceback (most recent call last):
+[35]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[8] Traceback (most recent call last):
+[8]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[28] Traceback (most recent call last):
+[28]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[29] Traceback (most recent call last):
+[29]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[16]     import gridutils
+[32]     import gridutils
+[16]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[16]     rom threadpoolctl import threadpool_limits
+[16]         ^^^^^^^^^^[32]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[32]     rom threadpoolctl import threadpool_limits
+[32]         ^^^^^^^^^[16] ^^^
+[16] SyntaxError: invalid syntax
+[32] ^^^^
+[32] SyntaxError: invalid syntax
+[30]     import gridutils
+[10] Traceback (most recent call last):
+[10]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[30]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[30]     rom threadpoolctl import threadpool_limits
+[30]         ^^^^^^^^^^^[30] ^^
+[30] SyntaxError: invalid syntax
+[14] Traceback (most recent call last):
+[14]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[35]     import gridutils
+[8]     import gridutils
+[8]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[8]     rom threadpoolctl import threadpool_limits
+[8]         ^^^^^^^^[35]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[35]     rom threadpoolctl import threadpool_limits
+[35]         ^^^^^^^^^^^^^
+[35] SyntaxError: invalid syntax
+[8] ^^^^^
+[8] SyntaxError: invalid syntax
+[28]     import gridutils
+[29]     import gridutils
+[28]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[28]     rom threadpoolctl import threadpool_limits
+[28]         ^^[29]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[29]     rom threadpoolctl import threadpool_limits
+[29]         ^^^^^^^^^^^^[28] ^^^^^^^^^^^
+[28] SyntaxError: invalid syntax
+[29] ^
+[29] SyntaxError: invalid syntax
+[10]     import gridutils
+[10]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[10]     rom threadpoolctl import threadpool_limits
+[10]         ^[14]     import gridutils
+[14]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[14]     rom threadpoolctl import threadpool_limits
+[14]         ^^[10] ^^^^^^^^^^^^
+[10] SyntaxError: invalid syntax
+[14] ^^^^^^^^^^^
+[14] SyntaxError: invalid syntax
+[17] Traceback (most recent call last):
+[17]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[13] Traceback (most recent call last):
+[13]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[26] Traceback (most recent call last):
+[26]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[24] Traceback (most recent call last):
+[24]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[37] Traceback (most recent call last):
+[37]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[19] Traceback (most recent call last):
+[19]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[9] Traceback (most recent call last):
+[9]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[13]     import gridutils
+[17]     import gridutils
+[17]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[17]     rom threadpoolctl import threadpool_limits
+[17]         ^^^^^^^^^[13]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[13]     rom threadpoolctl import threadpool_limits
+[13]         ^^^^^[17] ^^^^
+[17] SyntaxError: invalid syntax
+[26]     import gridutils
+[26]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[26]     rom threadpoolctl import threadpool_limits
+[13] ^^^^^^^^
+[13] SyntaxError: invalid syntax
+[24]     import gridutils
+[24]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[24]     rom threadpoolctl import threadpool_limits
+[24]         ^^^^^^^[26]         ^^^^^^^^^^^^^
+[26] SyntaxError: invalid syntax
+[24] ^^^^^^
+[24] SyntaxError: invalid syntax
+[37]     import gridutils
+[37]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[37]     rom threadpoolctl import threadpool_limits
+[37]         ^^^^^^^^^[19]     import gridutils
+[37] ^^^^
+[37] SyntaxError: invalid syntax
+[19]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[19]     rom threadpoolctl import threadpool_limits
+[19]         ^^^^[4] Traceback (most recent call last):
+[4]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[19] ^^^^^^^^^
+[19] SyntaxError: invalid syntax
+[9]     import gridutils
+[9]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[9]     rom threadpoolctl import threadpool_limits
+[9]         ^^^^^^^^^[9] ^^^^
+[9] SyntaxError: invalid syntax
+[4]     import gridutils
+[4]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[4]     rom threadpoolctl import threadpool_limits
+[4]         ^^^^^^^^^^^^[4] ^
+[4] SyntaxError: invalid syntax
+[1] Traceback (most recent call last):
+[1]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[1]     import gridutils
+[25]     import gridutils
+[1]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[1]     rom threadpoolctl import threadpool_limits
+[1]         ^^^^^[25]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[25]     rom threadpoolctl import threadpool_limits
+[25]         ^^^^^^^^^^^^^
+[1] ^^^^^^^^
+[1] SyntaxError: invalid syntax
+[25] SyntaxError: invalid syntax
+[31] Traceback (most recent call last):
+[31]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 648, in <module>
+[31]     import gridutils
+[31]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/gridutils.py", line 1
+[31]     rom threadpoolctl import threadpool_limits
+[31]      [31]    ^^^^^^^^^^^^^
+[31] SyntaxError: invalid syntax

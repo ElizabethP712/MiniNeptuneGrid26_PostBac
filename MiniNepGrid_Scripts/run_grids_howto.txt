@@ -1,0 +1,179 @@
+HOW TO RUN THE PICASO AND PHOTOCHEM GRIDS ON HYAK
+==================================================
+
+OVERVIEW
+--------
+Grid generation is a two-step pipeline run in order:
+
+  Step 1: PICASO climate grid   → computes 1D pressure-temperature (PT) profiles
+  Step 2: Photochem grid        → reads PICASO PT profiles; computes photochemical
+                                  composition at each grid point
+
+Photochem CANNOT run before PICASO. It reads the PICASO HDF5 output directly.
+
+Both scripts use MPI (one case per worker rank). Rank 0 is the master; all
+other ranks are workers. All SLURM scripts must be submitted from the PROJECT
+ROOT (not from inside MiniNepGrid_Scripts/).
+
+
+PREREQUISITES
+-------------
+1. Enable swap to extend available RAM (required on Hyak login node before submit):
+     sudo swapon /swapfile
+
+2. Activate conda environment:
+     conda activate picaso   (adjust name if different)
+
+3. Navigate to project root (NOT into MiniNepGrid_Scripts/):
+     cd /path/to/MiniNeptuneGrid26_PostBac
+
+4. Make sure the PICASO reference files are present at:
+     Installation&Setup_Instructions/picasofiles/reference/
+     Installation&Setup_Instructions/picasofiles/grp/redcat/trds/
+
+
+STEP 1 — PICASO CLIMATE GRID
+-----------------------------
+Script:  MiniNepGrid_Scripts/PICASO_Climate_grid_121625.py
+Output:  data/grid_results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.h5
+Logs:    data/grid_results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.log
+         data/grid_results/picaso_crash_fingerprints.log
+
+Choose a SLURM script based on your available allocation and time window:
+
+  PICASO_HyakJob.slurm        <- standard compute, stf account
+                                 10 nodes × 40 ranks = 400 total ranks
+                                 partition: compute    time limit: 24 h
+                                 use when: fast turnaround, stf allocation
+
+  PICASO_HyakJobEvening.slurm <- large memory, vsm account
+                                 4 nodes × 40 ranks = 160 total ranks
+                                 partition: compute-hugemem    time limit: 10 h
+                                 use when: evening/checkpoint window, vsm allocation
+
+  PICASO_HyakJobDay.slurm     <- large memory, vsm account
+                                 2 nodes × 40 ranks = 80 total ranks
+                                 partition: compute-hugemem    time limit: 7 days
+                                 use when: long daytime run, small allocation available
+
+Submit from project root:
+
+    sbatch MiniNepGrid_Scripts/PICASO_HyakJob.slurm
+
+To test locally with a small number of ranks:
+
+    mpiexec -np 4 python MiniNepGrid_Scripts/PICASO_Climate_grid_121625.py
+
+
+STEP 2 — PHOTOCHEM GRID
+------------------------
+Script:  MiniNepGrid_Scripts/Photochem_grid_121625.py
+Input:   data/grid_results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.h5
+         (hardcoded in Photochem_1D_model — PICASO step must be done first)
+Output:  data/grid_results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5
+Logs:    data/grid_results/Photochem_1D_updatop_paramext_reducedrad_full_try3.log
+         data/grid_results/photochem_crash_fingerprints.log
+
+Choose a SLURM script:
+
+  Photochem_HyakJob.slurm         <- standard compute, stf account
+                                     7 nodes × 40 ranks = 280 total ranks
+                                     partition: compute    time limit: 24 h
+
+  Photochem_HyakJobEvening.slurm  <- large memory, vsm account
+                                     4 nodes × 40 ranks = 160 total ranks
+                                     partition: compute-hugemem    time limit: 12 h
+
+Submit from project root:
+
+    sbatch MiniNepGrid_Scripts/Photochem_HyakJob.slurm
+
+To test locally:
+
+    mpiexec -n 4 python MiniNepGrid_Scripts/Photochem_grid_121625.py
+
+
+MONITORING JOBS
+---------------
+Check job status:
+    squeue -u $USER
+
+View live output (replace JOBID with your job number):
+    tail -f MiniNepGrid_Scripts/Picaso_stderr_stdout_files/picaso_grid_JOBID.stdout
+    tail -f MiniNepGrid_Scripts/Photochem_stderr_stdout_files/photochem_grid_JOBID.stdout
+
+Check progress log (updated as cases complete):
+    tail -f data/grid_results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.log
+    tail -f data/grid_results/Photochem_1D_updatop_paramext_reducedrad_full_try3.log
+
+Check crash fingerprint logs for any failed/timed-out cases:
+    cat data/grid_results/picaso_crash_fingerprints.log
+    cat data/grid_results/photochem_crash_fingerprints.log
+
+Cancel a job:
+    scancel JOBID
+
+
+GRID PARAMETERS
+---------------
+To change which parameter combinations are computed, edit the grid functions
+in the respective scripts:
+
+  PICASO:     get_gridvals_PICASO_TP()   in PICASO_Climate_grid_121625.py
+  Photochem:  get_gridvals_Photochem()   in Photochem_grid_121625.py
+
+Current PICASO parameter space:
+  rad_plan_earth_units    planet radius (Earth radii)     np.linspace(0.5, 3.5, 9)
+  log10_planet_metallicity  metallicity (log10 × solar)   np.linspace(0.5, 3.5, 9)
+  tint_K                  internal temperature (K)         np.linspace(50, 400, 8)
+  semi_major_AU           orbital distance (AU)            [0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10]
+  ctoO_solar              C/O ratio (× solar)              np.linspace(0.01, 1, 5)
+
+Current Photochem parameter space (same axes as PICASO plus Kzz):
+  rad_plan_earth_units    same as PICASO                   np.array([2])
+  log10_planet_metallicity  same as PICASO                 np.linspace(0.5, 3.5, 9)
+  tint_K                  same as PICASO                   np.linspace(50, 400, 8)
+  semi_major_AU           same as PICASO                   [0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10]
+  ctoO_solar              same as PICASO                   np.linspace(0.01, 1, 5)
+  log_Kzz                 eddy diffusion (log10 cm²/s)     [5, 7, 9]
+
+IMPORTANT: The Photochem grid must be a subset of the PICASO grid. Any Photochem
+grid point without a matching PICASO grid point will return NaN results.
+
+
+CHANGING OUTPUT FILENAMES
+--------------------------
+Both scripts write output to hardcoded filenames near the bottom of each file
+inside the `if __name__ == "__main__":` block.
+
+To use a different output path, edit:
+
+  PICASO   (~line 692 of PICASO_Climate_grid_121625.py):
+    gridutils.make_grid(
+        ...
+        filename='data/grid_results/YOUR_PICASO_OUTPUT.h5',
+        progress_filename='data/grid_results/YOUR_PICASO_OUTPUT.log'
+    )
+
+  Photochem (~line 662 and ~line 694 of Photochem_grid_121625.py):
+    - Line 662: PT_filename='data/grid_results/YOUR_PICASO_OUTPUT.h5'  (input file)
+    - Line 694: filename='data/grid_results/YOUR_PHOTOCHEM_OUTPUT.h5'
+                progress_filename='data/grid_results/YOUR_PHOTOCHEM_OUTPUT.log'
+
+
+OUTPUT FILE FORMAT
+------------------
+Both grids are saved as HDF5 files with the following structure:
+
+  inputs/
+    Each parameter axis stored as a dataset (e.g. inputs/rad_plan, inputs/tint, etc.)
+
+  results/
+    PICASO:    pressure, temperature, converged, status, error
+               shape: (n_rad × n_metal × n_tint × n_semi_major × n_ctoO × n_levels)
+    Photochem: <molecule>_sol, <molecule>_soleq, pressure_sol, pressure_soleq,
+               temperature_sol, temperature_soleq, Kzz_sol, Kzz_soleq,
+               converged_TP, converged_PC, status, error
+               shape: (n_rad × n_metal × n_tint × n_semi_major × n_ctoO × n_Kzz × n_layers)
+
+gridutils.py (in MiniNepGrid_Scripts/) handles all HDF5 reading and writing.

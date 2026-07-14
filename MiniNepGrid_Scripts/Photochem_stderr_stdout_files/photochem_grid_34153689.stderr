@@ -1,0 +1,23 @@
+2026-03-26 19:03:55,168 INFO [rank=1 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 3.0e-01 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,168 INFO [rank=2 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 7.0e-01 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,168 INFO [rank=3 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,169 INFO [rank=4 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.5e+00 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,168 INFO [rank=5 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 2.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,169 INFO [rank=7 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 4.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,169 INFO [rank=9 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 6.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,169 INFO [rank=10 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 8.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,169 INFO [rank=8 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 5.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,169 INFO [rank=11 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.0e+01 1.0e-02 5.0e+00]
+2026-03-26 19:03:55,169 INFO [rank=6 host=n3249]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 3.0e+00 1.0e-02 5.0e+00]
+At line 2483 of file /home/conda/feedstock_root/build_artifacts/photochem_1773364999822/work/src/input/photochem_input_read.f90 (unit = 1, file = 'sun_flux_file_98.51925787320911')
+Fortran runtime error: End of file
+At line 2483 of file /home/conda/feedstock_root/build_artifacts/photochem_1773364999822/work/src/input/photochem_input_read.f90 (unit = 1, file = 'sun_flux_file_113.76024010691886')
+Fortran runtime error: End of file
+[proxy:1@n3263] HYD_pmcd_pmip_control_cmd_cb (proxy/pmip_cb.c:487): assert (!closed) failed
+[proxy:1@n3263] HYDT_dmxu_poll_wait_for_event (lib/tools/demux/demux_poll.c:76): callback returned error status
+[proxy:1@n3263] main (proxy/pmip.c:122): demux engine error waiting for event
+srun: error: n3263: task 1: Exited with exit code 7
+[mpiexec@n3249] HYDT_bscu_wait_for_completion (lib/tools/bootstrap/utils/bscu_wait.c:109): one of the processes terminated badly; aborting
+[mpiexec@n3249] HYDT_bsci_wait_for_completion (lib/tools/bootstrap/src/bsci_wait.c:21): launcher returned error waiting for completion
+[mpiexec@n3249] HYD_pmci_wait_for_completion (mpiexec/pmiserv_pmci.c:196): launcher returned error waiting for completion
+[mpiexec@n3249] main (mpiexec/mpiexec.c:260): process manager error waiting for completion

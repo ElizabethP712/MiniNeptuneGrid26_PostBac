@@ -1,0 +1,96 @@
+name: subneptune_picaso_updated
+# Exported from the working subneptune_picaso_updated conda env (linux-64 / WSL2, June 2026)
+# Installs via: conda env create -f environment_subneptune_picaso_updated_current.yaml
+# After install, follow setup_automated.sh to download picaso reference data
+# and star spectra (picasofiles/ directory + PYSYN_CDBS).
+#
+# KEY DIFFERENCES from subneptune env:
+#   - picaso 4.0.1 (PyPI) vs picaso 4.0 (Wogan fork) — inputs_climate() API changed
+#   - virga-exo 2.0.2 vs 1.0
+#   - photochem 0.7.0 (older) vs 0.8.4
+#   - stsynphot/synphot are pip-installed here (vs conda in subneptune)
+#   - jupytext included
+#
+# WARNING: Grid scripts (PICASO_Climate_grid_121625.py) use inputs_climate(nstr=...)
+# which is NOT compatible with picaso 4.0.1. Use the subneptune env for grid runs.
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # ── Python ─────────────────────────────────────────────────────────────────
+  - python=3.12.12
+
+  # ── Core science stack ─────────────────────────────────────────────────────
+  - numpy=1.26.4
+  - scipy=1.11.4
+  - pandas=2.2.3
+  - matplotlib=3.10.9
+  - xarray=2024.9.0
+  - numba=0.60.0
+  - h5py=3.13.0
+  - h5netcdf=1.8.1
+  - netcdf4
+
+  # ── Atmospheric modeling ───────────────────────────────────────────────────
+  - photochem=0.7.0
+  - photochem_clima_data=0.3.1
+
+  # ── Astronomy ─────────────────────────────────────────────────────────────
+  - astropy=6.1.4
+  - astroquery=0.4.11
+
+  # ── Statistics / retrieval ─────────────────────────────────────────────────
+  - pymultinest=2.12
+  - multinest=3.10
+  - corner=2.2.3
+  - arviz=0.23.4
+
+  # ── Parallelism / MPI ─────────────────────────────────────────────────────
+  - mpi4py=4.0.1
+  - mpich=4.3.2
+  - dill=0.3.9
+  - threadpoolctl=3.6.0
+
+  # ── Jupyter / viz ─────────────────────────────────────────────────────────
+  - jupyter=1.1.1
+  - jupyterlab=4.5.7
+  - ipywidgets=8.1.8
+  - bokeh=3.0.2
+  - ipykernel=7.2.0
+
+  # ── Web / data fetching ────────────────────────────────────────────────────
+  - requests=2.33.1
+  - beautifulsoup4=4.14.3
+  - wget=1.25.0
+
+  # ── Build tools ────────────────────────────────────────────────────────────
+  - cmake=3.31.8
+  - ninja=1.13.1
+  - cython=3.1.6
+  - fypp=3.2
+  - scikit-build=0.18.1
+  - c-compiler=1.11.0
+  - cxx-compiler=1.11.0
+  - fortran-compiler=1.11.0
+
+  # ── Misc utilities ─────────────────────────────────────────────────────────
+  - tqdm=4.66.5
+  - git=2.51.0
+  - tar=1.35
+  - unzip=6.0
+  - pip=25.2
+
+  # ── pip-only packages ──────────────────────────────────────────────────────
+  - pip:
+    - picaso==4.0.1          # PyPI release — NOTE: incompatible with grid scripts
+    - virga-exo==2.0.2
+    - stsynphot==1.5.1
+    - synphot==1.7.0
+    - bibtexparser==1.4.4
+    - miepython==3.2.0
+    - pooch==1.9.0
+    - joblib==1.5.3
+    - photutils==3.0.0
+    - jupytext==1.19.1

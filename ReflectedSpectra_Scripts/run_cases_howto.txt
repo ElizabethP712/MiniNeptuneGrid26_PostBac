@@ -1,0 +1,134 @@
+HOW TO RUN REFLECTED LIGHT SPECTRA CASES
+=========================================
+
+PREREQUISITES
+-------------
+1. Enable swap to extend available RAM (required — opacity database is large):
+     sudo swapon /swapfile
+
+2. Activate conda environment:
+     conda activate picaso   (adjust name if different)
+
+3. Navigate to project root (NOT into ReflectedSpectra_Scripts/):
+     cd /path/to/MiniNeptuneGrid26_PostBac
+
+
+RUNNING CASES
+-------------
+Run all 24 paper-figure cases (default batch file: batch_cases_paper_figures.json):
+
+    for i in $(seq 0 23); do python ReflectedSpectra_Scripts/run_single_case.py $i; done
+
+Run only the NEW cases (no prior pkl exists for these):
+
+    for i in 3 4 5 6 7 8 12 13 14 15 16 17 21 23; do
+        python ReflectedSpectra_Scripts/run_single_case.py $i
+    done
+
+Run a single case by index:
+
+    python ReflectedSpectra_Scripts/run_single_case.py 3
+
+
+CHANGING THE BATCH FILE
+-----------------------
+Use the --file flag with a path relative to the project root:
+
+    python ReflectedSpectra_Scripts/run_single_case.py 14 --file ReflectedSpectra_Scripts/batch_cases_master.json
+
+    for i in $(seq 0 48); do
+        python ReflectedSpectra_Scripts/run_single_case.py $i --file ReflectedSpectra_Scripts/batch_cases_master.json
+    done
+
+Available batch files (all in ReflectedSpectra_Scripts/):
+  batch_cases_paper_figures.json   <- default; 23 cases for paper contribution figures
+  batch_cases_master.json          <- 49 cases; full set including H2He-rich, Archean Earth, etc.
+
+
+RUNNING ON HYAK (MPI — parallel across all cases at once)
+----------------------------------------------------------
+Use EarthGasPlanetBatch_HyakJob.slurm for running all cases in parallel via MPI on the cluster.
+Submit from the project root (NOT from inside ReflectedSpectra_Scripts/):
+
+    sbatch ReflectedSpectra_Scripts/EarthGasPlanetBatch_HyakJob.slurm
+
+To change which batch file is used, edit line 25 of the SLURM file:
+    export BATCH_CASE_LIST="ReflectedSpectra_Scripts/batch_cases_paper_figures.json"
+
+To run MPI locally (without SLURM, e.g. for testing):
+    export BATCH_CASE_LIST="ReflectedSpectra_Scripts/batch_cases_paper_figures.json"
+    mpiexec -n 4 python ReflectedSpectra_Scripts/EarthGasPlanetBatch_HyakJob.py
+
+Note: the MPI script loads opacities on every rank — ensure swap is enabled and sufficient
+RAM is available (see PREREQUISITES above).
+
+
+CASE INDEX REFERENCE — batch_cases_paper_figures.json
+------------------------------------------------------
+CASE 2: O2-rich Mini-Neptune (Z=3.125, Tint=200, a=1 AU, C/O=0.01, Kzz=5)
+  0  standard (cloud=0.5, Rayleigh, all gas, no surface)   [in master.json idx 32]
+  1  no cloud                                               [in master.json idx 34]
+  2  no Rayleigh                                            [in master.json idx 33]
+  3  surface p=1 bar                                        [NEW]
+  4  exclude CO2                                            [NEW]
+  5  exclude CH4                                            [NEW]
+  6  exclude H2O                                            [NEW]
+  7  exclude NH3                                            [NEW]
+  8  exclude O3                                             [NEW]
+
+CASE 3: H2/CO-rich Mini-Neptune (Z=3.125, Tint=200, a=1.5 AU, C/O=1, Kzz=7)
+  9  standard                                               [in master.json idx 36]
+  10 no cloud                                               [in master.json idx 38]
+  11 no Rayleigh                                            [in master.json idx 37]
+  12 surface p=1 bar                                        [NEW]
+  13 exclude CO2                                            [NEW]
+  14 exclude CH4                                            [NEW]
+  15 exclude H2O                                            [NEW]
+  16 exclude NH3                                            [NEW]
+  17 exclude O3                                             [NEW]
+
+MODERN EARTH (N2/O2, rayleigh + cloud=0.5 + surface p=1 bar, phase=30 deg)
+  18 exclude CO2                                            [in master.json idx 14]
+  19 exclude CH4                                            [in master.json idx 15]
+  20 exclude H2O                                            [in master.json idx 13]
+  21 exclude NH3                                            [NEW] (NH3 not in composition — null check)
+  22 exclude O3                                             [in master.json idx 12]
+  23 standard (all gas, cloud=0.5, surface p=1 bar)         [NEW]
+
+
+OUTPUT FILES
+------------
+All saved to data/RLS_results/ relative to project root.
+
+Gas planet pkl keys: wno, fpfs, alb, clouds, df_cld, df_cldfree
+Earth pkl keys:      wno, fpfs, albedo, df_cld, df_cldfree
+
+Case 2 outputs:
+  data/RLS_results/RLS_O2Rich_MiniNep_cld0.5.pkl              (idx 0 — standard)
+  data/RLS_results/RLS_O2Rich_MiniNep_nocld.pkl                (idx 1 — no cloud)
+  data/RLS_results/RLS_O2Rich_MiniNep_cld0.5_noray.pkl         (idx 2 — no Rayleigh)
+  data/RLS_results/RLS_O2Rich_MiniNep_psurf1_cld0.5.pkl        (idx 3 — surface p=1)
+  data/RLS_results/RLS_O2Rich_MiniNep_noCO2_cld0.5.pkl         (idx 4)
+  data/RLS_results/RLS_O2Rich_MiniNep_noCH4_cld0.5.pkl         (idx 5)
+  data/RLS_results/RLS_O2Rich_MiniNep_noH2O_cld0.5.pkl         (idx 6)
+  data/RLS_results/RLS_O2Rich_MiniNep_noNH3_cld0.5.pkl         (idx 7)
+  data/RLS_results/RLS_O2Rich_MiniNep_noO3_cld0.5.pkl          (idx 8)
+
+Case 3 outputs:
+  data/RLS_results/RLS_H2CORich_MiniNep_cld0.5.pkl             (idx 9  — standard)
+  data/RLS_results/RLS_H2CORich_MiniNep_nocld.pkl               (idx 10 — no cloud)
+  data/RLS_results/RLS_H2CORich_MiniNep_cld0.5_noray.pkl        (idx 11 — no Rayleigh)
+  data/RLS_results/RLS_H2CORich_MiniNep_psurf1_cld0.5.pkl       (idx 12 — surface p=1)
+  data/RLS_results/RLS_H2CORich_MiniNep_noCO2_cld0.5.pkl        (idx 13)
+  data/RLS_results/RLS_H2CORich_MiniNep_noCH4_cld0.5.pkl        (idx 14)
+  data/RLS_results/RLS_H2CORich_MiniNep_noH2O_cld0.5.pkl        (idx 15)
+  data/RLS_results/RLS_H2CORich_MiniNep_noNH3_cld0.5.pkl        (idx 16)
+  data/RLS_results/RLS_H2CORich_MiniNep_noO3_cld0.5.pkl         (idx 17)
+
+Modern Earth outputs:
+  data/RLS_results/EarthSpectrum_ModernEarth_phase0.5236_cld0.5_psurf1.0_noCO2.pkl  (idx 18)
+  data/RLS_results/EarthSpectrum_ModernEarth_phase0.5236_cld0.5_psurf1.0_noCH4.pkl  (idx 19)
+  data/RLS_results/EarthSpectrum_ModernEarth_phase0.5236_cld0.5_psurf1.0_noH2O.pkl  (idx 20)
+  data/RLS_results/EarthSpectrum_ModernEarth_phase0.5236_cld0.5_psurf1.0_noNH3.pkl  (idx 21)
+  data/RLS_results/EarthSpectrum_ModernEarth_phase0.5236_cld0.5_psurf1.0_noO3.pkl   (idx 22)
+  data/RLS_results/EarthSpectrum_ModernEarth_phase0.5236_cld0.5_psurf1.0.pkl        (idx 23 — standard)

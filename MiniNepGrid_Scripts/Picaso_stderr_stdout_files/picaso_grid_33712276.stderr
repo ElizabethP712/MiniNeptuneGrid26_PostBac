@@ -1,0 +1,1179 @@
+[12] 2026-03-07 19:10:15,963 INFO [rank=12 host=n3003]: starting climate model for inputs: [  2.      3.125 250.     10.      0.505]
+[1] 2026-03-07 19:10:15,963 INFO [rank=1 host=n3003]: starting climate model for inputs: [2.00e+00 2.75e+00 2.00e+02 1.00e+01 1.00e-02]
+[4] 2026-03-07 19:10:15,963 INFO [rank=4 host=n3003]: starting climate model for inputs: [  2.      3.125 200.      6.      0.505]
+[7] 2026-03-07 19:10:15,963 INFO [rank=7 host=n3003]: starting climate model for inputs: [  2.      3.125 250.      3.      1.   ]
+[8] 2026-03-07 19:10:15,963 INFO [rank=8 host=n3003]: starting climate model for inputs: [  2.      3.125 250.      4.      1.   ]
+[11] 2026-03-07 19:10:15,963 INFO [rank=11 host=n3003]: starting climate model for inputs: [  2.      3.125 250.      8.      1.   ]
+[16] 2026-03-07 19:10:15,963 INFO [rank=16 host=n3003]: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 1.000e+01 1.000e-02]
+[18] 2026-03-07 19:10:15,963 INFO [rank=18 host=n3003]: starting climate model for inputs: [  2.       3.125  400.      10.       0.7525]
+[24] 2026-03-07 19:10:15,963 INFO [rank=24 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      1.      0.7525]
+[2] 2026-03-07 19:10:15,963 INFO [rank=2 host=n3003]: starting climate model for inputs: [2.00e+00 2.75e+00 3.50e+02 1.00e+01 1.00e-02]
+[10] 2026-03-07 19:10:15,963 INFO [rank=10 host=n3003]: starting climate model for inputs: [  2.      3.125 250.      8.      0.505]
+[19] 2026-03-07 19:10:15,963 INFO [rank=19 host=n3003]: starting climate model for inputs: [  2.      3.125 400.     10.      1.   ]
+[20] 2026-03-07 19:10:15,963 INFO [rank=20 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      0.7     0.2575]
+[21] 2026-03-07 19:10:15,963 INFO [rank=21 host=n3003]: starting climate model for inputs: [ 2.     3.5   50.     0.7    0.505]
+[23] 2026-03-07 19:10:15,963 INFO [rank=23 host=n3003]: starting climate model for inputs: [ 2.     3.5   50.     1.     0.505]
+[25] 2026-03-07 19:10:15,963 INFO [rank=25 host=n3003]: starting climate model for inputs: [ 2.   3.5 50.   1.   1. ]
+[28] 2026-03-07 19:10:15,963 INFO [rank=28 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      2.      0.7525]
+[29] 2026-03-07 19:10:15,963 INFO [rank=29 host=n3003]: starting climate model for inputs: [ 2.   3.5 50.   2.   1. ]
+[30] 2026-03-07 19:10:15,963 INFO [rank=30 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 3.0e+00 1.0e-02]
+[36] 2026-03-07 19:10:15,963 INFO [rank=36 host=n3003]: starting climate model for inputs: [ 2.     3.5   50.     4.     0.505]
+[6] 2026-03-07 19:10:15,963 INFO [rank=6 host=n3003]: starting climate model for inputs: [  2.      3.125 200.      6.      1.   ]
+[13] 2026-03-07 19:10:15,963 INFO [rank=13 host=n3003]: starting climate model for inputs: [2.000e+00 3.125e+00 3.000e+02 4.000e+00 1.000e-02]
+[14] 2026-03-07 19:10:15,963 INFO [rank=14 host=n3003]: starting climate model for inputs: [2.000e+00 3.125e+00 3.500e+02 7.000e-01 1.000e-02]
+[33] 2026-03-07 19:10:15,963 INFO [rank=33 host=n3003]: starting climate model for inputs: [ 2.   3.5 50.   3.   1. ]
+[35] 2026-03-07 19:10:15,963 INFO [rank=35 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      4.      0.2575]
+[38] 2026-03-07 19:10:15,963 INFO [rank=38 host=n3003]: starting climate model for inputs: [ 2.   3.5 50.   4.   1. ]
+[27] 2026-03-07 19:10:15,963 INFO [rank=27 host=n3003]: starting climate model for inputs: [ 2.   3.5 50.   1.5  1. ]
+[31] 2026-03-07 19:10:15,963 INFO [rank=31 host=n3003]: starting climate model for inputs: [ 2.     3.5   50.     3.     0.505]
+[34] 2026-03-07 19:10:15,963 INFO [rank=34 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 4.0e+00 1.0e-02]
+[37] 2026-03-07 19:10:15,963 INFO [rank=37 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      4.      0.7525]
+[39] 2026-03-07 19:10:15,963 INFO [rank=39 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 5.0e+00 1.0e-02]
+[3] 2026-03-07 19:10:15,963 INFO [rank=3 host=n3003]: starting climate model for inputs: [  2.       3.125  200.       3.       0.2575]
+[22] 2026-03-07 19:10:15,963 INFO [rank=22 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      1.      0.2575]
+[17] 2026-03-07 19:10:15,963 INFO [rank=17 host=n3003]: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 1.000e+01 2.575e-01]
+[9] 2026-03-07 19:10:15,963 INFO [rank=9 host=n3003]: starting climate model for inputs: [  2.      3.125 250.      5.      0.505]
+[15] 2026-03-07 19:10:15,963 INFO [rank=15 host=n3003]: starting climate model for inputs: [2.000e+00 3.125e+00 4.000e+02 8.000e+00 2.575e-01]
+[26] 2026-03-07 19:10:15,963 INFO [rank=26 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      1.5     0.7525]
+[32] 2026-03-07 19:10:15,963 INFO [rank=32 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      3.      0.7525]
+[5] 2026-03-07 19:10:15,963 INFO [rank=5 host=n3003]: starting climate model for inputs: [  2.       3.125  200.       6.       0.7525]
+[15] 2026-03-07 19:40:16,802 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.125e+00 4.000e+02 8.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[16] 2026-03-07 19:40:16,810 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.125e+00 4.000e+02 1.000e+01 1.000e-02]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 19:40:16,814 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      1.      0.7525]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-07 19:40:16,815 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.125 200.      6.      1.   ]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[1] 2026-03-07 19:40:16,817 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [2.00e+00 2.75e+00 2.00e+02 1.00e+01 1.00e-02]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 19:40:16,820 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.125 400.     10.      1.   ]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[21] 2026-03-07 19:40:16,821 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [ 2.     3.5   50.     0.7    0.505]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-07 19:40:16,823 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      3.      0.7525]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 19:40:16,827 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [ 2.   3.5 50.   4.   1. ]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 19:40:16,829 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [ 2.     3.5   50.     4.     0.505]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 19:40:16,834 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.125 250.      8.      0.505]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 19:40:16,837 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 5.0e+01 5.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-07 19:40:16,840 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.125  400.      10.       0.7525]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[12] 2026-03-07 19:40:16,844 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.125 250.     10.      0.505]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[14] 2026-03-07 19:40:16,845 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.125e+00 3.500e+02 7.000e-01 1.000e-02]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 19:40:16,845 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      1.5     0.7525]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[31] 2026-03-07 19:40:16,846 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [ 2.     3.5   50.     3.     0.505]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[3] 2026-03-07 19:40:16,848 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.125  200.       3.       0.2575]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[11] 2026-03-07 19:40:16,856 ERROR [rank=11 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.125 250.      8.      1.   ]: PICASO subprocess timed out after 1800s
+[11] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-07 19:40:16,849 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.125e+00 3.000e+02 4.000e+00 1.000e-02]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[17] 2026-03-07 19:40:16,848 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.125e+00 4.000e+02 1.000e+01 2.575e-01]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-07 19:40:16,852 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      0.7     0.2575]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-07 19:40:16,856 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [ 2.     3.5   50.     1.     0.505]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 19:40:16,855 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [ 2.   3.5 50.   1.   1. ]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[33] 2026-03-07 19:40:16,854 ERROR [rank=33 host=n3003]: PICASO run failed (initial) for inputs [ 2.   3.5 50.   3.   1. ]: PICASO subprocess timed out after 1800s
+[33] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-07 19:40:16,855 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      4.      0.2575]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 19:40:16,848 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      4.      0.7525]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 19:40:16,858 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.125 200.      6.      0.505]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-07 19:40:16,867 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.125 250.      3.      1.   ]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-07 19:40:16,868 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [ 2.   3.5 50.   1.5  1. ]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[30] 2026-03-07 19:40:16,868 ERROR [rank=30 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 5.0e+01 3.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[30] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 19:40:16,869 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 5.0e+01 4.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-07 19:40:16,869 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      1.      0.2575]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[5] 2026-03-07 19:40:16,871 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.125  200.       6.       0.7525]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[2] 2026-03-07 19:40:16,872 ERROR [rank=2 host=n3003]: PICASO run failed (initial) for inputs [2.00e+00 2.75e+00 3.50e+02 1.00e+01 1.00e-02]: PICASO subprocess timed out after 1800s
+[2] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[8] 2026-03-07 19:40:16,871 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.125 250.      4.      1.   ]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-07 19:40:16,873 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [ 2.   3.5 50.   2.   1. ]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-07 19:40:16,874 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.125 250.      5.      0.505]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[28] 2026-03-07 19:40:16,880 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      2.      0.7525]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-07 19:40:17,179 INFO [rank=15 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      5.      0.2575]
+[32] 2026-03-07 19:40:17,189 INFO [rank=32 host=n3003]: starting climate model for inputs: [ 2.     3.5   50.     5.     0.505]
+[6] 2026-03-07 19:40:17,190 INFO [rank=6 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      5.      0.7525]
+[16] 2026-03-07 19:40:17,195 INFO [rank=16 host=n3003]: starting climate model for inputs: [ 2.   3.5 50.   5.   1. ]
+[10] 2026-03-07 19:40:17,200 INFO [rank=10 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 6.0e+00 1.0e-02]
+[39] 2026-03-07 19:40:17,207 INFO [rank=39 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      6.      0.2575]
+[36] 2026-03-07 19:40:17,212 INFO [rank=36 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      6.      0.7525]
+[18] 2026-03-07 19:40:17,216 INFO [rank=18 host=n3003]: starting climate model for inputs: [ 2.   3.5 50.   6.   1. ]
+[21] 2026-03-07 19:40:17,222 INFO [rank=21 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 8.0e+00 1.0e-02]
+[12] 2026-03-07 19:40:17,227 INFO [rank=12 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      8.      0.2575]
+[26] 2026-03-07 19:40:17,232 INFO [rank=26 host=n3003]: starting climate model for inputs: [ 2.     3.5   50.     8.     0.505]
+[14] 2026-03-07 19:40:17,237 INFO [rank=14 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.      8.      0.7525]
+[31] 2026-03-07 19:40:17,243 INFO [rank=31 host=n3003]: starting climate model for inputs: [ 2.   3.5 50.   8.   1. ]
+[17] 2026-03-07 19:40:17,248 INFO [rank=17 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.0e+01 1.0e-02]
+[3] 2026-03-07 19:40:17,253 INFO [rank=3 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.     10.      0.2575]
+[37] 2026-03-07 19:40:17,258 INFO [rank=37 host=n3003]: starting climate model for inputs: [ 2.     3.5   50.    10.     0.505]
+[13] 2026-03-07 19:40:17,264 INFO [rank=13 host=n3003]: starting climate model for inputs: [ 2.      3.5    50.     10.      0.7525]
+[24] 2026-03-07 19:40:17,269 INFO [rank=24 host=n3003]: starting climate model for inputs: [ 2.   3.5 50.  10.   1. ]
+[1] 2026-03-07 19:40:17,275 INFO [rank=1 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.0e+02 7.0e-01 1.0e-02]
+[20] 2026-03-07 19:40:17,280 INFO [rank=20 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       0.7      0.2575]
+[38] 2026-03-07 19:40:17,286 INFO [rank=38 host=n3003]: starting climate model for inputs: [  2.      3.5   100.      0.7     0.505]
+[33] 2026-03-07 19:40:17,293 INFO [rank=33 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       0.7      0.7525]
+[25] 2026-03-07 19:40:17,299 INFO [rank=25 host=n3003]: starting climate model for inputs: [  2.    3.5 100.    0.7   1. ]
+[35] 2026-03-07 19:40:17,303 INFO [rank=35 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       1.       0.7525]
+[11] 2026-03-07 19:40:17,309 INFO [rank=11 host=n3003]: starting climate model for inputs: [  2.    3.5 100.    1.    1. ]
+[23] 2026-03-07 19:40:17,316 INFO [rank=23 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       1.5      0.7525]
+[19] 2026-03-07 19:40:17,320 INFO [rank=19 host=n3003]: starting climate model for inputs: [  2.    3.5 100.    1.5   1. ]
+[4] 2026-03-07 19:40:17,327 INFO [rank=4 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       2.       0.7525]
+[7] 2026-03-07 19:40:17,332 INFO [rank=7 host=n3003]: starting climate model for inputs: [  2.    3.5 100.    2.    1. ]
+[27] 2026-03-07 19:40:17,340 INFO [rank=27 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       3.       0.7525]
+[30] 2026-03-07 19:40:17,344 INFO [rank=30 host=n3003]: starting climate model for inputs: [  2.    3.5 100.    3.    1. ]
+[34] 2026-03-07 19:40:17,349 INFO [rank=34 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       4.       0.7525]
+[22] 2026-03-07 19:40:17,354 INFO [rank=22 host=n3003]: starting climate model for inputs: [  2.    3.5 100.    4.    1. ]
+[5] 2026-03-07 19:40:17,360 INFO [rank=5 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.0e+02 5.0e+00 1.0e-02]
+[8] 2026-03-07 19:40:17,366 INFO [rank=8 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       5.       0.7525]
+[2] 2026-03-07 19:40:17,372 INFO [rank=2 host=n3003]: starting climate model for inputs: [  2.    3.5 100.    5.    1. ]
+[29] 2026-03-07 19:40:17,378 INFO [rank=29 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.0e+02 6.0e+00 1.0e-02]
+[9] 2026-03-07 19:40:17,384 INFO [rank=9 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       6.       0.2575]
+[28] 2026-03-07 19:40:17,390 INFO [rank=28 host=n3003]: starting climate model for inputs: [  2.      3.5   100.      6.      0.505]
+[6] 2026-03-07 20:10:17,588 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      5.      0.7525]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-07 20:10:17,596 INFO [rank=6 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       6.       0.7525]
+[36] 2026-03-07 20:10:17,619 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      6.      0.7525]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 20:10:17,626 INFO [rank=36 host=n3003]: starting climate model for inputs: [  2.    3.5 100.    6.    1. ]
+[15] 2026-03-07 20:10:17,640 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      5.      0.2575]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-07 20:10:17,647 INFO [rank=15 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.0e+02 8.0e+00 1.0e-02]
+[21] 2026-03-07 20:10:17,656 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 5.0e+01 8.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[21] 2026-03-07 20:10:17,663 INFO [rank=21 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       8.       0.2575]
+[31] 2026-03-07 20:10:17,664 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [ 2.   3.5 50.   8.   1. ]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[31] 2026-03-07 20:10:17,671 INFO [rank=31 host=n3003]: starting climate model for inputs: [  2.      3.5   100.      8.      0.505]
+[32] 2026-03-07 20:10:17,698 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [ 2.     3.5   50.     5.     0.505]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-07 20:10:17,705 INFO [rank=32 host=n3003]: starting climate model for inputs: [  2.       3.5    100.       8.       0.7525]
+[18] 2026-03-07 20:10:17,733 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [ 2.   3.5 50.   6.   1. ]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-07 20:10:17,740 INFO [rank=18 host=n3003]: starting climate model for inputs: [  2.    3.5 100.    8.    1. ]
+[13] 2026-03-07 20:10:17,744 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.     10.      0.7525]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-07 20:10:17,751 INFO [rank=13 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.0e+02 1.0e+01 1.0e-02]
+[39] 2026-03-07 20:10:17,754 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      6.      0.2575]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 20:10:17,761 INFO [rank=39 host=n3003]: starting climate model for inputs: [  2.       3.5    100.      10.       0.2575]
+[10] 2026-03-07 20:10:17,778 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 5.0e+01 6.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 20:10:17,785 INFO [rank=10 host=n3003]: starting climate model for inputs: [  2.      3.5   100.     10.      0.505]
+[20] 2026-03-07 20:10:17,789 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       0.7      0.2575]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-07 20:10:17,795 INFO [rank=20 host=n3003]: starting climate model for inputs: [  2.       3.5    100.      10.       0.7525]
+[1] 2026-03-07 20:10:17,833 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.0e+02 7.0e-01 1.0e-02]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 20:10:17,834 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [ 2.     3.5   50.     8.     0.505]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[12] 2026-03-07 20:10:17,835 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      8.      0.2575]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[1] 2026-03-07 20:10:17,840 INFO [rank=1 host=n3003]: starting climate model for inputs: [  2.    3.5 100.   10.    1. ]
+[16] 2026-03-07 20:10:17,837 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [ 2.   3.5 50.   5.   1. ]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 20:10:17,836 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.    0.7   1. ]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 20:10:17,841 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [ 2.   3.5 50.  10.   1. ]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[11] 2026-03-07 20:10:17,843 ERROR [rank=11 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.    1.    1. ]: PICASO subprocess timed out after 1800s
+[11] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 20:10:17,845 INFO [rank=26 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.5e+02 7.0e-01 1.0e-02]
+[7] 2026-03-07 20:10:17,853 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.    2.    1. ]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[12] 2026-03-07 20:10:17,854 INFO [rank=12 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       0.7      0.2575]
+[14] 2026-03-07 20:10:17,848 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.      8.      0.7525]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 20:10:17,859 INFO [rank=25 host=n3003]: starting climate model for inputs: [  2.      3.5   150.      0.7     0.505]
+[16] 2026-03-07 20:10:17,864 INFO [rank=16 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       0.7      0.7525]
+[24] 2026-03-07 20:10:17,870 INFO [rank=24 host=n3003]: starting climate model for inputs: [  2.    3.5 150.    0.7   1. ]
+[3] 2026-03-07 20:10:17,881 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [ 2.      3.5    50.     10.      0.2575]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 20:10:17,872 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       2.       0.7525]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[17] 2026-03-07 20:10:17,880 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 5.0e+01 1.0e+01 1.0e-02]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-07 20:10:17,876 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.    4.    1. ]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-07 20:10:17,874 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       1.5      0.7525]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[5] 2026-03-07 20:10:17,890 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.0e+02 5.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-07 20:10:17,901 INFO [rank=7 host=n3003]: starting climate model for inputs: [  2.      3.5   150.      1.      0.505]
+[8] 2026-03-07 20:10:17,891 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       5.       0.7525]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-07 20:10:17,889 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       6.       0.2575]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[11] 2026-03-07 20:10:17,889 INFO [rank=11 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.5e+02 1.0e+00 1.0e-02]
+[14] 2026-03-07 20:10:17,895 INFO [rank=14 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       1.       0.2575]
+[28] 2026-03-07 20:10:17,889 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   100.      6.      0.505]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-07 20:10:17,897 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.0e+02 6.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[30] 2026-03-07 20:10:17,896 ERROR [rank=30 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.    3.    1. ]: PICASO subprocess timed out after 1800s
+[30] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-07 20:10:17,906 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       1.       0.7525]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 20:10:17,893 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [ 2.     3.5   50.    10.     0.505]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 20:10:17,899 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   100.      0.7     0.505]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 20:10:17,910 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       4.       0.7525]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 20:10:17,919 INFO [rank=4 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       1.       0.7525]
+[22] 2026-03-07 20:10:17,930 INFO [rank=22 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.5e+02 1.5e+00 1.0e-02]
+[27] 2026-03-07 20:10:17,920 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       3.       0.7525]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[33] 2026-03-07 20:10:17,921 ERROR [rank=33 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       0.7      0.7525]: PICASO subprocess timed out after 1800s
+[33] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-07 20:10:17,938 INFO [rank=23 host=n3003]: starting climate model for inputs: [  2.    3.5 150.    1.    1. ]
+[17] 2026-03-07 20:10:17,953 INFO [rank=17 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       1.5      0.2575]
+[5] 2026-03-07 20:10:17,972 INFO [rank=5 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.5e+02 2.0e+00 1.0e-02]
+[28] 2026-03-07 20:10:17,976 INFO [rank=28 host=n3003]: starting climate model for inputs: [  2.    3.5 150.    1.5   1. ]
+[2] 2026-03-07 20:10:17,987 ERROR [rank=2 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.    5.    1. ]: PICASO subprocess timed out after 1800s
+[2] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-07 20:10:17,989 INFO [rank=9 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       1.5      0.7525]
+[19] 2026-03-07 20:10:17,990 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.    1.5   1. ]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s[19] 
+[3] 2026-03-07 20:10:17,991 INFO [rank=3 host=n3003]: starting climate model for inputs: [  2.      3.5   150.      1.5     0.505]
+[37] 2026-03-07 20:10:18,041 INFO [rank=37 host=n3003]: starting climate model for inputs: [  2.      3.5   150.      2.      0.505]
+[30] 2026-03-07 20:10:18,049 INFO [rank=30 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       2.       0.7525]
+[8] 2026-03-07 20:10:18,053 INFO [rank=8 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       2.       0.2575]
+[38] 2026-03-07 20:10:18,069 INFO [rank=38 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.5e+02 3.0e+00 1.0e-02]
+[29] 2026-03-07 20:10:18,074 INFO [rank=29 host=n3003]: starting climate model for inputs: [  2.    3.5 150.    2.    1. ]
+[35] 2026-03-07 20:10:18,075 INFO [rank=35 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       3.       0.2575]
+[34] 2026-03-07 20:10:18,080 INFO [rank=34 host=n3003]: starting climate model for inputs: [  2.      3.5   150.      3.      0.505]
+[27] 2026-03-07 20:10:18,085 INFO [rank=27 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       3.       0.7525]
+[33] 2026-03-07 20:10:18,091 INFO [rank=33 host=n3003]: starting climate model for inputs: [  2.    3.5 150.    3.    1. ]
+[2] 2026-03-07 20:10:18,096 INFO [rank=2 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.5e+02 4.0e+00 1.0e-02]
+[19] 2026-03-07 20:10:18,106 INFO [rank=19 host=n3003]: starting climate model for inputs: [  2.      3.5   150.      4.      0.505]
+[6] 2026-03-07 20:40:17,816 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       6.       0.7525]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 20:40:17,812 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.    6.    1. ]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 20:40:17,824 INFO [rank=36 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       4.       0.7525]
+[6] 2026-03-07 20:40:17,832 INFO [rank=6 host=n3003]: starting climate model for inputs: [  2.    3.5 150.    4.    1. ]
+[15] 2026-03-07 20:40:17,862 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.0e+02 8.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-07 20:40:17,873 INFO [rank=15 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.5e+02 5.0e+00 1.0e-02]
+[31] 2026-03-07 20:40:17,903 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   100.      8.      0.505]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[31] 2026-03-07 20:40:17,913 INFO [rank=31 host=n3003]: starting climate model for inputs: [  2.      3.5   150.      5.      0.505]
+[21] 2026-03-07 20:40:17,916 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       8.       0.2575]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[21] 2026-03-07 20:40:17,926 INFO [rank=21 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       5.       0.7525]
+[32] 2026-03-07 20:40:17,934 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.       8.       0.7525]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-07 20:40:17,944 INFO [rank=32 host=n3003]: starting climate model for inputs: [  2.    3.5 150.    5.    1. ]
+[13] 2026-03-07 20:40:17,952 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.0e+02 1.0e+01 1.0e-02]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-07 20:40:17,961 INFO [rank=13 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.5e+02 6.0e+00 1.0e-02]
+[18] 2026-03-07 20:40:17,977 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.    8.    1. ]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-07 20:40:17,986 INFO [rank=18 host=n3003]: starting climate model for inputs: [  2.      3.5   150.      6.      0.505]
+[10] 2026-03-07 20:40:18,027 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   100.     10.      0.505]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 20:40:18,036 INFO [rank=10 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       6.       0.7525]
+[26] 2026-03-07 20:40:18,065 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.5e+02 7.0e-01 1.0e-02]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 20:40:18,074 INFO [rank=26 host=n3003]: starting climate model for inputs: [  2.    3.5 150.    6.    1. ]
+[39] 2026-03-07 20:40:18,072 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.      10.       0.2575]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 20:40:18,080 INFO [rank=39 host=n3003]: starting climate model for inputs: [  2.       3.5    150.       8.       0.7525]
+[16] 2026-03-07 20:40:18,113 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       0.7      0.7525]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[16] 2026-03-07 20:40:18,122 INFO [rank=16 host=n3003]: starting climate model for inputs: [  2.    3.5 150.    8.    1. ]
+[20] 2026-03-07 20:40:18,150 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    100.      10.       0.7525]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-07 20:40:18,164 INFO [rank=20 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 1.5e+02 1.0e+01 1.0e-02]
+[1] 2026-03-07 20:40:18,203 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 100.   10.    1. ]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[1] 2026-03-07 20:40:18,210 INFO [rank=1 host=n3003]: starting climate model for inputs: [  2.       3.5    150.      10.       0.7525]
+[25] 2026-03-07 20:40:18,210 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   150.      0.7     0.505]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 20:40:18,228 INFO [rank=25 host=n3003]: starting climate model for inputs: [  2.    3.5 150.   10.    1. ]
+[14] 2026-03-07 20:40:18,287 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       1.       0.2575]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 20:40:18,311 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       1.       0.7525]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[2] 2026-03-07 20:40:18,337 ERROR [rank=2 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.5e+02 4.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[2] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[14] 2026-03-07 20:40:18,351 INFO [rank=14 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       0.7      0.2575]
+[7] 2026-03-07 20:40:18,373 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   150.      1.      0.505]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 20:40:18,411 INFO [rank=4 host=n3003]: starting climate model for inputs: [  2.      3.5   200.      0.7     0.505]
+[2] 2026-03-07 20:40:18,416 INFO [rank=2 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       0.7      0.7525]
+[35] 2026-03-07 20:40:18,421 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       3.       0.2575]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-07 20:40:18,422 INFO [rank=7 host=n3003]: starting climate model for inputs: [  2.    3.5 200.    0.7   1. ]
+[35] 2026-03-07 20:40:18,428 INFO [rank=35 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.0e+02 1.0e+00 1.0e-02]
+[11] 2026-03-07 20:40:18,446 ERROR [rank=11 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.5e+02 1.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[11] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-07 20:40:18,446 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.5e+02 1.5e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 20:40:18,446 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.    0.7   1. ]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[12] 2026-03-07 20:40:18,461 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       0.7      0.2575]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[17] 2026-03-07 20:40:18,456 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       1.5      0.2575]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-07 20:40:18,447 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.    1.    1. ]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 20:40:18,453 INFO [rank=24 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       1.       0.2575]
+[27] 2026-03-07 20:40:18,451 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       3.       0.7525]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[28] 2026-03-07 20:40:18,457 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.    1.5   1. ]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[33] 2026-03-07 20:40:18,451 ERROR [rank=33 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.    3.    1. ]: PICASO subprocess timed out after 1800s
+[33] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 20:40:18,463 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   150.      3.      0.505]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[33] 2026-03-07 20:40:18,469 INFO [rank=33 host=n3003]: starting climate model for inputs: [  2.    3.5 200.    1.    1. ]
+[30] 2026-03-07 20:40:18,470 ERROR [rank=30 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       2.       0.7525]: PICASO subprocess timed out after 1800s
+[30] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 20:40:18,472 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   150.      2.      0.505]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 20:40:18,472 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.5e+02 3.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-07 20:40:18,472 INFO [rank=27 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       1.       0.7525]
+[19] 2026-03-07 20:40:18,473 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   150.      4.      0.505]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[3] 2026-03-07 20:40:18,482 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   150.      1.5     0.505]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[12] 2026-03-07 20:40:18,486 INFO [rank=12 host=n3003]: starting climate model for inputs: [  2.      3.5   200.      1.5     0.505]
+[28] 2026-03-07 20:40:18,487 INFO [rank=28 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       1.5      0.2575]
+[34] 2026-03-07 20:40:18,491 INFO [rank=34 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       1.5      0.7525]
+[23] 2026-03-07 20:40:18,497 INFO [rank=23 host=n3003]: starting climate model for inputs: [  2.      3.5   200.      1.      0.505]
+[22] 2026-03-07 20:40:18,498 INFO [rank=22 host=n3003]: starting climate model for inputs: [  2.    3.5 200.    1.5   1. ]
+[30] 2026-03-07 20:40:18,503 INFO [rank=30 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.0e+02 2.0e+00 1.0e-02]
+[17] 2026-03-07 20:40:18,505 INFO [rank=17 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.0e+02 1.5e+00 1.0e-02]
+[37] 2026-03-07 20:40:18,508 INFO [rank=37 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       2.       0.2575]
+[38] 2026-03-07 20:40:18,514 INFO [rank=38 host=n3003]: starting climate model for inputs: [  2.      3.5   200.      2.      0.505]
+[19] 2026-03-07 20:40:18,520 INFO [rank=19 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       2.       0.7525]
+[11] 2026-03-07 20:40:18,525 INFO [rank=11 host=n3003]: starting climate model for inputs: [  2.    3.5 200.    2.    1. ]
+[3] 2026-03-07 20:40:18,531 INFO [rank=3 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.0e+02 3.0e+00 1.0e-02]
+[29] 2026-03-07 20:40:18,535 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.    2.    1. ]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[5] 2026-03-07 20:40:18,539 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.5e+02 2.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-07 20:40:18,542 INFO [rank=29 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       3.       0.2575]
+[5] 2026-03-07 20:40:18,547 INFO [rank=5 host=n3003]: starting climate model for inputs: [  2.      3.5   200.      3.      0.505]
+[9] 2026-03-07 20:40:18,551 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       1.5      0.7525]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[8] 2026-03-07 20:40:18,577 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       2.       0.2575]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[8] 2026-03-07 20:40:18,636 INFO [rank=8 host=n3003]: starting climate model for inputs: [  2.    3.5 200.    3.    1. ]
+[9] 2026-03-07 20:40:18,636 INFO [rank=9 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       3.       0.7525]
+[36] 2026-03-07 21:10:18,094 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       4.       0.7525]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-07 21:10:18,097 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.5e+02 5.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-07 21:10:18,104 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.    4.    1. ]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 21:10:18,106 INFO [rank=36 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.0e+02 4.0e+00 1.0e-02]
+[15] 2026-03-07 21:10:18,113 INFO [rank=15 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       4.       0.2575]
+[31] 2026-03-07 21:10:18,111 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   150.      5.      0.505]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-07 21:10:18,121 INFO [rank=6 host=n3003]: starting climate model for inputs: [  2.      3.5   200.      4.      0.505]
+[31] 2026-03-07 21:10:18,128 INFO [rank=31 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       4.       0.7525]
+[21] 2026-03-07 21:10:18,190 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       5.       0.7525]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[21] 2026-03-07 21:10:18,199 INFO [rank=21 host=n3003]: starting climate model for inputs: [  2.    3.5 200.    4.    1. ]
+[32] 2026-03-07 21:10:18,218 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.    5.    1. ]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-07 21:10:18,227 INFO [rank=32 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       5.       0.2575]
+[13] 2026-03-07 21:10:18,228 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.5e+02 6.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-07 21:10:18,237 INFO [rank=13 host=n3003]: starting climate model for inputs: [  2.      3.5   200.      5.      0.505]
+[18] 2026-03-07 21:10:18,244 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   150.      6.      0.505]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-07 21:10:18,253 INFO [rank=18 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       5.       0.7525]
+[10] 2026-03-07 21:10:18,305 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       6.       0.7525]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 21:10:18,314 INFO [rank=10 host=n3003]: starting climate model for inputs: [  2.    3.5 200.    5.    1. ]
+[26] 2026-03-07 21:10:18,355 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.    6.    1. ]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 21:10:18,363 INFO [rank=26 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.0e+02 6.0e+00 1.0e-02]
+[39] 2026-03-07 21:10:18,355 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.       8.       0.7525]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 21:10:18,370 INFO [rank=39 host=n3003]: starting climate model for inputs: [  2.      3.5   200.      6.      0.505]
+[16] 2026-03-07 21:10:18,380 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.    8.    1. ]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[16] 2026-03-07 21:10:18,389 INFO [rank=16 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       6.       0.7525]
+[20] 2026-03-07 21:10:18,389 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 1.5e+02 1.0e+01 1.0e-02]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-07 21:10:18,398 INFO [rank=20 host=n3003]: starting climate model for inputs: [  2.    3.5 200.    6.    1. ]
+[1] 2026-03-07 21:10:18,426 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    150.      10.       0.7525]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[1] 2026-03-07 21:10:18,435 INFO [rank=1 host=n3003]: starting climate model for inputs: [  2.       3.5    200.       8.       0.7525]
+[25] 2026-03-07 21:10:18,440 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 150.   10.    1. ]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 21:10:18,469 INFO [rank=25 host=n3003]: starting climate model for inputs: [  2.    3.5 200.    8.    1. ]
+[4] 2026-03-07 21:10:18,687 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   200.      0.7     0.505]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 21:10:18,721 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       1.       0.2575]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s[24] 
+[4] 2026-03-07 21:10:18,737 INFO [rank=4 host=n3003]: starting climate model for inputs: [  2.       3.5    200.      10.       0.7525]
+[14] 2026-03-07 21:10:18,748 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       0.7      0.2575]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[14] 2026-03-07 21:10:18,770 INFO [rank=14 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       0.7      0.2575]
+[24] 2026-03-07 21:10:18,782 INFO [rank=24 host=n3003]: starting climate model for inputs: [  2.    3.5 200.   10.    1. ]
+[7] 2026-03-07 21:10:18,811 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.    0.7   1. ]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-07 21:10:18,819 INFO [rank=7 host=n3003]: starting climate model for inputs: [  2.      3.5   250.      0.7     0.505]
+[12] 2026-03-07 21:10:18,835 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   200.      1.5     0.505]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 21:10:18,828 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       1.5      0.7525]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 21:10:18,851 INFO [rank=34 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       0.7      0.7525]
+[35] 2026-03-07 21:10:18,846 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.0e+02 1.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 21:10:18,867 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       2.       0.7525]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-07 21:10:18,869 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.    1.5   1. ]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-07 21:10:18,881 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       1.       0.7525]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[12] 2026-03-07 21:10:18,894 INFO [rank=12 host=n3003]: starting climate model for inputs: [  2.    3.5 250.    0.7   1. ]
+[35] 2026-03-07 21:10:18,891 INFO [rank=35 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.5e+02 1.0e+00 1.0e-02]
+[33] 2026-03-07 21:10:18,900 ERROR [rank=33 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.    1.    1. ]: PICASO subprocess timed out after 1800s
+[33] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[17] 2026-03-07 21:10:18,913 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.0e+02 1.5e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-07 21:10:18,918 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       3.       0.2575]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-07 21:10:18,929 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   200.      1.      0.505]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-07 21:10:18,941 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       3.       0.7525]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[8] 2026-03-07 21:10:18,943 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.    3.    1. ]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[5] 2026-03-07 21:10:18,964 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   200.      3.      0.505]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 21:10:18,973 INFO [rank=19 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       1.       0.2575]
+[22] 2026-03-07 21:10:18,979 INFO [rank=22 host=n3003]: starting climate model for inputs: [  2.      3.5   250.      1.      0.505]
+[27] 2026-03-07 21:10:19,014 INFO [rank=27 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       1.       0.7525]
+[33] 2026-03-07 21:10:19,016 INFO [rank=33 host=n3003]: starting climate model for inputs: [  2.    3.5 250.    1.    1. ]
+[17] 2026-03-07 21:10:19,023 INFO [rank=17 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.5e+02 1.5e+00 1.0e-02]
+[2] 2026-03-07 21:10:19,024 ERROR [rank=2 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       0.7      0.7525]: PICASO subprocess timed out after 1800s
+[2] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[3] 2026-03-07 21:10:19,027 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.0e+02 3.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[11] 2026-03-07 21:10:19,024 ERROR [rank=11 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.    2.    1. ]: PICASO subprocess timed out after 1800s
+[11] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[30] 2026-03-07 21:10:19,027 ERROR [rank=30 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.0e+02 2.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[30] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 21:10:19,027 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       2.       0.2575]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 21:10:19,027 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   200.      2.      0.505]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[28] 2026-03-07 21:10:19,034 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       1.5      0.2575]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-07 21:10:19,074 INFO [rank=29 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       1.5      0.2575]
+[23] 2026-03-07 21:10:19,080 INFO [rank=23 host=n3003]: starting climate model for inputs: [  2.      3.5   250.      1.5     0.505]
+[9] 2026-03-07 21:10:19,129 INFO [rank=9 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       1.5      0.7525]
+[8] 2026-03-07 21:10:19,134 INFO [rank=8 host=n3003]: starting climate model for inputs: [  2.    3.5 250.    1.5   1. ]
+[38] 2026-03-07 21:10:19,176 INFO [rank=38 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       2.       0.7525]
+[28] 2026-03-07 21:10:19,187 INFO [rank=28 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.5e+02 3.0e+00 1.0e-02]
+[30] 2026-03-07 21:10:19,182 INFO [rank=30 host=n3003]: starting climate model for inputs: [  2.    3.5 250.    2.    1. ]
+[3] 2026-03-07 21:10:19,192 INFO [rank=3 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       3.       0.2575]
+[37] 2026-03-07 21:10:19,198 INFO [rank=37 host=n3003]: starting climate model for inputs: [  2.      3.5   250.      3.      0.505]
+[2] 2026-03-07 21:10:19,199 INFO [rank=2 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       2.       0.2575]
+[11] 2026-03-07 21:10:19,200 INFO [rank=11 host=n3003]: starting climate model for inputs: [  2.      3.5   250.      2.      0.505]
+[5] 2026-03-07 21:10:19,214 INFO [rank=5 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.5e+02 2.0e+00 1.0e-02]
+[36] 2026-03-07 21:40:18,325 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.0e+02 4.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 21:40:18,336 INFO [rank=36 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       3.       0.7525]
+[6] 2026-03-07 21:40:18,339 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   200.      4.      0.505]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-07 21:40:18,349 INFO [rank=6 host=n3003]: starting climate model for inputs: [  2.    3.5 250.    3.    1. ]
+[15] 2026-03-07 21:40:18,374 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       4.       0.2575]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-07 21:40:18,385 INFO [rank=15 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.5e+02 4.0e+00 1.0e-02]
+[31] 2026-03-07 21:40:18,387 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       4.       0.7525]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[31] 2026-03-07 21:40:18,396 INFO [rank=31 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       4.       0.2575]
+[21] 2026-03-07 21:40:18,431 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.    4.    1. ]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[21] 2026-03-07 21:40:18,441 INFO [rank=21 host=n3003]: starting climate model for inputs: [  2.      3.5   250.      4.      0.505]
+[32] 2026-03-07 21:40:18,448 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       5.       0.2575]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-07 21:40:18,458 INFO [rank=32 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       4.       0.7525]
+[18] 2026-03-07 21:40:18,469 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       5.       0.7525]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-07 21:40:18,478 INFO [rank=18 host=n3003]: starting climate model for inputs: [  2.    3.5 250.    4.    1. ]
+[13] 2026-03-07 21:40:18,489 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   200.      5.      0.505]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-07 21:40:18,498 INFO [rank=13 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.5e+02 5.0e+00 1.0e-02]
+[10] 2026-03-07 21:40:18,558 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.    5.    1. ]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 21:40:18,567 INFO [rank=10 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       5.       0.2575]
+[20] 2026-03-07 21:40:18,588 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.    6.    1. ]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-07 21:40:18,597 INFO [rank=20 host=n3003]: starting climate model for inputs: [  2.      3.5   250.      5.      0.505]
+[16] 2026-03-07 21:40:18,613 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       6.       0.7525]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[16] 2026-03-07 21:40:18,622 INFO [rank=16 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       5.       0.7525]
+[26] 2026-03-07 21:40:18,613 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.0e+02 6.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 21:40:18,624 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   200.      6.      0.505]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 21:40:18,629 INFO [rank=26 host=n3003]: starting climate model for inputs: [  2.    3.5 250.    5.    1. ]
+[39] 2026-03-07 21:40:18,636 INFO [rank=39 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.5e+02 6.0e+00 1.0e-02]
+[1] 2026-03-07 21:40:18,649 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.       8.       0.7525]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[1] 2026-03-07 21:40:18,658 INFO [rank=1 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       6.       0.2575]
+[25] 2026-03-07 21:40:18,848 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.    8.    1. ]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 21:40:18,886 INFO [rank=25 host=n3003]: starting climate model for inputs: [  2.      3.5   250.      6.      0.505]
+[4] 2026-03-07 21:40:19,005 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    200.      10.       0.7525]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 21:40:19,025 INFO [rank=4 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       6.       0.7525]
+[34] 2026-03-07 21:40:19,054 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       0.7      0.7525]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 21:40:19,073 INFO [rank=34 host=n3003]: starting climate model for inputs: [  2.    3.5 250.    6.    1. ]
+[14] 2026-03-07 21:40:19,083 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       0.7      0.2575]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[14] 2026-03-07 21:40:19,093 INFO [rank=14 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.5e+02 8.0e+00 1.0e-02]
+[24] 2026-03-07 21:40:19,117 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 200.   10.    1. ]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 21:40:19,125 INFO [rank=24 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       8.       0.2575]
+[12] 2026-03-07 21:40:19,130 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.    0.7   1. ]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[12] 2026-03-07 21:40:19,138 INFO [rank=12 host=n3003]: starting climate model for inputs: [  2.      3.5   250.      8.      0.505]
+[35] 2026-03-07 21:40:19,151 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.5e+02 1.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-07 21:40:19,157 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.      0.7     0.505]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-07 21:40:19,159 INFO [rank=35 host=n3003]: starting climate model for inputs: [  2.       3.5    250.       8.       0.7525]
+[7] 2026-03-07 21:40:19,166 INFO [rank=7 host=n3003]: starting climate model for inputs: [  2.    3.5 250.    8.    1. ]
+[19] 2026-03-07 21:40:19,206 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       1.       0.2575]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 21:40:19,214 INFO [rank=19 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 2.5e+02 1.0e+01 1.0e-02]
+[17] 2026-03-07 21:40:19,257 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.5e+02 1.5e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[33] 2026-03-07 21:40:19,250 ERROR [rank=33 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.    1.    1. ]: PICASO subprocess timed out after 1800s
+[33] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[33] 2026-03-07 21:40:19,263 INFO [rank=33 host=n3003]: starting climate model for inputs: [  2.       3.5    250.      10.       0.2575]
+[22] 2026-03-07 21:40:19,274 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.      1.      0.505]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[17] 2026-03-07 21:40:19,310 INFO [rank=17 host=n3003]: starting climate model for inputs: [  2.      3.5   250.     10.      0.505]
+[22] 2026-03-07 21:40:19,316 INFO [rank=22 host=n3003]: starting climate model for inputs: [  2.       3.5    250.      10.       0.7525]
+[29] 2026-03-07 21:40:19,317 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       1.5      0.2575]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-07 21:40:19,325 INFO [rank=29 host=n3003]: starting climate model for inputs: [  2.    3.5 250.   10.    1. ]
+[3] 2026-03-07 21:40:19,382 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       3.       0.2575]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[3] 2026-03-07 21:40:19,390 INFO [rank=3 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 3.0e-01 1.0e-02]
+[28] 2026-03-07 21:40:19,417 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.5e+02 3.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[28] 2026-03-07 21:40:19,425 INFO [rank=28 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 3.000e-01 2.575e-01]
+[23] 2026-03-07 21:40:19,430 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.      1.5     0.505]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-07 21:40:19,437 INFO [rank=23 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      0.3     0.505]
+[5] 2026-03-07 21:40:19,486 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.5e+02 2.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[5] 2026-03-07 21:40:19,494 INFO [rank=5 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       0.3      0.7525]
+[37] 2026-03-07 21:40:19,492 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.      3.      0.505]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[8] 2026-03-07 21:40:19,495 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.    1.5   1. ]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-07 21:40:19,498 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       1.       0.7525]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 21:40:19,500 INFO [rank=37 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    0.3   1. ]
+[8] 2026-03-07 21:40:19,506 INFO [rank=8 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 7.0e-01 1.0e-02]
+[27] 2026-03-07 21:40:19,512 INFO [rank=27 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 7.000e-01 2.575e-01]
+[38] 2026-03-07 21:40:19,529 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       2.       0.7525]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-07 21:40:19,537 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       1.5      0.7525]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 21:40:19,537 INFO [rank=38 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      0.7     0.505]
+[9] 2026-03-07 21:40:19,545 INFO [rank=9 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       0.7      0.7525]
+[2] 2026-03-07 21:40:19,561 ERROR [rank=2 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       2.       0.2575]: PICASO subprocess timed out after 1800s
+[2] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[2] 2026-03-07 21:40:19,569 INFO [rank=2 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    0.7   1. ]
+[11] 2026-03-07 21:40:19,570 ERROR [rank=11 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.      2.      0.505]: PICASO subprocess timed out after 1800s
+[11] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[30] 2026-03-07 21:40:19,567 ERROR [rank=30 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.    2.    1. ]: PICASO subprocess timed out after 1800s
+[30] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[30] 2026-03-07 21:40:19,575 INFO [rank=30 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 1.0e+00 1.0e-02]
+[11] 2026-03-07 21:40:19,580 INFO [rank=11 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 1.000e+00 2.575e-01]
+[36] 2026-03-07 22:10:18,510 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       3.       0.7525]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 22:10:18,522 INFO [rank=36 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      1.      0.505]
+[6] 2026-03-07 22:10:18,555 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.    3.    1. ]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-07 22:10:18,565 INFO [rank=6 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       1.       0.7525]
+[15] 2026-03-07 22:10:18,628 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.5e+02 4.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-07 22:10:18,637 INFO [rank=15 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    1.    1. ]
+[31] 2026-03-07 22:10:18,662 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       4.       0.2575]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[31] 2026-03-07 22:10:18,672 INFO [rank=31 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 1.5e+00 1.0e-02]
+[13] 2026-03-07 22:10:18,682 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.5e+02 5.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-07 22:10:18,691 INFO [rank=13 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 1.500e+00 2.575e-01]
+[21] 2026-03-07 22:10:18,684 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.      4.      0.505]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[21] 2026-03-07 22:10:18,698 INFO [rank=21 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      1.5     0.505]
+[18] 2026-03-07 22:10:18,721 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.    4.    1. ]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-07 22:10:18,730 INFO [rank=18 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       1.5      0.7525]
+[32] 2026-03-07 22:10:18,721 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       4.       0.7525]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-07 22:10:18,737 INFO [rank=32 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    1.5   1. ]
+[10] 2026-03-07 22:10:18,783 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       5.       0.2575]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 22:10:18,792 INFO [rank=10 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 2.0e+00 1.0e-02]
+[20] 2026-03-07 22:10:18,810 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.      5.      0.505]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-07 22:10:18,819 INFO [rank=20 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 2.000e+00 2.575e-01]
+[16] 2026-03-07 22:10:18,841 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       5.       0.7525]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 22:10:18,844 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.5e+02 6.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[16] 2026-03-07 22:10:18,850 INFO [rank=16 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      2.      0.505]
+[39] 2026-03-07 22:10:18,857 INFO [rank=39 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       2.       0.7525]
+[26] 2026-03-07 22:10:18,873 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.    5.    1. ]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[1] 2026-03-07 22:10:18,881 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       6.       0.2575]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 22:10:18,882 INFO [rank=26 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    2.    1. ]
+[1] 2026-03-07 22:10:18,890 INFO [rank=1 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 3.0e+00 1.0e-02]
+[25] 2026-03-07 22:10:19,333 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.      6.      0.505]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 22:10:19,342 INFO [rank=25 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 3.000e+00 2.575e-01]
+[24] 2026-03-07 22:10:19,373 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       8.       0.2575]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 22:10:19,381 INFO [rank=24 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      3.      0.505]
+[7] 2026-03-07 22:10:19,394 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.    8.    1. ]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 22:10:19,407 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       6.       0.7525]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-07 22:10:19,409 INFO [rank=7 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       3.       0.7525]
+[4] 2026-03-07 22:10:19,416 INFO [rank=4 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    3.    1. ]
+[34] 2026-03-07 22:10:19,454 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.    6.    1. ]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-07 22:10:19,454 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.       8.       0.7525]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-07 22:10:19,476 INFO [rank=35 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 4.0e+00 1.0e-02]
+[34] 2026-03-07 22:10:19,485 INFO [rank=34 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 4.000e+00 2.575e-01]
+[33] 2026-03-07 22:10:19,509 ERROR [rank=33 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.      10.       0.2575]: PICASO subprocess timed out after 1800s
+[33] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[33] 2026-03-07 22:10:19,517 INFO [rank=33 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      4.      0.505]
+[12] 2026-03-07 22:10:19,533 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.      8.      0.505]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 22:10:19,532 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.5e+02 1.0e+01 1.0e-02]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 22:10:19,539 INFO [rank=19 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       4.       0.7525]
+[12] 2026-03-07 22:10:19,545 INFO [rank=12 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    4.    1. ]
+[17] 2026-03-07 22:10:19,576 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   250.     10.      0.505]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-07 22:10:19,573 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    250.      10.       0.7525]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-07 22:10:19,581 INFO [rank=22 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 5.0e+00 1.0e-02]
+[14] 2026-03-07 22:10:19,585 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 2.5e+02 8.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[14] 2026-03-07 22:10:19,593 INFO [rank=14 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      5.      0.505]
+[17] 2026-03-07 22:10:19,587 INFO [rank=17 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 5.000e+00 2.575e-01]
+[29] 2026-03-07 22:10:19,595 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 250.   10.    1. ]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-07 22:10:19,602 INFO [rank=29 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       5.       0.7525]
+[28] 2026-03-07 22:10:19,633 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 3.000e-01 2.575e-01]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[28] 2026-03-07 22:10:19,641 INFO [rank=28 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    5.    1. ]
+[23] 2026-03-07 22:10:19,723 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      0.3     0.505]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-07 22:10:19,731 INFO [rank=23 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 6.0e+00 1.0e-02]
+[3] 2026-03-07 22:10:19,748 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 3.0e-01 1.0e-02]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[3] 2026-03-07 22:10:19,756 INFO [rank=3 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 6.000e+00 2.575e-01]
+[37] 2026-03-07 22:10:19,758 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    0.3   1. ]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 22:10:19,765 INFO [rank=37 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      6.      0.505]
+[38] 2026-03-07 22:10:19,786 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      0.7     0.505]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-07 22:10:19,794 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 7.000e-01 2.575e-01]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 22:10:19,794 INFO [rank=38 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       6.       0.7525]
+[9] 2026-03-07 22:10:19,799 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       0.7      0.7525]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-07 22:10:19,801 INFO [rank=27 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    6.    1. ]
+[9] 2026-03-07 22:10:19,807 INFO [rank=9 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 8.0e+00 1.0e-02]
+[8] 2026-03-07 22:10:19,816 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 7.0e-01 1.0e-02]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[8] 2026-03-07 22:10:19,824 INFO [rank=8 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 8.000e+00 2.575e-01]
+[5] 2026-03-07 22:10:19,926 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       0.3      0.7525]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[5] 2026-03-07 22:10:19,943 INFO [rank=5 host=n3003]: starting climate model for inputs: [  2.      3.5   300.      8.      0.505]
+[30] 2026-03-07 22:10:20,119 ERROR [rank=30 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 1.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[30] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[2] 2026-03-07 22:10:20,120 ERROR [rank=2 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    0.7   1. ]: PICASO subprocess timed out after 1800s
+[2] PICASO run failed (initial): PICASO subprocess timed out after 1800s[2] 
+[30] 2026-03-07 22:10:20,127 INFO [rank=30 host=n3003]: starting climate model for inputs: [  2.       3.5    300.       8.       0.7525]
+[11] 2026-03-07 22:10:20,132 ERROR [rank=11 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 1.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[11] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[2] 2026-03-07 22:10:20,147 INFO [rank=2 host=n3003]: starting climate model for inputs: [  2.    3.5 300.    8.    1. ]
+[11] 2026-03-07 22:10:20,159 INFO [rank=11 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.0e+02 1.0e+01 1.0e-02]
+[33] Fatal Python error: Segmentation fault
+[33] 
+[33] Current thread 0x000014d7f64d0400 (most recent call first):
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/photochem.py", line 361 in equilibrate_atmosphere
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 2921 in chemeq_on_the_fly
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 2157 in chemistry_handler
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 2277 in premix_atmosphere
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 3228 in profile
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/climate.py", line 348 in run_chemeq_climate_workflow
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/site-packages/picaso/justdoit.py", line 5290 in climate
+[33]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 265 in PICASO_PT_Planet
+[33]   File "/mmfs1/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/PICASO_Climate_grid_121625.py", line 310 in _picaso_subprocess_worker
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/multiprocessing/process.py", line 108 in run
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/multiprocessing/process.py", line 314 in _bootstrap
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/multiprocessing/spawn.py", line 135 in _main
+[33]   File "/gscratch/stf/elizap/envs/subneptune/lib/python3.12/multiprocessing/spawn.py", line 122 in spawn_main
+[33]   File "<string>", line 1 in <module>
+[33] 
+[33] Extension modules: numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal[33] , numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, erfa.ufunc, pandas._libs.tslibs.ccalendar, pandas._libs.tslibs.np_datetime, pandas._libs.tslibs.dtypes, pandas._libs.tslibs.base, pandas._libs.tslibs.nattype, pandas._libs.tslibs.timezones, pandas._libs.tslibs.fields, pandas._libs.tslibs.timedeltas, pandas._libs.tslibs.tzconversion, pandas._libs.tslibs.timestamps, pandas._libs.properties, pandas._libs.tslibs.offsets, pandas._libs.tslibs.strptime, pandas._libs.tslibs.parsing, pandas._libs.tslibs.conversion, pandas._libs.tslibs.period, pandas._libs.tslibs.vectorized, pandas._libs.ops_dispatch, pandas._libs.missing, pandas._libs.hashtable, pandas._libs.algos, pandas._libs.interval, pandas._libs.lib, pandas._libs.ops, pandas._libs.hashing, pandas._libs.arrays, pandas._libs.tslib, pandas._libs.sparse, pandas._libs.internals, pandas._libs.indexing, pandas._libs.index, pandas._libs.writers, pandas._libs.join, pandas._libs.window.aggregations, pandas._libs.window.indexers, pandas._libs.reshape, pandas._libs.groupby, pandas._libs.json, pandas._libs.parsers, pandas._libs.testing, scipy._lib._ccallback_c, scipy.special._ufuncs_cxx, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_sqrtm_triu, scipy.linalg.cython_blas, scipy.linalg._matfuncs_expm, scipy.linalg._decomp_update, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.sparse.linalg._isolve._iterative, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpack, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, scipy.linalg._flinalg, scipy.special._ellip_harm_2, scipy.interpolate._fitpack, scipy.interpolate.dfitpack, scipy.optimize._minpack2, scipy.optimize._group_columns, scipy._lib.messagestream, scipy.optimize._trlib._trlib, scipy.optimize._lbfgsb, _moduleTNC, scipy.optimize._moduleTNC, scipy.optimize._cobyla, scipy.optimize._slsqp, scipy.optimize._minpack, scipy.optimize._lsq.givens_elimination, scipy.optimize._zeros, scipy.optimize.__nnls, scipy.optimize._highs.cython.src._highs_wrapper, scipy.optimize._highs._highs_wrapper, scipy.optimize._highs.cython.src._highs_constants, scipy.optimize._highs._highs_constants, scipy.linalg._interpolative, scipy.optimize._bglu_dense, scipy.optimize._lsap, scipy.spatial._ckdtree, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._distance_wrap, scipy.spatial._hausdorff, scipy.spatial.transform._rotation, scipy.optimize._direct, scipy.interpolate._bspl, scipy.interpolate._ppoly, scipy.interpolate.interpnd, scipy.interpolate._rbfinterp_pythran, scipy.interpolate._rgi_cython, yaml._yaml, numba.core.typeconv._typeconv, numba._helperlib, numba._dynfunc, numba._dispatcher, numba.core.runtime._nrt_python, numba.np.ufunc._internal, numba.experimental.jitclass._box, scipy.ndimage._nd_image, _ni_label, scipy.ndimage._ni_label, scipy.integrate._odepack, scipy.integrate._quadpack, scipy.integrate._vode, scipy.integrate._dop, scipy.integrate._lsoda, scipy.special.cython_special, scipy.stats._stats, scipy.stats.beta_ufunc, scipy.stats._boost.beta_ufunc, scipy.stats.binom_ufunc, scipy.stats._boost.binom_ufunc, scipy.stats.nbinom_ufunc, scipy.stats._boost.nbinom_ufunc, scipy.stats.hypergeom_ufunc, scipy.stats._boost.hypergeom_ufunc, scipy.stats.ncf_ufunc, scipy.stats._boost.ncf_ufunc, scipy.stats.ncx2_ufunc, scipy.stats._boost.ncx2_ufunc, scipy.stats.nct_ufunc, scipy.stats._boost.nct_ufunc, scipy.stats.skewnorm_ufunc, scipy.stats._boost.skewnorm_ufunc, scipy.stats.invgauss_ufunc, scipy.stats._boost.invgauss_ufunc, scipy.stats._biasedurn, scipy.stats._levy_stable.levyst, scipy.stats._stats_pythran, scipy._lib._uarray._uarray, scipy.stats._statlib, scipy.stats._sobol, scipy.stats._qmc_cy, scipy.stats._mvn, scipy.stats._rcont.rcont, PIL._imaging, markupsafe._speedups, scipy.signal._sigtools, scipy.signal._max_len_seq_inner, scipy.signal._upfirdn_apply, scipy.signal._spline, scipy.signal._sosfilt, scipy.signal._spectral, scipy.signal._peak_finding_utils, astropy.io.fits._utils, astropy.io.fits.hdu.compressed._compression, scipy.io.matlab._mio_utils, scipy.io.matlab._streams, scipy.io.matlab._mio5_utils, h5py._errors, h5py.defs, h5py._objects, h5py.h5, h5py.utils, h5py.h5t, h5py.h5s, h5py.h5ac, h5py.h5p, h5py.h5r, h5py._proxy, h5py._conv, h5py.h5z, h5py.h5a, h5py.h5d, h5py.h5ds, h5py.h5g, h5py.h5i, h5py.h5o, h5py.h5f, h5py.h5fd, h5py.h5pl, h5py.h5l, h5py._selector, kiwisolver._cext, cftime._cftime, astropy.time._parse_times, astropy.table._column_mixins, astropy.table._np_utils, astropy.io.ascii.cparser, astropy.utils.xml._iterparser, astropy.io.votable.tablewriter, astropy.wcs._wcs, astropy.stats._stats, astropy.stats._fast_sigma_clip, synphot.synphot_utils, psutil._psutil_linux, _photochem, photochem._photochem, _equilibrate, photochem._equilibrate, _cffi_backend, _brotli, backports.zstd._zstd, _clima, photochem._clima (total: 223)
+[33] 2026-03-07 22:23:47,705 ERROR [rank=33 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      4.      0.505]: PICASO subprocess crashed with exit code -11 (signal 11)
+[33] PICASO run failed (initial): PICASO subprocess crashed with exit code -11 (signal 11)
+[33] 2026-03-07 22:23:47,717 INFO [rank=33 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.000e+02 1.000e+01 2.575e-01]
+[36] 2026-03-07 22:40:18,708 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      1.      0.505]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 22:40:18,720 INFO [rank=36 host=n3003]: starting climate model for inputs: [  2.      3.5   300.     10.      0.505]
+[6] 2026-03-07 22:40:18,749 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       1.       0.7525]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-07 22:40:18,758 INFO [rank=6 host=n3003]: starting climate model for inputs: [  2.       3.5    300.      10.       0.7525]
+[15] 2026-03-07 22:40:18,872 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    1.    1. ]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-07 22:40:18,881 INFO [rank=15 host=n3003]: starting climate model for inputs: [  2.    3.5 300.   10.    1. ]
+[31] 2026-03-07 22:40:18,900 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 1.5e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[31] 2026-03-07 22:40:18,909 INFO [rank=31 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 3.0e-01 1.0e-02]
+[13] 2026-03-07 22:40:18,915 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 1.500e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-07 22:40:18,923 INFO [rank=13 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 3.000e-01 2.575e-01]
+[18] 2026-03-07 22:40:18,941 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       1.5      0.7525]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-07 22:40:18,949 INFO [rank=18 host=n3003]: starting climate model for inputs: [2.00e+00 3.50e+00 3.50e+02 3.00e-01 5.05e-01]
+[21] 2026-03-07 22:40:18,948 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      1.5     0.505]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[21] 2026-03-07 22:40:18,956 INFO [rank=21 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 3.000e-01 7.525e-01]
+[32] 2026-03-07 22:40:18,965 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    1.5   1. ]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-07 22:40:18,973 INFO [rank=32 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 3.0e-01 1.0e+00]
+[10] 2026-03-07 22:40:19,006 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 2.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 22:40:19,014 INFO [rank=10 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 7.0e-01 1.0e-02]
+[16] 2026-03-07 22:40:19,104 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      2.      0.505]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 22:40:19,108 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       2.       0.7525]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-07 22:40:19,135 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 2.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[16] 2026-03-07 22:40:19,176 INFO [rank=16 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 7.000e-01 2.575e-01]
+[1] 2026-03-07 22:40:19,197 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 3.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 22:40:19,200 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    2.    1. ]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 22:40:19,204 INFO [rank=39 host=n3003]: starting climate model for inputs: [  2.      3.5   350.      0.7     0.505]
+[1] 2026-03-07 22:40:19,217 INFO [rank=1 host=n3003]: starting climate model for inputs: [  2.    3.5 350.    0.7   1. ]
+[26] 2026-03-07 22:40:19,223 INFO [rank=26 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 1.0e+00 1.0e-02]
+[20] 2026-03-07 22:40:19,228 INFO [rank=20 host=n3003]: starting climate model for inputs: [  2.       3.5    350.       0.7      0.7525]
+[25] 2026-03-07 22:40:19,594 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 3.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 22:40:19,615 INFO [rank=25 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 1.000e+00 2.575e-01]
+[24] 2026-03-07 22:40:19,624 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      3.      0.505]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 22:40:19,662 INFO [rank=24 host=n3003]: starting climate model for inputs: [  2.      3.5   350.      1.      0.505]
+[7] 2026-03-07 22:40:19,666 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       3.       0.7525]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-07 22:40:19,685 INFO [rank=7 host=n3003]: starting climate model for inputs: [  2.       3.5    350.       1.       0.7525]
+[4] 2026-03-07 22:40:19,709 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    3.    1. ]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 22:40:19,717 INFO [rank=4 host=n3003]: starting climate model for inputs: [  2.    3.5 350.    1.    1. ]
+[35] 2026-03-07 22:40:19,784 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 4.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-07 22:40:19,792 INFO [rank=35 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 1.5e+00 1.0e-02]
+[19] 2026-03-07 22:40:19,797 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       4.       0.7525]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 22:40:19,805 INFO [rank=19 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 1.500e+00 2.575e-01]
+[29] 2026-03-07 22:40:19,799 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       5.       0.7525]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-07 22:40:19,811 INFO [rank=29 host=n3003]: starting climate model for inputs: [  2.      3.5   350.      1.5     0.505]
+[12] 2026-03-07 22:40:19,817 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    4.    1. ]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 22:40:19,823 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 4.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[12] 2026-03-07 22:40:19,825 INFO [rank=12 host=n3003]: starting climate model for inputs: [  2.       3.5    350.       1.5      0.7525]
+[34] 2026-03-07 22:40:19,831 INFO [rank=34 host=n3003]: starting climate model for inputs: [  2.    3.5 350.    1.5   1. ]
+[22] 2026-03-07 22:40:19,846 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 5.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-07 22:40:19,853 INFO [rank=22 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 2.0e+00 1.0e-02]
+[17] 2026-03-07 22:40:19,894 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 5.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[17] 2026-03-07 22:40:19,913 INFO [rank=17 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 2.000e+00 2.575e-01]
+[28] 2026-03-07 22:40:19,921 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    5.    1. ]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[28] 2026-03-07 22:40:19,939 INFO [rank=28 host=n3003]: starting climate model for inputs: [  2.      3.5   350.      2.      0.505]
+[14] 2026-03-07 22:40:19,998 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      5.      0.505]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 22:40:20,047 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      6.      0.505]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[14] 2026-03-07 22:40:20,058 INFO [rank=14 host=n3003]: starting climate model for inputs: [  2.       3.5    350.       2.       0.7525]
+[3] 2026-03-07 22:40:20,062 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 6.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-07 22:40:20,062 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    6.    1. ]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s[27] 
+[23] 2026-03-07 22:40:20,063 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 6.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 22:40:20,095 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       6.       0.7525]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 22:40:20,110 INFO [rank=37 host=n3003]: starting climate model for inputs: [  2.    3.5 350.    2.    1. ]
+[3] 2026-03-07 22:40:20,130 INFO [rank=3 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 3.0e+00 1.0e-02]
+[27] 2026-03-07 22:40:20,142 INFO [rank=27 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 3.000e+00 2.575e-01]
+[8] 2026-03-07 22:40:20,148 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.000e+02 8.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-07 22:40:20,149 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 8.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-07 22:40:20,151 INFO [rank=23 host=n3003]: starting climate model for inputs: [  2.      3.5   350.      3.      0.505]
+[38] 2026-03-07 22:40:20,169 INFO [rank=38 host=n3003]: starting climate model for inputs: [  2.       3.5    350.       3.       0.7525]
+[5] 2026-03-07 22:40:20,180 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.      8.      0.505]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-07 22:40:20,186 INFO [rank=9 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 4.0e+00 1.0e-02]
+[8] 2026-03-07 22:40:20,187 INFO [rank=8 host=n3003]: starting climate model for inputs: [  2.    3.5 350.    3.    1. ]
+[5] 2026-03-07 22:40:20,198 INFO [rank=5 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 4.000e+00 2.575e-01]
+[11] 2026-03-07 22:40:20,340 ERROR [rank=11 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.0e+02 1.0e+01 1.0e-02]: PICASO subprocess timed out after 1800s
+[11] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[11] 2026-03-07 22:40:20,382 INFO [rank=11 host=n3003]: starting climate model for inputs: [  2.      3.5   350.      4.      0.505]
+[30] 2026-03-07 22:40:20,410 ERROR [rank=30 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.       8.       0.7525]: PICASO subprocess timed out after 1800s
+[30] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[30] 2026-03-07 22:40:20,417 INFO [rank=30 host=n3003]: starting climate model for inputs: [  2.       3.5    350.       4.       0.7525]
+[2] 2026-03-07 22:40:20,428 ERROR [rank=2 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.    8.    1. ]: PICASO subprocess timed out after 1800s
+[2] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[2] 2026-03-07 22:40:20,435 INFO [rank=2 host=n3003]: starting climate model for inputs: [  2.    3.5 350.    4.    1. ]
+[33] An exception was raised in PICASO_PT_Planet: ZeroDivisionError: division by zero
+[33] 2026-03-07 22:46:37,481 INFO [rank=33 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 5.0e+00 1.0e-02]
+[36] 2026-03-07 23:10:18,912 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   300.     10.      0.505]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 23:10:18,923 INFO [rank=36 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 5.000e+00 2.575e-01]
+[6] 2026-03-07 23:10:18,952 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    300.      10.       0.7525]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-07 23:10:18,961 INFO [rank=6 host=n3003]: starting climate model for inputs: [  2.      3.5   350.      5.      0.505]
+[15] 2026-03-07 23:10:19,069 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 300.   10.    1. ]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-07 23:10:19,078 INFO [rank=15 host=n3003]: starting climate model for inputs: [  2.       3.5    350.       5.       0.7525]
+[31] 2026-03-07 23:10:19,147 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 3.0e-01 1.0e-02]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[31] 2026-03-07 23:10:19,156 INFO [rank=31 host=n3003]: starting climate model for inputs: [  2.    3.5 350.    5.    1. ]
+[13] 2026-03-07 23:10:19,158 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 3.000e-01 2.575e-01]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-07 23:10:19,167 INFO [rank=13 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 6.0e+00 1.0e-02]
+[18] 2026-03-07 23:10:19,188 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [2.00e+00 3.50e+00 3.50e+02 3.00e-01 5.05e-01]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-07 23:10:19,197 INFO [rank=18 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 6.000e+00 2.575e-01]
+[21] 2026-03-07 23:10:19,218 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 3.000e-01 7.525e-01]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 23:10:19,225 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 7.0e-01 1.0e-02]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 23:10:19,234 INFO [rank=10 host=n3003]: starting climate model for inputs: [  2.       3.5    350.       6.       0.7525]
+[21] 2026-03-07 23:10:19,227 INFO [rank=21 host=n3003]: starting climate model for inputs: [  2.      3.5   350.      6.      0.505]
+[32] 2026-03-07 23:10:19,227 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 3.0e-01 1.0e+00]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-07 23:10:19,241 INFO [rank=32 host=n3003]: starting climate model for inputs: [  2.    3.5 350.    6.    1. ]
+[16] 2026-03-07 23:10:19,447 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 7.000e-01 2.575e-01]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[16] 2026-03-07 23:10:19,459 INFO [rank=16 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 8.0e+00 1.0e-02]
+[26] 2026-03-07 23:10:19,452 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 1.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 23:10:19,465 INFO [rank=26 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 8.000e+00 2.575e-01]
+[1] 2026-03-07 23:10:19,467 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.    0.7   1. ]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[1] 2026-03-07 23:10:19,475 INFO [rank=1 host=n3003]: starting climate model for inputs: [  2.      3.5   350.      8.      0.505]
+[20] 2026-03-07 23:10:19,600 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.       0.7      0.7525]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 23:10:19,606 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.      0.7     0.505]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-07 23:10:19,619 INFO [rank=20 host=n3003]: starting climate model for inputs: [  2.       3.5    350.       8.       0.7525]
+[39] 2026-03-07 23:10:19,625 INFO [rank=39 host=n3003]: starting climate model for inputs: [  2.    3.5 350.    8.    1. ]
+[25] 2026-03-07 23:10:19,903 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 1.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 23:10:19,904 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.      1.      0.505]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 23:10:19,912 INFO [rank=25 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 3.5e+02 1.0e+01 1.0e-02]
+[24] 2026-03-07 23:10:19,918 INFO [rank=24 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 3.500e+02 1.000e+01 2.575e-01]
+[4] 2026-03-07 23:10:19,927 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.    1.    1. ]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 23:10:19,935 INFO [rank=4 host=n3003]: starting climate model for inputs: [  2.      3.5   350.     10.      0.505]
+[7] 2026-03-07 23:10:19,943 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.       1.       0.7525]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-07 23:10:19,951 INFO [rank=7 host=n3003]: starting climate model for inputs: [  2.       3.5    350.      10.       0.7525]
+[22] 2026-03-07 23:10:20,107 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 2.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 23:10:20,109 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 1.500e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-07 23:10:20,115 INFO [rank=22 host=n3003]: starting climate model for inputs: [  2.    3.5 350.   10.    1. ]
+[12] 2026-03-07 23:10:20,119 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.       1.5      0.7525]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 23:10:20,121 INFO [rank=19 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 3.0e-01 1.0e-02]
+[12] 2026-03-07 23:10:20,127 INFO [rank=12 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 3.000e-01 2.575e-01]
+[29] 2026-03-07 23:10:20,126 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.      1.5     0.505]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 23:10:20,125 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.    1.5   1. ]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-07 23:10:20,126 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 1.5e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[17] 2026-03-07 23:10:20,130 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 2.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 23:10:20,133 INFO [rank=34 host=n3003]: starting climate model for inputs: [2.00e+00 3.50e+00 4.00e+02 3.00e-01 5.05e-01]
+[29] 2026-03-07 23:10:20,140 INFO [rank=29 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 3.000e-01 7.525e-01]
+[35] 2026-03-07 23:10:20,146 INFO [rank=35 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 3.0e-01 1.0e+00]
+[17] 2026-03-07 23:10:20,158 INFO [rank=17 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 7.0e-01 1.0e-02]
+[28] 2026-03-07 23:10:20,158 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.      2.      0.505]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[28] 2026-03-07 23:10:20,186 INFO [rank=28 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 7.000e-01 2.575e-01]
+[3] 2026-03-07 23:10:20,353 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 3.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[3] 2026-03-07 23:10:20,363 INFO [rank=3 host=n3003]: starting climate model for inputs: [  2.      3.5   400.      0.7     0.505]
+[38] 2026-03-07 23:10:20,401 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.       3.       0.7525]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 23:10:20,408 INFO [rank=38 host=n3003]: starting climate model for inputs: [  2.       3.5    400.       0.7      0.7525]
+[37] 2026-03-07 23:10:20,415 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.    2.    1. ]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[14] 2026-03-07 23:10:20,416 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.       2.       0.7525]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 23:10:20,422 INFO [rank=37 host=n3003]: starting climate model for inputs: [  2.    3.5 400.    0.7   1. ]
+[14] 2026-03-07 23:10:20,427 INFO [rank=14 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 1.0e+00 1.0e-02]
+[23] 2026-03-07 23:10:20,440 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.      3.      0.505]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-07 23:10:20,447 INFO [rank=23 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 1.000e+00 2.575e-01]
+[27] 2026-03-07 23:10:20,505 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 3.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-07 23:10:20,513 INFO [rank=27 host=n3003]: starting climate model for inputs: [  2.      3.5   400.      1.      0.505]
+[8] 2026-03-07 23:10:20,574 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.    3.    1. ]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[8] 2026-03-07 23:10:20,581 INFO [rank=8 host=n3003]: starting climate model for inputs: [  2.       3.5    400.       1.       0.7525]
+[9] 2026-03-07 23:10:20,584 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 4.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-07 23:10:20,591 INFO [rank=9 host=n3003]: starting climate model for inputs: [  2.    3.5 400.    1.    1. ]
+[5] 2026-03-07 23:10:20,592 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 4.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[5] 2026-03-07 23:10:20,599 INFO [rank=5 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 1.5e+00 1.0e-02]
+[2] 2026-03-07 23:10:20,710 ERROR [rank=2 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.    4.    1. ]: PICASO subprocess timed out after 1800s
+[2] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[2] 2026-03-07 23:10:20,719 INFO [rank=2 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 1.500e+00 2.575e-01]
+[30] 2026-03-07 23:10:20,753 ERROR [rank=30 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.       4.       0.7525]: PICASO subprocess timed out after 1800s
+[30] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[30] 2026-03-07 23:10:20,760 INFO [rank=30 host=n3003]: starting climate model for inputs: [  2.      3.5   400.      1.5     0.505]
+[11] 2026-03-07 23:10:20,820 ERROR [rank=11 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.      4.      0.505]: PICASO subprocess timed out after 1800s
+[11] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[11] 2026-03-07 23:10:20,828 INFO [rank=11 host=n3003]: starting climate model for inputs: [  2.       3.5    400.       1.5      0.7525]
+[33] 2026-03-07 23:16:37,675 ERROR [rank=33 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 5.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[33] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[33] 2026-03-07 23:16:37,687 INFO [rank=33 host=n3003]: starting climate model for inputs: [  2.    3.5 400.    1.5   1. ]
+[36] 2026-03-07 23:40:19,126 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 5.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-07 23:40:19,139 INFO [rank=36 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 2.0e+00 1.0e-02]
+[6] 2026-03-07 23:40:19,144 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.      5.      0.505]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-07 23:40:19,154 INFO [rank=6 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 2.000e+00 2.575e-01]
+[15] 2026-03-07 23:40:19,263 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.       5.       0.7525]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-07 23:40:19,273 INFO [rank=15 host=n3003]: starting climate model for inputs: [  2.      3.5   400.      2.      0.505]
+[13] 2026-03-07 23:40:19,358 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 6.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-07 23:40:19,368 INFO [rank=13 host=n3003]: starting climate model for inputs: [  2.       3.5    400.       2.       0.7525]
+[31] 2026-03-07 23:40:19,367 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.    5.    1. ]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[31] 2026-03-07 23:40:19,377 INFO [rank=31 host=n3003]: starting climate model for inputs: [  2.    3.5 400.    2.    1. ]
+[18] 2026-03-07 23:40:19,413 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 6.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-07 23:40:19,423 INFO [rank=18 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 3.0e+00 1.0e-02]
+[21] 2026-03-07 23:40:19,436 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.      6.      0.505]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-07 23:40:19,438 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.    6.    1. ]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-07 23:40:19,444 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.       6.       0.7525]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[21] 2026-03-07 23:40:19,445 INFO [rank=21 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 3.000e+00 2.575e-01]
+[32] 2026-03-07 23:40:19,452 INFO [rank=32 host=n3003]: starting climate model for inputs: [  2.      3.5   400.      3.      0.505]
+[10] 2026-03-07 23:40:19,459 INFO [rank=10 host=n3003]: starting climate model for inputs: [  2.       3.5    400.       3.       0.7525]
+[16] 2026-03-07 23:40:19,660 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 8.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[16] 2026-03-07 23:40:19,669 INFO [rank=16 host=n3003]: starting climate model for inputs: [  2.    3.5 400.    3.    1. ]
+[1] 2026-03-07 23:40:19,695 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.      8.      0.505]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[1] 2026-03-07 23:40:19,704 INFO [rank=1 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 4.0e+00 1.0e-02]
+[26] 2026-03-07 23:40:19,699 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 8.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-07 23:40:19,710 INFO [rank=26 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 4.000e+00 2.575e-01]
+[39] 2026-03-07 23:40:19,960 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.    8.    1. ]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-07 23:40:19,968 INFO [rank=39 host=n3003]: starting climate model for inputs: [  2.      3.5   400.      4.      0.505]
+[20] 2026-03-07 23:40:19,996 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.       8.       0.7525]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-07 23:40:20,069 INFO [rank=20 host=n3003]: starting climate model for inputs: [  2.       3.5    400.       4.       0.7525]
+[25] 2026-03-07 23:40:20,110 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 3.5e+02 1.0e+01 1.0e-02]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-07 23:40:20,143 INFO [rank=25 host=n3003]: starting climate model for inputs: [  2.    3.5 400.    4.    1. ]
+[4] 2026-03-07 23:40:20,146 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   350.     10.      0.505]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-07 23:40:20,184 INFO [rank=4 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 5.0e+00 1.0e-02]
+[7] 2026-03-07 23:40:20,183 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    350.      10.       0.7525]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-07 23:40:20,191 INFO [rank=7 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 5.000e+00 2.575e-01]
+[24] 2026-03-07 23:40:20,227 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 3.500e+02 1.000e+01 2.575e-01]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-07 23:40:20,235 INFO [rank=24 host=n3003]: starting climate model for inputs: [  2.      3.5   400.      5.      0.505]
+[29] 2026-03-07 23:40:20,376 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 3.000e-01 7.525e-01]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-07 23:40:20,384 INFO [rank=29 host=n3003]: starting climate model for inputs: [  2.       3.5    400.       5.       0.7525]
+[19] 2026-03-07 23:40:20,418 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 3.0e-01 1.0e-02]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-07 23:40:20,426 INFO [rank=19 host=n3003]: starting climate model for inputs: [  2.    3.5 400.    5.    1. ]
+[34] 2026-03-07 23:40:20,420 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [2.00e+00 3.50e+00 4.00e+02 3.00e-01 5.05e-01]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-07 23:40:20,432 INFO [rank=34 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 6.0e+00 1.0e-02]
+[17] 2026-03-07 23:40:20,448 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 7.0e-01 1.0e-02]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[17] 2026-03-07 23:40:20,456 INFO [rank=17 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 6.000e+00 2.575e-01]
+[12] 2026-03-07 23:40:20,464 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 3.000e-01 2.575e-01]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-07 23:40:20,462 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 3.0e-01 1.0e+00]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-07 23:40:20,470 INFO [rank=35 host=n3003]: starting climate model for inputs: [  2.      3.5   400.      6.      0.505]
+[12] 2026-03-07 23:40:20,476 INFO [rank=12 host=n3003]: starting climate model for inputs: [  2.       3.5    400.       6.       0.7525]
+[22] 2026-03-07 23:40:20,484 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 350.   10.    1. ]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-07 23:40:20,493 INFO [rank=22 host=n3003]: starting climate model for inputs: [  2.    3.5 400.    6.    1. ]
+[28] 2026-03-07 23:40:20,485 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 7.000e-01 2.575e-01]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[28] 2026-03-07 23:40:20,499 INFO [rank=28 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 8.0e+00 1.0e-02]
+[3] 2026-03-07 23:40:20,698 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.      0.7     0.505]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[3] 2026-03-07 23:40:20,738 INFO [rank=3 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 8.000e+00 2.575e-01]
+[14] 2026-03-07 23:40:20,745 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 1.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 23:40:20,746 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.       0.7      0.7525]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[8] 2026-03-07 23:40:20,759 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.       1.       0.7525]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[14] 2026-03-07 23:40:20,784 INFO [rank=14 host=n3003]: starting climate model for inputs: [  2.      3.5   400.      8.      0.505]
+[8] 2026-03-07 23:40:20,796 INFO [rank=8 host=n3003]: starting climate model for inputs: [  2.    3.5 400.    8.    1. ]
+[23] 2026-03-07 23:40:20,794 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 1.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-07 23:40:20,790 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.      1.      0.505]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-07 23:40:20,793 INFO [rank=38 host=n3003]: starting climate model for inputs: [  2.       3.5    400.       8.       0.7525]
+[27] 2026-03-07 23:40:20,802 INFO [rank=27 host=n3003]: starting climate model for inputs: [2.0e+00 3.5e+00 4.0e+02 1.0e+01 1.0e-02]
+[23] 2026-03-07 23:40:20,808 INFO [rank=23 host=n3003]: starting climate model for inputs: [2.000e+00 3.500e+00 4.000e+02 1.000e+01 2.575e-01]
+[9] 2026-03-07 23:40:20,898 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.    1.    1. ]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-07 23:40:20,905 INFO [rank=9 host=n3003]: starting climate model for inputs: [  2.      3.5   400.     10.      0.505]
+[37] 2026-03-07 23:40:20,912 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.    0.7   1. ]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-07 23:40:20,925 INFO [rank=37 host=n3003]: starting climate model for inputs: [  2.       3.5    400.      10.       0.7525]
+[5] 2026-03-07 23:40:20,937 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 1.5e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[5] 2026-03-07 23:40:20,944 INFO [rank=5 host=n3003]: starting climate model for inputs: [  2.    3.5 400.   10.    1. ]
+[2] 2026-03-07 23:40:20,983 ERROR [rank=2 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 1.500e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[2] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[11] 2026-03-07 23:40:21,121 ERROR [rank=11 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.       1.5      0.7525]: PICASO subprocess timed out after 1800s
+[11] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[30] 2026-03-07 23:40:21,121 ERROR [rank=30 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.      1.5     0.505]: PICASO subprocess timed out after 1800s
+[30] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[33] 2026-03-07 23:46:37,875 ERROR [rank=33 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.    1.5   1. ]: PICASO subprocess timed out after 1800s
+[33] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[36] 2026-03-08 00:10:19,335 ERROR [rank=36 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 2.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[36] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[6] 2026-03-08 00:10:19,341 ERROR [rank=6 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 2.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[6] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[15] 2026-03-08 00:10:19,501 ERROR [rank=15 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.      2.      0.505]: PICASO subprocess timed out after 1800s
+[15] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[31] 2026-03-08 00:10:19,582 ERROR [rank=31 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.    2.    1. ]: PICASO subprocess timed out after 1800s
+[31] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[13] 2026-03-08 00:10:19,588 ERROR [rank=13 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.       2.       0.7525]: PICASO subprocess timed out after 1800s
+[13] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[32] 2026-03-08 00:10:19,678 ERROR [rank=32 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.      3.      0.505]: PICASO subprocess timed out after 1800s
+[32] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[18] 2026-03-08 00:10:19,688 ERROR [rank=18 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 3.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[18] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[10] 2026-03-08 00:10:19,715 ERROR [rank=10 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.       3.       0.7525]: PICASO subprocess timed out after 1800s
+[10] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[21] 2026-03-08 00:10:19,718 ERROR [rank=21 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 3.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[21] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[16] 2026-03-08 00:10:19,875 ERROR [rank=16 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.    3.    1. ]: PICASO subprocess timed out after 1800s
+[16] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[1] 2026-03-08 00:10:19,891 ERROR [rank=1 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 4.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[1] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[26] 2026-03-08 00:10:19,923 ERROR [rank=26 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 4.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[26] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[39] 2026-03-08 00:10:20,178 ERROR [rank=39 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.      4.      0.505]: PICASO subprocess timed out after 1800s
+[39] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[20] 2026-03-08 00:10:20,260 ERROR [rank=20 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.       4.       0.7525]: PICASO subprocess timed out after 1800s
+[20] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[25] 2026-03-08 00:10:20,330 ERROR [rank=25 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.    4.    1. ]: PICASO subprocess timed out after 1800s
+[25] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[4] 2026-03-08 00:10:20,376 ERROR [rank=4 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 5.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[4] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[7] 2026-03-08 00:10:20,396 ERROR [rank=7 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 5.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[7] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[24] 2026-03-08 00:10:20,434 ERROR [rank=24 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.      5.      0.505]: PICASO subprocess timed out after 1800s
+[24] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[29] 2026-03-08 00:10:20,472 ERROR [rank=29 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.       5.       0.7525]: PICASO subprocess timed out after 1800s
+[29] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[17] 2026-03-08 00:10:20,643 ERROR [rank=17 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 6.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[17] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[34] 2026-03-08 00:10:20,677 ERROR [rank=34 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 6.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[34] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[22] 2026-03-08 00:10:20,684 ERROR [rank=22 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.    6.    1. ]: PICASO subprocess timed out after 1800s
+[22] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[12] 2026-03-08 00:10:20,714 ERROR [rank=12 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.       6.       0.7525]: PICASO subprocess timed out after 1800s
+[12] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[35] 2026-03-08 00:10:20,717 ERROR [rank=35 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.      6.      0.505]: PICASO subprocess timed out after 1800s
+[35] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[28] 2026-03-08 00:10:20,727 ERROR [rank=28 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 8.0e+00 1.0e-02]: PICASO subprocess timed out after 1800s
+[28] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[19] 2026-03-08 00:10:20,727 ERROR [rank=19 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.    5.    1. ]: PICASO subprocess timed out after 1800s
+[19] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[3] 2026-03-08 00:10:20,981 ERROR [rank=3 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 8.000e+00 2.575e-01]: PICASO subprocess timed out after 1800s
+[3] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[8] 2026-03-08 00:10:20,985 ERROR [rank=8 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.    8.    1. ]: PICASO subprocess timed out after 1800s
+[8] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[14] 2026-03-08 00:10:20,999 ERROR [rank=14 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.      8.      0.505]: PICASO subprocess timed out after 1800s
+[14] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[23] 2026-03-08 00:10:21,007 ERROR [rank=23 host=n3003]: PICASO run failed (initial) for inputs [2.000e+00 3.500e+00 4.000e+02 1.000e+01 2.575e-01]: PICASO subprocess timed out after 1800s
+[23] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[38] 2026-03-08 00:10:21,012 ERROR [rank=38 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.       8.       0.7525]: PICASO subprocess timed out after 1800s
+[38] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[27] 2026-03-08 00:10:21,036 ERROR [rank=27 host=n3003]: PICASO run failed (initial) for inputs [2.0e+00 3.5e+00 4.0e+02 1.0e+01 1.0e-02]: PICASO subprocess timed out after 1800s
+[27] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[9] 2026-03-08 00:10:21,128 ERROR [rank=9 host=n3003]: PICASO run failed (initial) for inputs [  2.      3.5   400.     10.      0.505]: PICASO subprocess timed out after 1800s
+[9] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[5] 2026-03-08 00:10:21,145 ERROR [rank=5 host=n3003]: PICASO run failed (initial) for inputs [  2.    3.5 400.   10.    1. ]: PICASO subprocess timed out after 1800s
+[5] PICASO run failed (initial): PICASO subprocess timed out after 1800s
+[37] 2026-03-08 00:10:21,150 ERROR [rank=37 host=n3003]: PICASO run failed (initial) for inputs [  2.       3.5    400.      10.       0.7525]: PICASO subprocess timed out after 1800s
+[37] PICASO run failed (initial): PICASO subprocess timed out after 1800s

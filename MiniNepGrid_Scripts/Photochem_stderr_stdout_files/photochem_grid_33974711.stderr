@@ -1,0 +1,5 @@
+[mpiexec@n3095] match_arg (lib/utils/args.c:166): unrecognized argument 1
+[mpiexec@n3095] HYDU_parse_array (lib/utils/args.c:181): argument matching returned error
+[mpiexec@n3095] parse_args (mpiexec/get_parameters.c:315): error parsing input array
+[mpiexec@n3095] HYD_uii_mpx_get_parameters (mpiexec/get_parameters.c:48): unable to parse user arguments
+[mpiexec@n3095] main (mpiexec/mpiexec.c:49): error parsing parameters

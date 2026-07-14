@@ -1,0 +1,13 @@
+2026-03-26 19:22:23,932 INFO [rank=1 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 3.0e-01 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=3 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=5 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 2.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=6 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 3.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=7 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 4.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=8 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 5.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=9 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 6.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=11 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.0e+01 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=10 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 8.0e+00 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=4 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 1.5e+00 1.0e-02 5.0e+00]
+2026-03-26 19:22:23,932 INFO [rank=2 host=n3388]: starting photochem model for inputs: [2.0e+00 3.5e+00 5.0e+01 7.0e-01 1.0e-02 5.0e+00]
+[2026-03-26T19:47:38.975] error: *** STEP 34153753.0 ON n3388 CANCELLED AT 2026-03-26T19:47:38 DUE to SIGNAL Terminated ***
+[2026-03-26T19:47:38.977] error: *** JOB 34153753 ON n3388 CANCELLED AT 2026-03-26T19:47:38 DUE to SIGNAL Terminated ***
