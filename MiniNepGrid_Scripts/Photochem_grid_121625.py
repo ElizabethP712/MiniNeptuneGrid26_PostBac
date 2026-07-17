@@ -1,4 +1,4 @@
-import sys
+﻿import sys
 from pathlib import Path
 
 _root = Path.cwd()  # assumes notebook is run from the project root
@@ -13,8 +13,8 @@ import time
 from pathlib import Path
 
 current_directory = Path.cwd()
-references_directory_path = "Installation&Setup_Instructions/picasofiles/reference"
-PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/trds"
+references_directory_path = "Installation_Setup_Instructions/picasofiles/reference"
+PYSYN_directory_path = "Installation_Setup_Instructions/picasofiles/grp/redcat/trds"
 os.environ['picaso_refdata']= os.path.join(current_directory, references_directory_path)
 os.environ['PYSYN_CDBS']= os.path.join(current_directory, PYSYN_directory_path)
 
@@ -533,10 +533,20 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
         if not converged_PC:
             retry_budgets = [12000, 15000, 20000, 30000, 50000]
             for budget in retry_budgets:
-                pc.gdat.max_total_step = budget
-                converged_PC = pc.find_steady_state()
-                if converged_PC:
-                    break
+                try:
+                    pc.gdat.max_total_step = budget
+                    converged_PC = pc.find_steady_state()
+                    if converged_PC:
+                        break
+                except Exception as retry_exc:
+                    print(
+                        f"Photochem retry exception at budget={budget} for "
+                        f"rad_plan={rad_plan}, metal={log10_planet_metallicity}, "
+                        f"tint={tint}, semi_major={semi_major}, ctoO={ctoO}, "
+                        f"log_Kzz={log_Kzz}: {type(retry_exc).__name__}: {retry_exc}",
+                        file=sys.stderr
+                    )
+                    break  # pc state may be undefined; stop retrying and save what we have
             
         sol_raw = pc.return_atmosphere()
         soleq_raw = pc.return_atmosphere(equilibrium=True)
@@ -633,9 +643,9 @@ def get_gridvals_Photochem():
     
     """
 
-    # Parameter Exploration Refined
+    # Parameter Exploration Refined — low-metal restart (metallicities <= 2.375)
     rad_plan_earth_units = np.array([2]) # in units of xEarth radii
-    log10_planet_metallicity = np.linspace(0.5, 3.5, 9) # in units of solar metallicity
+    log10_planet_metallicity = np.linspace(0.5, 2.375, 6) # in units of solar metallicity
     tint_K = np.linspace(50, 400, 8) # in Kelvin
     semi_major_AU = np.array([0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10]) # in AU 
     ctoO_solar = np.linspace(0.01, 1, 5) # in units of solar C/O
@@ -700,6 +710,6 @@ if __name__ == "__main__":
     gridutils.make_grid(
         model_func=Photochem_1D_model,
         gridvals=get_gridvals_Photochem(),
-        filename='data/grid_results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5',
-        progress_filename='data/grid_results/Photochem_1D_updatop_paramext_reducedrad_full_try3.log'
+        filename='data/grid_results/Photochem_1D_lowmetal_restart.h5',
+        progress_filename='data/grid_results/Photochem_1D_lowmetal_restart.log'
     )

@@ -1,4 +1,4 @@
-import warnings
+﻿import warnings
 warnings.filterwarnings('ignore')
 from picaso import photochem as picasochem
 import os
@@ -8,8 +8,8 @@ import os
 from pathlib import Path
 
 current_directory = Path.cwd()
-references_directory_path = "Installation&Setup_Instructions/picasofiles/reference"
-PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/trds"
+references_directory_path = "Installation_Setup_Instructions/picasofiles/reference"
+PYSYN_directory_path = "Installation_Setup_Instructions/picasofiles/grp/redcat/trds"
 print(os.path.join(current_directory, references_directory_path))
 print(os.path.join(current_directory, PYSYN_directory_path))
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 """
 Run a single case from a batch JSON file without MPI.
 Usage: python ReflectedSpectra_Scripts/run_single_case.py [case_index] [--file path/to/batch.json]
@@ -16,8 +16,8 @@ import os
 
 # --- Paths ---
 current_directory = Path.cwd()
-os.environ['picaso_refdata'] = str(current_directory / "Installation&Setup_Instructions/picasofiles/reference")
-os.environ['PYSYN_CDBS']     = str(current_directory / "Installation&Setup_Instructions/picasofiles/grp/redcat/trds")
+os.environ['picaso_refdata'] = str(current_directory / "Installation_Setup_Instructions/picasofiles/reference")
+os.environ['PYSYN_CDBS']     = str(current_directory / "Installation_Setup_Instructions/picasofiles/grp/redcat/trds")
 
 # --- Parse args ---
 parser = argparse.ArgumentParser()

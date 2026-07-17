@@ -1,4 +1,4 @@
-HOW TO RUN THE PICASO AND PHOTOCHEM GRIDS ON HYAK
+﻿HOW TO RUN THE PICASO AND PHOTOCHEM GRIDS ON HYAK
 ==================================================
 
 OVERVIEW
@@ -28,8 +28,8 @@ PREREQUISITES
      cd /path/to/MiniNeptuneGrid26_PostBac
 
 4. Make sure the PICASO reference files are present at:
-     Installation&Setup_Instructions/picasofiles/reference/
-     Installation&Setup_Instructions/picasofiles/grp/redcat/trds/
+     Installation_Setup_Instructions/picasofiles/reference/
+     Installation_Setup_Instructions/picasofiles/grp/redcat/trds/
 
 
 STEP 1 — PICASO CLIMATE GRID

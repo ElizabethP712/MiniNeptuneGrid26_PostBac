@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "_section": "ARCHEAN EARTH — standard",
     "type": "earth",
@@ -389,7 +389,7 @@
     "cloud_frac": 0.5, "forced_nocld": false, "no_rayleigh": false,
     "surface_albedo": null, "kwarg_factor": 0, "exclude_all_gas": false,
     "atmosphere_kwargs": {},
-    "opacity_file": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_5.5_R60000.db",
+    "opacity_file": "Installation_Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_5.5_R60000.db",
     "wave_range": [0.1, 2.5],
     "regrid_R": 3000,
     "outputfile": "data/RLS_results/H2HeRich_MiniNep_R60000"
@@ -523,7 +523,7 @@
     "cloud_frac": 0.5, "forced_nocld": false, "no_rayleigh": false,
     "surface_albedo": null, "kwarg_factor": 0, "exclude_all_gas": false,
     "atmosphere_kwargs": {},
-    "opacity_file": "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_5.5_R60000.db",
+    "opacity_file": "Installation_Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_5.5_R60000.db",
     "wave_range": [0.1, 2.5],
     "regrid_R": 3000,
     "outputfile": "data/RLS_results/H2CORich_MiniNep_R60000"

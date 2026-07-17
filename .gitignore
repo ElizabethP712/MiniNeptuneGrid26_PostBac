@@ -1,4 +1,4 @@
-# Ignore entire directories
+﻿# Ignore entire directories
 ScholarlyArticles/
 picasofiles/
 subneptunes/_MACOSX
@@ -8,7 +8,7 @@ subneptunes/subneptunes/.DS_Store
 subneptunes/subneptunes/.gitignore
 __pycache__/
 data/
-Installation&Setup_Instructions/picasofiles/
+Installation_Setup_Instructions/picasofiles/
 
 # Ignore single file
 TimeSheetNASAUWPostBac.xlsx

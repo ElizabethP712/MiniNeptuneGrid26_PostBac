@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 """
 MPI batch runner for earth_spectrum and reflected_spectrum_planet_Sun_adjusted_forcldfrac_molecules.
 
@@ -51,8 +51,8 @@ import dill
 
 # ── Environment setup ─────────────────────────────────────────────────────────
 current_directory = Path.cwd()
-references_directory_path = "Installation&Setup_Instructions/picasofiles/reference"
-PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/trds"
+references_directory_path = "Installation_Setup_Instructions/picasofiles/reference"
+PYSYN_directory_path = "Installation_Setup_Instructions/picasofiles/grp/redcat/trds"
 
 os.environ['picaso_refdata'] = os.path.join(current_directory, references_directory_path)
 os.environ['PYSYN_CDBS'] = os.path.join(current_directory, PYSYN_directory_path)

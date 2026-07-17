@@ -1,4 +1,4 @@
-import matplotlib
+﻿import matplotlib
 matplotlib.use('Agg')  # non-interactive backend for terminal use
 
 import matplotlib.pyplot as plt
@@ -10,8 +10,8 @@ import os
 
 # --- Set up paths ---
 current_directory = Path.cwd()
-os.environ['picaso_refdata'] = str(current_directory / "Installation&Setup_Instructions/picasofiles/reference")
-os.environ['PYSYN_CDBS']     = str(current_directory / "Installation&Setup_Instructions/picasofiles/grp/redcat/trds")
+os.environ['picaso_refdata'] = str(current_directory / "Installation_Setup_Instructions/picasofiles/reference")
+os.environ['PYSYN_CDBS']     = str(current_directory / "Installation_Setup_Instructions/picasofiles/grp/redcat/trds")
 
 import picaso.justdoit as jdi
 import astropy.units as u
@@ -19,7 +19,7 @@ import astropy.units as u
 # --- Opacity ---
 opacity_path = str(
     current_directory /
-    "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
+    "Installation_Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
 )
 print(f"Loading opacities from: {opacity_path}")
 OPACITY_EARTH = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])

@@ -1,4 +1,4 @@
-import sys
+﻿import sys
 from pathlib import Path
 
 _root = Path.cwd()  # assumes notebook is run from the project root
@@ -12,8 +12,8 @@ import os
 from pathlib import Path
 
 current_directory = Path.cwd()
-references_directory_path = "Installation&Setup_Instructions/picasofiles/reference"
-PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/trds"
+references_directory_path = "Installation_Setup_Instructions/picasofiles/reference"
+PYSYN_directory_path = "Installation_Setup_Instructions/picasofiles/grp/redcat/trds"
 print(os.path.join(current_directory, references_directory_path))
 print(os.path.join(current_directory, PYSYN_directory_path))
 
@@ -174,7 +174,7 @@ def mass_from_radius_chen_kipping_2017(R_rearth):
 
     return 10.0 ** logM
 
-def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, nlevel=91, nofczns=1, nstr_upper=85, rfacv=0.5, outputfile=None, pt_guillot=True, prior_out=None):
+def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, nlevel=91, rfacv=0.5, outputfile=None, pt_guillot=True, prior_out=None):
 
     """
     Calculates the semi-major distance from the Sun of a planet whose equilibrium temperature can vary.
@@ -191,14 +191,11 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, n
         This is the orbital distance of the planet from the star in units of AU.
     ctoO = float
         This is the carbon to oxygen ratio of the planet in units of x Solar C/O ratio.
-    nlevel = float
+    nlevel = int
         Number of plane-parallel levels in your code
-    nofczns = float
-        Number of convective zones
-    nstr_upper = float
-        Top most level of guessed convective zone
     rfacv = float
         Based on Mukherjee et al. Eqn. 20, this tells you how much of the hemisphere(s) is being irradiated; if stellar irradiation is 50% (one hemisphere), rfacv is 0.5 and if just night side then rfacv is 0. If tidally locked planet, rfacv is 1.
+    nstr_upper = float (85 with the older Nick Wogan picaso version used to create the grid before the current update that uses a different version of picaso -- this is just to note the change and is no longer applicable in this script). The framework that applied nstr_upper was replaced with the rcb_guess parameter. 
         
     Results: CHECK THIS WHEN RUNNING CASES THAT DIDN'T CONVERGE
     
@@ -243,15 +240,6 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, n
     cl_run.star(opacity_ck, temp =T_star,metal =metal, logg =logg, radius = r_star, 
             radius_unit=u.R_sun,semi_major= semi_major_AU , semi_major_unit = u.AU )#opacity db, pysynphot database, temp, metallicity, logg
 
-    # Initial T(P) Guess
-    nstr_deep = nlevel -2
-    nstr = np.array([0,nstr_upper,nstr_deep,0,0,0]) # initial guess of convective zones
-
-    # Try to fix the convergence issue by using other results as best guesses
-    #with h5py.File('data/grid_results/PICASO_climate_fv.h5', 'r') as f:
-    #    pressure = np.array(list(f['results']['pressure'][1][0][0]))
-    #    temp_guess = np.array(list(f['results']['temperature'][1][0][0]))
-
     if pt_guillot == True:
         pt = cl_run.guillot_pt(Teq, nlevel=nlevel, T_int = tint, p_bottom=3, p_top=-6)
         temp_guess = pt['temperature'].values
@@ -259,17 +247,10 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, n
     elif pt_guillot == False:
         temp_guess = prior_out['temperature']
         pressure = prior_out['pressure']
-    
-    # Try using the T(P) profile from the test case instead of Guillot et al 2010.
-    # with open('out_Sun_5778_initP3bar.pkl', 'rb') as file:
-    #     out_Gstar = pickle.load(file)
-    
-    #temp_guess = pt['temperature'].values
-    #pressure = pt['pressure'].values
 
-    # Initial Convective Zone Guess
-    cl_run.inputs_climate(temp_guess= temp_guess, pressure= pressure, 
-                      nstr = nstr, nofczns = nofczns , rfacv = rfacv)
+    # rcb_guess replaces the old nstr_upper parameter (new picaso API).
+    # nstr_upper was 85 for nlevel=91; nlevel-6 preserves that ratio.
+    cl_run.inputs_climate(temp_guess= temp_guess, pressure= pressure, rfacv = rfacv, rcb_guess=nlevel-6)
 
     # Set composition
     mh_converted_from_log = 10**log_mh
@@ -657,11 +638,11 @@ def get_gridvals_PICASO_TP():
     """
 
     
-    # Full Parameter Exploration
+    # Low-metal grid — metallicities <= 2.375 (6 of the original 9 values)
     rad_plan_earth_units = np.array([2]) # in units of xEarth radii
-    log10_planet_metallicity = np.linspace(0.5, 3.5, 9) # in units of solar metallicity
+    log10_planet_metallicity = np.linspace(0.5, 2.375, 6) # in units of solar metallicity
     tint_K = np.linspace(50, 400, 8) # in Kelvin
-    semi_major_AU = np.array([0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10]) # in AU 
+    semi_major_AU = np.array([0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10]) # in AU
     ctoO_solar = np.linspace(0.01, 1, 5) # in units of solar C/O
 
     """
@@ -690,8 +671,8 @@ if __name__ == "__main__":
     setup_rank_debug_logging()
     
     gridutils.make_grid(
-        model_func=PICASO_climate_model, 
-        gridvals=get_gridvals_PICASO_TP(), 
-        filename='data/grid_results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.h5', 
-        progress_filename='data/grid_results/PICASO_climate_updatop_full_exploration_reducedrad_solveSegFault.log'
-    ) 
+        model_func=PICASO_climate_model,
+        gridvals=get_gridvals_PICASO_TP(),
+        filename='data/grid_results/PICASO_climate_lowmetal_nb_picaso.h5',
+        progress_filename='data/grid_results/PICASO_climate_lowmetal_nb_picaso.log'
+    )

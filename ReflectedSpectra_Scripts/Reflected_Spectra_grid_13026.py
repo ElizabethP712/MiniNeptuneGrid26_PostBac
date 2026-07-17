@@ -1,4 +1,4 @@
-import sys
+﻿import sys
 from pathlib import Path
 
 _root = Path.cwd()  # assumes notebook is run from the project root
@@ -12,8 +12,8 @@ import os
 from pathlib import Path
 
 current_directory = Path.cwd()
-references_directory_path = "Installation&Setup_Instructions/picasofiles/reference"
-PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/trds"
+references_directory_path = "Installation_Setup_Instructions/picasofiles/reference"
+PYSYN_directory_path = "Installation_Setup_Instructions/picasofiles/grp/redcat/trds"
 print(os.path.join(current_directory, references_directory_path))
 print(os.path.join(current_directory, PYSYN_directory_path))
 
@@ -357,7 +357,7 @@ def find_pbot(sol=None, solaer=None, tol=0.9):
 # Make a Global Variable
 
 current_directory = Path.cwd()
-opacity_file_path = "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
+opacity_file_path = "Installation_Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
 print(os.path.join(current_directory, opacity_file_path))
 
 opacity_path=os.path.join(current_directory, opacity_file_path)

@@ -1,4 +1,4 @@
-import sys
+﻿import sys
 from pathlib import Path
 
 _root = Path.cwd()  # assumes notebook is run from the project root
@@ -30,8 +30,8 @@ import os
 from pathlib import Path
 
 current_directory = Path.cwd()
-references_directory_path = "Installation&Setup_Instructions/picasofiles/reference"
-PYSYN_directory_path = "Installation&Setup_Instructions/picasofiles/grp/redcat/trds"
+references_directory_path = "Installation_Setup_Instructions/picasofiles/reference"
+PYSYN_directory_path = "Installation_Setup_Instructions/picasofiles/grp/redcat/trds"
 print(os.path.join(current_directory, references_directory_path))
 print(os.path.join(current_directory, PYSYN_directory_path))
 
@@ -48,7 +48,7 @@ import picaso.justplotit as jpi
 # Gas planet spectra use [0.1, 2.5] to capture the full UV range.
 opacity_path = os.path.join(
     current_directory,
-    "Installation&Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000_v2.db"
+    "Installation_Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000_v2.db"
 )
 print(opacity_path)
 # RUN_CASE_TYPE env var controls which opacity is loaded (set by run_single_case.py).
@@ -246,12 +246,15 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
         plt.show()
 
     if 'exclude_mol' in atmosphere_kwargs:
-        for sp in atmosphere_kwargs['exclude_mol']:
-            print(f'This should show the species you are excluding: {sp}')
-
-            if sp in df_atmo:
-                df_atmo[sp] *= kwarg_factor
-                print(df_atmo[sp])
+        _excl_val = atmosphere_kwargs['exclude_mol']
+        if not isinstance(_excl_val, dict):
+            # List-form: zero out abundance by kwarg_factor (original behavior)
+            for sp in _excl_val:
+                print(f'This should show the species you are excluding: {sp}')
+                if sp in df_atmo:
+                    df_atmo[sp] *= kwarg_factor
+                    print(df_atmo[sp])
+        # Dict-form (e.g. {'O2': ['line']}) is opacity-only — abundances unchanged
 
     if exclude_all_gas:
         _excl = {sp: ['line', 'continuum'] for sp in df_atmo.columns if sp not in ['pressure', 'temperature']}
@@ -265,7 +268,8 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
                  if sp not in ['pressure', 'temperature'] and sp in _rayleigh_mols}
         start_case.atmosphere(df=df_atmo, exclude_mol=_excl)
     else:
-        start_case.atmosphere(df=df_atmo)
+        _opacity_excl = atmosphere_kwargs.get('exclude_mol') if isinstance(atmosphere_kwargs.get('exclude_mol'), dict) else None
+        start_case.atmosphere(df=df_atmo, exclude_mol=_opacity_excl) if _opacity_excl else start_case.atmosphere(df=df_atmo)
 
     if surface_albedo is not None:
         start_case.surface_reflect(surface_albedo, opacity.wno)
@@ -273,10 +277,20 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
     # Build pickle filename suffix from active options
     if outputfile is not None:
         _suffix = ''
+        _ABBREV = {'line': 'Line', 'continuum': 'Cont', 'rayleigh': 'Ray'}
         if exclude_all_gas:
             _suffix += '_nogas'
-        elif 'exclude_mol' in atmosphere_kwargs and kwarg_factor == 0:
-            _suffix += '_no' + ''.join(atmosphere_kwargs['exclude_mol'])
+        elif 'exclude_mol' in atmosphere_kwargs:
+            _mol_val = atmosphere_kwargs['exclude_mol']
+            if isinstance(_mol_val, dict):
+                # Dict-form selective opacity exclusion: {'O2': ['line']} → _O2_noLine
+                _parts = []
+                for _mol, _types in _mol_val.items():
+                    _abbrevs = ''.join(_ABBREV.get(t, t.capitalize()) for t in sorted(_types))
+                    _parts.append(f'{_mol}_no{_abbrevs}')
+                _suffix += '_' + '_'.join(_parts)
+            elif kwarg_factor == 0:
+                _suffix += '_no' + ''.join(_mol_val)
         if forced_nocld:
             _suffix += '_nocld'
         else:
@@ -455,9 +469,12 @@ def earth_spectrum(
     df_atmo_earth = df_pt_earth.join(df_mol_grid, how='inner')
 
     if 'exclude_mol' in atmosphere_kwargs:
-        for sp in atmosphere_kwargs['exclude_mol']:
-            if sp in df_atmo_earth:
-                df_atmo_earth[sp] *= 0
+        _excl_val_e = atmosphere_kwargs['exclude_mol']
+        if not isinstance(_excl_val_e, dict):
+            for sp in _excl_val_e:
+                if sp in df_atmo_earth:
+                    df_atmo_earth[sp] *= 0
+        # Dict-form is opacity-only — abundances unchanged
 
     if exclude_all_gas:
         _excl = {sp: ['line', 'continuum'] for sp in df_atmo_earth.columns if sp not in ['pressure', 'temperature']}
@@ -466,7 +483,8 @@ def earth_spectrum(
         _excl = {sp: ['rayleigh'] for sp in df_atmo_earth.columns if sp not in ['pressure', 'temperature']}
         earth.atmosphere(df=df_atmo_earth, exclude_mol=_excl)
     else:
-        earth.atmosphere(df=df_atmo_earth)
+        _opacity_excl_e = atmosphere_kwargs.get('exclude_mol') if isinstance(atmosphere_kwargs.get('exclude_mol'), dict) else None
+        earth.atmosphere(df=df_atmo_earth, exclude_mol=_opacity_excl_e) if _opacity_excl_e else earth.atmosphere(df=df_atmo_earth)
     earth.surface_reflect(0.1, OPACITY_EARTH.wno)
 
     if no_rayleigh:
@@ -512,10 +530,19 @@ def earth_spectrum(
 
     if outputfile is not None:
         _suffix = f'_phase{phase:.4f}_cld{cloud_frac}_psurf{p_surface_bar}'
+        _ABBREV_E = {'line': 'Line', 'continuum': 'Cont', 'rayleigh': 'Ray'}
         if exclude_all_gas:
             _suffix += '_nogas'
         elif 'exclude_mol' in atmosphere_kwargs:
-            _suffix += '_no' + ''.join(atmosphere_kwargs['exclude_mol'])
+            _mol_val_e = atmosphere_kwargs['exclude_mol']
+            if isinstance(_mol_val_e, dict):
+                _parts_e = []
+                for _mol, _types in _mol_val_e.items():
+                    _abbrevs_e = ''.join(_ABBREV_E.get(t, t.capitalize()) for t in sorted(_types))
+                    _parts_e.append(f'{_mol}_no{_abbrevs_e}')
+                _suffix += '_' + '_'.join(_parts_e)
+            elif kwarg_factor == 0:
+                _suffix += '_no' + ''.join(_mol_val_e)
         if no_rayleigh:
             _suffix += '_noray'
         _out = Path(outputfile)
