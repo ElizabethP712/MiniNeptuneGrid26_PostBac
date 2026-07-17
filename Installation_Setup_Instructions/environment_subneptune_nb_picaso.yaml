@@ -1,0 +1,100 @@
+﻿name: subneptune_nb_picaso
+# Same packages as subneptune (photochem=0.8.4, mpi4py, etc.) but using
+# Natasha Batalha's picaso fork at commit 4569a09 instead of Nick Wogan's.
+#
+# WARNING: Before running PICASO_Climate_grid_121625.py with this env, verify
+# that inputs_climate(nstr=...) is still supported in this picaso commit.
+# Run: python -c "import inspect, picaso.justdoit as jdi; print(inspect.signature(jdi.inputs.inputs_climate))"
+# If 'nstr' is missing from the signature, PICASO_Climate_grid_121625.py will
+# need to be updated before use.
+#
+# Setup:
+#   conda env create -f Installation_Setup_Instructions/environment_subneptune_nb_picaso.yaml
+#   conda activate subneptune_nb_picaso
+#   cd Installation_Setup_Instructions
+#   python setup_picaso.py   # downloads opacity tables for this picaso version
+#
+# Reference data (picasofiles/) is already present from the original installation.
+# Only re-run setup_picaso.py if this picaso version requires different opacity files.
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # ── Python ─────────────────────────────────────────────────────────────────
+  - python=3.12.12
+
+  # ── Core science stack ─────────────────────────────────────────────────────
+  - numpy=1.26.4
+  - scipy=1.11.4
+  - pandas=2.2.3
+  - matplotlib=3.10.8
+  - xarray=2024.9.0
+  - numba=0.60.0
+  - h5py=3.15.1
+  - h5netcdf=1.8.0
+  - netcdf4
+
+  # ── Atmospheric modeling ───────────────────────────────────────────────────
+  - photochem=0.8.4
+  - photochem_clima_data=0.3.1
+
+  # ── Astronomy / photometry ─────────────────────────────────────────────────
+  - astropy=6.1.4
+  - astroquery=0.4.11
+  - stsynphot=1.5.1
+  - synphot=1.7.0
+  - photutils=2.3.0
+
+  # ── Statistics / retrieval ─────────────────────────────────────────────────
+  - pymultinest=2.12
+  - multinest=3.10
+  - corner=2.2.3
+  - arviz=0.23.1
+
+  # ── Parallelism / MPI ─────────────────────────────────────────────────────
+  - mpi4py=4.0.1
+  - mpich=4.3.2
+  - dill=0.3.9
+  - threadpoolctl=3.6.0
+
+  # ── Jupyter / viz ─────────────────────────────────────────────────────────
+  - jupyter=1.1.1
+  - jupyterlab=4.5.3
+  - ipywidgets=8.1.8
+  - bokeh=3.8.2
+  - ipykernel=7.1.0
+
+  # ── Web / data fetching ────────────────────────────────────────────────────
+  - requests=2.32.5
+  - beautifulsoup4=4.14.3
+  - wget=1.25.0
+
+  # ── Build tools (needed to compile photochem / picaso extensions) ──────────
+  - cmake=3.31.8
+  - ninja=1.13.1
+  - cython=3.1.6
+  - fypp=3.2
+  - scikit-build=0.18.1
+  - c-compiler=1.11.0
+  - cxx-compiler=1.11.0
+  - fortran-compiler=1.11.0
+
+  # ── Misc utilities ─────────────────────────────────────────────────────────
+  - tqdm=4.66.5
+  - git=2.51.0
+  - tar=1.35
+  - unzip=6.0
+  - pip=25.2
+
+  # ── pip-only packages ──────────────────────────────────────────────────────
+  # picaso: Natasha Batalha's fork, commit 4569a09 — used for the new low-metal
+  # PICASO grid. Distinct from Nick Wogan's fork (1abab28) used in subneptune.
+  - pip:
+    - https://github.com/natashabatalha/picaso/archive/4569a09eea10e41f6f31a3a20d0bfb06b69d9ea2.zip
+    - virga-exo==1.0
+    - bibtexparser==1.4.3
+    - miepython==3.0.5
+    - pooch==1.8.2
+    - joblib==1.5.3
