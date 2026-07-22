@@ -19,7 +19,7 @@ import astropy.units as u
 # --- Opacity ---
 opacity_path = str(
     current_directory /
-    "Installation_Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
+    "Installation_Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000_v2.db"
 )
 print(f"Loading opacities from: {opacity_path}")
 OPACITY_EARTH = jdi.opannection(filename_db=opacity_path, wave_range=[0.3, 2.5])

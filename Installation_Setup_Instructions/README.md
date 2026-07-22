@@ -60,6 +60,11 @@ tar -xvzf synphot3.tar.gz
 mv grp picasofiles/
 rm synphot3.tar.gz
 
+mkdir -p picasofiles/reference/opacities
+wget https://zenodo.org/records/20397663/files/opacities_photochem_0.1_250.0_R15000_v2.db.zip
+unzip opacities_photochem_0.1_250.0_R15000_v2.db.zip -d picasofiles/reference/opacities/
+rm opacities_photochem_0.1_250.0_R15000_v2.db.zip
+
 python setup_picaso.py
 # When prompted, enter:
 #   ck_tables
@@ -115,6 +120,12 @@ python setup_picaso.py
 #   ck_tables
 #   by-molecule
 #   yes
+
+# Download photochem opacity database
+mkdir -p picasofiles/reference/opacities
+wget https://zenodo.org/records/20397663/files/opacities_photochem_0.1_250.0_R15000_v2.db.zip
+unzip opacities_photochem_0.1_250.0_R15000_v2.db.zip -d picasofiles/reference/opacities/
+rm opacities_photochem_0.1_250.0_R15000_v2.db.zip
 ```
 
 This skips recreating the conda environment entirely.

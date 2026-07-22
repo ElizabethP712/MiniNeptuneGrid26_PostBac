@@ -208,7 +208,7 @@ def calc_semi_major_SUN(Teq):
     distance_AU = distance_m / 1.496e+11
     return distance_AU
     
-def find_Photochem_match(filename='data/grid_results/Photochem_1D_fv.h5',  rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, Kzz=None, gridvals= Photochem_grid.get_gridvals_Photochem()):
+def find_Photochem_match(filename='data/grid_results/Photochem_1D_fv.h5',  rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, Kzz=None, gridvals= Photochem_grid.get_gridvals_Photochem_full()):
     
     """
     This finds the Photochem match on the grid based on inputs into the Reflected Spectra grid.
@@ -357,7 +357,7 @@ def find_pbot(sol=None, solaer=None, tol=0.9):
 # Make a Global Variable
 
 current_directory = Path.cwd()
-opacity_file_path = "Installation_Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000.db"
+opacity_file_path = "Installation_Setup_Instructions/picasofiles/reference/opacities/opacities_photochem_0.1_250.0_R15000_v2.db"
 print(os.path.join(current_directory, opacity_file_path))
 
 opacity_path=os.path.join(current_directory, opacity_file_path)

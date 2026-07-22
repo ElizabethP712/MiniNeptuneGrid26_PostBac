@@ -78,6 +78,13 @@ tar -xvzf $Starstuff_DOWNLOAD_File
 mv grp picasofiles/
 rm $Starstuff_DOWNLOAD_File
 
+# 9. Download photochem opacity database
+echo "Downloading photochem opacity database..."
+mkdir -p picasofiles/reference/opacities
+wget https://zenodo.org/records/20397663/files/opacities_photochem_0.1_250.0_R15000_v2.db.zip -O opacities_photochem_0.1_250.0_R15000_v2.db.zip
+unzip opacities_photochem_0.1_250.0_R15000_v2.db.zip -d picasofiles/reference/opacities/
+rm opacities_photochem_0.1_250.0_R15000_v2.db.zip
+
 # 6. Export an environment variable (often used for configuration)
 export picaso_refdata=$(pwd)"/picasofiles/reference/" 
 export PYSYN_CDBS=$(pwd)"/picasofiles/grp/redcat/trds"
@@ -85,6 +92,6 @@ echo "Set picaso_refdata and PYSYN_CDBS paths (only persists for the duration of
 
 # 7. Run the setup_picaso script to download opacities required
 echo "Finish setting up picaso by downloading opacities"
-python setup_picaso.py
+printf "ck_tables\nby-molecule\nyes\n" | python setup_picaso.py
 
 echo "Automation script finished."

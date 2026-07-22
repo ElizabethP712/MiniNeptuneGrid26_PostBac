@@ -583,6 +583,18 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
         sol_nan, soleq_nan, conv_nan, conv_pc_nan = _photochem_nan_result()
         return sol_nan, soleq_nan, None, conv_nan, conv_pc_nan, 'Photochem-error', err_str
 
+def get_gridvals_Photochem_full():
+    """Gridvals matching Photochem_1D_updatop_paramext_reducedrad_full_try3.h5.
+    Use this when calling find_Photochem_match against the original full grid file."""
+    rad_plan_earth_units = np.array([2])
+    log10_planet_metallicity = np.linspace(0.5, 3.5, 9)
+    tint_K = np.linspace(50, 400, 8)
+    semi_major_AU = np.array([0.3, 0.7, 1, 1.5, 2, 3, 4, 5, 6, 8, 10])
+    ctoO_solar = np.linspace(0.01, 1, 5)
+    log_Kzz = np.array([5, 7, 9])
+    return (rad_plan_earth_units, log10_planet_metallicity, tint_K, semi_major_AU, ctoO_solar, log_Kzz)
+
+
 def get_gridvals_Photochem():
 
     """
