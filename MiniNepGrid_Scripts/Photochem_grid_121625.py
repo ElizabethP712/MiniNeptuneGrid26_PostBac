@@ -397,7 +397,7 @@ def interpolate_photochem_result_to_nlayers(out, nlayers):
 # Calculates the Chemical Composition of the Planet using Photochem
 
 
-def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, log_Kzz=None, PT_filename=None):
+def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None, semi_major=None, ctoO=None, log_Kzz=None, PT_filename=None, PT_ind_picaso=None):
 
     """
     This calculates the 1D photochemical composition of a K218b-like planet around a Sun-like star.
@@ -446,7 +446,11 @@ def Photochem_Gas_Giant(rad_plan=None, log10_planet_metallicity=None, tint=None,
     stellar_flux_file = _ensure_stellar_flux_file(planet_Teq)
     rank = MPI.COMM_WORLD.Get_rank()
 
-    PT_list, convergence_values, picaso_status, picaso_error = find_PT_grid(filename=PT_filename, rad_plan=rad_plan, log10_planet_metallicity=log10_planet_metallicity, tint=tint, semi_major=semi_major, ctoO=ctoO)
+    if PT_ind_picaso is None:
+        PT_list, convergence_values, picaso_status, picaso_error = find_PT_grid(filename=PT_filename, rad_plan=rad_plan, log10_planet_metallicity=log10_planet_metallicity, tint=tint, semi_major=semi_major, ctoO=ctoO)
+    else:
+        PT_list = PT_ind_picaso
+        convergence_values = np.array([1])  # caller is responsible for providing a valid PT
 
     # If PICASO did not converge or had an error, return NaN result immediately.
     if PT_list is None:

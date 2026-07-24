@@ -282,8 +282,8 @@ def PICASO_PT_Planet(rad_plan=1, log_mh=2.0, tint=60, semi_major_AU=1, ctoO=1, n
     # _run_picaso_isolated.  Extracting here ensures only serializable data crosses
     # the queue boundary.
     safe_out = {
-        'pressure':    np.array(out['pressure']),
-        'temperature': np.array(out['temperature']),
+        'pressure':    np.array(out['pressure']).flatten(),
+        'temperature': np.array(out['temperature']).flatten(),
         'converged':   np.array([out.get('converged', 0)]),
         'status':      out.get('status', ''),
         'error':       out.get('error', ''),

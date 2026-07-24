@@ -41,7 +41,7 @@ def save_result_hdf5(filename, index, x, res, grid_shape):
         for key, val in res.items():
             data_shape = grid_shape + val.shape  # accommodate vector outputs
             #print(f"This is the grid_shape: {grid_shape} and type: {type(grid_shape)}") # allows for a longer array to be saved
-            max_shape_tuple = grid_shape + (None,)
+            max_shape_tuple = grid_shape + (None,) * len(val.shape)
             length_val = len(val)
             #print(f"This is the tuple for max_shapes: {max_shape_tuple}")
             
