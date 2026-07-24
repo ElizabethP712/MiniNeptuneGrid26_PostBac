@@ -8,8 +8,9 @@
 #SBATCH --mem=16G
 #SBATCH --output=install_%j.out
 #SBATCH --error=install_%j.err
+#SBATCH --chdir=/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation_Setup_Instructions
 
 source /mmfs1/home/elizap77/miniconda3/etc/profile.d/conda.sh
 
-bash "/mmfs1/home/elizap77/elizap/MiniNeptuneGrid26_PostBac/Installation_Setup_Instructions/setup_automated.sh"
+bash "/gscratch/vsm/elizap/MiniNeptuneGrid26_PostBac/Installation_Setup_Instructions/setup_automated.sh"
 

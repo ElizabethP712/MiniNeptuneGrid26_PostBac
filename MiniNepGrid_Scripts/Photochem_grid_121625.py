@@ -1,4 +1,4 @@
-﻿import sys
+import sys
 from pathlib import Path
 
 _root = Path.cwd()  # assumes notebook is run from the project root
