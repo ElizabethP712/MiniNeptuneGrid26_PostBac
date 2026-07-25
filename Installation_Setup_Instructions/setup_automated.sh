@@ -31,7 +31,8 @@ if [ $? -eq 0 ]; then
     # echo "Activating the environment..."
     # conda activate <ENV_NAME> # Replace <ENV_NAME> with the name specified in your YAML file
 else
-    echo "Failed to create Conda environment."
+    echo "Failed to create Conda environment. Exiting."
+    exit 1
 fi
 
 # 2. Activate Conda environment
@@ -44,6 +45,18 @@ conda activate $CONDA_ENV_NAME
 # Check if activation was successful
 if [ $? -ne 0 ]; then
     echo "Failed to activate conda environment. Exiting."
+    exit 1
+fi
+
+# 2b. Install pip-only packages (excluding picaso and virga-exo).
+# virga-exo is intentionally omitted here — picaso's setup.py declares its own
+# virga-exo version requirement and installs it automatically in step 5 below.
+# Pinning virga-exo==1.0 here conflicts with picaso's declared dependency.
+echo "Installing pip-only packages..."
+pip install bibtexparser==1.4.3 miepython==3.0.5 pooch==1.8.2 joblib==1.5.3
+
+if [ $? -ne 0 ]; then
+    echo "Failed to install pip packages. Exiting."
     exit 1
 fi
 

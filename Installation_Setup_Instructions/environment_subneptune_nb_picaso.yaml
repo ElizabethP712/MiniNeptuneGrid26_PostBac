@@ -89,12 +89,9 @@ dependencies:
   - pip=25.2
 
   # ── pip-only packages ──────────────────────────────────────────────────────
-  # picaso: Natasha Batalha's fork, commit 4569a09 — used for the new low-metal
-  # PICASO grid. Distinct from Nick Wogan's fork (1abab28) used in subneptune.
-  - pip:
-    - https://github.com/natashabatalha/picaso/archive/4569a09eea10e41f6f31a3a20d0bfb06b69d9ea2.zip
-    - virga-exo==1.0
-    - bibtexparser==1.4.3
-    - miepython==3.0.5
-    - pooch==1.8.2
-    - joblib==1.5.3
+  # NOTE: pip packages are intentionally NOT listed here to avoid pip's
+  # dependency resolver conflicting with pinned conda packages.
+  # They are installed explicitly in setup_automated.sh after conda activation:
+  #   picaso     -> installed from downloaded zip (see setup_automated.sh step 5)
+  #   virga-exo  -> pip install virga-exo==1.0
+  #   others     -> pip install bibtexparser==1.4.3 miepython==3.0.5 pooch==1.8.2 joblib==1.5.3
