@@ -95,6 +95,18 @@ MODERN EARTH (N2/O2, rayleigh + cloud=0.5 + surface p=1 bar, phase=30 deg)
   22 exclude O3                                             [in master.json idx 12]
   23 standard (all gas, cloud=0.5, surface p=1 bar)         [NEW]
 
+O2 OPACITY EXCLUSION CASES (Case 2 only — O2-rich Mini-Neptune)
+  27 exclude O2 (abundance zeroed)                          [NEW]
+  28 exclude O2 — Modern Earth (abundance zeroed)           [NEW]
+  29 O2 line only excluded                                  [NEW]
+  30 O2 continuum only excluded                             [NEW]
+  31 O2 Rayleigh only excluded                              [NEW]
+  32 O2 continuum + Rayleigh excluded                       [NEW]
+  33 O2 continuum + line excluded                           [NEW]
+  34 O2 line + Rayleigh excluded                            [NEW]
+  35 O2 excluded via PICASO exclude_mol, abundance intact   [NEW]
+  36 O2 all opacity excluded (line+cont+ray, dict-form)     [NEW]
+
 
 OUTPUT FILES
 ------------
@@ -132,3 +144,14 @@ Modern Earth outputs:
   data/RLS_results/EarthSpectrum_ModernEarth_phase0.5236_cld0.5_psurf1.0_noNH3.pkl  (idx 21)
   data/RLS_results/EarthSpectrum_ModernEarth_phase0.5236_cld0.5_psurf1.0_noO3.pkl   (idx 22)
   data/RLS_results/EarthSpectrum_ModernEarth_phase0.5236_cld0.5_psurf1.0.pkl        (idx 23 — standard)
+
+O2 opacity exclusion outputs (Case 2):
+  data/RLS_results/RLS_O2Rich_MiniNep_noO2_cld0.5.pkl                  (idx 27 — abundance zeroed)
+  data/RLS_results/RLS_O2Rich_MiniNep_O2_noLine_cld0.5.pkl              (idx 29)
+  data/RLS_results/RLS_O2Rich_MiniNep_O2_noCont_cld0.5.pkl              (idx 30)
+  data/RLS_results/RLS_O2Rich_MiniNep_O2_noRay_cld0.5.pkl               (idx 31)
+  data/RLS_results/RLS_O2Rich_MiniNep_O2_noContRay_cld0.5.pkl           (idx 32)
+  data/RLS_results/RLS_O2Rich_MiniNep_O2_noContLine_cld0.5.pkl          (idx 33)
+  data/RLS_results/RLS_O2Rich_MiniNep_O2_noLineRay_cld0.5.pkl           (idx 34)
+  data/RLS_results/RLS_O2Rich_MiniNep_O2_noOpacity_cld0.5.pkl           (idx 35 — PICASO list-form, abundance intact)
+  data/RLS_results/RLS_O2Rich_MiniNep_O2_noContLineRay_cld0.5.pkl       (idx 36 — dict-form all three, abundance intact)

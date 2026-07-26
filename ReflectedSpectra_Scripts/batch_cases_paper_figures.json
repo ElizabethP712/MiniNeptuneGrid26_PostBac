@@ -553,5 +553,39 @@
     "exclude_all_gas": false,
     "atmosphere_kwargs": {"exclude_mol": {"O2": ["line", "rayleigh"]}},
     "outputfile": "data/RLS_results/O2Rich_MiniNep"
+  },
+  {
+    "_section": "CASE 2 — O2-RICH MINI-NEPTUNE — exclude O2 via PICASO exclude_mol, abundance intact [NEW]",
+    "_note": "pkl: data/RLS_results/RLS_O2Rich_MiniNep_O2_noOpacity_cld0.5.pkl",
+    "type": "gas_planet",
+    "rad_plan": 2, "planet_metal": 3.125, "tint": 200, "semi_major": 1, "ctoO": 0.01, "Kzz": 5,
+    "phase_angle": 0.0,
+    "Photochem_file": "data/grid_results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac": 0.5,
+    "forced_nocld": false,
+    "no_rayleigh": false,
+    "surface_albedo": null,
+    "p_surface_bar": null,
+    "kwarg_factor": 1,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": ["O2"]},
+    "outputfile": "data/RLS_results/O2Rich_MiniNep"
+  },
+  {
+    "_section": "CASE 2 — O2-RICH MINI-NEPTUNE — O2 all opacity excluded (line + continuum + Rayleigh) [NEW]",
+    "_note": "pkl: data/RLS_results/RLS_O2Rich_MiniNep_O2_noContLineRay_cld0.5.pkl",
+    "type": "gas_planet",
+    "rad_plan": 2, "planet_metal": 3.125, "tint": 200, "semi_major": 1, "ctoO": 0.01, "Kzz": 5,
+    "phase_angle": 0.0,
+    "Photochem_file": "data/grid_results/Photochem_1D_updatop_paramext_reducedrad_full_try3.h5",
+    "cloud_frac": 0.5,
+    "forced_nocld": false,
+    "no_rayleigh": false,
+    "surface_albedo": null,
+    "p_surface_bar": null,
+    "kwarg_factor": 1,
+    "exclude_all_gas": false,
+    "atmosphere_kwargs": {"exclude_mol": {"O2": ["line", "continuum", "rayleigh"]}},
+    "outputfile": "data/RLS_results/O2Rich_MiniNep"
   }
 ]

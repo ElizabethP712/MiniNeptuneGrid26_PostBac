@@ -248,12 +248,14 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
     if 'exclude_mol' in atmosphere_kwargs:
         _excl_val = atmosphere_kwargs['exclude_mol']
         if not isinstance(_excl_val, dict):
-            # List-form: zero out abundance by kwarg_factor (original behavior)
-            for sp in _excl_val:
-                print(f'This should show the species you are excluding: {sp}')
-                if sp in df_atmo:
-                    df_atmo[sp] *= kwarg_factor
-                    print(df_atmo[sp])
+            if kwarg_factor == 0:
+                # Abundance-zeroing form: remove species from df_atmo before PICASO
+                for sp in _excl_val:
+                    print(f'This should show the species you are excluding: {sp}')
+                    if sp in df_atmo:
+                        df_atmo[sp] *= kwarg_factor
+                        print(df_atmo[sp])
+            # kwarg_factor != 0: abundance stays intact; list passed to PICASO below
         # Dict-form (e.g. {'O2': ['line']}) is opacity-only — abundances unchanged
 
     if exclude_all_gas:
@@ -268,8 +270,15 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
                  if sp not in ['pressure', 'temperature'] and sp in _rayleigh_mols}
         start_case.atmosphere(df=df_atmo, exclude_mol=_excl)
     else:
-        _opacity_excl = atmosphere_kwargs.get('exclude_mol') if isinstance(atmosphere_kwargs.get('exclude_mol'), dict) else None
-        start_case.atmosphere(df=df_atmo, exclude_mol=_opacity_excl) if _opacity_excl else start_case.atmosphere(df=df_atmo)
+        _excl_val = atmosphere_kwargs.get('exclude_mol')
+        if isinstance(_excl_val, dict):
+            # Dict-form: per-component opacity exclusion, abundance unchanged
+            start_case.atmosphere(df=df_atmo, exclude_mol=_excl_val)
+        elif _excl_val is not None and kwarg_factor != 0:
+            # List-form, abundance intact: pass list to PICASO (excludes all opacity for those molecules)
+            start_case.atmosphere(df=df_atmo, exclude_mol=_excl_val)
+        else:
+            start_case.atmosphere(df=df_atmo)
 
     if surface_albedo is not None:
         start_case.surface_reflect(surface_albedo, opacity.wno)
@@ -291,6 +300,9 @@ start_case.inputs['atmosphere']['exclude_mol'] = {'CH4': 0}
                 _suffix += '_' + '_'.join(_parts)
             elif kwarg_factor == 0:
                 _suffix += '_no' + ''.join(_mol_val)
+            else:
+                # List-form, abundance intact: PICASO-level exclusion of all opacity
+                _suffix += '_' + ''.join(_mol_val) + '_noOpacity'
         if forced_nocld:
             _suffix += '_nocld'
         else:
